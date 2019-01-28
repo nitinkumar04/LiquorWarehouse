@@ -67,6 +67,9 @@
     <Build Include="dbo\Stored Procedures\CreateDefaultsDimRetailer.sql" />
     <Build Include="dbo\Stored Procedures\UpdateTable.sql" />
     <Build Include="Security\db_executor.sql" />
+    <Build Include="dbo\Tables\DimLabel.sql" />
+    <Build Include="dbo\Tables\DimSize.sql" />
+    <Build Include="dbo\Tables\DimItem.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimAccountType.sql" />
@@ -101,5 +104,11 @@
     <Build Include="dbo\Tables\DimStatus.sql" />
     <Build Include="dbo\Tables\DimSupplier.sql" />
     <Build Include="dbo\Tables\DimTerritory.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="LiquorWarehouse_1_0.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LiquorWarehouse_1_0.publish.xml" />
   </ItemGroup>
 </Project>

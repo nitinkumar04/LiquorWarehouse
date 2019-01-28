@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="370cf279-0fc1-4eb6-8556-710bf878e8c7" ChangeDateTime="01/28/2019 21:32:49">
+    <Property Name="ElementName" Value="[dbo].[DimLabel].[LWSalesForceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimLabel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesforceURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="56e461ff-186f-44e7-9753-b901cd7cf962" ChangeDateTime="01/28/2019 21:37:17">
+    <Property Name="ElementName" Value="[dbo].[DimLabel].[BrokenCaseExempt]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimLabel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BrokenCaseExemptFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a406683c-17fa-4eba-9e2f-d06f560ef8df" ChangeDateTime="01/28/2019 21:38:26">
+    <Property Name="ElementName" Value="[dbo].[DimLabel].[LabelCustomCheckbox]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimLabel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LabelCustomCheckbox1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="744bea87-5617-464c-8de7-9636b218788b" ChangeDateTime="01/28/2019 21:39:05">
+    <Property Name="ElementName" Value="[dbo].[DimLabel].[LW]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimLabel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSourceID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="030af194-a53b-4297-a3e9-5d1fde3d18af" ChangeDateTime="01/28/2019 21:44:14">
+    <Property Name="ElementName" Value="[dbo].[DimItem].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWItemSkey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="655b3a94-e41d-4a31-a61f-ff4210d261e4" ChangeDateTime="01/28/2019 22:55:09">
+    <Property Name="ElementName" Value="[dbo].[DimSize].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSize]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSizeSKey" />
+  </Operation>
+</Operations>

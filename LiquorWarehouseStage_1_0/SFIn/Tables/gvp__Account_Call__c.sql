@@ -44,7 +44,7 @@
 	gvp__Local_Date__c date null,
 	gvp__Event_Status__c nvarchar(100) null,
 	gvp__Sales_Team_Division__c char(18) null,
-	gvp__Date_Formula__c decimal(6,2) not null,
+	gvp__Date_Formula__c decimal(6,2) null,
 	gvp__Program__c char(18) null,
 	gvp__Sales_Sequence_End_Date_Time__c datetime null,
 	gvp__Sales_Sequence_Start_Date_Time__c datetime null, 

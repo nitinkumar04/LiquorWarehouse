@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[DimLabel]
+(
+  [LWLabelSKey] INT NOT NULL IDENTITY, 
+    LabelID char(18) not null DEFAULT '-1',
+    LabelLN nvarchar(100) not null DEFAULT 'No Data',
+    [LWSalesforceURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
+    [ExternalID] VARCHAR(20) NULL, 
+    [ProductLine] NVARCHAR(100) NULL, 
+    [LabelType] NVARCHAR(100) NULL, 
+    [Ownership] NVARCHAR(100) NULL, 
+    [Variety] NVARCHAR(100) NULL, 
+    [KeyLabelFlag] INT NOT NULL DEFAULT -1, 
+    [Country] NVARCHAR(100) NULL, 
+    [Region] NVARCHAR(100) NULL, 
+    [SubRegion] NVARCHAR(100) NULL, 
+    [Appellation] NVARCHAR(100) NULL, 
+    [Vineyard] NVARCHAR(100) NULL, 
+    [BrokenCaseExemptFlag] INT NOT NULL DEFAULT -1, 
+    [VisibleFlag] INT NOT NULL DEFAULT -1, 
+    [LabelCustomString1] NVARCHAR(200) NULL, 
+    [LabelCustomString2] NVARCHAR(200) NULL, 
+
+    [LabelCustomPicklist1] NVARCHAR(200) NULL, 
+    [LabelCustomPicklist2] NVARCHAR(200) NULL, 
+    [LabelCustomCheckbox1] NVARCHAR(100) NULL, 
+    [LabelCustomCheckbox2] NVARCHAR(100) NULL, 
+    [LWSourceID] INT NOT NULL, 
+    [SourceCreateDate] DATETIME NULL, 
+    [SourceModifiedDate] DATETIME NULL, 
+    [LWCreateDate] DATETIME NOT NULL DEFAULT getdate(), 
+    [LWModifiedDate] DATETIME NOT NULL DEFAULT getdate(), 
+    CONSTRAINT [PK_DimLabel] PRIMARY KEY ([LWLabelSKey]) 
+)
