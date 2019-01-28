@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[DimBrand]
 (
-  [LBBrandSKey] INT NOT NULL IDENTITY, 
-    [LBBrandID] char(18) NOT NULL DEFAULT '-1', 
-    [LBBrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
-    [LBBrandURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
+  [LWBrandSKey] INT NOT NULL IDENTITY, 
+    [LWBrandID] char(18) NOT NULL DEFAULT '-1', 
+    [LWBrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
+    [LWBrandURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [BrandExternalID] VARCHAR(20) NULL, 
-    [LBSupplierSKey] INT NOT NULL DEFAULT -1, 
+    [LWSupplierSKey] INT NOT NULL DEFAULT -1, 
     [BrandOwnership] NVARCHAR(100) NULL, 
     [KeyBrandFlag] INT NOT NULL DEFAULT -1, 
     [VisibleFlag] INT NOT NULL DEFAULT -1, 
@@ -14,10 +14,10 @@
     [BrandCustomString2] NVARCHAR(200) NULL, 
     [BrandCustomPicklist1] NVARCHAR(200) NULL, 
     [BrandCustomPicklist2] NVARCHAR(200) NULL, 
-    [LBSourceID]               INT          NOT NULL DEFAULT -1,
+    [LWSourceID]               INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]         DATETIME     NULL,
     [SourceModifiedDate]       DATETIME     NULL,
-    [LBCreateDate]             DATETIME     CONSTRAINT [DF_DimBrand_LBCreateDate] DEFAULT (getdate()) NOT NULL,
-    [LBModifiedDate]           DATETIME     CONSTRAINT [DF_DimBrand_LBModifiedDate] DEFAULT (getdate()) NOT NULL,
-    CONSTRAINT [PK_DimBrand] PRIMARY KEY ([LBBrandSKey]) 
+    [LWCreateDate]             DATETIME     CONSTRAINT [DF_DimBrand_LWCreateDate] DEFAULT (getdate()) NOT NULL,
+    [LWModifiedDate]           DATETIME     CONSTRAINT [DF_DimBrand_LWModifiedDate] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT [PK_DimBrand] PRIMARY KEY ([LWBrandSKey]) 
 )

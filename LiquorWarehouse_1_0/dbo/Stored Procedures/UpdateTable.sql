@@ -12,15 +12,15 @@ begin
   declare @skeyfield varchar(35)
 
   set @idfield = replace(@tablename, 'Dim', '') + 'ID'
-  set @skeyfield = 'LB' + replace(@tablename, 'Dim', '') + 'SKey'
+  set @skeyfield = 'LW' + replace(@tablename, 'Dim', '') + 'SKey'
 
-  select 'lb.' + c.name + ' = lbs.' + c.name  as columnupdate into #temp
+  select 'LW.' + c.name + ' = LWs.' + c.name  as columnupdate into #temp
   from sys.columns c 
     inner join sys.tables t on t.object_id = c.object_id 
   where t.name = @tablename
-    and c.name not in (@idfield, @skeyfield, 'LBCreateDate', 'LBModifiedDate')
+    and c.name not in (@idfield, @skeyfield, 'LWCreateDate', 'LWModifiedDate')
 
-  insert into #temp values ('lb.LBModifiedDate = getdate()')
+  insert into #temp values ('LW.LWModifiedDate = getdate()')
 
   select @setstatement = coalesce(@setstatement + ',
 ','') + columnupdate 
@@ -28,10 +28,10 @@ begin
 
   --print @setstatement
 
-  set @sql = 'update lb set 
+  set @sql = 'update LW set 
     ' + @setstatement + ' 
-    from ' + @tablename + ' lb 
-      inner join ' + @stagedatabasename + '..Temp' + @tablename + ' lbs on lb.' + @idfield + ' = lbs.' + @idfield + ' and lbs.LBSourceID = lb.LBSourceID'
+    from ' + @tablename + ' LW 
+      inner join ' + @stagedatabasename + '..Temp' + @tablename + ' LWs on LW.' + @idfield + ' = LWs.' + @idfield + ' and LWs.LWSourceID = LW.LWSourceID'
 
   --print @sql
   exec (@sql)

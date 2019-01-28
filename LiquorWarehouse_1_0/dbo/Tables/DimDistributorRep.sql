@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[DimDistributorRep] (
-    [LBDistributorRepSKey]  INT          IDENTITY (1, 1) NOT NULL,
+    [LWDistributorRepSKey]  INT          IDENTITY (1, 1) NOT NULL,
     [DistributorRepID]      char (18) NOT NULL,
     [DistributorName]       VARCHAR (50) NOT NULL,
-    [LBDistributorSKey]     INT          NOT NULL,
-    [LBDistributorTeamSKey] INT          NOT NULL,
-    [LBSourceID]            INT          NOT NULL,
+    [LWDistributorSKey]     INT          NOT NULL,
+    [LWDistributorTeamSKey] INT          NOT NULL,
+    [LWSourceID]            INT          NOT NULL,
     [SourceCreateDate]      DATETIME     NULL,
     [SourceModifiedDate]    DATETIME     NULL,
-    [LBCreateDate]          DATETIME     CONSTRAINT [DF_DimDistributorRep_LBCreateDate] DEFAULT (getdate()) NOT NULL,
-    [LBModifiedDate]        DATETIME     CONSTRAINT [DF_DimDistributorRep_LBModifiedDate] DEFAULT (getdate()) NOT NULL,
-    CONSTRAINT [PK_LBDistributorRepSKey] PRIMARY KEY CLUSTERED ([LBDistributorRepSKey] ASC)
+    [LWCreateDate]          DATETIME     CONSTRAINT [DF_DimDistributorRep_LWCreateDate] DEFAULT (getdate()) NOT NULL,
+    [LWModifiedDate]        DATETIME     CONSTRAINT [DF_DimDistributorRep_LWModifiedDate] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT [PK_LWDistributorRepSKey] PRIMARY KEY CLUSTERED ([LWDistributorRepSKey] ASC)
 );
 

@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[DimSource] (
-    [LBSourceID]   INT          NOT NULL,
-    [LBSourceSD]   VARCHAR (2)  NOT NULL,
-    [LBSourceLD]   VARCHAR (25) NOT NULL,
-    [LBCreateDate] DATETIME     CONSTRAINT [DF_DimSource_LBCreateDate] DEFAULT (getdate()) NOT NULL, 
-    CONSTRAINT [PK_DimSource] PRIMARY KEY ([LBSourceID])
+    [LWSourceID]   INT          NOT NULL,
+    [LWSourceSD]   VARCHAR (2)  NOT NULL,
+    [LWSourceLD]   VARCHAR (25) NOT NULL,
+    [LWCreateDate] DATETIME     CONSTRAINT [DF_DimSource_LWCreateDate] DEFAULT (getdate()) NOT NULL, 
+    CONSTRAINT [PK_DimSource] PRIMARY KEY ([LWSourceID])
 );
 

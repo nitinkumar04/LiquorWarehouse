@@ -1,11 +1,11 @@
 ﻿CREATE TABLE [dbo].[DimAccountType] (
-    [LBAccountTypeSKey]  INT          IDENTITY (1, 1) NOT NULL,
+    [LWAccountTypeSKey]  INT          IDENTITY (1, 1) NOT NULL,
     [AccountLN]          VARCHAR (25) NOT NULL DEFAULT 'No Data',
-    [LBSourceID]         INT          NOT NULL DEFAULT -1,
+    [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
-    [LBCreateDate]       DATETIME     CONSTRAINT [DF_DimAccountType_LBCreateDate] DEFAULT (getdate()) NOT NULL,
-    [LBModifiedDate]     DATETIME     CONSTRAINT [DF_DimAccountType_LBModifiedDate] DEFAULT (getdate()) NOT NULL,
-    CONSTRAINT [PK_LBAccountTypeSKey] PRIMARY KEY CLUSTERED ([LBAccountTypeSKey] ASC)
+    [LWCreateDate]       DATETIME     CONSTRAINT [DF_DimAccountType_LWCreateDate] DEFAULT (getdate()) NOT NULL,
+    [LWModifiedDate]     DATETIME     CONSTRAINT [DF_DimAccountType_LWModifiedDate] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT [PK_LWAccountTypeSKey] PRIMARY KEY CLUSTERED ([LWAccountTypeSKey] ASC)
 );
 
