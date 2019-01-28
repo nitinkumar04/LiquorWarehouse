@@ -57,5 +57,49 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DimAccountOwner.sql" />
+    <Build Include="dbo\Stored Procedures\CreateDefaultsDimRetailer.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTable.sql" />
+    <Build Include="Security\db_executor.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DimAccountType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DimBoolean.sql" />
+    <Build Include="dbo\Tables\DimBrand.sql" />
+    <Build Include="dbo\Tables\DimCompany.sql" />
+    <Build Include="dbo\Tables\DimCountry.sql" />
+    <Build Include="dbo\Tables\DimCounty.sql" />
+    <Build Include="dbo\Tables\DimDistributor.sql" />
+    <Build Include="dbo\Tables\DimDistributorHQ.sql" />
+    <Build Include="dbo\Tables\DimDistributorHQ2.sql" />
+    <Build Include="dbo\Tables\DimDistributorHQ3.sql" />
+    <Build Include="dbo\Tables\DimDistributorHQ4.sql" />
+    <Build Include="dbo\Tables\DimDistributorOwner.sql" />
+    <Build Include="dbo\Tables\DimDistributorRep.sql" />
+    <Build Include="dbo\Tables\DimDivision.sql" />
+    <Build Include="dbo\Tables\DimMarketingGroup.sql" />
+    <Build Include="dbo\Tables\DimPremiseType.sql" />
+    <Build Include="dbo\Tables\DimProductSet.sql" />
+    <Build Include="dbo\Tables\DimRecordType.sql" />
+    <Build Include="dbo\Tables\DimRegion.sql" />
+    <Build Include="dbo\Tables\DimRetailer.sql" />
+    <Build Include="dbo\Tables\DimRetailerHQ.sql" />
+    <Build Include="dbo\Tables\DimRetailerHQ2.sql" />
+    <Build Include="dbo\Tables\DimRetailerHQ3.sql" />
+    <Build Include="dbo\Tables\DimRetailerHQ4.sql" />
+    <Build Include="dbo\Tables\DimRetailerOwner.sql" />
+    <Build Include="dbo\Tables\DimSource.sql" />
+    <Build Include="dbo\Tables\DimState.sql" />
+    <Build Include="dbo\Tables\DimStatus.sql" />
+    <Build Include="dbo\Tables\DimSupplier.sql" />
+    <Build Include="dbo\Tables\DimTerritory.sql" />
   </ItemGroup>
 </Project>
