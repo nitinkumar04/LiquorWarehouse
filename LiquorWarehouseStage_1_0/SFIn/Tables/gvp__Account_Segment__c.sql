@@ -4,7 +4,7 @@
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	CreatedDate datetime not null,
-	CreatedById char(18) not null,
+	CreatedById char(18) null,
 	LastModifiedDate datetime not null,
 	LastModifiedById char(18) not null,
 	SystemModstamp datetime not null,

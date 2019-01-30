@@ -8,7 +8,7 @@
 	IsAllDayEvent varchar(10) NOT NULL,
 	ActivityDateTime datetime null,
 	ActivityDate date not null,
-	DurationInMinutes int not null,
+	DurationInMinutes int null,
 	StartDateTime datetime not null,
 	EndDateTime datetime not null,
 	Description nvarchar(200) null,

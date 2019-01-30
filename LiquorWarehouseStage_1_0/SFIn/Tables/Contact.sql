@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFIn].[Contact] (
     [Id]                               char (18)     NOT NULL,
-    [IsDeleted]                        VARCHAR (10)     NULL,
+    [IsDeleted]                        VARCHAR (10)     NOT NULL,
     [MasterRecordId]                   char (18)     NULL,
     [AccountId]                        char (18)     NULL,
     [LastName]                         NVARCHAR (25)     NULL,
@@ -16,7 +16,6 @@
     [OtherLatitude]                    DECIMAL (14, 11) NULL,
     [OtherLongitude]                   DECIMAL (14, 11) NULL,
     [OtherGeocodeAccuracy]             VARCHAR (20)     NULL,
-    [OtherAddress]                     NVARCHAR (100)    NULL,
     [MailingStreet]                    NVARCHAR (100)    NULL,
     [MailingCity]                      NVARCHAR (50)     NULL,
     [MailingState]                     NVARCHAR (35)     NULL,
@@ -25,7 +24,6 @@
     [MailingLatitude]                  DECIMAL (14, 11) NULL,
     [MailingLongitude]                 DECIMAL (14, 11) NULL,
     [MailingGeocodeAccuracy]           VARCHAR (20)     NULL,
-    [MailingAddress]                   NVARCHAR (100)    NULL,
     [Phone]                            VARCHAR (15)     NULL,
     [Fax]                              VARCHAR (15)     NULL,
     [MobilePhone]                      VARCHAR (15)     NULL,

@@ -3,7 +3,7 @@
 	[Id] char(18) NOT NULL ,
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
-	CreatedDate datetime not null,
+	CreatedDate datetime null,
 	CreatedById char(18) not null,
 	LastModifiedDate datetime not null,
 	LastModifiedById char(18) not null,

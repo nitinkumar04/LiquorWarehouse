@@ -12,7 +12,7 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Size__c char(18) null,
-	gvp__Type__c nvarchar(100) not null,
+	gvp__Type__c nvarchar(100) null,
 	gvp__External_ID__c varchar(20) null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
 	gvp__Custom_Fact_2__c decimal(12,8) null,
