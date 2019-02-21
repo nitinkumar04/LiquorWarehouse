@@ -7,8 +7,8 @@
     [LastModifiedDate]   DATETIME     NOT NULL,
     [LastModifiedById]   CHAR (18) NOT NULL,
     [SystemModstamp]     DATETIME     NOT NULL,
-    [LastViewedDate]     DATETIME     NOT NULL,
-    [LastReferencedDate] DATETIME     NOT NULL,
+    [LastViewedDate]     DATETIME     NULL,
+    [LastReferencedDate] DATETIME     NULL,
     CONSTRAINT [PK_Profile] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 

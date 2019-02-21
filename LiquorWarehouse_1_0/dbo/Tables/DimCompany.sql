@@ -4,7 +4,7 @@
     [CompanyLN]          VARCHAR (50) NOT NULL DEFAULT 'No Data',
     [CompanyCustom1]     VARCHAR (50) NULL,
     [CompanyCustom2]     VARCHAR (50) NULL,
-    [LWSourceID]         INT          NOT NULL,
+    [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
     [LWCreateDate]       DATETIME     CONSTRAINT [DF_DimCompany_LWCreateDate] DEFAULT (getdate()) NOT NULL,

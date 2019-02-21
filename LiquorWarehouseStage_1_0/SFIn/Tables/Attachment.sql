@@ -3,7 +3,7 @@
 	[Id] char(18) NOT NULL , 
     [IsDeleted] VARCHAR(10) NULL, 
     [ParentId] char(18) NULL, 
-    [Name] NVARCHAR(50) NOT NULL, 
+    [Name] NVARCHAR(100) NOT NULL, 
     [IsPrivate] VARCHAR(10) NULL, 
     [ContentType] VARCHAR(100) NULL, 
     [BodyLength] INT NULL, 

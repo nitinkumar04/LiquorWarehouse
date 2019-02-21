@@ -11,11 +11,11 @@
 	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Category__c nvarchar(100) not null,
-	gvp__Multiple_Answers__c varchar(10) not null,
-	gvp__Product_Only__c nvarchar(100) not null,
-	gvp__Question_Text__c nvarchar(200) not null,
-	gvp__Type__c nvarchar(100) not null,
+	gvp__Category__c nvarchar(100) null,
+	gvp__Multiple_Answers__c varchar(10) null,
+	gvp__Product_Only__c nvarchar(100) null,
+	gvp__Question_Text__c nvarchar(200) null,
+	gvp__Type__c nvarchar(100) null,
 	gvp__Question_List__c nvarchar(300) null,
 	gvp__Sales_Driver__c nvarchar(100) null,
 	gvp__External_Id__c varchar(20) null,
@@ -29,7 +29,7 @@
 	gvp__Custom_Text_3__c nvarchar(200) null,
 	gvp__Custom_Text_4__c nvarchar(200) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
-	gvp__Name_With_Symbol__c nvarchar(200) not null,
+	gvp__Name_With_Symbol__c nvarchar(200) null,
 	gvp__Reference_To__c nvarchar(100) null
     CONSTRAINT [PK_gvp__Survey_Bank__c] PRIMARY KEY ([Id]) 
 )

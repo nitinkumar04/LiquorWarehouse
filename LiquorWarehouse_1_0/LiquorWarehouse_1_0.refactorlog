@@ -42,4 +42,242 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWSizeSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="682cd47c-9e10-457a-a73f-f97dfe9fd31f" ChangeDateTime="02/11/2019 17:32:18">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[RetailerLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RetailerLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9acc9643-2609-41bf-8092-f0cab9564306" ChangeDateTime="02/14/2019 19:15:30">
+    <Property Name="ElementName" Value="[dbo].[DimLabel].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimLabel]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWLabelURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f4083f42-1e77-43bd-9a7c-8d245b9a1d2b" ChangeDateTime="02/14/2019 19:17:55">
+    <Property Name="ElementName" Value="[dbo].[DimBrand].[LWBrandLN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimBrand]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BrandLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="df65b10e-b929-4650-8b0c-349dd0d49a3a" ChangeDateTime="02/14/2019 19:18:00">
+    <Property Name="ElementName" Value="[dbo].[DimBrand].[LWBrandID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimBrand]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BrandID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9e9f8488-7773-4052-90e5-78bc9f9322cf" ChangeDateTime="02/15/2019 20:50:42">
+    <Property Name="ElementName" Value="[dbo].[DimPremiseType].[PremiseTypeLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimPremiseType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PremiseTypeLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a3be58b5-d6a0-4d44-ad11-56bc9884431d" ChangeDateTime="02/15/2019 20:50:45">
+    <Property Name="ElementName" Value="[dbo].[DimPremiseType].[PremiseTypeSD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimPremiseType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PremiseTypeSN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3dc967d8-058a-4587-a4ab-fc95c49f7070" ChangeDateTime="02/15/2019 20:52:02">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ].[RetailerHQLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RetailerHQLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b7fb1cc3-31c5-4955-b84e-1f899fba4242" ChangeDateTime="02/15/2019 20:52:48">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ2].[RetailerHQ2LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ2]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RetailerHQ2LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef99fd2b-b288-4ebd-9506-b873f37fbcae" ChangeDateTime="02/15/2019 20:53:00">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ2].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ2]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerHQ2URL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b7f2d029-4aea-4cf6-bd12-47491b6931ca" ChangeDateTime="02/15/2019 20:53:23">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ3].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ3]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerHQ3URL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5fc81e9c-2f28-4d93-9ac4-5bdd70378cff" ChangeDateTime="02/15/2019 20:53:36">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ3].[RetailerHQ3LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ3]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RetailerHQ3LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4343469-9b5f-4721-9d83-19710bce5472" ChangeDateTime="02/15/2019 20:53:57">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ4].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ4]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerHQ4URL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5d06a948-1818-418d-a79f-48e1c292e90d" ChangeDateTime="02/15/2019 20:54:34">
+    <Property Name="ElementName" Value="[dbo].[DimSize].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSize]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSizeURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ae212ad-175f-4484-bba5-f027b87806d1" ChangeDateTime="02/15/2019 20:55:41">
+    <Property Name="ElementName" Value="[dbo].[DimSupplier].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSupplier]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSupplierURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="66e1a07d-5ff8-4a90-add5-943ce0ff0c1a" ChangeDateTime="02/15/2019 20:56:20">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerHQURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fa3070dd-491c-4206-9b6e-33e0a4531a1a" ChangeDateTime="02/15/2019 20:56:33">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerHQ4].[RetailerHQ4LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerHQ4]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RetailerHQ4LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="56e7a862-d55f-494f-bcea-93e3c1538765" ChangeDateTime="02/15/2019 20:56:45">
+    <Property Name="ElementName" Value="[dbo].[DimStatus].[StatusSD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StatusSN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="73734c9b-aede-41a0-8426-719e225bb009" ChangeDateTime="02/15/2019 20:56:49">
+    <Property Name="ElementName" Value="[dbo].[DimStatus].[StatusLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StatusLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cae13ee7-b5fb-4781-9207-292345fa9572" ChangeDateTime="02/15/2019 20:56:57">
+    <Property Name="ElementName" Value="[dbo].[DimSupplier].[SupplierLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSupplier]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SupplierLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b86f06a3-31e2-4c0c-976f-7e9ab0ba17cf" ChangeDateTime="02/15/2019 20:57:38">
+    <Property Name="ElementName" Value="[dbo].[DimDistributor].[DistributorLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistributorLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b5272dc1-15c3-4b35-b0b2-9b8de094936b" ChangeDateTime="02/15/2019 20:57:47">
+    <Property Name="ElementName" Value="[dbo].[DimDistributor].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWDistributorURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4d3a50a2-0162-4834-bea2-6c11cf0a802f" ChangeDateTime="02/15/2019 20:58:00">
+    <Property Name="ElementName" Value="[dbo].[DimDistributorHQ].[DistributorHQLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributorHQ]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistributorHQLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="358e0596-d74f-47d0-bfb7-24978934d4d4" ChangeDateTime="02/15/2019 20:58:08">
+    <Property Name="ElementName" Value="[dbo].[DimDistributorHQ2].[DistributorHQ2LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributorHQ2]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistributorHQ2LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="527f5db2-4b13-4890-a49d-2894f27cca26" ChangeDateTime="02/15/2019 20:58:14">
+    <Property Name="ElementName" Value="[dbo].[DimDistributorHQ3].[DistributorHQ3LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributorHQ3]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistributorHQ3LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="45fb6954-c552-4ded-b34a-37d48753207c" ChangeDateTime="02/15/2019 20:58:19">
+    <Property Name="ElementName" Value="[dbo].[DimDistributorHQ4].[DistributorHQ4LD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributorHQ4]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DistributorHQ4LN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b1398b18-30f0-4cbc-98f5-82e606b507e1" ChangeDateTime="02/15/2019 20:58:44">
+    <Property Name="ElementName" Value="[dbo].[DimDivision].[DivisionSD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDivision]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DivisionSN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2bca7325-16e3-44f6-b0a3-79a997d755d9" ChangeDateTime="02/15/2019 20:58:49">
+    <Property Name="ElementName" Value="[dbo].[DimDivision].[DivisionLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDivision]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DivisionLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a02d0355-e4cf-4278-b1a5-91f925227597" ChangeDateTime="02/15/2019 20:59:00">
+    <Property Name="ElementName" Value="[dbo].[DimItem].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimItem]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWItemURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8185f5b9-2f6a-4887-bbf8-b219ccb57680" ChangeDateTime="02/15/2019 21:02:50">
+    <Property Name="ElementName" Value="[dbo].[DimMarketingGroup].[MarketingGroupLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimMarketingGroup]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MarketingGroupLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="15c6b506-a55a-464b-97a6-66aeef18e3e7" ChangeDateTime="02/15/2019 21:03:04">
+    <Property Name="ElementName" Value="[dbo].[DimRegion].[RegionLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRegion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RegionLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf79e216-85db-45b1-b849-3844850739b7" ChangeDateTime="02/15/2019 21:03:07">
+    <Property Name="ElementName" Value="[dbo].[DimRegion].[RegionSD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRegion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RegionSN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00f5fc38-6c97-4e2a-9676-4e621c69ba56" ChangeDateTime="02/15/2019 21:03:22">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[LWSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3d51b34b-b09d-4126-ae32-efcc299d5109" ChangeDateTime="02/15/2019 21:04:27">
+    <Property Name="ElementName" Value="[dbo].[DimState].[StateLD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimState]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StateLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="62b883f9-9a2c-4a2c-9be8-9ed4deae31bc" ChangeDateTime="02/15/2019 21:04:30">
+    <Property Name="ElementName" Value="[dbo].[DimState].[StateSD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimState]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StateSN" />
+  </Operation>
 </Operations>

@@ -37,6 +37,7 @@
 	gvp__Custom_Fact_1__c decimal(12,8) null,
 	gvp__Custom_Fact_2__c decimal(12,8) null,
 	gvp__External_Id__c varchar(20) null,
+  gvp__Account_Call_Send_Email_Date__c date null,
 	gvp__Account_Call_Send_Email__c varchar(10) null,
 	gvp__Account_Call_Status__c nvarchar(50) null, 
     CONSTRAINT [PK_gvp__Cocktail_Menu__c] PRIMARY KEY ([Id]),

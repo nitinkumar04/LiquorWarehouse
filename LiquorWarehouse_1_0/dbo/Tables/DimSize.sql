@@ -3,7 +3,7 @@
   [LWSizeSKey] INT NOT NULL PRIMARY KEY IDENTITY, 
     [SizeID] CHAR(18) NOT NULL DEFAULT '-1', 
     [SizeLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
-    [LWSalesforceURL] NVARCHAR(100) NULL DEFAULT 'No Data', 
+    [LWSizeURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data' , 
     [ExternalID] VARCHAR(20) NULL, 
     [LiterVolume] DECIMAL(8, 6) NULL, 
     [ContainerType] NVARCHAR(30) NULL, 

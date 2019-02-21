@@ -10,7 +10,6 @@
 	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Item__c char(18) not null,
 	gvp__Location__c nvarchar(100) null,
 	gvp__Quantity__c decimal(6,2) null,
 	gvp__Date_of_Data__c date null,

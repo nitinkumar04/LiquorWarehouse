@@ -267,7 +267,6 @@
     <Build Include="SFIn\Tables\gvp__Retail_Ad__c.sql" />
     <Build Include="SFIn\Tables\gvp__Authorization__c.sql" />
     <Build Include="SFIn\Tables\gvp__Placement__c.sql" />
-    <Build Include="SFIn\Tables\CurrencyType.sql" />
     <Build Include="SFIn\Tables\gvp__Account_Segment__c.sql" />
     <Build Include="SFIn\Tables\gvp__Account_Team__c.sql" />
     <Build Include="SFIn\Tables\gvp__Account_Set__c.sql" />
@@ -290,9 +289,16 @@
     <Build Include="SFIn\Tables\gvp__Inventory__c.sql" />
     <Build Include="SFIn\Tables\gvp__Media__c.sql" />
     <Build Include="SFIn\Tables\gvp__Shipment__c.sql" />
+    <Build Include="SFIn\Tables\gvp__Sales_Goal_Plan__c.sql" />
+    <Build Include="SFIn\Tables\gvp__Sales_Goal__c.sql" />
+    <Build Include="GDOut\Tables\GD_Geography_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Product_Dim.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />
     <None Include="LiquorWarehouseStage_1_0.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="LiquorWarehouseStage_1_0.refactorlog" />
   </ItemGroup>
 </Project>

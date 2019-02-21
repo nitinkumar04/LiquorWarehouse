@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a6953732-ab5e-4c65-bea9-9432347f258c" ChangeDateTime="02/05/2019 21:50:01">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Product_Set__c].[LtModifiedById]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Product_Set__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModifiedById" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="56d54036-fb06-4044-92d2-976439514b69" ChangeDateTime="02/05/2019 21:50:06">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Product_Set__c].[LtModifiedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Product_Set__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastModifiedDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d8319be5-9884-449a-b25c-728f4120de25" ChangeDateTime="02/05/2019 21:50:11">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Product_Set__c].[LtReferencedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Product_Set__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastReferencedDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a25433a9-dcf9-42fe-8396-c560e54ae541" ChangeDateTime="02/05/2019 21:51:47">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Product_Set__c].[LtViewedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Product_Set__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastViewedDate" />
+  </Operation>
+</Operations>

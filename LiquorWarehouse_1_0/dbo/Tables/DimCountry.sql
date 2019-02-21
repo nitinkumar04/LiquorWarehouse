@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimCountry] (
     [LWCountrySKey]      INT          IDENTITY (1, 1) NOT NULL,
-    [CountrySN]          VARCHAR (3)  NOT NULL DEFAULT '?',
+    [CountrySN]          VARCHAR (3)  NOT NULL DEFAULT '-',
     [CountryLN]          VARCHAR (50) NOT NULL DEFAULT 'No Data',
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,

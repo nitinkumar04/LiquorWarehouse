@@ -1,15 +1,15 @@
 ﻿CREATE TABLE [dbo].[DimBrand]
 (
   [LWBrandSKey] INT NOT NULL IDENTITY, 
-    [LWBrandID] char(18) NOT NULL DEFAULT '-1', 
-    [LWBrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
+    [BrandID] char(18) NOT NULL DEFAULT '-1', 
+    [BrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [LWBrandURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [BrandExternalID] VARCHAR(20) NULL, 
     [LWSupplierSKey] INT NOT NULL DEFAULT -1, 
     [BrandOwnership] NVARCHAR(100) NULL, 
     [KeyBrandFlag] INT NOT NULL DEFAULT -1, 
     [VisibleFlag] INT NOT NULL DEFAULT -1, 
-    [Attachments] INT NOT NULL DEFAULT 0, 
+    [Attachments] INT NULL , 
     [BrandCustomString1] NVARCHAR(200) NULL, 
     [BrandCustomString2] NVARCHAR(200) NULL, 
     [BrandCustomPicklist1] NVARCHAR(200) NULL, 

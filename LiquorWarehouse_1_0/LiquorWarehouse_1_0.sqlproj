@@ -64,15 +64,13 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimAccountOwner.sql" />
-    <Build Include="dbo\Stored Procedures\CreateDefaultsDimRetailer.sql" />
     <Build Include="dbo\Stored Procedures\UpdateTable.sql" />
     <Build Include="Security\db_executor.sql" />
     <Build Include="dbo\Tables\DimLabel.sql" />
     <Build Include="dbo\Tables\DimSize.sql" />
     <Build Include="dbo\Tables\DimItem.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Tables\DimAccountType.sql" />
+    <Build Include="dbo\Tables\DimClassOfTrade.sql" />
+    <Build Include="dbo\Stored Procedures\CreateDefaultValues.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />

@@ -1,40 +1,46 @@
-﻿USE [master]
+﻿/**********************
+Instructions:
+  1. Search and Replace <client> to the client name (NOT the SF login, for example, client name is Proximo, not Proximo@greatvines.com)
+  2. Search and Replace <version> with the version of the database that the client will run
+  3. DO NOT SAVE THIS FILE!!!!
+**********************/
+USE [master]
 GO
-CREATE LOGIN [Proximo_LiquorBarn] WITH PASSWORD=N'k39xj3!lkd', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+CREATE LOGIN [<client>] WITH PASSWORD=N'k39xj3!lkd', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
 GO
-USE [Proximo_LiquorBarn_1_0]
+USE [<client>_LiquorWarehouse_<version>]
 GO
-CREATE USER [Proximo_LiquorBarn] FOR LOGIN [Proximo_LiquorBarn]
+CREATE USER [<client>] FOR LOGIN [<client>]
 GO
-USE [Proximo_LiquorBarn_1_0]
+USE [<client>_LiquorWarehouse_<version>]
 GO
-ALTER ROLE [db_datareader] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_datareader] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarn_1_0]
+USE [<client>_LiquorWarehouse_<version>]
 GO
-ALTER ROLE [db_ddladmin] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_ddladmin] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarn_1_0]
+USE [<client>_LiquorWarehouse_<version>]
 GO
-ALTER ROLE [db_datawriter] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_datawriter] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarn_1_0]
+USE [<client>_LiquorWarehouse_<version>]
 GO
-ALTER ROLE [db_executor] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_executor] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarnStage]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
-CREATE USER [Proximo_LiquorBarn] FOR LOGIN [Proximo_LiquorBarn]
+CREATE USER [<client>] FOR LOGIN [<client>]
 GO
-USE [Proximo_LiquorBarnStage]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
-ALTER ROLE [db_datareader] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_datareader] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarnStage]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
-ALTER ROLE [db_datawriter] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_datawriter] ADD MEMBER [<client>]
 GO
-USE [Proximo_LiquorBarnStage]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
-ALTER ROLE [db_executor] ADD MEMBER [Proximo_LiquorBarn]
+ALTER ROLE [db_executor] ADD MEMBER [<client>]
 GO

@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[DimState] (
     [LWStateSKey]        INT          IDENTITY (1, 1) NOT NULL,
-    [StateSD]            VARCHAR (4)  NULL,
-    [StateLD]            VARCHAR (50) NULL,
-    [LWCountrySKey]      INT          NOT NULL,
-    [LWSourceID]         INT          NOT NULL,
+    [StateSN]            VARCHAR (4)  NOT NULL DEFAULT '-',
+    [StateLN]            VARCHAR (50) NOT NULL DEFAULT 'No Data',
+    [LWCountrySKey]      INT          NOT NULL DEFAULT -1,
+    [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
     [LWCreateDate]       DATETIME     CONSTRAINT [DF_DimState_LWCreateDate] DEFAULT (getdate()) NOT NULL,
