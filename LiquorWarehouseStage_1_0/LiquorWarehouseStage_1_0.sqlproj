@@ -293,6 +293,10 @@
     <Build Include="SFIn\Tables\gvp__Sales_Goal__c.sql" />
     <Build Include="GDOut\Tables\GD_Geography_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Product_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Geography_Dim_All.sql" />
+    <Build Include="GDOut\Tables\GD_Account_For_HQ2.sql" />
+    <Build Include="GDOut\Tables\GD_Account_For_HQ1.sql" />
+    <Build Include="GDOut\Tables\GD_Account_For_HQ_By.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />

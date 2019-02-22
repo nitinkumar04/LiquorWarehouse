@@ -28,4 +28,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LastViewedDate" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5db7bfca-62d4-4454-a9b7-51cbca0cd2b8" ChangeDateTime="02/22/2019 17:17:44">
+    <Property Name="ElementName" Value="[dbo].[TempDimRetailer].[LBSalesforceURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TempDimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerURL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="25efe6c7-2e3b-4efb-a667-5bb98146143b" ChangeDateTime="02/22/2019 17:17:48">
+    <Property Name="ElementName" Value="[dbo].[TempDimRetailer].[LBPremiseTypeSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TempDimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWPremiseTypeSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b48162f-ded5-40f3-9486-45a3268cbe7d" ChangeDateTime="02/22/2019 17:17:52">
+    <Property Name="ElementName" Value="[dbo].[TempDimRetailer].[LBRetailerOwnerSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TempDimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerOwnerSKey" />
+  </Operation>
 </Operations>
