@@ -21,7 +21,7 @@
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
-	gvp__RAD_Key__c varchar(50) null,
+	gvp__RAD_Key__c varchar(95) null,
 	gvp__Salesman__c char(18) null,
 	gvp__Source_File__c varchar(50) null,
 	gvp__Distributor_Sales_Rep__c nvarchar(50) null,

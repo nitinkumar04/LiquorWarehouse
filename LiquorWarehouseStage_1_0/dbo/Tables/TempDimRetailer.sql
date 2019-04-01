@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [dbo].[TempDimRetailer] (
     [LWRetailerSKey]          INT              IDENTITY (1, 1) NOT NULL,
-    [RetailerID]              char (18)     NOT NULL DEFAULT '-1',
+   [RetailerID]              char (18)     NOT NULL DEFAULT '-1',
     [RetailerLN]              NVARCHAR(100)    NOT NULL DEFAULT 'No Data',
     [RetailerDBA]             NVARCHAR(100)    NULL,
     [BDNID]                   VARCHAR (35)     NULL,
-    [ExternalID]              VARCHAR (20)     NULL,
+    [ExternalID]              VARCHAR (35)     NULL,
     [DistributorAccountID]    VARCHAR (20)     NULL,
     [LWRetailerURL]         NVARCHAR(100)    NOT NULL DEFAULT 'No Data',
     [LWPremiseTypeSKey]       INT              NOT NULL DEFAULT -1,
@@ -92,9 +92,7 @@
     [LWSourceID]              INT              NOT NULL DEFAULT -1,
     [SourceCreateDate]        DATE         NULL,
     [SourceModifiedDate]      DATE         NULL,
-    [LWCreateDate]            DATETIME         DEFAULT (getdate()) NOT NULL,
-    [LWModifiedDate]          DATETIME         DEFAULT (getdate()) NOT NULL,
-    [LWRowHash]               VARBINARY (16)   NULL, 
-    CONSTRAINT [PK_TempDimRetailer] PRIMARY KEY ([LWRetailerSKey]),
+    [LWRowHash]               BINARY(16)   NOT NULL,
+     CONSTRAINT [PK_TempDimRetailer] PRIMARY KEY ([LWRetailerSKey]),
 );
 

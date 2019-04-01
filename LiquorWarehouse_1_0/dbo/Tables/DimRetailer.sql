@@ -4,7 +4,7 @@
     [RetailerLN]              NVARCHAR(100)    NOT NULL DEFAULT 'No Data',
     [RetailerDBA]             NVARCHAR(100)    NULL,
     [BDNID]                   VARCHAR (35)     NULL,
-    [ExternalID]              VARCHAR (20)     NULL,
+    [ExternalID]              VARCHAR (35)     NULL,
     [DistributorAccountID]    VARCHAR (20)     NULL,
     [LWRetailerURL]         NVARCHAR(100)    NOT NULL DEFAULT 'No Data',
     [LWPremiseTypeSKey]       INT              NOT NULL DEFAULT -1,
@@ -94,7 +94,7 @@
     [SourceModifiedDate]      DATE         NULL,
     [LWCreateDate]            DATETIME         CONSTRAINT [DF_DimRetailer_LWCreateDate] DEFAULT (getdate()) NOT NULL,
     [LWModifiedDate]          DATETIME         CONSTRAINT [DF_DimRetailer_LWModifiedDate] DEFAULT (getdate()) NOT NULL,
-    [LWRowHash]               VARBINARY (16)   NULL,
+    [LWRowHash]               BINARY(16)   NOT NULL,
     CONSTRAINT [PK_LWRetailerSKey] PRIMARY KEY CLUSTERED ([LWRetailerSKey] ASC)
 );
 

@@ -7,7 +7,7 @@
     [LastModifiedDate]                     DATETIME        NULL,
     [LastModifiedById]                     char (18)    NULL,
     [SystemModstamp]                       DATETIME        NULL,
-    [LastActivityDate]                     DATETIME        NULL,
+    [LastActivityDate]                     DATE        NULL,
     [LastViewedDate]                       DATETIME        NULL,
     [LastReferencedDate]                   DATETIME        NULL,
     [gvp__Account__c]                      char (18)    NULL,

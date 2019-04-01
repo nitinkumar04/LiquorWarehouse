@@ -15,7 +15,7 @@
 	gvp__Brand__c nvarchar(100) not null,
 	gvp__Cases_YTD__c decimal(6,2) not null,
 	gvp__Date_of_Delivery__c date not null,
-	gvp__Date_of_Order__c date not null,
+	gvp__Date_of_Order__c date null,
 	gvp__Item__c char(18) not null,
 	gvp__Label__c nvarchar(100) not null,
 	gvp__Physical_Cases__c decimal(6,2) not null,

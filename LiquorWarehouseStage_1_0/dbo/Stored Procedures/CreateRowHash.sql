@@ -2,7 +2,7 @@
 CREATE procedure [dbo].[CreateRowHash] 
   @schemaname varchar(10), 
   @tablename varchar(50), 
-  @IDColumnName varchar(20) = 'Id', 
+  @IDColumnName varchar(25) = 'Id', 
   @SourceName varchar(25) = 'Salesforce' as
 begin
 
@@ -27,7 +27,7 @@ begin
 
 	-- Add the isnull function to each column (can't do this above because with the isnull the above query is larger than 4000 characters)
   if len(@stringcolumns) > 0
-	set @stringcolumns = 'isnull(' + replace(@stringcolumns, ', ', ','''') + isnull(') + ','''')'
+	set @stringcolumns = 'isnull(' + replace(@stringcolumns, ', ', ',''|'') + isnull(') + ',''|'')'
   --print @stringcolumns
 
   -- Get the non-string columns, which must be converted
@@ -42,7 +42,7 @@ begin
   
 	-- Add the isnull function to each column (can't do this above because with the isnull the above query is larger than 4000 characters)
   if len(@nonstringcolumns) > 0
-		set @nonstringcolumns = ' + isnull(convert(varchar,' + replace(@nonstringcolumns, ', ', '),'''') + isnull(convert(varchar,') + '),'''')'
+		set @nonstringcolumns = ' + isnull(convert(varchar,' + replace(@nonstringcolumns, ', ', '),''|'') + isnull(convert(varchar,') + '),''|'')'
   --print @nonstringcolumns
 
   -- combine the variables
@@ -50,7 +50,7 @@ begin
   --print @columns
 
 	-- Return the table (ID, RowHash)
-  set @sql = 'select ' + @IDColumnname + ', ' + @sourceID + ', HASHBYTES(''MD5'', ' + @columns +') as RowHash from ' + @schemaname + '.' + @tablename + ' order by ' + @IDColumnName
+  set @sql = 'select ' + @IDColumnname + ', ' + @sourceID + ' as SourceID, HASHBYTES(''MD5'', ' + @columns +') as RowHash from ' + @schemaname + '.' + @tablename + ' order by ' + @IDColumnName
 
   --print @sql 
   exec (@sql)

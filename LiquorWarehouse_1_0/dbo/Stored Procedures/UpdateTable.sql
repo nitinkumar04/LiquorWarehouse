@@ -4,8 +4,8 @@ begin
   --declare @tablename varchar(25)
   --set @tablename = 'DimRetailer'
   declare @stagedatabasename varchar(50)
-  set @stagedatabasename = (select substring(db_name(), 1, charindex('_1', db_name()) - 1) + 'Stage')
-  print db_name()
+  set @stagedatabasename = (select substring(db_name(), 1, charindex('_1', db_name()) - 1) + 'Stage' + substring(db_name(), charindex('_1', db_name()), len(db_name())))
+  --print db_name()
   declare @setstatement varchar(7800)
   declare @sql varchar(8000)
   declare @idfield varchar(35)

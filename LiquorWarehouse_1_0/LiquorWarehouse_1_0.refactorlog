@@ -280,4 +280,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="StateSN" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="67ab80e1-c4c9-443d-95a5-0a807e36dcd9" ChangeDateTime="02/28/2019 15:24:39">
+    <Property Name="ElementName" Value="[dbo].[DimSurveyQuestionBank].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurveyQuestionBank]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSurveyQuestionBankSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8486e38-d5c8-4f93-bc59-fe5f10d7fca4" ChangeDateTime="02/28/2019 16:53:22">
+    <Property Name="ElementName" Value="[dbo].[DimSurveyPlan].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurveyPlan]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSurveyPlanSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="471caec9-a120-4c7c-bf92-30f94b9c4dd9" ChangeDateTime="02/28/2019 20:44:59">
+    <Property Name="ElementName" Value="[dbo].[DimSurveyPlan].[LWItemSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurveyPlan]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWTerritorySKey" />
+  </Operation>
 </Operations>
