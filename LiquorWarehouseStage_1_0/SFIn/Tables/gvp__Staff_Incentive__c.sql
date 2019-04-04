@@ -19,7 +19,7 @@
 	gvp__Incentive_Budget__c money null,
 	gvp__Incentive_Description__c nvarchar(2000) null,
 	gvp__Incentive_End_Date__c date null,
-	gvp__Incentive_Results__c nvarchar(200) null,
+	gvp__Incentive_Results__c nvarchar(300) null,
 	gvp__Incentive_Start_Date__c date null,
 	gvp__Label__c char(18) null,
 	gvp__Item__c char(18) null,
