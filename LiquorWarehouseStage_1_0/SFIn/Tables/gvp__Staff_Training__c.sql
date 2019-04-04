@@ -14,7 +14,7 @@
 	gvp__Account__c char(18) null,
 	gvp__Account_Call__c char(18) not null,
 	gvp__Activity_Goal__c char(18) null,
-	gvp__Date__c date not null,
+	gvp__Date__c date null,
 	gvp__Label__c char(18) null,
 	gvp__POS_Details__c nvarchar(50) null,
 	gvp__People_Trained__c decimal(4,1),

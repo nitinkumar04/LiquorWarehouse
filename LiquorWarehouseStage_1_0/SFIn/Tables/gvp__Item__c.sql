@@ -67,8 +67,8 @@
     [gvp__Custom_5__c]                      NVARCHAR (200)    NULL,
     [gvp__Custom_6__c]                      NVARCHAR (200)    NULL,
     [gvp__Custom_7__c]                      NVARCHAR (200)    NULL,
-    [gvp__Custom_Fact_1__c]                 DECIMAL (12, 8)  NULL,
-    [gvp__Custom_Fact_2__c]                 DECIMAL (12, 8)  NULL,
+    [gvp__Custom_Fact_1__c]                 DECIMAL (12, 6)  NULL,
+    [gvp__Custom_Fact_2__c]                 DECIMAL (12, 6)  NULL,
     [gvp__Proof__c]                         DECIMAL (5, 2)   NULL,
     CONSTRAINT [PK_gvp__Item__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );

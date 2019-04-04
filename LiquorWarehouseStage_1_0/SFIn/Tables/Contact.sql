@@ -40,7 +40,6 @@
     [Description]                      NVARCHAR (1000)   NULL,
     [OwnerId]                          char (18)     NULL,
     [HasOptedOutOfEmail]               VARCHAR (10)     NULL,
-    [HasOptedOutOfFax]                 VARCHAR (10)     NULL,
     [DoNotCall]                        VARCHAR (10)     NULL,
     [CreatedDate]                      DATETIME         NULL,
     [CreatedById]                      char (18)     NULL,
