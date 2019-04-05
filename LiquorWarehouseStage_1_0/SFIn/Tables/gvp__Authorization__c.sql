@@ -8,7 +8,6 @@
 	LastModifiedDate datetime not null,
 	LastModifiedById char(18) not null,
 	SystemModstamp datetime not null,
-	LastActivityDate date null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
@@ -39,6 +38,7 @@
 	gvp__Custom_Checkbox_2__c nvarchar(200) null,
 	gvp__Custom_Currency_1__c money null,
 	gvp__Custom_Currency_2__c money null, 
+    [OwnerId] CHAR(18) NULL, 
     CONSTRAINT [PK_gvp__Authorization__c] PRIMARY KEY ([Id])
 
 )
