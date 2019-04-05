@@ -5,7 +5,7 @@
     [AccountId]                        char (18)     NULL,
     [LastName]                         NVARCHAR (50)     NULL,
     [FirstName]                        NVARCHAR (50)     NULL,
-    [Salutation]                       NVARCHAR (5)      NULL,
+    [Salutation]                       NVARCHAR (30)      NULL,
     [Name]                             NVARCHAR (100)    NULL,
     [RecordTypeId]                     char (18)     NULL,
     [OtherStreet]                      NVARCHAR (100)    NULL,
