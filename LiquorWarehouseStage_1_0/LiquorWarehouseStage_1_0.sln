@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouseStage_1_0", "LiquorWarehouseStage_1_0.sqlproj", "{EFCE299A-18BF-485A-A316-8924EB28720F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCE299A-18BF-485A-A316-8924EB28720F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF029A65-FC55-45E0-815B-AC4011BF948B}
+	EndGlobalSection
+EndGlobal

@@ -49,4 +49,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWRetailerOwnerSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="37145303-8986-46d0-a39a-5621ab28fdf6" ChangeDateTime="04/05/2019 20:10:31">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Account_Call__c].[gvp__Account_Goal__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Account_Call__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Acnt_Goal__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b201cb2f-4f4a-4a64-900e-e50fe6dc60b6" ChangeDateTime="04/05/2019 20:13:02">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Account_Call__c].[gvp__Account_Goal__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Account_Call__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Activity_Goal__c" />
+  </Operation>
 </Operations>

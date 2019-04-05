@@ -11,7 +11,7 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
-	gvp__Account_Goal__c char(18) null,
+	[gvp__Activity_Goal__c] char(18) null,
 	gvp__Date_of_Call__c datetime null,
 	gvp__Distributor_in_Attendance__c char(18) null,
 	gvp__Notes__c nvarchar(300),
