@@ -31,7 +31,6 @@
     [gvp__Attachments__c]        DECIMAL (4, 1) NULL,
     [gvp__Custom_Picklist_1__c]  NVARCHAR (100)  NULL,
     [gvp__Custom_Picklist_2__c]  NVARCHAR (100)  NULL,
-    [OwnerId] CHAR(18) NULL, 
     CONSTRAINT [PK_gvp__Label__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
