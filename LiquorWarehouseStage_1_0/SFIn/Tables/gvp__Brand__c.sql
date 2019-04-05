@@ -9,7 +9,7 @@
     [SystemModstamp]            DATETIME       NULL,
     [LastViewedDate]            DATETIME       NULL,
     [LastReferencedDate]        DATETIME       NULL,
-    [gvp__Brand_Key__c]         char (18)   NULL,
+    [gvp__Brand_Key__c]         char (30)   NULL,
     [gvp__Supplier__c]          char (18)   NULL,
     [gvp__Ownership__c]         char (18)   NULL,
     [gvp__Custom_1__c]          NVARCHAR (200)  NULL,
