@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [SFIn].[User] (
     [Id]                         CHAR (18)  NOT NULL,
     [UserName]                   NVARCHAR(75) NOT NULL,
-    [LastName]                   NVARCHAR(30) NOT NULL,
+    [LastName]                   NVARCHAR(50) NOT NULL,
     [FirstName]                  NVARCHAR(30) NULL,
-    [Name]                       NVARCHAR(60) NOT NULL,
+    [Name]                       NVARCHAR(80) NOT NULL,
     [CompanyName]                NVARCHAR(50) NULL,
     [Division]                   NVARCHAR(30) NULL,
     [Department]                 NVARCHAR(75) NULL,
