@@ -39,7 +39,7 @@
     [AccountId]                  CHAR (18) NULL,
     [CallCenterId]               CHAR (18) NULL,
     [Extension]                  INT NULL,
-    [FederationIdentifier]       VARCHAR (20) NULL,
+    [FederationIdentifier]       VARCHAR (40) NULL,
     [gvp__End_of_Day__c]         CHAR (2) NULL,
     [gvp__Geography_Key__c]      VARCHAR (20) NULL,
     [gvp__GoodData_User_Type__c] VARCHAR (100) NULL,
