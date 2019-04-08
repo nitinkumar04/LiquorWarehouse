@@ -39,6 +39,7 @@
 	gvp__External_Id__c varchar(20) null,
 	gvp__Account_Call_Send_Email__c varchar(10) null,
 	gvp__Account_Call_Status__c nvarchar(50) null, 
+    [gvp__Account_Call_Send_Email_Date__c] DATE NULL, 
     CONSTRAINT [PK_gvp__Scan__c] PRIMARY KEY ([Id]),
 
 )
