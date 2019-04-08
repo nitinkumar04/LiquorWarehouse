@@ -16,7 +16,7 @@
     [Email]                      NVARCHAR(75) NULL,
     [Phone]                      VARCHAR (15) NULL,
     [Fax]                        VARCHAR (15) NULL,
-    [MobilePhone]                VARCHAR (15) NULL,
+    [MobilePhone]                VARCHAR (25) NULL,
     [Alias]                      NVARCHAR (25) NULL,
     [IsActive]                   VARCHAR (10) NULL,
     [TimeZoneSidKey]             VARCHAR (35) NULL,
