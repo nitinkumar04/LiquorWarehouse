@@ -11,7 +11,7 @@
     [LastReferencedDate]     DATETIME NULL,
     [gvp__Region__c]         char (18) NULL,
     [gvp__Division__c]       char (18) NULL,
-    [gvp__Territory_Code__c] NVARCHAR (10) NULL,
+    [gvp__Territory_Code__c] NVARCHAR (20) NULL,
     [gvp__Owner__c]          char (18) NULL,
     [gvp__Custom_1__c]       NVARCHAR (200) NULL,
     [gvp__Custom_2__c]       NVARCHAR (200) NULL,
