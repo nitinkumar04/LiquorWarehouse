@@ -61,7 +61,7 @@
     [gvp__HomeEmail__c]                NVARCHAR (100)    NULL,
     [gvp__Level__c]                    NVARCHAR (20)     NULL,
     [gvp__Role__c]                     NVARCHAR (100)     NULL,
-    [gvp__Spouse__c]                   NVARCHAR (50)    NULL,
+    [gvp__Spouse__c]                   NVARCHAR (100)    NULL,
     [gvp__WorkEmail__c]                NVARCHAR (100)    NULL,
     [gvp__WorkPhone__c]                VARCHAR (30)     NULL,
     [gvp__Salesman_Key__c]             VARCHAR (50)     NULL,
