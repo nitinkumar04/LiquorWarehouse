@@ -51,7 +51,7 @@
     [LastCUUpdateDate]                 DATETIME         NULL,
     [LastViewedDate]                   DATETIME         NULL,
     [LastReferencedDate]               DATETIME         NULL,
-    [EmailBouncedReason]               NVARCHAR (200)    NULL,
+    [EmailBouncedReason]               NVARCHAR (500)    NULL,
     [EmailBouncedDate]                 DATETIME         NULL,
     [IsEmailBounced]                   VARCHAR (10)     NULL,
     [PhotoUrl]                         NVARCHAR (100)    NULL,
