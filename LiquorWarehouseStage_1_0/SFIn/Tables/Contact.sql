@@ -79,7 +79,7 @@
     [gvp__Favorite_Restaurants__c]     NVARCHAR (50)     NULL,
     [gvp__Join_Date__c]                DATE             NULL,
     [gvp__Last_Visit__c]               DATE             NULL,
-    [gvp__Other_Tastes_Preferences__c] NVARCHAR (300)    NULL,
+    [gvp__Other_Tastes_Preferences__c] NVARCHAR (500)    NULL,
     [gvp__Referred_By__c]              char (18)     NULL,
     [gvp__Twitter_Username__c]         NVARCHAR (100)    NULL,
     [gvp__Consumer_Order_Amount__c]    MONEY            NULL,
