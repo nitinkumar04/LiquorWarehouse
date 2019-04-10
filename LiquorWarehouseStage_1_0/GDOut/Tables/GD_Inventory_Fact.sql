@@ -1,0 +1,31 @@
+﻿CREATE TABLE [GDOut].[GD_Inventory_Fact] (
+    [Inventory Fact Id]            VARCHAR (18)   NOT NULL,
+    [Inventory Fact Name]          VARCHAR (50)   NULL,
+    [Inventory Fact URL]           NVARCHAR (200) NULL,
+    [Transaction Type Id]          VARCHAR (20)   NULL,
+    [Product Dim Id]               VARCHAR (18)   NULL,
+    [Txn Date]                       DATETIME       NULL,
+    [Fiscal Date]                    DATETIME       NULL,
+    [Fiscal Month]                 VARCHAR (5)    NULL,
+    [Fiscal Year]                  VARCHAR (5)    NULL,
+    [Fiscal Date Dim Id]             VARCHAR (18)   NULL,
+    [Created Date]                   DATETIME       NULL,
+    [Modified Date]                  DATETIME       NULL,
+    [Inventory Id]                 VARCHAR (20)   NULL,
+    [Inventory Name]               VARCHAR (50)   NULL,
+    [Inventory Item Key]           VARCHAR (50)   NULL,
+    [Inventory Location]           VARCHAR (50)   NULL,
+    [Inventory Warehouse]          VARCHAR (50)   NULL,
+    [Inventory Quantity]             VARCHAR (20)   NULL,
+    [Inventory Quantity On Hand]     VARCHAR (20)   NULL,
+    [Inventory Quantity On Order]    VARCHAR (20)   NULL,
+    [Inventory 9L Cases]             NVARCHAR (30)  NULL,
+    [Inventory Primary Volume]       NVARCHAR (30)  NULL,
+    [Inventory Secondary Volume]     NVARCHAR (30)  NULL,
+    [Inventory Full Case Equivalent] NVARCHAR (30)  NULL,
+    [Txn_Date_Id]                    VARCHAR (20)   NULL,
+    [Fiscal_Date_Id]                 VARCHAR (20)   NULL, 
+    CONSTRAINT [PK_GD_Inventory_Fact] PRIMARY KEY ([Inventory Fact Id])
+);
+
+

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GDOut].[GD_Geography_Dim]
 (
-	[Geography Dim Id] 				    char(18) NULL,
+	[Geography Dim Id] 				    char(18) NOT NULL,
 	[Geography Dim Name]	  		  nvarchar(100) NULL,
 	[Geography Dim Granularity]		varchar(20) NULL,
 	[Geography Dim URL]    			  nvarchar(100) NULL,
@@ -82,5 +82,6 @@
 	[Company Id]	 	      			char(18) NULL,
 	[Division Id] 	    				char(18) NULL,
 	[Region Id] 			      		char(18) NULL,
-	[Create_Date_Id] 			    	char(5) NULL  
+	[Create_Date_Id] 			    	char(5) NULL, 
+    CONSTRAINT [PK_GD_Geography_Dim] PRIMARY KEY ([Geography Dim Id])  
 )

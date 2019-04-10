@@ -22,7 +22,7 @@ begin
 		from sys.columns c 
 			inner join sys.tables t on t.object_id = c.object_id 
 			inner join sys.schemas s on s.schema_id = t.schema_id 
-		where t.name = @tablename and c.user_type_id in (167, 231, 175) and s.name = @schemaname and c.name not in (@IDcolumnname)
+		where t.name = @tablename and c.user_type_id in (167, 231, 175) and s.name = @schemaname and c.name not in (@IDColumnName)
 		) as name
 
 	-- Add the isnull function to each column (can't do this above because with the isnull the above query is larger than 4000 characters)
@@ -37,7 +37,7 @@ begin
 		from sys.columns c 
 			inner join sys.tables t on t.object_id = c.object_id 
 			inner join sys.schemas s on s.schema_id = t.schema_id
-		where t.name = @tablename and c.user_type_id not in (167, 231, 175) and s.name = @schemaname and c.name not in (@IDcolumnname)
+		where t.name = @tablename and c.user_type_id not in (167, 231, 175) and s.name = @schemaname and c.name not in (@IDColumnName)
 		) as name
   
 	-- Add the isnull function to each column (can't do this above because with the isnull the above query is larger than 4000 characters)

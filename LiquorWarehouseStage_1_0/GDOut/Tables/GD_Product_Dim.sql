@@ -1,6 +1,6 @@
 ﻿
 CREATE TABLE [GDOut].[GD_Product_Dim](
-	[Product Dim Id]						varchar(37) NULL,
+	[Product Dim Id]						varchar(37) NOT NULL,
 	[Product Dim Name]					nvarchar(100) NULL,
 	[Product Dim Granularity]		varchar(15) NULL,
 	[Product Dim URL]						nvarchar(100) NULL,
@@ -128,6 +128,7 @@ CREATE TABLE [GDOut].[GD_Product_Dim](
 	[Item Custom Fact 2]				nvarchar (200) NULL,
 	[Product Set Id]						char(18) NULL,
 	[Product Set Name]					nvarchar(100) NULL,
-	[Product Set URL]						nvarchar(100) NULL
+	[Product Set URL]						nvarchar(100) NULL, 
+    CONSTRAINT [PK_GD_Product_Dim] PRIMARY KEY ([Product Dim Id])
 ) 
 

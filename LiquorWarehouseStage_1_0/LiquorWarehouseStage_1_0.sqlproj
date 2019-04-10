@@ -229,14 +229,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="dbo\Stored Procedures\Load_GD_Acct_Univ_Dim.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="dbo\Stored Procedures\Load_GD_Acct_Univ_Retail_Dim.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="dbo\Stored Procedures\CreateRowHash.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -312,6 +304,25 @@
     <Build Include="GDOut\Tables\GD_Acct_Listing_Fact.sql" />
     <Build Include="GDOut\Tables\GD_Acct_Record_Type_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Acct_Type_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Univ_Custom_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Univ_Dim_All.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Univ_Hier_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Univ_HQ_By_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Univ_Owner_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Activity_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Activity_Goal_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Competitor.sql" />
+    <Build Include="GDOut\Tables\GD_Currency_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Depletion_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Distributor_Hier_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Distributor_Owner_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Event_Call_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Event_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Inventory_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Managed_By_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Product_Set_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Sales_Division_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Txn_Type.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />
