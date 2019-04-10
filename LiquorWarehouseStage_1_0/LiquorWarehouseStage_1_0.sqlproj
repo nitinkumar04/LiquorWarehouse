@@ -294,9 +294,24 @@
     <Build Include="GDOut\Tables\GD_Geography_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Product_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Geography_Dim_All.sql" />
-    <Build Include="GDOut\Tables\GD_Account_For_HQ2.sql" />
-    <Build Include="GDOut\Tables\GD_Account_For_HQ1.sql" />
-    <Build Include="GDOut\Tables\GD_Account_For_HQ_By.sql" />
+    <Build Include="GDOut\Tables\GD_Accounts_For_HQ2.sql" />
+    <Build Include="GDOut\Tables\GD_Accounts_For_HQ1.sql" />
+    <Build Include="GDOut\Tables\GD_Accounts_For_HQ_By.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Call_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Custom_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Hier_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_HQ_By_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_KA1_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_KA2_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Mktg_Group_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Owner_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Retail_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Set_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Account_Team_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_HQ_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Listing_Fact.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Record_Type_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Acct_Type_Dim.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />
