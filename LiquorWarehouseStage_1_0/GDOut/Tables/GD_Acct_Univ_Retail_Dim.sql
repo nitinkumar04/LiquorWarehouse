@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Acct_Univ_Retail_Dim] (
-    [Account Retail Dim Id]                     CHAR (18)  NULL,
+    [Account Retail Dim Id]                     CHAR (18)  NOT NULL,
     [Created Date]                              VARCHAR (20)  NULL,
     [Modified Date]                             VARCHAR (20)  NULL,
     [Account Customer Number]                   VARCHAR (120) NULL,
@@ -31,6 +31,7 @@
     [Account Weekly Volume]                     VARCHAR (8)  NULL,
     [Account Distributor Name]                  NVARCHAR (100)  NULL,
     [Account Distributor Team]                  NVARCHAR (100)  NULL,
-    [Account Distributor Rep]                   NVARCHAR (100)  NULL
+    [Account Distributor Rep]                   NVARCHAR (100)  NULL, 
+    CONSTRAINT [PK_GD_Acct_Univ_Retail_Dim] PRIMARY KEY ([Account Retail Dim Id])
 );
 

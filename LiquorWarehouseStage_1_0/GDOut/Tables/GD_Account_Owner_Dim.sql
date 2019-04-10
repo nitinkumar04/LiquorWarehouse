@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Account_Owner_Dim](
-	[Person Dim Id] [varchar](18) NULL,
+	[Person Dim Id] [varchar](18) NOT NULL,
 	[Person Dim Name] [varchar](200) NULL,
 	[Person Dim Granularity] [varchar](10) NULL,
 	[Person Dim URL] [varchar](200) NULL,
@@ -56,7 +56,8 @@
 	[Person Custom 3] [varchar](100) NULL,
 	[Person Custom 4] [varchar](100) NULL,
 	[Person Custom 5] [varchar](100) NULL,
-	[Person Zip5] [varchar](50) NULL
+	[Person Zip5] [varchar](50) NULL, 
+    CONSTRAINT [PK_GD_Account_Owner_Dim] PRIMARY KEY ([Person Dim Id])
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 
