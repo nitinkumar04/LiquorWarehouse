@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFIn].[gvp__Order_Commitment__c]
 (
 	[Id] char(18) NOT NULL ,
-	IsDeleted varchar(12) not null,
+	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	CreatedDate datetime null,
 	CreatedById char(18) not null,
