@@ -71,6 +71,12 @@
     <Build Include="dbo\Tables\DimItem.sql" />
     <Build Include="dbo\Tables\DimClassOfTrade.sql" />
     <Build Include="dbo\Stored Procedures\CreateDefaultValues.sql" />
+    <Build Include="dbo\Tables\DimDivisionLevel2.sql" />
+    <Build Include="dbo\Tables\DimDivisionLevel3.sql" />
+    <Build Include="dbo\Tables\DimDivisionLevel1.sql" />
+    <Build Include="dbo\Tables\DimUser.sql" />
+    <Build Include="dbo\Tables\DimSurvey.sql" />
+    <Build Include="dbo\Tables\XRefSurveyPlanQuestion.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
