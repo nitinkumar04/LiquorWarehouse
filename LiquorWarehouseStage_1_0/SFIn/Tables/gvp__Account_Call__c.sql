@@ -22,7 +22,7 @@
 	gvp__Email_Summary_Recipient__c nvarchar(100) null,
 	gvp__Email_Summary_Sent_Date__c datetime null,
 	gvp__Number_Of_Related_Records__c decimal(4,1) null,
-	gvp__External_Id__c varchar(20) null,
+	gvp__External_Id__c varchar(75) null,
 	gvp__Distance_m__c decimal(8,1),
 	gvp__Geolocation__Latitude__s decimal(18,15) null,
 	gvp__Geolocation__Longitude__s decimal(18,15) null,
