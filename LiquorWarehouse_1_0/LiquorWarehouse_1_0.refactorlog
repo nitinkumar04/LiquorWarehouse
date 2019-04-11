@@ -301,4 +301,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWTerritorySKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8ee824ca-d95b-4f8e-9407-da54d1923429" ChangeDateTime="04/10/2019 20:57:15">
+    <Property Name="ElementName" Value="[dbo].[DimSurvey].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurvey]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSurveySKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f746dce-1590-4355-88fa-9acb3aba2d3c" ChangeDateTime="04/10/2019 21:08:46">
+    <Property Name="ElementName" Value="[dbo].[DimSurvey].[LWSurveyPlanQuestionSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurvey]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSurveyPlanSKey" />
+  </Operation>
 </Operations>
