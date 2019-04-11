@@ -315,4 +315,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWSurveyPlanSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="79e618c8-a4ea-4c52-bd2d-ccd4c38bfa28" ChangeDateTime="04/11/2019 17:40:13">
+    <Property Name="ElementName" Value="[dbo].[XrefAccountAccountSet].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[XrefAccountAccountSet]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWAccountSKey" />
+  </Operation>
 </Operations>
