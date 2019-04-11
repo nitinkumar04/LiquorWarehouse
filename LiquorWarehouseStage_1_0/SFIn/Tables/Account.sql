@@ -9,7 +9,7 @@
     [BillingStreet]                             NVARCHAR (200)  NULL,
     [BillingCity]                               NVARCHAR (50)  NULL,
     [BillingState]                              NVARCHAR (25)  NULL,
-    [BillingPostalCode]                         NVARCHAR (10)  NULL,
+    [BillingPostalCode]                         NVARCHAR (20)  NULL,
     [BillingCountry]                            NVARCHAR (25)  NULL,
     [BillingLatitude]                           DECIMAL (14,11)  NULL,
     [BillingLongitude]                          DECIMAL (14,11)  NULL,
@@ -17,7 +17,7 @@
     [ShippingStreet]                            NVARCHAR (100)  NULL,
     [ShippingCity]                              NVARCHAR (50)  NULL,
     [ShippingState]                             NVARCHAR (25)  NULL,
-    [ShippingPostalCode]                        NVARCHAR (10)  NULL,
+    [ShippingPostalCode]                        NVARCHAR (20)  NULL,
     [ShippingCountry]                           NVARCHAR (25)  NULL,
     [ShippingLatitude]                          DECIMAL (14,11)  NULL,
     [ShippingLongitude]                         DECIMAL (14,11)  NULL,
@@ -165,8 +165,8 @@
     [gvp__Last_Account_Call__c]                 DATETIME  NULL,
     [gvp__Last_Survey_Date__c]                  DATETIME  NULL,
     [gvp__Open_Objectives__c]                   DECIMAL(4,1)  NULL,
-    [gvp__RAD_2009__c]                          DECIMAL(4,1)  NULL,
-    [gvp__RAD_2010__c]                          DECIMAL(4,1)  NULL, 
+    [gvp__RAD_2009__c]                          DECIMAL(7,2)  NULL,
+    [gvp__RAD_2010__c]                          DECIMAL(7,2)  NULL, 
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 
