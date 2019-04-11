@@ -3,7 +3,7 @@
 	[Id] char(18) NOT NULL ,
 	WhoId char(18) null,
 	WhatId char(18) null,
-	Subject nvarchar(200) null,
+	Subject nvarchar(250) null,
 	ActivityDate date null,
 	Status nvarchar(25) null,
 	Priority nvarchar(20) null,
