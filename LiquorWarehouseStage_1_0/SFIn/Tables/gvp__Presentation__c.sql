@@ -13,7 +13,7 @@
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
 	gvp__Account_Call__c char(18) null,
-  gvp__Action__c char(18) null,
+  gvp__Action__c char(50) null,
 	gvp__Activity_Goal__c char(18) null,
 	gvp__Comments__c nvarchar(2000) null,
 	gvp__Date_of_Presentation__c date null,
