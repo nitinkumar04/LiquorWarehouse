@@ -77,6 +77,7 @@
     <Build Include="dbo\Tables\DimUser.sql" />
     <Build Include="dbo\Tables\DimSurvey.sql" />
     <Build Include="dbo\Tables\XRefSurveyPlanQuestion.sql" />
+    <Build Include="dbo\Tables\XrefAccountAccountSet.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
