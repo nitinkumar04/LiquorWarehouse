@@ -16,7 +16,7 @@
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_3__c nvarchar(200) null,
-	gvp__End_Date__c date not null,
+	gvp__End_Date__c date null,
 	gvp__Is_Mandated__c varchar(10) not null,
 	gvp__Is_Supported__c varchar(10) not null,
 	gvp__Item__c char(18) null,
