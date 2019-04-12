@@ -23,7 +23,7 @@
 	gvp__Charged_to_Brand__c decimal(12,8) null,
 	gvp__Cost_to_Brand__c money null,
 	gvp__Cost_to_Distributor__c money null,
-	gvp__Description_of_Promotion__c nvarchar(200) null,
+	gvp__Description_of_Promotion__c nvarchar(350) null,
 	gvp__Distributor_Rate_per_Incremental_Case__c money null,
 	gvp__Distributor_Rate_per_Total_Cases__c money null,
 	gvp__Distributor__c char(18) null,
