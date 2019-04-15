@@ -12,7 +12,7 @@
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
 	gvp__Brand__c char(18) null,
-	gvp__Compliance__c nvarchar(100) not null,
+	gvp__Compliance__c nvarchar(100) null,
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_3__c nvarchar(200) null,

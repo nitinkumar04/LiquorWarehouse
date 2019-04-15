@@ -18,7 +18,7 @@
 	gvp__Approval_Status__c nvarchar(100) null,
 	gvp__Bottles__c decimal(4,1) null,
 	gvp__Budget_Plan__c char(18) not null,
-	gvp__Budget__c char(18) not null,
+	gvp__Budget__c char(18) null,
 	gvp__Cases__c decimal(4,1) null,
 	gvp__DA_Case_Rate__c money null,
 	gvp__Description__c nvarchar(1000) null,
