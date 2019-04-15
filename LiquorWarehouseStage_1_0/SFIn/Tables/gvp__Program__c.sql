@@ -18,7 +18,7 @@
 	gvp__Brand_Rate_per_Incremental_Case__c money null,
 	gvp__Brand_Rate_per_Total_Cases__c money null,
 	gvp__Brand__c nvarchar(100) null,
-	gvp__Chain__c decimal(4,3) null,
+	gvp__Chain__c decimal(4,1) null,
 	gvp__Channel_Allocated__c decimal(12,8) null,
 	gvp__Charged_to_Brand__c decimal(12,8) null,
 	gvp__Cost_to_Brand__c money null,
