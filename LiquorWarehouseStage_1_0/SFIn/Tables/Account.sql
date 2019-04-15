@@ -2,7 +2,7 @@
     [Id]                                        char (18)   NOT NULL,
     [IsDeleted]                                 VARCHAR (10) NOT NULL,
     [MasterRecordId]                            CHAR (18)  NULL,
-    [Name]                                      NVARCHAR (150)  NULL,
+    [Name]                                      NVARCHAR (200)  NULL,
     [Type]                                      NVARCHAR (100)  NULL,
     [RecordTypeId]                              CHAR (18)  NULL,
     [ParentId]                                  CHAR (18)  NULL,
