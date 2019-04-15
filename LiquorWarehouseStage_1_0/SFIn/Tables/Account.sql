@@ -63,7 +63,7 @@
     [gvp__BDN_Trade_Channel__c]                 NVARCHAR (100)  NULL,
     [gvp__Banner_Name__c]                       NVARCHAR (100)  NULL,
     [gvp__Banner__c]                            NVARCHAR (100)  NULL,
-    [gvp__Beer_Indicator__c]                    VARCHAR (10)  NULL,
+    [gvp__Beer_Indicator__c]                    VARCHAR (20)  NULL,
     [gvp__Billing_Contact__c]                   NVARCHAR (50)  NULL,
     [gvp__Company_Id__c]                        VARCHAR (20)  NULL,
     [gvp__Company_Size_Code__c]                 NVARCHAR (100)  NULL,
