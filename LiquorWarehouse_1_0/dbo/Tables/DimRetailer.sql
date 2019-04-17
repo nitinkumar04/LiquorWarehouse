@@ -6,7 +6,7 @@
     [BDNID]                   VARCHAR (35)     NULL,
     [ExternalID]              VARCHAR (35)     NULL,
     [DistributorAccountID]    VARCHAR (20)     NULL,
-    [LWRetailerURL]         NVARCHAR(100)    NOT NULL DEFAULT 'No Data',
+    [LWRetailerURL]         NVARCHAR(200)    NOT NULL DEFAULT 'No Data',
     [LWPremiseTypeSKey]       INT              NOT NULL DEFAULT -1,
     [LWRetailerOwnerSKey]     INT              NOT NULL DEFAULT -1,
     [LWRetailerHQSKey]        INT              NOT NULL DEFAULT -1,
