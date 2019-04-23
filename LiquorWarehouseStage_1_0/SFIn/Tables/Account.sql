@@ -120,7 +120,7 @@
     [gvp__Liquor_Indicator__c]                  VARCHAR (10)  NULL,
     [gvp__Longitude__c]                         DECIMAL(14,11) NULL,
     [gvp__MSA_Code__c]                          VARCHAR (5)  NULL,
-    [gvp__MSA_Name__c]                          VARCHAR (100)  NULL,
+    [gvp__MSA_Name__c]                          VARCHAR (200)  NULL,
     [gvp__Marketing_Group__c]                   CHAR(18)  NULL,
     [gvp__Marketing_Group_Code__c]              VARCHAR (20)  NULL,
     [gvp__Marketing_Group_Name__c]              NVARCHAR (100)  NULL,
