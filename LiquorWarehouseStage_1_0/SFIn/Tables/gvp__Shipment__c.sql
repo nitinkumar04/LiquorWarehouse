@@ -19,7 +19,7 @@
 	gvp__Item__c char(18) not null,
 	gvp__Label__c nvarchar(100) not null,
 	gvp__Physical_Cases__c decimal(8,3) not null,
-	gvp__Shipment_Key__c varchar(75) not null,
+	gvp__Shipment_Key__c varchar(100) not null,
 	gvp__Order_Type__c nvarchar(100) not null,
 	gvp__Shipment_Goal__c char(18) null,
 	gvp__Status__c nvarchar(100) not null,
