@@ -47,7 +47,7 @@
 	gvp__Wine_List_Placements_vs_Goal__c decimal(6,3) null,
 	gvp__Goal_End_Date__c date not null,
 	gvp__Goal_Start_Date__c date not null,
-	gvp__User__c char(18) not null,
+	gvp__User__c char(18) null,
 	gvp__Off_Premise_Event_Goal__c decimal(4,1) null,
 	gvp__Off_Premise_Events_Executed__c decimal(4,1) null,
 	gvp__Off_Premise_Events_vs_Goal__c decimal(6,3) null,
