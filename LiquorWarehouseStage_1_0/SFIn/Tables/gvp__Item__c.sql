@@ -13,7 +13,7 @@
     [LastReferencedDate]                    DATETIME         NULL,
     [gvp__Label__c]                         char (18)     NULL,
     [gvp__Additional_Description__c]        NVARCHAR (200)    NULL,
-    [gvp__Alcohol_by_Volume__c]             DECIMAL (8, 6)   NULL,
+    [gvp__Alcohol_by_Volume__c]             DECIMAL (10, 6)   NULL,
     [gvp__Brand__c]                         char (18)     NULL,
     [gvp__Designation__c]                   NVARCHAR (100)    NULL,
     [gvp__FOB_DI__c]                        MONEY            NULL,
