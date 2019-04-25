@@ -27,7 +27,7 @@
 	gvp__Total_Budget_Spend__c money null,
 	gvp__Company__c char(18) null,
 	gvp__Active__c varchar(10) null,
-	gvp__Budget_Key__c varchar(20) null,
+	gvp__Budget_Key__c varchar(50) null,
 	gvp__Amount_Planned__c money null,
 	gvp__End_Date__c date null,
 	gvp__Start_Date__c date null,

@@ -32,7 +32,7 @@
 	gvp__Amount_Planned__c money null,
 	gvp__End_Date__c date null,
 	gvp__Start_Date__c date null,
-	gvp__Brand_Key__c varchar(20) null,
+	gvp__Brand_Key__c varchar(40) null,
 	gvp__Cost_Center__c nvarchar(100) null,
 	gvp__Custom_Currency_1__c money null,
 	gvp__Custom_Currency_2__c money null,
