@@ -27,7 +27,7 @@
 	gvp__Matching_Target_Points__c decimal(4,1) null,
 	gvp__External_Id__c varchar(20) null,
 	gvp__Status__c nvarchar(100) null,
-	gvp__Answer_Formula__c varchar(100) null,
+	gvp__Answer_Formula__c varchar(250) null,
 	gvp__Custom_Currency_1__c money null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
 	gvp__Custom_Fact_2__c decimal(12,8) null,
