@@ -22,7 +22,7 @@
 	gvp__Answer_Saved__c varchar(10) null,
 	gvp__Question_Text_Sort__c nvarchar(200) null,
 	gvp__Points__c decimal(4,1) null,
-	gvp__Account__c nvarchar(100) null,
+	gvp__Account__c nvarchar(200) null,
 	gvp__Most_Recent__c varchar(10) null,
 	gvp__Matching_Target_Points__c decimal(4,1) null,
 	gvp__External_Id__c varchar(20) null,
