@@ -22,7 +22,7 @@
 	gvp__Account_Call_Send_Email_Date__c date null,
 	gvp__RAD__c char(18) null,
 	gvp__Status__c nvarchar(25) null,
-	gvp__Bottles__c decimal(4,1),
+	gvp__Bottles__c decimal(5,1),
 	gvp__Brand__c char(18) null,
 	gvp__Label2__c char(18) null,
 	gvp__Custom_1__c nvarchar(200) null,

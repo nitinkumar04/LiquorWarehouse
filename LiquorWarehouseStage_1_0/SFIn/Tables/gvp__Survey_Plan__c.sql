@@ -19,7 +19,7 @@
 	gvp__End_Date_of_Survey__c date not null,
 	gvp__Start_Date_of_Survey__c date not null,
 	gvp__Total_Accounts_Surveyed_vs_Goal__c decimal(5,1) not null,
-	gvp__Total_Accounts_Surveyed__c decimal(5,1) not null,
+	gvp__Total_Accounts_Surveyed__c decimal(6,1) not null,
 	gvp__Account_Segment__c char(18) null,
 	gvp__Chain_HQ__c char(18) null,
 	gvp__Company__c char(18) null,

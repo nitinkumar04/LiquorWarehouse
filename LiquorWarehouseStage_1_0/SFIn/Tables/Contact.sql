@@ -25,7 +25,7 @@
     [MailingLongitude]                 DECIMAL (14, 11) NULL,
     [MailingGeocodeAccuracy]           VARCHAR (20)     NULL,
     [Phone]                            VARCHAR (50)     NULL,
-    [Fax]                              VARCHAR (25)     NULL,
+    [Fax]                              VARCHAR (40)     NULL,
     [MobilePhone]                      VARCHAR (35)     NULL,
     [HomePhone]                        VARCHAR (25)     NULL,
     [OtherPhone]                       VARCHAR (25)     NULL,
