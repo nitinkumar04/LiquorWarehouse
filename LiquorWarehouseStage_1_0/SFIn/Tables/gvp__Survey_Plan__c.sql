@@ -29,7 +29,7 @@
 	gvp__Disable_Copy_Previous__c varchar(10) not null,
 	gvp__Disable_Summary_Page__c varchar(10) not null,
 	gvp__Survey_Plan_Key__c varchar(20) null,
-	gvp__Possible_Points__c decimal(4,1),
+	gvp__Possible_Points__c decimal(5,1),
 	gvp__Custom_Text_1__c nvarchar(200) null,
 	gvp__Custom_Text_2__c nvarchar(200) null,
 	gvp__Custom_Text_3__c nvarchar(200) null,
