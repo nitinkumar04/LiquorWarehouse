@@ -32,10 +32,10 @@
 	gvp__Custom_Number_2__c decimal(12,8) null,
 	gvp__Custom_Picklist_1__c nvarchar(200) null,
 	gvp__Custom_Picklist_2__c nvarchar(200) null,
-	gvp__Custom_Text_1__c nvarchar(200) null,
-	gvp__Custom_Text_2__c nvarchar(200) null,
-	gvp__Custom_Text_3__c nvarchar(200) null,
-	gvp__Custom_Text_4__c nvarchar(200) null,
-	gvp__Custom_Text_5__c nvarchar(200) null
+	gvp__Custom_Text_1__c nvarchar(255) null,
+	gvp__Custom_Text_2__c nvarchar(255) null,
+	gvp__Custom_Text_3__c nvarchar(255) null,
+	gvp__Custom_Text_4__c nvarchar(255) null,
+	gvp__Custom_Text_5__c nvarchar(255) null
     CONSTRAINT [PK_gvp__Planned_Spend__c] PRIMARY KEY ([Id]) 
 )

@@ -19,7 +19,7 @@
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_3__c nvarchar(200) null,
-	gvp__Details__c nvarchar(200) null,
+	gvp__Details__c nvarchar(500) null,
 	gvp__Drink_Name__c nvarchar(100) null,
 	gvp__End_Date__c date not null,
 	gvp__New_Or_Not__c nvarchar(100) null,
