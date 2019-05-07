@@ -44,7 +44,7 @@
     [gvp__Units__c]                         DECIMAL(4, 1)              NULL,
     [gvp__Vintage__c]                       VARCHAR (40)     NULL,
     [gvp__BrandLookup__c]                   NVARCHAR (100)    NULL,
-    [gvp__Item_Key__c]                      VARCHAR (30)     NULL,
+    [gvp__Item_Key__c]                      VARCHAR (60)     NULL,
     [gvp__Available__c]                     VARCHAR (10)     NULL,
     [gvp__Price_Comments__c]                VARCHAR (200)    NULL,
     [gvp__X9L_Equivalent__c]                DECIMAL (13, 11) NULL,
