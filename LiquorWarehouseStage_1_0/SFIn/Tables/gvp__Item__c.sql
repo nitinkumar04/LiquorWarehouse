@@ -20,7 +20,7 @@
     [gvp__FOB_Warehouse__c]                 MONEY            NULL,
     [gvp__Item_Description__c]              NVARCHAR (100)    NULL,
     [gvp__Item_Full_Name__c]                NVARCHAR (200)    NULL,
-    [gvp__Item_Number__c]                   NVARCHAR (30)     NULL,
+    [gvp__Item_Number__c]                   NVARCHAR (60)     NULL,
     [gvp__NABCA_Code__c]                    VARCHAR (20)     NULL,
     [gvp__Next_Order_Arrival__c]            DATE             NULL,
     [gvp__On_Order__c]                      DECIMAL (8, 4)   NULL,
