@@ -42,7 +42,7 @@
 	gvp__Related_Content__c nvarchar(100) null,
 	gvp__Full_Product_Description__c nvarchar(200) null,
 	gvp__Product_Name__c nvarchar(100) null,
-	gvp__Product_Size__c nvarchar(30) null,
+	gvp__Product_Size__c nvarchar(75) null,
 	gvp__Questions_In_Set__c nvarchar(200) null,
 	gvp__Required__c varchar(10) null,
 	gvp__Attachments__c decimal(4,1) null,
