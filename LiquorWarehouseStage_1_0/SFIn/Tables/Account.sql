@@ -8,7 +8,7 @@
     [ParentId]                                  CHAR (18)  NULL,
     [BillingStreet]                             NVARCHAR (250)  NULL,
     [BillingCity]                               NVARCHAR (50)  NULL,
-    [BillingState]                              NVARCHAR (30)  NULL,
+    [BillingState]                              NVARCHAR (35)  NULL,
     [BillingPostalCode]                         NVARCHAR (20)  NULL,
     [BillingCountry]                            NVARCHAR (25)  NULL,
     [BillingLatitude]                           DECIMAL (14,11)  NULL,

@@ -13,7 +13,7 @@
     [gvp__Appellation__c]        NVARCHAR (100)   NULL,
     [gvp__Country__c]            NVARCHAR (100)  NULL,
     [gvp__Label_Full_Name__c]    NVARCHAR (200)  NULL,
-    [gvp__Label_Key__c]          VARCHAR (35)   NULL,
+    [gvp__Label_Key__c]          VARCHAR (45)   NULL,
     [gvp__Product_Line__c]       NVARCHAR (100)  NULL,
     [gvp__Region_Sub__c]         NVARCHAR (100)  NULL,
     [gvp__Region__c]             NVARCHAR (100)  NULL,
