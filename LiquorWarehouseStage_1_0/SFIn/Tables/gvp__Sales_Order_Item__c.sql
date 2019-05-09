@@ -15,7 +15,7 @@
 	gvp__Item__c char(18) null,
 	gvp__Price_Level__c nvarchar(100) null,
 	gvp__Price__c money null,
-	gvp__Quantity__c decimal(4,1) null,
+	gvp__Quantity__c decimal(6,1) null,
 	gvp__Order_Date__c date null,
 	gvp__Order_Item_Key__c varchar(20) null,
 	gvp__Order_Item_Line__c decimal(4,1) null,
