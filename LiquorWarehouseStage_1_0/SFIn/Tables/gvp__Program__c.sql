@@ -68,7 +68,7 @@
 	gvp__Custom_Text_1__c nvarchar(300) null,
 	gvp__Custom_Text_2__c nvarchar(300) null,
 	gvp__Custom_Text_3__c nvarchar(200) null,
-	gvp__Custom_Text_4__c nvarchar(200) null,
+	gvp__Custom_Text_4__c nvarchar(270) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
 	gvp__Spend_Type__c nvarchar(100) null, 
     CONSTRAINT [PK_gvp__Program__c] PRIMARY KEY ([Id])
