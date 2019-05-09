@@ -33,7 +33,7 @@
 	gvp__Depletion_Key__c varchar(95) null,
 	gvp__Month__c DECIMAL(2) null,
 	gvp__Year__c varchar(4) null,
-	gvp__Source_File__c varchar(50) null,
+	gvp__Source_File__c varchar(80) null,
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
