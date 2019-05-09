@@ -10,7 +10,7 @@
     [SystemModstamp]      DATETIME NULL,
     [LastViewedDate]      DATETIME NULL,
     [LastReferencedDate]  DATETIME NULL,
-    [gvp__Company_Key__c] NVARCHAR (20) NULL,
+    [gvp__Company_Key__c] NVARCHAR (35) NULL,
     [gvp__Custom_1__c]    NVARCHAR (200) NULL,
     [gvp__Custom_2__c]    NVARCHAR (200) NULL,
     [gvp__Is_Active__c]   VARCHAR (10) NULL, 
