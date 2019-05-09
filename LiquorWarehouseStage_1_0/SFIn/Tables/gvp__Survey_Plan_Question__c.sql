@@ -52,7 +52,7 @@
 	gvp__Set_Minimum_Target__c decimal(4,1) null,
 	gvp__Show_On_Summary__c varchar(10) null,
 	gvp__Question_ID__c varchar(20) null,
-	gvp__Cluster_Name__c nvarchar(100) null,
+	gvp__Cluster_Name__c nvarchar(150) null,
 	gvp__Cluster_Number__c decimal(4,1) null,
 	gvp__Matrix__c varchar(10) null,
 	gvp__Product_Number__c decimal(4,1) null,

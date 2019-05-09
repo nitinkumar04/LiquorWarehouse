@@ -11,7 +11,7 @@
     [LastViewedDate]     DATETIME NULL,
     [LastReferencedDate] DATETIME NULL,
     [gvp__Division__c]   char (18) NULL,
-    [gvp__Region_Key__c] char (18) NULL,
+    [gvp__Region_Key__c] char (28) NULL,
     [gvp__Custom_1__c]   NVARCHAR (200) NULL,
     [gvp__Custom_2__c]   NVARCHAR (200) NULL,
     [gvp__Is_Active__c]  VARCHAR (10) NULL, 
