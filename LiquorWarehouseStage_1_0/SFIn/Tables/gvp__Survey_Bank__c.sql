@@ -12,7 +12,6 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Category__c nvarchar(100) null,
-	gvp__Multiple_Answers__c varchar(10) null,
 	gvp__Product_Only__c nvarchar(100) null,
 	gvp__Question_Text__c nvarchar(200) null,
 	gvp__Type__c nvarchar(100) null,
