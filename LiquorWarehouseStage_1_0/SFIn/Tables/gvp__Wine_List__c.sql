@@ -14,7 +14,7 @@
 	gvp__Account__c char(18) null,
 	gvp__Account_Call__c char(18) null,
 	gvp__Activity_Goal__c char(18) null,
-	gvp__Brand__c char(30) null,
+	gvp__Brand__c char(40) null,
 	gvp__End_Date__c date null,
 	gvp__Is_Current__c varchar(10) null,
 	gvp__Item__c char(18) null,
