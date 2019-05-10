@@ -24,7 +24,7 @@
 	gvp__State__c nvarchar(25) null,
 	gvp__Status__c nvarchar(100) null,
 	gvp__Order_Total__c money null,
-	gvp__Total_Cases__c decimal(6,1) null,
+	gvp__Total_Cases__c decimal(8,1) null,
 	gvp__Total_Order_Items__c decimal(4,1) null,
 	gvp__Account_Selector__c char(18) null,
 	gvp__Billing_Address__c nvarchar(200) null,
