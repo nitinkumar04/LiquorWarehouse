@@ -21,7 +21,7 @@
     [IsActive]                   VARCHAR (10) NULL,
     [TimeZoneSidKey]             VARCHAR (35) NULL,
     [UserRoleId]                 CHAR (18) NULL,
-    [LocaleSidKey]               VARCHAR (6) NULL,
+    [LocaleSidKey]               VARCHAR (12) NULL,
     [ProfileId]                  CHAR (18) NULL,
     [UserType]                   VARCHAR (20) NULL,
     [LanguageLocaleKey]          VARCHAR (6) NULL,
