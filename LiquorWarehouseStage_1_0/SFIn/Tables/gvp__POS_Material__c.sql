@@ -20,7 +20,7 @@
 	gvp__Label__c char(18) null,
 	gvp__Units_per_pack__c decimal(4,1) null,
 	gvp__Total_Ordered__c decimal(4,1) null,
-	gvp__Total_Produced__c decimal(4,1) null,
+	gvp__Total_Produced__c decimal(6,1) null,
 	gvp__POS_Key__c varchar(35) null,
 	gvp__Price__c money null,
 	gvp__Active__c varchar(10) null,
