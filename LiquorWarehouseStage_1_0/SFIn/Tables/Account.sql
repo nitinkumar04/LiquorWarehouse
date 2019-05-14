@@ -10,7 +10,7 @@
     [BillingCity]                               NVARCHAR (50)  NULL,
     [BillingState]                              NVARCHAR (35)  NULL,
     [BillingPostalCode]                         NVARCHAR (20)  NULL,
-    [BillingCountry]                            NVARCHAR (25)  NULL,
+    [BillingCountry]                            NVARCHAR (40)  NULL,
     [BillingLatitude]                           DECIMAL (14,11)  NULL,
     [BillingLongitude]                          DECIMAL (14,11)  NULL,
     [BillingGeocodeAccuracy]                    VARCHAR (20)  NULL,

@@ -24,7 +24,7 @@
 	gvp__End_Date__c date not null,
 	gvp__New_Or_Not__c nvarchar(100) null,
 	gvp__POS_Placement__c char(18) null,
-	gvp__Placement_Name__c nvarchar(100) not null,
+	gvp__Placement_Name__c nvarchar(100) null,
 	gvp__Placement_Price__c money null,
 	gvp__Start_Date__c date not null,
 	gvp__Cases_on_Display__c decimal(4,1) null,

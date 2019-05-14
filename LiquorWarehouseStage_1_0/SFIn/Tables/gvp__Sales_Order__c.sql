@@ -33,7 +33,7 @@
 	gvp__Order_Adjustment__c money null,
 	gvp__Order_Number__c varchar(20) null,
 	gvp__Order_Status__c nvarchar(100) null,
-	gvp__Order_Type_Code__c varchar(20) null,
+	gvp__Order_Type_Code__c varchar(60) null,
 	gvp__Order_Type__c nvarchar(100) null,
 	gvp__Original_Order__c money null,
 	gvp__Price_Request__c nvarchar(300) null,
