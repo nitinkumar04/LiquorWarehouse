@@ -10,7 +10,6 @@
 	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Test__c char(18) null,
 	gvp__Account_HQ_Chain__c char(18) null,
 	gvp__Account_Segment__c char(18) null,
 	gvp__Active__c varchar(10) not null,
@@ -34,7 +33,7 @@
 	gvp__Region__c char(18) null,
 	gvp__Territory__c char(18) null,
 	gvp__Number_of_Accounts__c decimal(5,1) null,
-	gvp__External_Id__c varchar(20) null
+	gvp__External_Id__c varchar(50) null
     CONSTRAINT [PK_gvp__Account_Set__c] PRIMARY KEY ([Id]), 
     [OwnerId] CHAR(18) NULL 
 )

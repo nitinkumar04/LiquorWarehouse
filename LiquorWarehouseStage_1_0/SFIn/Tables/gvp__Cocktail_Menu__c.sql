@@ -16,7 +16,7 @@
 	gvp__Account_Call__c char(18) null,
 	gvp__Activity_Goal__c char(18) null,
 	gvp__Days_Menu_Running__c decimal(7,2) null,
-	gvp__Drink_Name__c nvarchar(100) null,
+	gvp__Drink_Name__c nvarchar(150) null,
 	gvp__Drink_Price__c money null,
 	gvp__Is_Current__c varchar(10) null,
 	gvp__Item__c char(18) null,
