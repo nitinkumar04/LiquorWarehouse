@@ -30,7 +30,7 @@
     [gvp__Price_Level_4__c]                 MONEY            NULL,
     [gvp__Price_Level_5__c]                 MONEY            NULL,
     [gvp__Price_List__c]                    MONEY            NULL,
-    [gvp__Quantity__c]                      DECIMAL (8, 4)   NULL,
+    [gvp__Quantity__c]                      DECIMAL (12, 4)   NULL,
     [gvp__Rating_Enthusiast_del__c]         DECIMAL (3, 1)   NULL,
     [gvp__Rating_Parker_del__c]             DECIMAL (3, 1)   NULL,
     [gvp__Rating_Spectactor_del__c]         DECIMAL (3, 1)   NULL,
