@@ -3,7 +3,7 @@
     [IsDeleted]                        VARCHAR (10)     NOT NULL,
     [MasterRecordId]                   char (18)     NULL,
     [AccountId]                        char (18)     NULL,
-    [LastName]                         NVARCHAR (60)     NULL,
+    [LastName]                         NVARCHAR (80)     NULL,
     [FirstName]                        NVARCHAR (50)     NULL,
     [Salutation]                       NVARCHAR (30)      NULL,
     [Name]                             NVARCHAR (100)    NULL,
