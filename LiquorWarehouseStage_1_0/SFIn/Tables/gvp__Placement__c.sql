@@ -27,7 +27,7 @@
 	gvp__Placement_Name__c nvarchar(100) null,
 	gvp__Placement_Price__c money null,
 	gvp__Start_Date__c date not null,
-	gvp__Cases_on_Display__c decimal(4,1) null,
+	gvp__Cases_on_Display__c decimal(5,1) null,
 	gvp__Display_Location__c nvarchar(100) null,
 	gvp__Scan_Amount__c money null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
