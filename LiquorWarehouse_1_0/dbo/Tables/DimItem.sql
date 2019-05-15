@@ -7,6 +7,7 @@
     [ExternalID] VARCHAR(20) NULL, 
     [LWSizeSKey] INT NOT NULL DEFAULT -1, 
     [LWLabelSKey] int not null DEFAULT -1,
+    [LWProductSetSKey] int not null DEFAULT -1,
     [Designation] NVARCHAR(100) NULL, 
     [Units] INT NULL, 
     [Vintage] VARCHAR(20) NULL, 

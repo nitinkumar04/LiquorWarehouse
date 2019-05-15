@@ -327,7 +327,6 @@
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />
     <None Include="LiquorWarehouseStage_1_0.publish.xml" />
-    <None Include="aaDarla_LiquorWarehouseStage_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_0.refactorlog" />

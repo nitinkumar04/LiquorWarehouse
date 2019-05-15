@@ -322,4 +322,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWAccountSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b231cb9f-9b14-45cb-b9fa-6730522d9280" ChangeDateTime="05/15/2019 21:05:46">
+    <Property Name="ElementName" Value="[dbo].[XRefDistributorRetailer].[LWXRefDistributorRetailerSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[XRefDistributorRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWXrefDistributorRetailerSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ff9d8ea0-db52-483a-9a27-caa50ec930c4" ChangeDateTime="05/15/2019 21:40:50">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[WineFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWWineFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="01abd4ac-3d4d-4aef-a139-313238d14e12" ChangeDateTime="05/15/2019 21:40:54">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[LiquorFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWLiquorFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9d45e251-4c9a-4eff-a288-1568b53b95b2" ChangeDateTime="05/15/2019 21:40:58">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[BeerFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWBeerFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e727a0bd-d068-4a04-b5e8-acd030ba3d18" ChangeDateTime="05/15/2019 21:41:03">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[FranchiseFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWFranchiseFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="62eb2087-e2b7-47f9-9ec1-b3aba92ab01e" ChangeDateTime="05/15/2019 21:41:13">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[ActiveFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWActiveFlag" />
+  </Operation>
 </Operations>
