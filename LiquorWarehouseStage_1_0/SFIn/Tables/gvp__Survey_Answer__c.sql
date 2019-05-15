@@ -20,7 +20,7 @@
 	gvp__Question__c char(18) null,
 	gvp__Survey__c char(18) null,
 	gvp__Answer_Saved__c varchar(10) null,
-	gvp__Question_Text_Sort__c nvarchar(200) null,
+	gvp__Question_Text_Sort__c nvarchar(255) null,
 	gvp__Points__c decimal(4,1) null,
 	gvp__Account__c nvarchar(200) null,
 	gvp__Most_Recent__c varchar(10) null,
