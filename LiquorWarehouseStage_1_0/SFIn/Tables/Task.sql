@@ -5,7 +5,7 @@
 	WhatId char(18) null,
 	Subject nvarchar(250) null,
 	ActivityDate date null,
-	Status nvarchar(25) null,
+	Status nvarchar(50) null,
 	Priority nvarchar(20) null,
 	IsHighPriority varchar(10) null,
 	OwnerId char(18) null,
