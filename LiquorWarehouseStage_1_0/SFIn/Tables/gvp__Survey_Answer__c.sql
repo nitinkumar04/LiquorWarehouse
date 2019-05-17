@@ -13,7 +13,7 @@
 	LastReferencedDate datetime null,
 	gvp__Answer_Check__c varchar(10) null,
 	gvp__Answer_Currency__c money null,
-	gvp__Answer_Number__c decimal(12,8) null,
+	gvp__Answer_Number__c decimal(15,8) null,
 	gvp__Answer_Percent__c decimal(4,1) null,
 	gvp__Answer_Text__c nvarchar(300) null,
 	gvp__Order__c decimal(8,1) null,
