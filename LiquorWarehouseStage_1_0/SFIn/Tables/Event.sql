@@ -3,7 +3,7 @@
 	[Id] char(18) NOT NULL ,
 	WhoId char(18) NULL,
 	WhatId  char(18) NULL,
-	Subject nvarchar(200) NULL,
+	Subject nvarchar(250) NULL,
 	Location nvarchar(225) NULL,
 	IsAllDayEvent varchar(10) NULL,
 	ActivityDateTime datetime null,
