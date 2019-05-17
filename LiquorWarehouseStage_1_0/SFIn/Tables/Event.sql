@@ -4,7 +4,7 @@
 	WhoId char(18) NULL,
 	WhatId  char(18) NULL,
 	Subject nvarchar(250) NULL,
-	Location nvarchar(125) NULL,
+	Location nvarchar(225) NULL,
 	IsAllDayEvent varchar(10) NULL,
 	ActivityDateTime datetime null,
 	ActivityDate date null,
