@@ -45,7 +45,7 @@
     [gvp__Account_Format__c]                    NVARCHAR (200)  NULL,
     [gvp__Account_Groups__c]                    NVARCHAR (200)  NULL,
     [gvp__Account_Key_List__c]                  VARCHAR (4000) NULL,
-    [gvp__Account_Key__c]                       VARCHAR (50) NULL,
+    [gvp__Account_Key__c]                       VARCHAR (70) NULL,
     [gvp__Account_Rank__c]                      DECIMAL(6,1) NULL,
     [gvp__Account_Segment__c]                   CHAR (18) NULL,
     [gvp__Account_Sold__c]                      DECIMAL(4,1) NULL,
