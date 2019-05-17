@@ -35,7 +35,7 @@
     [gvp__Survey_Plan_Question__c]         char (18)    NULL,
     [gvp__Objective_Creator_Template__c]   char (18)    NULL,
     [gvp__End_Date__c]                     DATE            NULL,
-    [gvp__External_Id__c]                  VARCHAR (20)    NULL,
+    [gvp__External_Id__c]                  VARCHAR (30)    NULL,
     [gvp__Start_Date__c]                   DATE            NULL,
     [gvp__Survey_Answer__c]                char (18)    NULL,
     [gvp__Custom_Checkbox_1__c]            VARCHAR (10)    NULL,
