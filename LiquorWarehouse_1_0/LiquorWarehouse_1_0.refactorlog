@@ -364,4 +364,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWActiveFlag" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="01436bcd-cbf7-4d30-aaad-3cee141c2c5a" ChangeDateTime="05/17/2019 15:03:47">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[LWBillingCitySKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BillingCity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c19875b2-da4a-4f46-87e9-2caada0786be" ChangeDateTime="05/17/2019 15:04:03">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[LWShippingCitySKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ShippingCity" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0734dd70-addd-4264-bb18-1ac964623ced" ChangeDateTime="05/17/2019 15:10:42">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[DecisionMakerName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWDecisionMakerSKey" />
+  </Operation>
 </Operations>
