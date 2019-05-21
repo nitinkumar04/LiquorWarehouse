@@ -36,8 +36,8 @@
 	gvp__Source_File__c varchar(80) null,
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
-	gvp__Custom_Fact_1__c decimal(12,8) null,
-	gvp__Custom_Fact_2__c decimal(12,8) null,
+	gvp__Custom_Fact_1__c decimal(12,9) null,
+	gvp__Custom_Fact_2__c decimal(12,9) null,
 	gvp__Distributor_Item_Number__c varchar(20) null,
 	gvp__Source_System__c nvarchar(20) null
     CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]) 
