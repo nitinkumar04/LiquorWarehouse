@@ -17,7 +17,7 @@
 	gvp__Advertised__c varchar(10) not null,
 	gvp__Display__c varchar(10) not null,
 	gvp__End_Date__c date null,
-	gvp__Feature_Price_Discount__c decimal(4,3) null,
+	gvp__Feature_Price_Discount__c decimal(6,3) null,
 	gvp__Feature_Price__c money null,
 	gvp__Item__c char(18) null,
 	gvp__Label__c char(18) null,

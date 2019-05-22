@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFIn].[Profile] (
     [Id]                 char (18)  NOT NULL,
     [Name]               NVARCHAR (100) NOT NULL,
-	[Description]		 NVARCHAR (200) NULL,
+	[Description]		 NVARCHAR (255) NULL,
     [CreatedDate]        DATETIME     NOT NULL,
     [CreatedById]        CHAR (18)  NULL,
     [LastModifiedDate]   DATETIME     NOT NULL,
