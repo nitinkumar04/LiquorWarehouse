@@ -67,7 +67,7 @@
     [gvp__Salesman_Key__c]             VARCHAR (50)     NULL,
     [gvp__Salesman_Number__c]          VARCHAR (20)     NULL,
     [gvp__Age_Calculated__c]           DECIMAL (6, 2)   NULL,
-    [gvp__Attributes__c]               VARCHAR (20)     NULL,
+    [gvp__Attributes__c]               VARCHAR (100)     NULL,
     [gvp__Company__c]                  NVARCHAR(70)     NULL,
     [gvp__Contact_Method__c]           NVARCHAR (20)     NULL,
     [gvp__Customer_Key__c]             VARCHAR (50)     NULL,
