@@ -98,7 +98,7 @@
     [gvp__Distributor__c]                       CHAR(18)  NULL,
     [gvp__Division_Id__c]                       CHAR(18)  NULL,
     [gvp__Division__c]                          NVARCHAR(50)  NULL,
-    [gvp__External_Id__c]                       VARCHAR (20)  NULL,
+    [gvp__External_Id__c]                       VARCHAR (30)  NULL,
     [gvp__Family_Owner_Code__c]                 VARCHAR (20)  NULL,
     [gvp__Franchise__c]                         VARCHAR (10) NULL,
     [gvp__Geocode_Unavailable__c]               VARCHAR (10) NULL,
