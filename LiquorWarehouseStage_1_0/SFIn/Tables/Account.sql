@@ -30,7 +30,7 @@
     [AnnualRevenue]                             MONEY          NULL,
     [NumberOfEmployees]                         INT  NULL,
     [Description]                               NVARCHAR (2000)  NULL,
-    [Site]                                      VARCHAR (50)  NULL,
+    [Site]                                      VARCHAR (80)  NULL,
     [OwnerId]                                   CHAR (18) NOT NULL,
     [CreatedDate]                               DATETIME NULL,
     [CreatedById]                               CHAR (18) NOT NULL,
