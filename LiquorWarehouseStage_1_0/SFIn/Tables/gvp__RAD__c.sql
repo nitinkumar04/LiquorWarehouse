@@ -33,7 +33,7 @@
 	gvp__Additional_Charge__c money null,
 	gvp__Deposit__c money null,
 	gvp__Dist_Inv_Number__c varchar(20) null,
-	gvp__Dist_Item_Number__c varchar(20) null,
+	gvp__Dist_Item_Number__c varchar(30) null,
 	gvp__Dist_Sales_Rep_Code__c varchar(20) null,
 	gvp__Extended_Price_2__c money null,
 	gvp__Local_Tax__c money null,
