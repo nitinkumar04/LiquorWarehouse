@@ -9,7 +9,7 @@
     [SystemModstamp]                    DATETIME         NULL,
     [LastViewedDate]                    DATETIME         NULL,
     [LastReferencedDate]                DATETIME         NULL,
-    [gvp__Liter_Volume__c]              DECIMAL (9, 7)   NULL,
+    [gvp__Liter_Volume__c]              DECIMAL (11, 7)   NULL,
     [gvp__Size_Key__c]                  NVARCHAR(40)     NULL,
     [gvp__X9_Liter_Eqv__c]              DECIMAL (12, 10) NULL,
     [gvp__Primary_Conversion__c]        DECIMAL (15, 11) NULL,
