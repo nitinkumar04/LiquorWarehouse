@@ -6,7 +6,7 @@
     [LastModifiedDate]  DATETIME     NOT NULL,
     [LastModifiedById]  CHAR (18) NOT NULL,
     [SystemModstamp]    DATETIME     NOT NULL,
-    [DeveloperName]     VARCHAR (50)  NULL,
+    [DeveloperName]     VARCHAR (75)  NULL,
     CONSTRAINT [PK_UserRole] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
