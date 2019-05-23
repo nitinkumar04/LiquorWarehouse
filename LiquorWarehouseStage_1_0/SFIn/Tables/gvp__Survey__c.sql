@@ -19,7 +19,7 @@
 	gvp__Item__c char(18) null,
 	gvp__Account_Call__c char(18) null,
 	gvp__Status__c nvarchar(100) null,
-	gvp__External_Id__c varchar(20) null,
+	gvp__External_Id__c varchar(35) null,
 	gvp__Points__c decimal(5,1) null,
 	gvp__Email_Summary_Sent_Date__c datetime null,
 	gvp__Send_Email_Summary__c varchar(10) null,

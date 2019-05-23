@@ -25,7 +25,7 @@
 	gvp__Bottles__c decimal(5,1),
 	gvp__Brand__c char(18) null,
 	gvp__Label2__c char(18) null,
-	gvp__Custom_1__c nvarchar(200) null,
+	gvp__Custom_1__c nvarchar(255) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_3__c nvarchar(200) null,
 	gvp__Custom_4__c nvarchar(200) null,
