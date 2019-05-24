@@ -87,7 +87,7 @@
     [gvp__Custom_Checkbox_2__c]                 NVARCHAR(100)  NULL,
     [gvp__Custom_Date_1__c]                     DATE  NULL,
     [gvp__Custom_Date_2__c]                     DATE  NULL,
-    [gvp__CustomerPriority__c]                  NVARCHAR(100)  NULL,
+    [gvp__CustomerPriority__c]                  NVARCHAR(150)  NULL,
     [gvp__DBA__c]                               NVARCHAR (100)  NULL,
     [gvp__Decision_Maker__c]                    CHAR(18)  NULL,
     [gvp__Delivery_Day_Time__c]                 NVARCHAR(70)  NULL,
