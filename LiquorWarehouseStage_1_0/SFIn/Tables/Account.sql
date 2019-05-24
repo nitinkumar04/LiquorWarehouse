@@ -137,7 +137,7 @@
     [gvp__Owner_State_FIPS_Code__c]             CHAR (10)  NULL,
     [gvp__Owner_State__c]                       VARCHAR (25)  NULL,
     [gvp__Placement_Id_List__c]                 NVARCHAR (300)  NULL,
-    [gvp__Primary_Contact__c]                   NVARCHAR (100)  NULL,
+    [gvp__Primary_Contact__c]                   NVARCHAR (180)  NULL,
     [gvp__Primary_Email__c]                     NVARCHAR (100)  NULL,
     [gvp__Region_Id__c]                         CHAR (18)  NULL,
     [gvp__Region__c]                            NVARCHAR(50)  NULL,
