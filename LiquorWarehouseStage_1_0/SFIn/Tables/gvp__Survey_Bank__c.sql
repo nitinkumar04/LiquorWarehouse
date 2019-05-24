@@ -15,7 +15,7 @@
 	gvp__Product_Only__c nvarchar(100) null,
 	gvp__Question_Text__c nvarchar(270) null,
 	gvp__Type__c nvarchar(100) null,
-	gvp__Question_List__c nvarchar(300) null,
+	gvp__Question_List__c nvarchar(2000) null,
 	gvp__Sales_Driver__c nvarchar(100) null,
 	gvp__External_Id__c varchar(20) null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
