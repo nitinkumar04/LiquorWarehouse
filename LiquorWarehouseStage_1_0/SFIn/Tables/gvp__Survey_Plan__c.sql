@@ -16,7 +16,7 @@
 	gvp__Account_Surveyed_Goal__c decimal(4,1) null,
 	gvp__Aim_of_Survey__c nvarchar(300) null,
 	gvp__Channel_Surveyed__c nvarchar(220) null,
-	gvp__End_Date_of_Survey__c date not null,
+	gvp__End_Date_of_Survey__c date null,
 	gvp__Start_Date_of_Survey__c date not null,
 	gvp__Total_Accounts_Surveyed_vs_Goal__c decimal(5,1) not null,
 	gvp__Total_Accounts_Surveyed__c decimal(6,1) not null,
