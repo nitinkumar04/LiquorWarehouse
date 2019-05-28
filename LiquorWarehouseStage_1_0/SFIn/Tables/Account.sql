@@ -23,7 +23,7 @@
     [ShippingLongitude]                         DECIMAL (14,11)  NULL,
     [ShippingGeocodeAccuracy]                   VARCHAR (20)  NULL,
     [Phone]                                     VARCHAR (50)  NULL,
-    [Fax]                                       VARCHAR (30)  NULL,
+    [Fax]                                       VARCHAR (50)  NULL,
     [Website]                                   NVARCHAR (300)  NULL,
     [PhotoUrl]                                  NVARCHAR (100)  NULL,
     [Industry]                                  NVARCHAR (100)  NULL,
