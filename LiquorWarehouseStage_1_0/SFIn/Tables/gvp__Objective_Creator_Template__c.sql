@@ -15,7 +15,7 @@
     [gvp__Objective__c]          char (18)  NULL,
     [gvp__Accomplish_By_Date__c] DATE          NULL,
     [gvp__Assigned_Date__c]      DATE          NULL,
-    [gvp__Description__c]        NVARCHAR (250) NULL,
+    [gvp__Description__c]        NVARCHAR (255) NULL,
     [gvp__Territory__c]          char (18)  NULL,
     CONSTRAINT [PK_gvp__Objective_Creator_Template__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );

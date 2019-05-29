@@ -13,6 +13,6 @@
   [LastModifiedDate] DATETIME NOT NULL, 
   [LastModifiedById] char(18) NOT NULL, 
   [SystemModstamp] DATETIME NOT NULL, 
-  [Description] NVARCHAR(200) NULL, 
+  [Description] NVARCHAR(300) NULL, 
   CONSTRAINT [PK_Attachment] PRIMARY KEY ([Id])
 )
