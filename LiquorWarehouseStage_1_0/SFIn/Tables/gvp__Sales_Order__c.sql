@@ -21,7 +21,7 @@
 	gvp__Person_Giving_Order__c nvarchar(100) null,
 	gvp__Rep_Phone__c nvarchar(100) null,
 	gvp__Sales_Rep__c nvarchar(100) null,
-	gvp__State__c nvarchar(25) null,
+	gvp__State__c nvarchar(30) null,
 	gvp__Status__c nvarchar(100) null,
 	gvp__Order_Total__c money null,
 	gvp__Total_Cases__c decimal(8,1) null,
