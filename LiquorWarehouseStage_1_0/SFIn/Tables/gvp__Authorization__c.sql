@@ -28,7 +28,7 @@
 	gvp__Status__c nvarchar(100) null,
 	gvp__Custom_Fact_1__c decimal(12,8) null,
 	gvp__Custom_Fact_2__c decimal(12,8) null,
-	gvp__Custom_Text_1__c nvarchar(200) null,
+	gvp__Custom_Text_1__c nvarchar(255) null,
 	gvp__Custom_Text_2__c nvarchar(200) null,
 	gvp__Custom_Text_3__c nvarchar(200) null,
 	gvp__Custom_Text_4__c nvarchar(200) null,
