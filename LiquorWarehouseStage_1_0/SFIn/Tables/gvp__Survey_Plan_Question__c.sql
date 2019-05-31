@@ -31,7 +31,7 @@
 	gvp__Target_Checkbox__c varchar(10) null,
 	gvp__Target_Currency__c money null,
 	gvp__Target_Number__c decimal(12,8) null,
-	gvp__Target_Percentage__c decimal(4,3) null,
+	gvp__Target_Percentage__c decimal(6,3) null,
 	gvp__Target_Text_List__c nvarchar(100) null,
 	gvp__Target_YesNo__c varchar(10) null,
 	gvp__Type__c nvarchar(100) null,

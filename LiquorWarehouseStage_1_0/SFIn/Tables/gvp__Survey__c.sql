@@ -29,7 +29,7 @@
 	gvp__Plan_Possible_Points__c decimal(5,1) null,
 	gvp__Points_Since_Last_Survey__c decimal(4,1) null,
 	gvp__Previous_Survey__c char(18) null,
-	gvp__Distance_m__c decimal(8,1) null,
+	gvp__Distance_m__c decimal(9,1) null,
 	gvp__Submitted_Date_Time__c datetime null,
 	gvp__Mobile_Survey__c varchar(10) null,
 	gvp__Source__c nvarchar(100) null,
