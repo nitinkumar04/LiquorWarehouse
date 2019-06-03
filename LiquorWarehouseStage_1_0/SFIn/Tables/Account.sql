@@ -16,7 +16,7 @@
     [BillingGeocodeAccuracy]                    VARCHAR (20)  NULL,
     [ShippingStreet]                            NVARCHAR (250)  NULL,
     [ShippingCity]                              NVARCHAR (50)  NULL,
-    [ShippingState]                             NVARCHAR (25)  NULL,
+    [ShippingState]                             NVARCHAR (30)  NULL,
     [ShippingPostalCode]                        NVARCHAR (20)  NULL,
     [ShippingCountry]                           NVARCHAR (25)  NULL,
     [ShippingLatitude]                          DECIMAL (14,11)  NULL,
