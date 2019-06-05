@@ -77,7 +77,16 @@
     <Build Include="dbo\Tables\DimUser.sql" />
     <Build Include="dbo\Tables\DimSurvey.sql" />
     <Build Include="dbo\Tables\XRefSurveyPlanQuestion.sql" />
-    <Build Include="dbo\Tables\XrefAccountAccountSet.sql" />
+    <Build Include="dbo\Tables\XrefRetailerRetailerSet.sql" />
+    <Build Include="dbo\Tables\XRefRetailerDistributor.sql" />
+    <Build Include="dbo\Tables\XRefItemProductSet.sql" />
+    <Build Include="dbo\Tables\DimDistributorTeam.sql" />
+    <Build Include="dbo\Tables\DimRetailerDivision.sql" />
+    <Build Include="dbo\Tables\DimRetailerTeam.sql" />
+    <Build Include="dbo\Tables\DimRetailerType.sql" />
+    <Build Include="dbo\Tables\DimKeyAccount1.sql" />
+    <Build Include="dbo\Tables\DimKeyAccount2.sql" />
+    <Build Include="dbo\Tables\DimBannerName.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />

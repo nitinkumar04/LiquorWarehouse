@@ -1,9 +1,7 @@
 ﻿CREATE TABLE [dbo].[DimDistributorRep] (
     [LWDistributorRepSKey]  INT          IDENTITY (1, 1) NOT NULL,
     [DistributorRepID]      char (18) NOT NULL DEFAULT '-1',
-    [DistributorName]       VARCHAR (50) NOT NULL DEFAULT 'No Data',
-    [LWDistributorSKey]     INT          NOT NULL DEFAULT -1,
-    [LWDistributorTeamSKey] INT          NOT NULL DEFAULT -1,
+    DistributorRepLN      nvarchar(100) not null default '-',
     [LWSourceID]            INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]      DATETIME     NULL,
     [SourceModifiedDate]    DATETIME     NULL,
