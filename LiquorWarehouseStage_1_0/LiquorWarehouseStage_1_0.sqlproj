@@ -324,6 +324,7 @@
     <Build Include="GDOut\Tables\GD_Sales_Division_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Txn_Type.sql" />
     <Build Include="SFIn\Tables\gvp__POS_Placement__c.sql" />
+    <Build Include="SFIn\gvp__Well__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />
