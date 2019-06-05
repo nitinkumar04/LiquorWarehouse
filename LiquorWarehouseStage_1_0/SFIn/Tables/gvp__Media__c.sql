@@ -23,7 +23,7 @@
 	gvp__Geolocation__Latitude__s decimal(21,18) null,
 	gvp__Geolocation__Longitude__s decimal(21,18) null,
 	gvp__Heading__c decimal(4,1) null,
-	gvp__Distance_m__c decimal(8,1) null,
+	gvp__Distance_m__c decimal(9,1) null,
 	gvp__Attachments__c decimal(4,1) null,
 	gvp__Attachment_Id__c char(18) null,
 	gvp__Sticky__c varchar(10) null,
