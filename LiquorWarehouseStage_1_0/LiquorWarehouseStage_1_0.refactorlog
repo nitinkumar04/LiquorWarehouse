@@ -63,4 +63,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="gvp__Activity_Goal__c" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="d3e4526b-31f6-49b0-8ccd-25763a839061" ChangeDateTime="06/06/2019 20:04:02">
+    <Property Name="ElementName" Value="[SFIn].[gvp__GoodData_Translation_Settings__c].[gvp__GoodData_Object__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__GoodData_Translation_Settings__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Salesforce_Object__c" />
+  </Operation>
 </Operations>

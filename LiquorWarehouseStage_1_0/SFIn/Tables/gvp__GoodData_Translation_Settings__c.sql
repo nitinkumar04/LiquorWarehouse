@@ -13,6 +13,6 @@
 	[gvp__GoodData_Order__c]     DECIMAL (18,0)    NULL,
 	[gvp__GoodData_Plural__c]     NVARCHAR  (50)   NULL,
 	[gvp__GoodData_Subgroup__c]     NVARCHAR (50)    NULL,
-	[gvp__GoodData_Object__c]     NVARCHAR  (50)   NULL,
+	[gvp__Salesforce_Object__c]     NVARCHAR  (50)   NULL,
     CONSTRAINT [PK_GoodData_Translation_Settings__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 	)
