@@ -37,7 +37,7 @@
 	gvp__Custom_Currency_2__c money null,
 	gvp__Custom_Date_1__c date null,
 	gvp__Custom_Date_2__c date null,
-	gvp__Custom_Number_1__c decimal(12,8) null,
+	gvp__Custom_Number_1__c decimal(15,8) null,
 	gvp__Custom_Number_2__c decimal(12,8) null,
 	gvp__Custom_Picklist_1__c nvarchar(100) null,
 	gvp__Custom_Picklist_2__c nvarchar(100) null,
