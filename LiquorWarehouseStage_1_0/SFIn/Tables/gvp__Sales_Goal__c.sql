@@ -17,7 +17,7 @@
 	gvp__Estimate_Quantity__c decimal(8,2) null,
 	gvp__Estimate_vs_Goal_Percent__c decimal(8,2) null,
 	gvp__Estimate_vs_Goal_Quantity__c decimal(8,2) null,
-	gvp__Goal_Key__c varchar(100) null,
+	gvp__Goal_Key__c varchar(150) null,
 	gvp__Goal_Quantity__c decimal(13,6) null,
 	gvp__Goal_Type__c nvarchar(20) null,
 	gvp__Item__c char(18) null,
