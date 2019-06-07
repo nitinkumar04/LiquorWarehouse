@@ -59,7 +59,7 @@
     [gvp__BDN_Id__c]                            VARCHAR (50)  NULL,
     [gvp__BDN_Last_Update__c]                   DATE  NULL,
     [gvp__BDN_Phone__c]                         VARCHAR (30)  NULL,
-    [gvp__BDN_Primary_Contact__c]               NVARCHAR (50)  NULL,
+    [gvp__BDN_Primary_Contact__c]               NVARCHAR (75)  NULL,
     [gvp__BDN_Trade_Channel__c]                 NVARCHAR (100)  NULL,
     [gvp__Banner_Name__c]                       NVARCHAR (100)  NULL,
     [gvp__Banner__c]                            NVARCHAR (100)  NULL,
