@@ -22,7 +22,7 @@
 [gvp__Custom_3__c] [nvarchar](100) NULL,
 [gvp__Custom_4__c] [nvarchar](100) NULL,
 [gvp__Custom_5__c] [nvarchar](100) NULL,
-[gvp__Custom_Fact_1__c] [decimal](12, 8) NULL,
+[gvp__Custom_Fact_1__c] [decimal](15, 8) NULL,
 [gvp__Custom_Fact_2__c] [decimal](12, 8) NULL,
 [gvp__Date_Delivered__c] [date] NULL,
 [gvp__External_Id__c] [char](19) NULL,
@@ -31,7 +31,7 @@
 [gvp__POS_Item__c] [char](18) NULL,
 [gvp__Picture_Attached__c] [varchar](10) NULL,
 [gvp__Program__c] [char](18) NULL,
-[gvp__Quantity__c] [decimal](4, 1) NULL,
+[gvp__Quantity__c] [decimal](5, 1) NULL,
 [gvp__Account_Call_Send_Email_Date__c] [date] NULL,
 [gvp__Account_Call_Send_Email__c] [varchar](10) NULL,
 [gvp__Account_Call_Status__c] [varchar](50) NULL
