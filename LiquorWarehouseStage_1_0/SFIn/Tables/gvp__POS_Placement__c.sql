@@ -23,7 +23,7 @@
 [gvp__Custom_4__c] [nvarchar](100) NULL,
 [gvp__Custom_5__c] [nvarchar](100) NULL,
 [gvp__Custom_Fact_1__c] [decimal](15, 8) NULL,
-[gvp__Custom_Fact_2__c] [decimal](12, 8) NULL,
+[gvp__Custom_Fact_2__c] [decimal](13, 8) NULL,
 [gvp__Date_Delivered__c] [date] NULL,
 [gvp__External_Id__c] [char](19) NULL,
 [gvp__Item__c] [char](18) NULL,
