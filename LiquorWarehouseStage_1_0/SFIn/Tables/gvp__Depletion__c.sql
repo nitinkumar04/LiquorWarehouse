@@ -20,7 +20,7 @@
 	gvp__X9L_Cases__c DECIMAL(13, 5) null,
 	gvp__Goal__c nvarchar(60) null,
 	gvp__Territory_Goal__c char(18) null,
-	gvp__BDN_Adjustments__c decimal(9,2) null,
+	gvp__BDN_Adjustments__c decimal(14,4) null,
 	gvp__BDN_Closing_Balance__c MONEY null,
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_In_Bond__c decimal(7,2) null,
