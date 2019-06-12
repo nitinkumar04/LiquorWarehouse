@@ -29,7 +29,7 @@
 	gvp__Account_Selector__c char(18) null,
 	gvp__Billing_Address__c nvarchar(200) null,
 	gvp__Delivery_Date__c date null,
-	gvp__Delivery_Instructions__c nvarchar(600) null,
+	gvp__Delivery_Instructions__c nvarchar(2000) null,
 	gvp__Order_Adjustment__c money null,
 	gvp__Order_Number__c varchar(20) null,
 	gvp__Order_Status__c nvarchar(100) null,
