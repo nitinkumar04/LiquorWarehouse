@@ -69,7 +69,7 @@
     [gvp__Age_Calculated__c]           DECIMAL (6, 2)   NULL,
     [gvp__Attributes__c]               VARCHAR (100)     NULL,
     [gvp__Company__c]                  NVARCHAR(70)     NULL,
-    [gvp__Contact_Method__c]           NVARCHAR (20)     NULL,
+    [gvp__Contact_Method__c]           NVARCHAR (30)     NULL,
     [gvp__Customer_Key__c]             VARCHAR (50)     NULL,
     [gvp__Email_Key__c]                VARCHAR (100)     NULL,
     [gvp__Facebook_Fan__c]             VARCHAR (10)     NULL,
