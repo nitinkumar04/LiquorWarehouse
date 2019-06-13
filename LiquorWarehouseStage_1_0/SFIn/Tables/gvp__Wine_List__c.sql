@@ -26,7 +26,7 @@
 	gvp__Program__c char(18) null,
 	gvp__Brand2__c char(18) null,
 	gvp__Label2__c char(18) null,
-	gvp__Custom_1__c nvarchar(200) null,
+	gvp__Custom_1__c nvarchar(300) null,
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_3__c nvarchar(200) null,
 	gvp__Custom_4__c nvarchar(200) null,
