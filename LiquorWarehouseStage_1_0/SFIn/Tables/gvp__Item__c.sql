@@ -24,7 +24,7 @@
     [gvp__NABCA_Code__c]                    VARCHAR (20)     NULL,
     [gvp__Next_Order_Arrival__c]            DATE             NULL,
     [gvp__On_Order__c]                      DECIMAL (9, 4)   NULL,
-    [gvp__Package__c]                       NVARCHAR (40)     NULL,
+    [gvp__Package__c]                       NVARCHAR (100)     NULL,
     [gvp__Price_Level_2__c]                 MONEY            NULL,
     [gvp__Price_Level_3__c]                 MONEY            NULL,
     [gvp__Price_Level_4__c]                 MONEY            NULL,
