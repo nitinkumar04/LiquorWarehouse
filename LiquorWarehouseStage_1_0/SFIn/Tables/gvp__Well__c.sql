@@ -26,7 +26,7 @@
 	[gvp__Custom_1__c] NVARCHAR(100) NULL,
 	[gvp__Custom_2__c] NVARCHAR(100) NULL,
 	[gvp__Custom_3__c] NVARCHAR(100) NULL,
-	[gvp__Custom_4__c] NVARCHAR(100) NULL,
+	[gvp__Custom_4__c] NVARCHAR(200) NULL,
 	[gvp__Custom_5__c] NVARCHAR(100) NULL,
 	[gvp__Custom_Fact_1__c] [decimal](13, 8) NULL,
 	[gvp__Custom_Fact_2__c] [decimal](13, 8) NULL,

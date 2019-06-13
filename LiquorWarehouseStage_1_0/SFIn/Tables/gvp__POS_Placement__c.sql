@@ -21,7 +21,7 @@
 [gvp__Custom_2__c] [nvarchar](200) NULL,
 [gvp__Custom_3__c] [nvarchar](100) NULL,
 [gvp__Custom_4__c] [nvarchar](100) NULL,
-[gvp__Custom_5__c] [nvarchar](100) NULL,
+[gvp__Custom_5__c] [nvarchar](150) NULL,
 [gvp__Custom_Fact_1__c] [decimal](15, 8) NULL,
 [gvp__Custom_Fact_2__c] [decimal](13, 8) NULL,
 [gvp__Date_Delivered__c] [date] NULL,
