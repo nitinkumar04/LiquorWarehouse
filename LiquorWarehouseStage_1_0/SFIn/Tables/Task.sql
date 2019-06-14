@@ -37,7 +37,7 @@
 	RecurrenceDayOfWeekMask int null,
 	RecurrenceDayOfMonth int null,
 	RecurrenceInstance nvarchar(100) null,
-	RecurrenceMonthOfYear int null,
+	RecurrenceMonthOfYear NVARCHAR(20) null,
 	RecurrenceRegeneratedType nvarchar(100) null,
 	TaskSubtype nvarchar(200) null,
 	gvp__Account_Call__c varchar(10) null,
