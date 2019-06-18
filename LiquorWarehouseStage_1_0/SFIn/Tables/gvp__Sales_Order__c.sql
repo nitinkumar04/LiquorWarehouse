@@ -44,7 +44,7 @@
 	gvp__Will_Call__c varchar(10) not null,
 	gvp__Tracking_Number__c varchar(40) null,
 	gvp__Shipping_Address2__c nvarchar(150) null,
-	gvp__Sales_Order_Key__c varchar(20) null,
+	gvp__Sales_Order_Key__c varchar(60) null,
 	gvp__Order_Item_Count__c decimal(4,1) null,
 	gvp__ERP_Id__c varchar(110) null,
 	gvp__Attachments__c decimal(4,1) null 
