@@ -91,6 +91,8 @@
     <Build Include="dbo\Tables\XrefDistributorRetailer.sql" />
     <Build Include="dbo\Tables\FactRAD.sql" />
     <Build Include="dbo\Tables\DimRetailerStatus.sql" />
+    <Build Include="dbo\Tables\DimMSA.sql" />
+    <Build Include="dbo\Tables\DimTradeChannel.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
@@ -124,6 +126,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorWarehouse_1_0.publish.xml" />
+    <None Include="aaMike_LiquorWarehouse_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouse_1_0.refactorlog" />

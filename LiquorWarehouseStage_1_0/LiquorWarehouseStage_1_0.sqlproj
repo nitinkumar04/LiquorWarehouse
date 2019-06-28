@@ -326,6 +326,7 @@
     <Build Include="SFIn\Tables\gvp__POS_Placement__c.sql" />
     <Build Include="SFIn\Tables\gvp__Well__c.sql" />
     <Build Include="SFIn\Tables\gvp__GoodData_Translation_Settings__c.sql" />
+    <Build Include="SFIn\Tables\DimBannerName.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorBarnStage.publish.xml" />

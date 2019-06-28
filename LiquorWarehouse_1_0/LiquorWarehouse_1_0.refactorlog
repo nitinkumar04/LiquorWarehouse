@@ -448,4 +448,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ActiveStatus" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="61f0c1c5-2cc7-47f4-8bd5-8c475c001e55" ChangeDateTime="06/28/2019 13:49:56">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerType].[ActiveFlag]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWActiveFlag" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="50ad3195-c69f-4864-b28c-4767eee2e888" ChangeDateTime="06/28/2019 16:15:57">
+    <Property Name="ElementName" Value="[dbo].[DimRetailer].[BannerName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWBannerNameSKey" />
+  </Operation>
 </Operations>

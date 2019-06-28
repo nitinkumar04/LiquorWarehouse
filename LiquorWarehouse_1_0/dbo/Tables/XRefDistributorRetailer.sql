@@ -12,6 +12,5 @@
   [LWCreateDate]        DATETIME     CONSTRAINT [DF_XrefDistributorRetailer_LWCreateDate] DEFAULT (getdate()) NOT NULL,
   [LWModifiedDate]      DATETIME     CONSTRAINT [DF_XrefDistributorRetailer_LWModifiedDate] DEFAULT (getdate()) NOT NULL, 
   CONSTRAINT [FK_XRefDistributorRetailer_DimDistributor] FOREIGN KEY (LWDistributorSKey) REFERENCES DimDistributor(LWDistributorSKey),
-  CONSTRAINT [FK_XRefDistributorRetailer_DimRetailer] FOREIGN KEY (LWRetailerSKey) REFERENCES DimRetailer(LWRetailerSKey),
   CONSTRAINT [PK_XrefDistributorRetailer] PRIMARY KEY ([LWXrefDistributorRetailerSKey])
 )
