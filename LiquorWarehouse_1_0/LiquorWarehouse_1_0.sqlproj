@@ -88,7 +88,6 @@
     <Build Include="dbo\Tables\DimKeyAccount2.sql" />
     <Build Include="dbo\Tables\DimBannerName.sql" />
     <Build Include="dbo\Tables\XrefItemProductSet.sql" />
-    <Build Include="dbo\Tables\XrefDistributorRetailer.sql" />
     <Build Include="dbo\Tables\FactRAD.sql" />
     <Build Include="dbo\Tables\DimRetailerStatus.sql" />
   </ItemGroup>

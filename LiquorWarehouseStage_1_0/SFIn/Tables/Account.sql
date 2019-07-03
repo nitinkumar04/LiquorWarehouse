@@ -170,3 +170,5 @@
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 
+
+GO

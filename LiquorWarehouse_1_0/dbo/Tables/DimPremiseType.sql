@@ -4,6 +4,7 @@
     [PremiseTypeSN]          VARCHAR (3)   NOT NULL DEFAULT '-',
     [PremiseTypeLN]          VARCHAR (25)  NOT NULL DEFAULT 'No Data',
     [PremiseTypeDescription] VARCHAR (100) NOT NULL DEFAULT 'No Data',
+    [LWActiveFlag]           INT           NOT NULL DEFAULT -1,
     [LWSourceID]             INT           NOT NULL DEFAULT -1,
     [SourceCreateDate]       DATETIME      NULL,
     [SourceModifiedDate]     DATETIME      NULL,
