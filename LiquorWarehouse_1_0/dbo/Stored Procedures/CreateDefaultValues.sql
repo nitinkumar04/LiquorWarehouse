@@ -34,7 +34,11 @@ begin
 
     -- Populate the temp table
     insert into #columns (columnname, size, system_type_id)
-      select c.name, c.max_length, c.system_type_id from sys.columns c inner join sys.tables t on c.object_id = t.object_id where t.name = @tablename and c.is_nullable = 0 
+      select c.name, c.max_length, c.system_type_id 
+      from sys.columns c 
+        inner join sys.tables t on c.object_id = t.object_id 
+      where t.name = @tablename 
+        and (c.is_nullable = 0 or c.name like '%Description%' or c.name like '%Name%')
 
     /*
     system_type_id  datatype
@@ -64,6 +68,7 @@ begin
         when system_type_id = 175 and columnname like '%id' then '''-2''' -- char that aren't SF Id's
         when system_type_id = 175 and size > 6 then '''Invalid''' -- long char
         when system_type_id = 175 and size <= 6 then '''?'''
+				when system_type_id = 173 then '0x0000000000000000'
       end
       from #columns
       order by id
@@ -90,6 +95,7 @@ begin
         when system_type_id = 175 and columnname like '%id' then '''-1''' -- char that aren't SF Id's
         when system_type_id = 175 and size > 6 then '''No Data''' -- long char
         when system_type_id = 175 and size <= 6 then '''-'''
+				when system_type_id = 173 then '0x0000000000000000'
       end
       from #columns
       order by id
