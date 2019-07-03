@@ -1,9 +1,13 @@
 ﻿CREATE TABLE [dbo].[FactRAD]
 (
-   LWRetailerSKey   int   not null default -1,
-   LWDistributorSKey int  not null default -1,
-   LWItemSKey int         not null default -1, 
+   [LWRetailerSKey]   int   not null default -1,
+   [LWDistributorSKey] int  not null default -1,
+   [LWItemSKey] int         not null default -1, 
    [TransactionDate] DATE NOT NULL DEFAULT '1/1/1900',
+   [RADKey] varchar(100) null,
+   [Quantity] decimal(14,4) null,
+   [Price1] money null,
+   [Price2] money null,
    [ActiveStatus] VARCHAR(25) NULL,
    [LWSourceID] INT NOT NULL DEFAULT -1, 
    [SourceCreateDate] DATETIME NULL, 
