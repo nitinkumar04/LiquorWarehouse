@@ -448,6 +448,19 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ActiveStatus" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="97326463-08f4-4fdc-9182-b849f6d31378" ChangeDateTime="07/01/2019 20:48:15">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerType].[RetailerTypeGroupLN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerTypeGroupLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e3348c0c-f388-4a2c-8d5d-f70ba456b9d4" ChangeDateTime="07/02/2019 20:57:55">
+    <Property Name="ElementName" Value="[dbo].[DimDistributor].[LWTerritorySkey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimDistributor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWTerritorySKey" />
   <Operation Name="Rename Refactor" Key="7059529b-c749-42d5-9a0a-8910b901e653" ChangeDateTime="06/27/2019 23:11:33">
     <Property Name="ElementName" Value="[dbo].[DimProductSet].[LWModifedDate]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />

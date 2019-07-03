@@ -3,6 +3,7 @@
     [RetailerOwnerID]        char (18) NOT NULL DEFAULT '-1',
     [RetailerOwnerFirstName] VARCHAR (25) NULL,
     [RetailerOwnerLastName]  VARCHAR (50) NOT NULL DEFAULT 'No Data',
+    [LWActiveFlag]           INT          NOT NULL DEFAULT -1,
     [LWSourceID]             INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]       DATETIME     NULL,
     [SourceModifiedDate]     DATETIME     NULL,

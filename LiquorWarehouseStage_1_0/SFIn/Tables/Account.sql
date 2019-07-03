@@ -32,9 +32,9 @@
     [Description]                               NVARCHAR (2000)  NULL,
     [Site]                                      VARCHAR (80)  NULL,
     [OwnerId]                                   CHAR (18) NOT NULL,
-    [CreatedDate]                               DATETIME NULL,
+    [CreatedDate]                               DATETIME NOT NULL,
     [CreatedById]                               CHAR (18) NOT NULL,
-    [LastModifiedDate]                          DATETIME  NULL,
+    [LastModifiedDate]                          DATETIME  NOT NULL,
     [LastModifiedById]                          CHAR (18) NOT NULL,
     [SystemModstamp]                            DATETIME NULL,
     [LastActivityDate]                          DATE NULL,
@@ -170,3 +170,5 @@
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 
+
+GO
