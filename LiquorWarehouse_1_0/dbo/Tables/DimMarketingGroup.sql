@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[DimMarketingGroup] (
     [LWMarketingGroupSKey] INT          IDENTITY (1, 1) NOT NULL,
-    [MarketingGroupID]     VARCHAR (20) NOT NULL DEFAULT '-1',
+    [MarketingGroupID]     CHAR (18) NOT NULL DEFAULT '-1',
     [MarketingGroupLN]     NVARCHAR (100) NOT NULL DEFAULT 'No Data',
-	[LWExistsInSFFlag] [int] NULL,
+	[LWExistsInSFFlag] [int] NOT NULL,
     [LWSourceID]           INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]     DATETIME     NULL,
     [SourceModifiedDate]   DATETIME     NULL,
