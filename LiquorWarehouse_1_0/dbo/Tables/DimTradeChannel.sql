@@ -1,7 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimTradeChannel] (
     [LWTradeChannelSKey] INT          IDENTITY (1, 1) NOT NULL,
-    [TradeChannelID]     char (18) NOT NULL DEFAULT '-1',
-    [TradeChannelLN]     VARCHAR (50) NOT NULL DEFAULT 'No Data',
+    [TradeChannelLN]     NVARCHAR (100) NOT NULL DEFAULT '-1',
     [LWSourceID]           INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]     DATETIME     NULL,
     [SourceModifiedDate]   DATETIME     NULL,

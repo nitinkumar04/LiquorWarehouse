@@ -476,4 +476,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SuggestedRetailPrice" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="6b3eb45e-f4c0-4168-b15e-3303cf321554" ChangeDateTime="07/09/2019 14:29:28">
+    <Property Name="ElementName" Value="[dbo].[DimActivity].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimActivity]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWActivitySKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f8c821c-5c27-4fb2-b24b-ae67252a1dae" ChangeDateTime="07/09/2019 21:43:00">
+    <Property Name="ElementName" Value="[dbo].[DimSurvey].[LWAccountSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurvey]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWRetailerSKey" />
+  </Operation>
 </Operations>
