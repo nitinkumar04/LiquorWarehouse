@@ -461,6 +461,7 @@
     <Property Name="ParentElementName" Value="[dbo].[DimDistributor]" />
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWTerritorySKey" />
+  </Operation>  
   <Operation Name="Rename Refactor" Key="7059529b-c749-42d5-9a0a-8910b901e653" ChangeDateTime="06/27/2019 23:11:33">
     <Property Name="ElementName" Value="[dbo].[DimProductSet].[LWModifedDate]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
