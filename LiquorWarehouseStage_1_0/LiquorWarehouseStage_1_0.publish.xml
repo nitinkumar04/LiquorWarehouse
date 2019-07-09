@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>LiquorWarehouseStage_1_0</TargetDatabaseName>
+    <DeployScriptFileName>LiquorWarehouseStage_1_0.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=ec2-34-220-132-77.us-west-2.compute.amazonaws.com;Persist Security Info=True;User ID=Mike;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+    <BlockOnPossibleDataLoss>False</BlockOnPossibleDataLoss>
+  </PropertyGroup>
+</Project>
