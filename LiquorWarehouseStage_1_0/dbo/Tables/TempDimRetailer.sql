@@ -7,7 +7,7 @@
     KeyAccountChain2          CHAR(18)         null,
     LWKeyAccountChainFlag     int              not null default 0,
     [SalesRep]                NVARCHAR(100)    null ,
-    [BannerName]              NVARCHAR (100)   NULL,
+    [LWBannerNameSKey]              INT   NOT NULL DEFAULT -1,
     [BDNID]                   VARCHAR (50)     NULL,
     [SRSID]                   VARCHAR (50)     NULL,
     [ERPID]                   VARCHAR (50)     NULL,
@@ -91,8 +91,8 @@
     [BDNChangeDate]           DATE             NULL,
     [LWExistsInSFFlag]        INT              NOT NULL DEFAULT -1,
     [LWSourceID]              INT              NOT NULL DEFAULT -1,
-    [SourceCreateDate]        DATE             NULL,
-    [SourceModifiedDate]      DATE             NULL,
+    [SourceCreateDate]        DATETIME             NOT NULL DEFAULT '1/1/1900',
+    [SourceModifiedDate]      DATETIME             NOT NULL DEFAULT '1/1/1900',
     [LWRowHash]               BINARY(16)       NOT NULL,
     CONSTRAINT [PK_LWRetailerSKey] PRIMARY KEY CLUSTERED ([LWRetailerSKey] ASC)
 );

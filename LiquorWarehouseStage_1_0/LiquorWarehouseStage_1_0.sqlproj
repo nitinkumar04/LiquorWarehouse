@@ -328,10 +328,9 @@
     <Build Include="SFIn\Tables\gvp__Well__c.sql" />
     <Build Include="SFIn\Tables\gvp__GoodData_Translation_Settings__c.sql" />
     <Build Include="SFIn\Stored Procedures\DimRetailerSourceQuery.sql" />
+    <Build Include="SFIn\Stored Procedures\DimActivitySourceQuery.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LiquorBarnStage.publish.xml" />
-    <None Include="LiquorWarehouseStage_1_0.publish.xml" />
     <None Include="aaMike_LiquorWarehouseStage_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
