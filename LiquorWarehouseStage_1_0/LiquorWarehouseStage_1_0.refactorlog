@@ -70,4 +70,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="gvp__Salesforce_Object__c" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="66085b7a-3ecf-44d5-a351-ae399df0e69b" ChangeDateTime="07/08/2019 17:56:42">
+    <Property Name="ElementName" Value="[dbo].[TempDimRetailer].[BannerName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TempDimRetailer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWBannerNameSKey" />
+  </Operation>
 </Operations>
