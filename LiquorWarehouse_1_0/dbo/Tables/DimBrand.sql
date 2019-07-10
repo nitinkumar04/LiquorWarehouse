@@ -4,7 +4,7 @@
     [BrandID] char(18) NOT NULL DEFAULT '-1', 
     [BrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [LWBrandURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
-    [BrandExternalID] VARCHAR(20) NULL, 
+    [BrandExternalID] VARCHAR(50) NULL, 
     [LWSupplierSKey] INT NOT NULL DEFAULT -1, 
     [BrandOwnership] NVARCHAR(100) NULL, 
     [KeyBrandFlag] INT NOT NULL DEFAULT -1, 

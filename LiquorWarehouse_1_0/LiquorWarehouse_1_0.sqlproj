@@ -96,6 +96,7 @@
     <Build Include="dbo\Tables\DimActivity.sql" />
     <Build Include="dbo\Tables\DimSurveyQuestionBank.sql" />
     <Build Include="dbo\Tables\DimSurveyPlan.sql" />
+    <Build Include="dbo\Tables\DimPerson.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
@@ -129,7 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorWarehouse_1_0.publish.xml" />
-    <None Include="aaMike_LiquorWarehouse_1_0.publish.xml" />
+    <None Include="aaBharathi_LiquorWarehouse_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouse_1_0.refactorlog" />
