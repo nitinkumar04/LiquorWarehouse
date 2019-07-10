@@ -95,6 +95,7 @@
     <Build Include="dbo\Tables\DimContact.sql" />
     <Build Include="dbo\Tables\DimActivity.sql" />
     <Build Include="dbo\Tables\DimSurveyQuestionBank.sql" />
+    <Build Include="dbo\Tables\DimSurveyPlan.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
