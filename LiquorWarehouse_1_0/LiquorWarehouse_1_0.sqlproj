@@ -61,6 +61,7 @@
     <Folder Include="dbo\Tables" />
     <Folder Include="dbo\Stored Procedures" />
     <Folder Include="Security" />
+    <Folder Include="dbo\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimAccountOwner.sql" />
@@ -76,8 +77,7 @@
     <Build Include="dbo\Tables\DimDivisionLevel1.sql" />
     <Build Include="dbo\Tables\DimUser.sql" />
     <Build Include="dbo\Tables\DimSurvey.sql" />
-    <Build Include="dbo\Tables\XRefSurveyPlanQuestion.sql" />
-    <Build Include="dbo\Tables\XrefRetailerRetailerSet.sql" />
+    <Build Include="dbo\Tables\XRefRetailerRetailerSet.sql" />
     <Build Include="dbo\Tables\XRefRetailerDistributor.sql" />
     <Build Include="dbo\Tables\XRefItemProductSet.sql" />
     <Build Include="dbo\Tables\DimDistributorTeam.sql" />
@@ -97,6 +97,10 @@
     <Build Include="dbo\Tables\DimSurveyQuestionBank.sql" />
     <Build Include="dbo\Tables\DimSurveyPlan.sql" />
     <Build Include="dbo\Tables\DimPerson.sql" />
+    <Build Include="dbo\Tables\XRefSurveyPlanQuestion.sql" />
+    <Build Include="dbo\Tables\FactSurveyAnswer.sql" />
+    <Build Include="dbo\Tables\XRefSurveyPlanTerritory.sql" />
+    <Build Include="dbo\Views\DimProduct.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimBrand]
 (
-  [LWBrandSKey] INT NOT NULL IDENTITY, 
+  [LWBrandSKey] INT NOT NULL IDENTITY(1,1), 
     [BrandID] char(18) NOT NULL DEFAULT '-1', 
     [BrandLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [LWBrandURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 

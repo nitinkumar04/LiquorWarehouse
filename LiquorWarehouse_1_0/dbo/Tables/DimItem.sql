@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimItem]
 (
-  [LWItemSkey] INT NOT NULL IDENTITY, 
+    [LWItemSkey] INT NOT NULL IDENTITY (100000,1), 
     [ItemID] CHAR(18) NOT NULL DEFAULT '-1', 
     [ItemLN] NVARCHAR(100) NOT NULL DEFAULT 'No Data', 
     [LWItemURL] NVARCHAR(100) NOT NULL DEFAULT 'No Data' , 

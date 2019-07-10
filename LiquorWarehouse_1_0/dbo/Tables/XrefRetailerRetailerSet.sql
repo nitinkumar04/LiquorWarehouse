@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[XrefRetailerRetailerSet]
+﻿CREATE TABLE [dbo].[XRefRetailerRetailerSet]
 (
   [LWRetailerSKey] INT NOT NULL  DEFAULT -1, 
     [LWRetailerSetSKey] INT NOT NULL DEFAULT -1, 
