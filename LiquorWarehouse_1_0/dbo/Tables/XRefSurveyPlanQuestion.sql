@@ -2,7 +2,7 @@
 (
     [LWSurveyQuestionBankSKey]   INT           IDENTITY(1,1) NOT NULL, 
     [LWSurveyPlanSKey]           int           not null default -1,
-    [LWProductSKey]           INT      NOT NULL DEFAULT -1, 
+    [LWProductSKey]              INT           NOT NULL DEFAULT -1, 
     LWCompetitorSKey             int           not null default -1,                
     [LWSourceID]                 INT           NOT NULL DEFAULT -1,
     [SourceCreateDate]           DATETIME      NULL,
