@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimSurveyQuestionBank]
 (
-  LWSurveyQuestionBankSKey int           identity(1,1) not null default -1,
+  LWSurveyQuestionBankSKey int           identity(1,1) not null,
   SurveyQuestionBankId     char(16)      NOT NULL DEFAULT '-1',
   SurveyQuestionBankLN     nvarchar(100) NOT NULL DEFAULT 'No Data',
   QuestionText             nvarchar(270) NOT NULL DEFAULT 'No Data',
