@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimSurvey]
 (
-    [LWSurveySKey]       INT          NOT NULL, 
+    [LWSurveySKey]       INT          NOT NULL IDENTITY(1,1), 
     [SurveyID]           CHAR(18)     NOT NULL DEFAULT '-1', 
     [LWRetailerSKey]     int          not null default -1,
     [LWSurveyPlanSKey]   INT          NOT NULL DEFAULT -1, 
