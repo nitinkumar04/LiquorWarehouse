@@ -1,9 +1,8 @@
 ﻿CREATE TABLE [dbo].[DimPerson](
 	[LWPersonSKey] [int] IDENTITY(1,1) NOT NULL,
-	[PersonID] [char](18) NOT NULL,
-	[PersonLN] [nvarchar](50) NOT NULL,
-	[PersonFN] [nvarchar](50)  NULL,
-	[PersonName] [nvarchar](80) NOT NULL,
+	[PersonID] [char](18) NOT NULL ,
+	[PersonLastName] [nvarchar](50) NOT NULL,
+	[PersonFirstName] [nvarchar](50)  NULL,
 	[LWCompanySKey] [int],
 	[LWDivisionSKey] [int],
 	[PersonDepartment] [nvarchar](90) NULL,
@@ -37,13 +36,10 @@ GO
 ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('-1') FOR [PersonID]
 GO
 
-ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('No Data') FOR [PersonLN]
+ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('No Data') FOR [PersonLastName]
 GO
 
-ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('No Data') FOR [PersonFN]
-GO
-
-ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('No Data') FOR [PersonName]
+ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ('No Data') FOR [PersonFirstName]
 GO
 
 ALTER TABLE [dbo].[DimPerson] ADD  DEFAULT ((-1)) FOR [LWCompanySKey]
