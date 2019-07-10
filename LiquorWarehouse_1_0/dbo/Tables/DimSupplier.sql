@@ -14,7 +14,7 @@
     [SupplierCustom3]    VARCHAR (256)  NULL,
     [SupplierCustom4]    VARCHAR (256)  NULL,
     [SupplierCustom5]    VARCHAR (256)  NULL,
-    [LWExistsInSFFlag]   INT            NOT NULL,
+    [LWExistsInSFFlag]   INT            NOT NULL DEFAULT -1,
     [LWSourceID]         INT            NULL,
     [SourceCreateDate]   DATETIME       NULL,
     [SourceModifiedDate] DATETIME       NULL,
