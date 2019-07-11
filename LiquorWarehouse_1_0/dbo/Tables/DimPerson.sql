@@ -25,7 +25,7 @@
 	[SourceModifiedDate] [datetime] NOT NULL,
 	[LWCreateDate] [datetime] NOT NULL,
 	[LWModifiedDate] [datetime] NOT NULL,
-	[LWRowHash] [binary](16) NOT NULL,
+	[LWRowHash] [binary](16) NULL,
  CONSTRAINT [PK_LWPersonSKey] PRIMARY KEY CLUSTERED 
 (
 	[LWPersonSKey] ASC
