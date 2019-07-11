@@ -101,6 +101,7 @@
     <Build Include="dbo\Tables\FactSurveyAnswer.sql" />
     <Build Include="dbo\Tables\XRefSurveyPlanTerritory.sql" />
     <Build Include="dbo\Views\DimProduct.sql" />
+    <Build Include="dbo\Tables\DimCompetitor.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
