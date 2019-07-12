@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="LiquorWarehouse_1_0.publish.xml" />
-    <None Include="aaBharathi_LiquorWarehouse_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouse_1_0.refactorlog" />
