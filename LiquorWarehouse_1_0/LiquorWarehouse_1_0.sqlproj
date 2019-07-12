@@ -99,6 +99,7 @@
     <Build Include="dbo\Tables\FactSurvey.sql" />
     <Build Include="dbo\Views\DimProduct.sql" />
     <Build Include="dbo\Tables\DimSurveyQuestion.sql" />
+    <Build Include="dbo\Tables\DimCompetitor.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
