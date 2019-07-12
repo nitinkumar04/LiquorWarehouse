@@ -1,9 +1,10 @@
 ﻿CREATE TABLE [dbo].[DimSurvey]
 (
     [LWSurveySKey]       INT          NOT NULL IDENTITY(1,1), 
-    [SurveyID]           CHAR(18)     NOT NULL DEFAULT '-1', 
-    [LWRetailerSKey]     int          not null default -1,
+    [SurveyID]           CHAR(18)     NOT NULL DEFAULT '-1',
+    SurveyDate           datetime     not null default '1/1/1900',
     [LWSurveyPlanSKey]   INT          NOT NULL DEFAULT -1, 
+    LWRetailerSKey       int          not null default -1,
     LWAuditedSurveySKey  int          not null default -1,
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
