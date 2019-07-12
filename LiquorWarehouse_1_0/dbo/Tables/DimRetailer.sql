@@ -85,7 +85,7 @@
     [RetailerCustom10]        NVARCHAR (255)   NULL,
     [RetailerCustomDate1]     DATE             NULL,
     [RetailerCustomDate2]     DATE             NULL,
-    [BDNDateofData]           CHAR(6)          NULL,
+    [BDNDateofData]           CHAR(10)          NULL,
     [BDNLastUpdate]           DATE             NULL,
     [BDNAddDate]              DATE             NULL,
     [BDNChangeDate]           DATE             NULL,
