@@ -5,7 +5,6 @@
     SurveyPlanLN          nvarchar(100) NOT NULL DEFAULT 'No Data',
     LWSurveyPlanOwnerSKey int           NOT NULL DEFAULT -1,
     LWSurveyPlanTypeSKey  int           NOT NULL DEFAULT -1,
-    LWRetailerSKey        int           not null default -1,
     [LWTerritorySKey]     INT           NOT NULL DEFAULT -1, 
     SurveyStartDate       date          null,
     SurveyEndDate         date          null,
