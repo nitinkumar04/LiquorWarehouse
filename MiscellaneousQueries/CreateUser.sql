@@ -8,39 +8,39 @@ USE [master]
 GO
 CREATE LOGIN [<client>] WITH PASSWORD=N'k39xj3!lkd', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
 GO
-USE [<client>_LW_<version>]
+USE [<client>_LiquorWarehouse_<version>]
 GO
 CREATE USER [<client>] FOR LOGIN [<client>]
 GO
-USE [<client>_LW_<version>]
+USE [<client>_LiquorWarehouse_<version>]
 GO
 ALTER ROLE [db_datareader] ADD MEMBER [<client>]
 GO
-USE [<client>_LW_<version>]
+USE [<client>_LiquorWarehouse_<version>]
 GO
 ALTER ROLE [db_ddladmin] ADD MEMBER [<client>]
 GO
-USE [<client>_LW_<version>]
+USE [<client>_LiquorWarehouse_<version>]
 GO
 ALTER ROLE [db_datawriter] ADD MEMBER [<client>]
 GO
-USE [<client>_LW_<version>]
+USE [<client>_LiquorWarehouse_<version>]
 GO
 ALTER ROLE [db_executor] ADD MEMBER [<client>]
 GO
-USE [<client>_LiquorWStage_<version>]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
 CREATE USER [<client>] FOR LOGIN [<client>]
 GO
-USE [<client>_LWStage_<version>]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
 ALTER ROLE [db_datareader] ADD MEMBER [<client>]
 GO
-USE [<client>_LWStage_<version>]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
 ALTER ROLE [db_datawriter] ADD MEMBER [<client>]
 GO
-USE [<client>_LWStage_<version>]
+USE [<client>_LiquorWarehouseStage_<version>]
 GO
 ALTER ROLE [db_executor] ADD MEMBER [<client>]
 GO
