@@ -2,7 +2,7 @@
 (
   LWSurveyQuestionSKey        int            not null default -1,
   LWSurveySKey                int            not null default -1,
-  AnswerStatus                nvarchar(50)   null,
+  AnswerStatus                nvarchar(100)  null,
   AnswerText                  nvarchar(300)  null,
   AnswerCurrency              money          null,
   AnswerNumber                decimal(24,8)  null,
