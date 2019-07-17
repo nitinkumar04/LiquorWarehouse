@@ -101,6 +101,8 @@
     <Build Include="dbo\Tables\DimSurveyQuestion.sql" />
     <Build Include="dbo\Tables\DimCompetitor.sql" />
     <Build Include="dbo\Views\DimGeography.sql" />
+    <Build Include="dbo\Tables\DimSalesGoalPlan.sql" />
+    <Build Include="dbo\Tables\FactSalesGoal.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
