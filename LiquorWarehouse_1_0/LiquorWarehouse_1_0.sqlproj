@@ -103,6 +103,9 @@
     <Build Include="dbo\Views\DimGeography.sql" />
     <Build Include="dbo\Tables\DimSalesGoalPlan.sql" />
     <Build Include="dbo\Tables\FactSalesGoal.sql" />
+    <Build Include="dbo\Tables\DimSalesGoalType.sql" />
+    <Build Include="dbo\Tables\DimSalesDivision.sql" />
+    <Build Include="dbo\Tables\DimSalesGoalOwnerSKey.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />

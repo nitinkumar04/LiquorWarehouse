@@ -518,4 +518,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SurveyAnswerText" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="088f6347-78ff-4b35-84f3-982c2eb80496" ChangeDateTime="07/18/2019 17:48:40">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWTransactionOwnerSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalOwnerSKey" />
+  </Operation>
 </Operations>
