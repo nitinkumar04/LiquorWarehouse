@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[DimSalesGoalOwnerSKey]
+﻿CREATE TABLE [dbo].[DimSalesGoalOwner]
 (
     [LWSalesGoalOwnerSKey]    INT          IDENTITY (1, 1) NOT NULL,
     [SalesGoalOwnerID]        char (18) NOT NULL DEFAULT '-1',
