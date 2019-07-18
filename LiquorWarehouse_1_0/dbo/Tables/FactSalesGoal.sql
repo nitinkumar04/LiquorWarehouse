@@ -9,7 +9,7 @@
   LWProductSKey           int           not null default -1,
   LWRADSurveyOwnerSKey    int           not null default -1,
   LWSurveyQuestionSKey    int           not null default -1,
-  LWTransactionOwnerSKey  int           not null default -1,
+  [LWSalesGoalOwnerSKey]  int           not null default -1,
   LWGeographySKey         int           not null default -1,
   QuantityType            nvarchar(100) null,
   StartDate               date          null,
