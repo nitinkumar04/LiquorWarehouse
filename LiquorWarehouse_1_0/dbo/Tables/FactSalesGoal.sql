@@ -4,7 +4,7 @@
   SalesGoalLN             nvarchar(100) not null default 'No Data',
   LWSalesGoalPlanSKey     int           not null default -1,
   LWSalesGoalTypeSKey     int           not null default -1,
-  LWSalesDivisionSKey     int           not null default -1,
+  [LWSalesTeamDivisionSKey]     int           not null default -1,
   LWPersonSKey            int           not null default -1,
   LWProductSKey           int           not null default -1,
   LWRADSurveyOwnerSKey    int           not null default -1,
