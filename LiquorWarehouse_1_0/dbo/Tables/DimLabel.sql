@@ -2,10 +2,10 @@
 (
 	[LWLabelSKey]			INT				NOT NULL IDENTITY(10000,1), 
     LabelID					char(18)		not null DEFAULT '-1',
-    LabelLN					nvarchar(100)	not null DEFAULT 'No Data',
+    LabelLN					nvarchar(200)	not null DEFAULT 'No Data',
     [LWLabelURL]			NVARCHAR(100)	NOT NULL DEFAULT 'No Data', 
     LWBrandSKey				int				not null DEFAULT -1,
-    [ExternalID]			VARCHAR(20)		NULL, 
+    [ExternalID]			VARCHAR(70)		NULL, 
     [ProductLine]			NVARCHAR(100)	NULL, 
     [LabelType]				NVARCHAR(100)	NULL, 
     [Ownership]				NVARCHAR(100)	NULL, 
