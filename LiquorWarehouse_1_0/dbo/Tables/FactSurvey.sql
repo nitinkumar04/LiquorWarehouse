@@ -2,6 +2,7 @@
 (
   LWSurveyQuestionSKey        int            not null default -1,
   LWSurveySKey                int            not null default -1,
+  LWAnswerName				  nvarchar(100)  not null default '-1',
   LWAnswerSingle			  nvarchar(200)  not null default '-1',
   AnswerStatus                nvarchar(100)  null,
   AnswerText                  nvarchar(300)  null,
@@ -15,5 +16,5 @@
   [SourceModifiedDate]        DATETIME       NULL, 
   [LWCreateDate]              DATETIME       NOT NULL DEFAULT (getdate()), 
   [LWModifiedDate]            DATETIME       NOT NULL DEFAULT (getdate()), 
-CONSTRAINT [PK_FactSurvey] PRIMARY KEY ([LWSurveySKey],[LWSurveyQuestionSKey],[LWAnswerSingle])
+CONSTRAINT [PK_FactSurvey] PRIMARY KEY ([LWSurveySKey],[LWSurveyQuestionSKey],[LWAnswerName],[LWAnswerSingle])
 )
