@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[DimSalesTeamDivision]
 (
-  LWSalesTeamDivisionSKey      int           not null identity(1,1),
-  SalesTeamDivisionID          char(18)      not null default '-1',
-  SalesTeamDivisionLN          varchar(100)  not null default 'No Data',
-  [LWActiveFlag]           INT           NOT NULL DEFAULT -1,
+  LWSalesTeamDivisionSKey  int           not null identity(1,1),
+  SalesTeamDivisionID      char(18)      not null default '-1',
+  SalesTeamDivisionLN      varchar(100)  not null default 'No Data',
+  LWTerritorySKey          int           not null default -1,
   [LWSourceID]             INT           NOT NULL DEFAULT -1,
   [SourceCreateDate]       DATETIME      NULL,
   [SourceModifiedDate]     DATETIME      NULL,
