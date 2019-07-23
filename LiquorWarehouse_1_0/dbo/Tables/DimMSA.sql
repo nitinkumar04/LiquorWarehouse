@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[DimMSA] (
     [LWMSASKey] INT          IDENTITY (1, 1) NOT NULL,
     [MSAID]     char (18) NOT NULL DEFAULT '-1',
-    [MSALN]     VARCHAR (50) NOT NULL DEFAULT 'No Data',
+    [MSALN]     VARCHAR (100) NOT NULL DEFAULT 'No Data',
     [LWSourceID]           INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]     DATETIME     NULL,
     [SourceModifiedDate]   DATETIME     NULL,
