@@ -107,6 +107,7 @@
     <Build Include="dbo\Tables\DimSalesTeamDivision.sql" />
     <Build Include="dbo\Tables\DimSalesGoalOwner.sql" />
     <Build Include="dbo\Tables\FactDepletion.sql" />
+    <Build Include="dbo\Tables\DimProductSize.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
@@ -141,6 +142,7 @@
   <ItemGroup>
     <None Include="LiquorWarehouse_1_0.publish.xml" />
     <None Include="aaBharathi_LiquorWarehouse_1_0.publish.xml" />
+    <None Include="POC_LiquorWarehouse_1_0.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouse_1_0.refactorlog" />

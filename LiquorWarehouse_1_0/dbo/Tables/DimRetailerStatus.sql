@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [dbo].[DimRetailerStatus] (
     [LWRetailerStatusSKey]       INT          IDENTITY (1, 1) NOT NULL,
-    [RetailerStatusID]           VARCHAR (10) NOT NULL DEFAULT '-1',
     [RetailerStatusSN]           VARCHAR (10) NULL,
     [RetailerStatusLN]           VARCHAR (25) NOT NULL DEFAULT 'No Data',
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
