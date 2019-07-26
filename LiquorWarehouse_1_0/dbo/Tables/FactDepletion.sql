@@ -30,6 +30,7 @@
   [SourceCreateDate]			DATETIME		NULL, 
   [SourceModifiedDate]			DATETIME		NULL, 
   [LWCreateDate]				DATETIME		NOT NULL DEFAULT (getdate()), 
-  [LWModifiedDate]				DATETIME		NOT NULL DEFAULT (getdate()), 
+  [LWModifiedDate]				DATETIME		NOT NULL DEFAULT (getdate()),
+  [LWRowHash]					BINARY(16)		NOT NULL,
 CONSTRAINT [PK_FactDepletion] PRIMARY KEY ([LWDepletionDistributorSKey],[LWDepletionItemSKey],[DepletionKey])
 )
