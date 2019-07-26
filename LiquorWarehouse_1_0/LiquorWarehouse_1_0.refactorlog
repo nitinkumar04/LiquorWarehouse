@@ -567,4 +567,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SalesGoalType" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="3d54b959-ba13-4335-ba04-7259db1d2512" ChangeDateTime="07/26/2019 17:26:33">
+    <Property Name="ElementName" Value="[dbo].[DimProductSize].[ProductSizeLevel]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimProductSize]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWProductSizeLevel" />
+  </Operation>
 </Operations>

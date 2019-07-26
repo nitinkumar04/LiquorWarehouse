@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[DimActivitySourceQuery] as
+﻿CREATE PROCEDURE SFIn.[DimActivitySourceQuery] as
 begin
   create table #TempDimActivity (
     ID char(18),
