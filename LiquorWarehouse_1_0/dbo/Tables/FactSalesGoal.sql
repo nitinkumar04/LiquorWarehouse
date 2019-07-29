@@ -7,7 +7,7 @@
   [LWSalesTransactionTypeSKey]     int           not null default -1,
   [LWSalesTeamDivisionSKey]     int           not null default -1,
   LWPersonSKey            int           not null default -1,
-  LWProductSKey           int           not null default -1,
+  [LWProductSizeSKey]           int           not null default -1,
   LWRADSurveyOwnerSKey    int           not null default -1,
   LWSurveyQuestionSKey    int           not null default -1,
   [LWSalesGoalOwnerSKey]  int           not null default -1,

@@ -3,7 +3,7 @@
   LWSurveyQuestionSKey  int           not null identity(1,1),
   SurveyQuestionID      char(18)      not null default '-1',
   SurveyQuestionText    nvarchar(300) not null default 'No Data',
-  LWProductSKey         int           not null default -1,
+  [LWProductSizeSKey]         int           not null default -1,
   Points                decimal(4,1)  null,
   GroupType             nvarchar(100) null,
   [ActiveStatus]		VARCHAR(25)	  NULL,
