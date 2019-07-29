@@ -574,4 +574,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWProductSizeLevel" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="57ac835c-6d71-46f3-93af-f26a8f56377f" ChangeDateTime="07/26/2019 21:33:50">
+    <Property Name="ElementName" Value="[dbo].[DimSurveyQuestion].[LWProductSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimSurveyQuestion]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWProductSizeSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="adb595ba-acb7-42f7-bc09-b99ed36277da" ChangeDateTime="07/26/2019 21:34:06">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWProductSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWProductSizeSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="545928bc-44e9-418c-b847-3f0af64943d2" ChangeDateTime="07/29/2019 17:36:30">
+    <Property Name="ElementName" Value="[dbo].[FactShipment].[LWDepletionDistributorSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactShipment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWShipmentDistributorSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e77f09d8-7f34-44a5-8e39-3ed4f232d6fc" ChangeDateTime="07/29/2019 17:36:51">
+    <Property Name="ElementName" Value="[dbo].[FactShipment].[LWDepletionItemSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactShipment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWShipmentItemSKey" />
+  </Operation>
 </Operations>
