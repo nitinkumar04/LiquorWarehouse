@@ -9,5 +9,5 @@
   [SourceModifiedDate]     DATETIME      NULL,
   [LWCreateDate]           DATETIME      CONSTRAINT [DF_DimSalesTransactionType_LWCreateDate] DEFAULT (getdate()) NOT NULL,
   [LWModifiedDate]         DATETIME      CONSTRAINT [DF_DimSalesTransactionType_LWModifiedDate] DEFAULT (getdate()) NOT NULL,
-  CONSTRAINT [PK_LWSalesGoalTransactionSKey] PRIMARY KEY CLUSTERED ([LWSalesTransactionTypeSKey] ASC)
+  CONSTRAINT [PK_LWSalesTransactionTypeSKey] PRIMARY KEY CLUSTERED ([LWSalesTransactionTypeSKey] ASC)
 )
