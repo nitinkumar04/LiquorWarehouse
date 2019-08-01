@@ -602,6 +602,13 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWShipmentItemSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8f26e6d1-a207-492b-ad87-1c4b20de8356" ChangeDateTime="08/01/2019 21:09:05">
+    <Property Name="ElementName" Value="[dbo].[DimRetailerType].[LWRetailerTypeSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DimRetailerType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSurveyPlanTypeSKey" />
+  </Operation>
   <Operation Name="Rename Refactor" Key="4256dbdc-1411-4a50-8d36-0a0b1edd60e5" ChangeDateTime="07/30/2019 13:36:51">
     <Property Name="ElementName" Value="[dbo].[DimSurveyPlan].[SurveyStartDate]" />
     <Property Name="ElementType" Value="SqlSimpleColumn" />
