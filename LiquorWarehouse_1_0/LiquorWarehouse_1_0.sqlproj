@@ -109,6 +109,9 @@
     <Build Include="dbo\Tables\FactDepletion.sql" />
     <Build Include="dbo\Tables\DimProductSize.sql" />
     <Build Include="dbo\Tables\FactShipment.sql" />
+    <Build Include="dbo\Tables\DimGoalType.sql" />
+    <Build Include="dbo\Tables\DimGoalTransactionType.sql" />
+    <Build Include="dbo\Tables\DimSurveyPlanOwner.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
