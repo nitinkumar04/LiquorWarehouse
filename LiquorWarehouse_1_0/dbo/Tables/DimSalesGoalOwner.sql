@@ -2,7 +2,7 @@
 (
     [LWSalesGoalOwnerSKey]    INT          IDENTITY (1, 1) NOT NULL,
     [SalesGoalOwnerID]        char (18) NOT NULL DEFAULT '-1',
-    [SalesGoalOwnerFirstName] VARCHAR (25) NULL,
+    [SalesGoalOwnerFirstName] VARCHAR (50) NULL,
     [SalesGoalOwnerLastName]  VARCHAR (50) NOT NULL DEFAULT 'No Data',
     [LWActiveFlag]           INT          NOT NULL DEFAULT -1,
     [LWSourceID]             INT          NOT NULL DEFAULT -1,

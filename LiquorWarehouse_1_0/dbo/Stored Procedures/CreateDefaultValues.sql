@@ -2,7 +2,7 @@
 begin
   declare @numDefaults int
   declare @sql nvarchar(2000)
-  declare @skeyname varchar(25) 
+  declare @skeyname varchar(26) 
 
   -- Set skey column name
   set @skeyname = 'LW' + replace(@tablename, 'Dim', '') + 'SKey'
