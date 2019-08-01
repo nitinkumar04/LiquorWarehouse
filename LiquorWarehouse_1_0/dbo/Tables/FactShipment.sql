@@ -10,10 +10,10 @@
   DeliveryDate					date			null,
   OrderDate						date			null,
   PhysicalCases					decimal(11,3)	null,
-  X9LCases						decimal(11,3)	null,
-  FullCaseEquivalent			decimal(11,3)	null,
-  PrimaryVolume					decimal(11,3)	null,
-  SecondaryVolume				decimal(11,3)	null,
+  X9LCases						decimal(15,3)	null,
+  FullCaseEquivalent			decimal(15,3)	null,
+  PrimaryVolume					decimal(15,3)	null,
+  SecondaryVolume				decimal(15,3)	null,
   ExtPrice1						money			null,
   ExtPrice2						money			null,
   OrderNumber					varchar(30)		null,
@@ -23,11 +23,12 @@
   CustomFact1					decimal(15,8)	null,
   CustomFact2					decimal(15,8)	null,
   SourceSystem					varchar(20)		null,
+  [LWExistsInSFFlag]			INT				NOT NULL DEFAULT -1,
   [LWSourceID]					INT				NOT NULL DEFAULT -1, 
   [SourceCreateDate]			DATETIME		NULL, 
   [SourceModifiedDate]			DATETIME		NULL, 
   [LWCreateDate]				DATETIME		NOT NULL DEFAULT (getdate()), 
   [LWModifiedDate]				DATETIME		NOT NULL DEFAULT (getdate()),
   [LWRowHash]					BINARY(16)		NOT NULL,
-CONSTRAINT [PK_FactShipment] PRIMARY KEY ([LWShipmentDistributorSKey],[LWShipmentProductSizeSKey],[ShipmentKey])
+CONSTRAINT [PK_FactShipment] PRIMARY KEY (ShipmentKey, LWShipmentDistributorSKey, LWShipmentProductSizeSKey)
 )

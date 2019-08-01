@@ -6,6 +6,7 @@
     [LWSurveyPlanSKey]   INT          NOT NULL DEFAULT -1, 
     LWRetailerSKey       int          not null default -1,
     LWAuditedSurveySKey  int          not null default -1,
+	SubmittedDateTime    DATETIME     NULL,
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
