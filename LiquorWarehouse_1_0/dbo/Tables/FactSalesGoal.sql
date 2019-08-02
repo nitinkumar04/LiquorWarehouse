@@ -2,9 +2,9 @@
 (
   SalesGoalID             char(18)      NOT NULL default '-1',
   SalesGoalLN             nvarchar(100) not null default 'No Data',
-  [SalesGoalType]			  nvarchar(25)  null,
+  [LWGoalTypeSKey]	      int           not null default -1,
   LWSalesGoalPlanSKey     int           not null default -1,
-  [LWSalesTransactionTypeSKey]     int           not null default -1,
+  [LWGoalTransactionTypeSKey]     int           not null default -1,
   [LWSalesTeamDivisionSKey]     int           not null default -1,
   LWPersonSKey            int           not null default -1,
   [LWProductSizeSKey]           int           not null default -1,
