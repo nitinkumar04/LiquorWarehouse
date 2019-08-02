@@ -79,7 +79,7 @@
     <Build Include="dbo\Tables\DimSurvey.sql" />
     <Build Include="dbo\Tables\XRefRetailerRetailerSet.sql" />
     <Build Include="dbo\Tables\XRefRetailerDistributor.sql" />
-    <Build Include="dbo\Tables\XRefItemProductSet.sql" />
+    <Build Include="dbo\Tables\XRefProductSizeProductSet.sql" />
     <Build Include="dbo\Tables\DimDistributorTeam.sql" />
     <Build Include="dbo\Tables\DimRetailerDivision.sql" />
     <Build Include="dbo\Tables\DimRetailerTeam.sql" />
