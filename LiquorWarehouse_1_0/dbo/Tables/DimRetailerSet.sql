@@ -9,8 +9,8 @@
   [LWSourceID]			INT				NOT NULL DEFAULT -1,
   [SourceCreateDate]	DATETIME		NULL,
   [SourceModifiedDate]	DATETIME		NULL,
-  [LWCreateDate]		DATETIME		CONSTRAINT [DF_DimRetailerRetailerSet_LWCreateDate] DEFAULT (getdate()) NOT NULL,
-  [LWModifiedDate]		DATETIME		CONSTRAINT [DF_DimRetailerRetailerSet_LWModifiedDate] DEFAULT (getdate()) NOT NULL, 
+  [LWCreateDate]		DATETIME		CONSTRAINT [DF_DimRetailerSet_LWCreateDate] DEFAULT (getdate()) NOT NULL,
+  [LWModifiedDate]		DATETIME		CONSTRAINT [DF_DimRetailerSet_LWModifiedDate] DEFAULT (getdate()) NOT NULL, 
     CONSTRAINT [PK_DimRetailerSet] PRIMARY KEY ([LWRetailerSetSKey])
 
 )
