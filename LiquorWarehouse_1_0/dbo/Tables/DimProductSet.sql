@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimProductSet]
 (
-	[LWProductSetSKey]		INT				NOT NULL IDENTITY, 
+	[LWProductSetSKey]		INT				IDENTITY (1, 1) NOT NULL, 
     [ProductSetID]			char(18)		NOT NULL DEFAULT '-1', 
     [ProductSetLN]			NVARCHAR(100)	NOT NULL DEFAULT 'No Data', 
     [LWProductSetURL]		NVARCHAR(100)	NULL, 
