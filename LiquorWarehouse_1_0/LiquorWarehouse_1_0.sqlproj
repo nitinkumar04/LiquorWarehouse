@@ -86,7 +86,6 @@
     <Build Include="dbo\Tables\DimRetailerType.sql" />
     <Build Include="dbo\Tables\DimKeyAccount1.sql" />
     <Build Include="dbo\Tables\DimKeyAccount2.sql" />
-    <Build Include="dbo\Tables\DimBannerName.sql" />
     <Build Include="dbo\Tables\XrefItemProductSet.sql" />
     <Build Include="dbo\Tables\FactRAD.sql" />
     <Build Include="dbo\Tables\DimRetailerStatus.sql" />
@@ -103,7 +102,6 @@
     <Build Include="dbo\Views\DimGeography.sql" />
     <Build Include="dbo\Tables\DimSalesGoalPlan.sql" />
     <Build Include="dbo\Tables\FactSalesGoal.sql" />
-    <Build Include="dbo\Tables\DimSalesTransactionType.sql" />
     <Build Include="dbo\Tables\DimSalesTeamDivision.sql" />
     <Build Include="dbo\Tables\DimSalesGoalOwner.sql" />
     <Build Include="dbo\Tables\FactDepletion.sql" />
