@@ -3,6 +3,8 @@
     [LWKeyAccount2SKey]  INT          IDENTITY (1, 1) NOT NULL,
     [KeyAccount2ID]      char (18) NOT NULL DEFAULT '-1',
     KeyAccount2LN        nvarchar(100) not null default '-',
+	[ActiveStatus]			VARCHAR(25)		NULL,
+    [LWExistsInSFFlag]		INT				NOT NULL DEFAULT -1,
     [LWSourceID]            INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]      DATETIME     NULL,
     [SourceModifiedDate]    DATETIME     NULL,
