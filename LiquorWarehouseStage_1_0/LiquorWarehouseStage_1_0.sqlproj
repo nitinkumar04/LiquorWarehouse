@@ -335,6 +335,7 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="SFIn\Tables\LWAccountParentRecordsAsChildren.sql" />
+    <Build Include="SFIn\Tables\gvp__Sales_Sequence__c.sql" />
     <Build Include="dbo\Tables\Country.sql" />
   </ItemGroup>
   <ItemGroup>
