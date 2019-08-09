@@ -2,6 +2,8 @@
     [LWCountrySKey]      INT          IDENTITY (1, 1) NOT NULL,
     [CountrySN]          VARCHAR (3)  NOT NULL DEFAULT '-',
     [CountryLN]          VARCHAR (50) NOT NULL DEFAULT 'No Data',
+	[LWActiveFlag]		 INT          NOT NULL DEFAULT -1,
+	[LWExistsInSFFlag]	 INT          NOT NULL DEFAULT -1,
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,

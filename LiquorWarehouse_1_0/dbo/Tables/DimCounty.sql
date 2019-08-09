@@ -3,6 +3,8 @@
     [CountyLN]           VARCHAR (50) NOT NULL DEFAULT 'No Data',
     [LWStateSKey]        INT          NOT NULL DEFAULT -1,
     [CountyFIPSCode]     VARCHAR (3)  NOT NULL DEFAULT '-',
+	[LWActiveFlag]		 INT          NOT NULL DEFAULT -1,
+	[LWExistsInSFFlag]	 INT          NOT NULL DEFAULT -1,
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
