@@ -3,6 +3,8 @@
     [StateSN]            VARCHAR (4)  NOT NULL DEFAULT '-',
     [StateLN]            VARCHAR (50) NOT NULL DEFAULT 'No Data',
     [LWCountrySKey]      INT          NOT NULL DEFAULT -1,
+	[LWActiveFlag]		 INT          NOT NULL DEFAULT -1,
+	[LWExistsInSFFlag]	 INT          NOT NULL DEFAULT -1,
     [LWSourceID]         INT          NOT NULL DEFAULT -1,
     [SourceCreateDate]   DATETIME     NULL,
     [SourceModifiedDate] DATETIME     NULL,
