@@ -112,6 +112,7 @@
     <Build Include="dbo\Tables\DimGoalTransactionType.sql" />
     <Build Include="dbo\Tables\DimSurveyPlanOwner.sql" />
     <Build Include="dbo\Tables\DimRetailerSet.sql" />
+    <Build Include="dbo\Tables\DimSurveyOwner.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\DimBoolean.sql" />
