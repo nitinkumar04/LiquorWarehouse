@@ -9,7 +9,7 @@ begin
     if exists (select 1 from tempdb.sys.objects where [name] = 'pk_TempRetailerHierarchyID')
       drop table #TempRetailerHierarchy
 
-  truncate table sfin.LWReatilerParentRecordsAsChildren
+  truncate table sfin.LWRetailerParentRecordsAsChildren
 
   -- Create the temp table to store the ID and Rollup Type
   create table #TempRetailerHierarchy (
@@ -53,7 +53,7 @@ begin
   end
 
   -- Insert the account records of anything that has children into our temp table so we can set the various parent fields to be itself
-  insert into sfin.LWReatilerParentRecordsAsChildren
+  insert into sfin.LWRetailerParentRecordsAsChildren
     select distinct a.* 
     from sfin.Account a 
       inner join #TempRetailerHierarchy trh on trh.ID = a.Id
@@ -62,21 +62,21 @@ begin
   -- Key Account 1
   update aprdac set
     aprdac.gvp__Key_Account_Chain_1__c = trh.ID
-    from sfin.LWReatilerParentRecordsAsChildren aprdac
+    from sfin.LWRetailerParentRecordsAsChildren aprdac
       inner join #TempRetailerHierarchy trh on aprdac.Id = trh.ID
     where trh.RollupType = 'KeyAccount1'
 
   -- Key Account 2
   update aprdac set
     aprdac.gvp__Key_Account_Chain_2__c = trh.ID
-    from sfin.LWReatilerParentRecordsAsChildren aprdac
+    from sfin.LWRetailerParentRecordsAsChildren aprdac
       inner join #TempRetailerHierarchy trh on aprdac.Id = trh.ID
     where trh.RollupType = 'KeyAccount2'
 
   -- Marketing Group
   update aprdac set
     aprdac.gvp__Marketing_Group__c = trh.ID
-    from sfin.LWReatilerParentRecordsAsChildren aprdac
+    from sfin.LWRetailerParentRecordsAsChildren aprdac
       inner join #TempRetailerHierarchy trh on aprdac.Id = trh.ID
     where trh.RollupType = 'MarketingGroup'
 
@@ -88,7 +88,7 @@ begin
 
     update aprdac set
       aprdac.ParentId = trh.ID
-      from sfin.LWReatilerParentRecordsAsChildren aprdac
+      from sfin.LWRetailerParentRecordsAsChildren aprdac
         inner join #TempRetailerHierarchy trh on aprdac.Id = trh.ID
       where trh.RollupType = 'HQ' and Level = @i
 
@@ -268,7 +268,7 @@ begin
     a.CreatedDate,
     a.LastModifiedDate,
     s.SourceID
-  from sfin.LWReatilerParentRecordsAsChildren a 
+  from sfin.LWRetailerParentRecordsAsChildren a 
     inner join source s on s.sourcename = 'Salesforce'
 
 
