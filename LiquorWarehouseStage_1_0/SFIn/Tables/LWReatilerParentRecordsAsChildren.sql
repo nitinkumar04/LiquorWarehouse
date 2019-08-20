@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIn].[LWAccountParentRecordsAsChildren] (
+﻿CREATE TABLE [SFIn].[LWReatilerParentRecordsAsChildren] (
     [Id]                                        char (18)   NOT NULL,
     [IsDeleted]                                 VARCHAR (10) NOT NULL,
     [MasterRecordId]                            CHAR (18)  NULL,
@@ -167,7 +167,7 @@
     [gvp__Open_Objectives__c]                   DECIMAL(4,1)  NULL,
     [gvp__RAD_2009__c]                          DECIMAL(7,2)  NULL,
     [gvp__RAD_2010__c]                          DECIMAL(7,2)  NULL, 
-    CONSTRAINT [PK_LWAccountParentRecordsAsChildren] PRIMARY KEY ([Id])
+    CONSTRAINT [PK_LWReatilerParentRecordsAsChildren] PRIMARY KEY ([Id])
 );
 GO
 
