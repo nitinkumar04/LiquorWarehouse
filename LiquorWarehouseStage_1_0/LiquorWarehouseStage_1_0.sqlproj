@@ -334,10 +334,12 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="SFIn\Tables\LWAccountParentRecordsAsChildren.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence__c.sql" />
     <Build Include="dbo\Tables\Country.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence_Step__c.sql" />
+    <Build Include="SFIn\Tables\LWDistributorParentRecordsAsChildren.sql" />
+    <Build Include="SFIn\Stored Procedures\DimDistributorSourceQuery.sql" />
+    <Build Include="SFIn\Tables\LWRetailerParentRecordsAsChildren.sql" />
     <Build Include="dbo\Tables\LoadLog.sql" />
     <Build Include="dbo\Tables\LoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\UpdateLoadDataDateTime.sql" />
