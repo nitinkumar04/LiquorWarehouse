@@ -167,6 +167,9 @@
     [gvp__Open_Objectives__c]                   DECIMAL(4,1)  NULL,
     [gvp__RAD_2009__c]                          DECIMAL(7,2)  NULL,
     [gvp__RAD_2010__c]                          DECIMAL(7,2)  NULL, 
+    [gvp__Beer_Volume__c] NVARCHAR(100) NULL, 
+    [gvp__Liquor_Volume__c] NVARCHAR(100) NULL, 
+    [gvp__Wine_Volume__c] NVARCHAR(100) NULL, 
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 
