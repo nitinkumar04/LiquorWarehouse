@@ -9,12 +9,18 @@
   AnswerCurrency              money          null,
   AnswerNumber                decimal(24,8)  null,
   AnswerPercent               decimal(4,1)   null,
+  [AnswerBrand]               CHAR(18) NULL,
+  [AnswerItem]                CHAR(18) NULL, 
+    [AnswerLabel]             CHAR(18) NULL, 
+    [AnswerProductSet]        CHAR(18) NULL, 
+    [AnswerProgram]           CHAR(18) NULL, 
+    [AnswerSize]              CHAR(18) NULL, 
   LWAnswerCheckFlag           int            null,
   MatchingTargetPoints        decimal(4,1)   null,      
   [LWSourceID]                INT            NOT NULL DEFAULT -1, 
   [SourceCreateDate]          DATETIME       NULL, 
   [SourceModifiedDate]        DATETIME       NULL, 
   [LWCreateDate]              DATETIME       NOT NULL DEFAULT (getdate()), 
-  [LWModifiedDate]            DATETIME       NOT NULL DEFAULT (getdate()), 
-CONSTRAINT [PK_FactSurvey] PRIMARY KEY ([LWSurveySKey],[LWSurveyQuestionSKey],[LWAnswerName],[LWAnswerSingle])
+  [LWModifiedDate]            DATETIME       NOT NULL DEFAULT (getdate()),
+    CONSTRAINT [PK_FactSurvey] PRIMARY KEY ([LWSurveySKey],[LWSurveyQuestionSKey],[LWAnswerName],[LWAnswerSingle])
 )

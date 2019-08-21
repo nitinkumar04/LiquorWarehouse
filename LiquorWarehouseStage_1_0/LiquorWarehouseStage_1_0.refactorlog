@@ -77,4 +77,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LWBannerNameSKey" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8e6d46d3-bed7-4910-a8cb-4e53ecf8c65e" ChangeDateTime="08/13/2019 13:46:14">
+    <Property Name="ElementName" Value="[dbo].[LoadDataDateTime].[TruncateTable]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoadDataDateTime]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TruncateTableNextLoad" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="76d60533-23c1-4878-871d-3e4735d9c1f3" ChangeDateTime="08/15/2019 18:08:39">
+    <Property Name="ElementName" Value="[dbo].[LoadLog].[SchemaName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoadLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PipelineName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f8820a60-88ca-4e56-9f64-b3bbd3e4ca24" ChangeDateTime="08/15/2019 18:11:42">
+    <Property Name="ElementName" Value="[dbo].[LoadDataDateTime].[SchemaName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[LoadDataDateTime]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PipelineName" />
+  </Operation>
 </Operations>
