@@ -1,4 +1,4 @@
-﻿CREATE TABLE [GDOut].[GD_Acct_Univ_Dim](
+﻿CREATE TABLE [GDOut].[GD_Account_Dim](
 	[Account Dim Id] [char](18) NOT NULL,
 	[Account Dim Name] [nvarchar](250) NULL,
 	[Account Dim Granularity] [varchar](100) NULL,
@@ -143,6 +143,6 @@
 	[Division Id] [char](18) NULL,
 	[Region Id] [char](18) NULL,
 	[Create_Date_Id] [int] NULL,
-	CONSTRAINT [PK_Acct_Univ_Dim] PRIMARY KEY ([Account Dim Id])
+	CONSTRAINT [PK_GD_Account_Dim] PRIMARY KEY ([Account Dim Id])
 ) ON [PRIMARY]
 GO
