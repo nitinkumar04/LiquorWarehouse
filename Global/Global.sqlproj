@@ -154,5 +154,18 @@
     </Build>
     <Build Include="dbo\Stored Procedures\GetClientList.sql" />
     <Build Include="Security\db_executor.sql" />
+    <Build Include="dbo\Tables\Country.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\State.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\FIPS_County.sql" />
+    <Build Include="dbo\Tables\FIPS_Zip.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
 </Project>
