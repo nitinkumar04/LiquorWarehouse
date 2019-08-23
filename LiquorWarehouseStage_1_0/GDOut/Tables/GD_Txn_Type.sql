@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Txn_Type] (
-    [Type Id]      VARCHAR (10) NOT NULL,
+    [Type Id]      VARCHAR (20) NOT NULL,
     [Type Name]    VARCHAR (30) NULL,
     [Type Plural]  VARCHAR (30) NULL,
     [Type Group]   VARCHAR (30) NULL,

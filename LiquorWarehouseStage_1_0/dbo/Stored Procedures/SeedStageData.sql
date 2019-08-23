@@ -7,4 +7,8 @@ begin
     select Global..[State].StateSN, Global..[State].StateLN, Global..[State].StateCountry from Global..[State]
   insert into Country(CountrySN, CountryLN)
     select Global..Country.CountrySN, Global..Country.CountryLN from Global..Country
+  insert into AccountType(Acct_Type)
+    select Global..AccountType.Acct_Type from Global..AccountType
+  insert into TypeData(Type_Id,Type_Name,Type_Plural,Type_Group,Type_Subtype,Type_Order)
+    select Global..TypeData.Type_Id, Global..TypeData.Type_Name, Global..TypeData.Type_Plural, Global..TypeData.Type_Group, Global..TypeData.Type_Subtype, Global..TypeData.Type_Order from Global..TypeData
 end
