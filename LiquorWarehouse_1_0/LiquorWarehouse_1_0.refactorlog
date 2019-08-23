@@ -630,4 +630,74 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="BannerName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="dbd0ec3e-8cc1-4162-aefc-0565692e3b7f" ChangeDateTime="08/23/2019 09:30:45">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWGoalTypeSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalTypeSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2758b1ac-a617-4a9d-b37e-d1981c52bb78" ChangeDateTime="08/23/2019 09:31:50">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWGoalTransactionTypeSKey]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalTransactionTypeSKey" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="842b30ee-70ad-494f-9725-98b381dae078" ChangeDateTime="08/23/2019 09:31:57">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[GoalStatus]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fdf9287d-1b04-4c28-817b-1ea4be0e4c28" ChangeDateTime="08/23/2019 09:32:20">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[GoalWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalWeight" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="08321cf0-b154-46c6-9065-0ab5b58eaec4" ChangeDateTime="08/23/2019 09:32:24">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[SalesGoalID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d2bc84a1-9201-4683-8c9e-b86357ecd7af" ChangeDateTime="08/23/2019 09:32:41">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[SalesGoalLN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LWSalesGoalLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e0618239-f490-4983-a482-daffbb2b547b" ChangeDateTime="08/23/2019 10:03:32">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWSalesGoalID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SalesGoalID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a730bac5-a440-452a-9e28-190c3f4b2db2" ChangeDateTime="08/23/2019 10:04:26">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWSalesGoalLN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SalesGoalLN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3982bf44-52c2-4e2f-a200-c4e4a3453c0a" ChangeDateTime="08/23/2019 10:12:59">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWSalesGoalStatus]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GoalStatus" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5af019e2-227c-4028-842b-7a08f8bb7619" ChangeDateTime="08/23/2019 10:13:13">
+    <Property Name="ElementName" Value="[dbo].[FactSalesGoal].[LWSalesGoalWeight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[FactSalesGoal]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GoalWeight" />
+  </Operation>
 </Operations>
