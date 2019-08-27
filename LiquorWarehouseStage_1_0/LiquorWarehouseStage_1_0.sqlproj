@@ -345,6 +345,8 @@
     <Build Include="dbo\Tables\LoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\UpdateLoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\WriteToLoadLog.sql" />
+    <Build Include="dbo\Tables\TypeData.sql" />
+    <Build Include="dbo\Tables\AccountType.sql" />
     <Build Include="dbo\Tables\FIPS_County.sql" />
     <Build Include="dbo\Tables\FIPS_Zip.sql" />
   </ItemGroup>
