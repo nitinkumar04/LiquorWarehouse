@@ -65,4 +65,7 @@
   <ItemGroup>
     <None Include="LoadClientParameters.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="GenerateTableCompareTestQuery.sql" />
+  </ItemGroup>
 </Project>
