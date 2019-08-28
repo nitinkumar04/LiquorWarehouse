@@ -11,7 +11,7 @@ declare @fromresults table (id int identity(1,1), clause varchar(200))
 declare @whereresults table (id int identity(1,1), clause varchar(4000))
 
 insert into @selectresults
-  select 'p.[' + c.name + '], t.[' + c.name + '],'
+  select 'isnull(p.[' + c.name + '], '''') as [' + c.name + '], isnull(t.[' + c.name + '],'''') as [' + c.name + '],'
   from sys.columns c 
     inner join sys.tables t on c.object_id = t.object_id
     inner join sys.schemas s on t.schema_id = s.schema_id
