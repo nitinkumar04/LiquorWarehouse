@@ -33,7 +33,7 @@ insert into @fromresults
 --select * from @fromresults
 
 insert into @whereresults
-  select 'or p.[' + c.name + '] <> t.[' + c.name + ']'
+  select 'or isnull(p.[' + c.name + '], '''') <> isnull(t.[' + c.name + '], '''')'
   from sys.columns c 
     inner join sys.tables t on c.object_id = t.object_id
     inner join sys.schemas s on t.schema_id = s.schema_id
