@@ -145,4 +145,3 @@
     [Create_Date_Id]                    CHAR (5)   NULL, 
     CONSTRAINT [PK_GD_Acct_Univ_Dim] PRIMARY KEY ([Account Dim Id])
 );
-
