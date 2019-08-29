@@ -60,7 +60,7 @@
 	gvp__Product_Name__c nvarchar(100) null,
 	gvp__Product_Set__c char(18) null,
 	gvp__Reported_Result__c decimal(9,2) null,
-	gvp__Reported_Result_vs_Goal_Percentage__c decimal(8,2) null,
+	gvp__Reported_Result_vs_Goal_Percentage__c decimal(9,2) null,
 	gvp__Reported_Result_vs_Goal__c decimal(9,2) null,
 	gvp__Status__c nvarchar(100) null,
 	gvp__Supplier__c nvarchar(100) null,
