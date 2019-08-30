@@ -14,7 +14,8 @@ begin
   insert into FIPS_County([State], State_ANSI, County_ANSI, County_Name, ANSI_CI)
     select [State], State_ANSI, County_ANSI, County_Name, ANSI_CI from Global..FIPS_County
   insert into FIPS_Zip(ZCTA5, [STATE], COUNTY, GEOID)
-    select ZCTA5, [STATE], COUNTY, GEOID from Global..FIPS_Zip
+    select top 1 with ties ZCTA5, [STATE], COUNTY, GEOID from Global..FIPS_Zip
+	order by row_number() over (partition by ZCTA5 order by cast(POPPT as int) Desc)
 
   -- Type Data
   insert into AccountType(Acct_Type)
