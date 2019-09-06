@@ -24,4 +24,7 @@ begin
     select Type_Id, Type_Name, Type_Plural, Type_Group, Type_Subtype, Type_Order from Global..TypeData
 
 
+  -- Dates
+
+
 end

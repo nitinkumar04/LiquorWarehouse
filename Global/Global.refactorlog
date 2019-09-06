@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="1bd5405a-dbe2-4aa2-b50b-cc2b7fca2b94" ChangeDateTime="08/28/2019 20:33:02">
+    <Property Name="ElementName" Value="[dbo].[CalendarDates].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CalendarDates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CalendarDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="91ac6e07-3092-4d55-ba43-d7c1915cacc1" ChangeDateTime="08/28/2019 20:34:11">
+    <Property Name="ElementName" Value="[dbo].[CalendarDates].[DayOfYear]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CalendarDates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DayNumberOfYear" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e43ce362-77be-4e53-959d-51fe232c747a" ChangeDateTime="08/28/2019 20:35:11">
+    <Property Name="ElementName" Value="[dbo].[CalendarDates].[WeekdaySD]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CalendarDates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="WeekdaySN" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1c434bb6-9054-47e0-ad08-50d1a0a98f8c" ChangeDateTime="08/28/2019 20:37:42">
+    <Property Name="ElementName" Value="[dbo].[CalendarDates].[WeekSN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CalendarDates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MonthNumberOfYear" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0c06ab41-d254-48ec-98b7-5d14f32f442f" ChangeDateTime="08/28/2019 20:37:48">
+    <Property Name="ElementName" Value="[dbo].[CalendarDates].[WeekLN]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CalendarDates]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MonthNumberOfQuarter" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b99d7c37-3dee-4e2e-aa93-9a4598bf8d39" ChangeDateTime="09/06/2019 15:40:26">
+    <Property Name="ElementName" Value="[dbo].[Holidays].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Holidays]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CalendarDate" />
+  </Operation>
+</Operations>
