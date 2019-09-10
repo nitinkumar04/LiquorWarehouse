@@ -24,7 +24,7 @@
 	gvp__Placement__c char(18) null,
 	gvp__Question_Key__c char(30) null,
 	gvp__Question_List__c nvarchar(300) null,
-	gvp__Question_Text__c nvarchar(300) null,
+	gvp__Question_Text__c nvarchar(500) null,
 	gvp__Related_Competitor__c char(18) null,
 	gvp__Related_Plan_Question__c char(18) null,
 	gvp__Size__c char(18) null,
