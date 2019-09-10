@@ -14,7 +14,7 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account_Surveyed_Goal__c decimal(4,1) null,
-	gvp__Aim_of_Survey__c nvarchar(300) null,
+	gvp__Aim_of_Survey__c nvarchar(500) null,
 	gvp__Channel_Surveyed__c nvarchar(500) null,
 	gvp__End_Date_of_Survey__c date null,
 	gvp__Start_Date_of_Survey__c date not null,
