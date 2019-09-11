@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [dbo].[FiscalDate] (
   [FiscalDate]                date        NOT NULL,
-  [CalendarDate]              date        NOT NULL,
 	[DayNumberOfYear]           int         NOT NULL,
 	[DayNumberOfQuarter]        int         NOT NULL,
 	[DayNumberOfMonth]          int         NOT NULL,
@@ -35,7 +34,6 @@
   [Holiday]                   bit         NOT NULL,
   [HolidayName]               varchar(100) NULL,
   [HolidayNameEnglish]        varchar(100) NULL,
-  [DateNumber]                int         NOT NULL,
-  [CalendarDateNumber]        int         NOT NULL
+  [DateNumber]                int         NOT NULL
   CONSTRAINT [PK_FiscalDate] PRIMARY KEY ([FiscalDate]) 
   )

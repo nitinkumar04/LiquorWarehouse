@@ -17,14 +17,13 @@ begin
 
   insert into FiscalDate
     select 
-    	FD.CalendarDate as FiscalDate,
-      CD.CalendarDate,
+    	CD.CalendarDate as FiscalDate,
 	    FD.DayNumberOfYear,
 	    FD.DayNumberOfQuarter,
-	    FD.DayNumberOfMonth,
-      FD.DayNumberOfWeek,
-	    FD.WeekdaySN, 
-	    FD.WeekdayLN,
+	    CD.DayNumberOfMonth,
+      CD.DayNumberOfWeek,
+	    CD.WeekdaySN, 
+	    CD.WeekdayLN,
 	    FD.WeekNumberOfYear,
       FD.WeekSN,
       FD.WeekLN,
@@ -49,18 +48,15 @@ begin
       replace(FD.YearMonthLN, 'CY', 'FY'),
       replace(FD.YearQuarterSN, 'CY', 'FY'),
       replace(FD.YearQuarterLN, 'CY', 'FY'),
-	    case when datepart(weekday, FD.CalendarDate) between 2 and 6 then 1 else 0 end,
+	    case when datepart(weekday, CD.CalendarDate) between 2 and 6 then 1 else 0 end,
       case when h.HolidayName is null then 0 else 1 end,
       h.HolidayName,
       h.HolidayNameEnglish,
-      FD.DateNumber,
       CD.DateNumber
     from Global..CalendarDate CD
-      inner join Global..CalendarDate FD on dateadd(dd, @dayoffset, CD.CalendarDate) = FD.CalendarDate
+      inner join Global..CalendarDate FD on dateadd(dd, @dayoffset, FD.CalendarDate) = CD.CalendarDate
       left outer join Global..Holiday h on CD.CalendarDate = h.CalendarDate and h.Country = @country
-    where FD.CalendarDate between @startdate and @enddate
-
-
+    where CD.CalendarDate between @startdate and @enddate
 end
 
 
