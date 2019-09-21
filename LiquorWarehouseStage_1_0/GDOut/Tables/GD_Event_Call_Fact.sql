@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Event_Call_Fact] (
-    [Event_Call_Fact_Key]     VARCHAR(50) NOT NULL,
+    [Event_Call_Fact_Key]     VARCHAR(75) NOT NULL,
     [Created Date]            CHAR(10)    NULL,
     [Modified Date]           CHAR(10)    NULL,
     [Start_Date]              CHAR(10)    NULL,
@@ -24,9 +24,9 @@
     [Event_Call_Time]         CHAR(5)     NULL,
     [Event_Call_Week]         CHAR(2)     NULL,
     [Event_Call_Year]         CHAR(4)     NULL,
-    [Start_Date_Id]           CHAR(5)     NULL,
-    [End_Date_Id]             CHAR(5)     NULL,
-    [Txn_Date_Id]             CHAR(5)     NULL,
+    [Start_Date_Id]           CHAR(8)     NULL,
+    [End_Date_Id]             CHAR(8)     NULL,
+    [Txn_Date_Id]             CHAR(8)     NULL,
     [Create_Date_Id]          CHAR(5)     NULL,
     [Fiscal_Date_Id]          CHAR(5)     NULL, 
     CONSTRAINT [PK_GD_Event_Call_Fact] PRIMARY KEY ([Event_Call_Fact_Key])
