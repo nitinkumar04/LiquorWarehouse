@@ -37,7 +37,7 @@
 [Survey Question Target Text List] [nvarchar](5) NULL,
 [Survey Question Target YesNo] [nvarchar](5) NULL,
 [Survey Question Type] [nvarchar](10) NULL,
-[Product Dim Id] [char](18) NULL,
+[Product Dim Id] [varchar](37) NULL,
 [Survey Product URL] [nvarchar](100) NULL,
 [Survey Product Name] [nvarchar](100) NULL,
 [Survey Product Type] [nvarchar](50) NULL,
