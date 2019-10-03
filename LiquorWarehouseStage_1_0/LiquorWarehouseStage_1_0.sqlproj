@@ -127,6 +127,8 @@
     <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="SFIn\Stored Procedures" />
+    <Folder Include="GDOutTest" />
+    <Folder Include="GDOutTest\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="GDOut\Tables\GD_Acct_Univ_Retail_Dim.sql">
@@ -364,6 +366,14 @@
     <Build Include="GDOut\Tables\GD_Fiscal_Date_Dim.sql" />
     <Build Include="dbo\Stored Procedures\PopulateFiscalDateTable.sql" />
     <Build Include="GDOut\Tables\GD_Survey_Dim.sql" />
+    <Build Include="GDOut\Tables\GD_Person_Dim.sql" />
+    <Build Include="GDOutTest\Tables\GD_Person_Dim.sql" />
+    <Build Include="Security\GDOutTest.sql" />
+    <Build Include="GDOutTest\Tables\TestResult.sql" />
+    <Build Include="GDOutTest\Tables\GD_Sales_Goal_Item.sql" />
+    <Build Include="GDOut\Tables\GD_Sales_Goal_Item.sql" />
+    <Build Include="SFIn\Tables\gvp__Sales_Goal_Detail__c.sql" />
+    <Build Include="GDOutTest\Tables\GD_Account_Set_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Media_Fact.sql" />
     <Build Include="GDOut\Tables\GD_RAD_Fact.sql" />
   </ItemGroup>

@@ -1,0 +1,1976 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/18/2019 5:09:04 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DARLA"
+  DTS:CreatorName="Darla\Darla Falk"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{AE74844C-95CE-4528-A03E-98481EE34A17}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="GD_Event_Call_Fact Package"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{209C4808-F5F7-408B-9C7B-C3BF0ABC53A5}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3A2A1FEF-87CF-407B-8299-8EA69709EF8B}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ec2-34-220-132-77.us-west-2.compute.amazonaws.com;User ID=Mike;Initial Catalog=aaDarla_LiquorWarehouseStage_1_0;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=false;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4UkMdToKn0iOVKJd8+y4qAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABPbwky9P3kjrD60DCT4fNkequigpWav92Mlf583wSjcwAAAAAOgAAAAAIAACAAAAADDbSv9clB6CHUCR9FvjJNwBPU4cxp2jEeqqu0GuwsnCAAAAD/JOjuQ5kp3rhenrz2sLZtF91YnB8y2azR4xQ9+U9x6EAAAADEYgjHYPmuJpD8NqxQMzOU82FsHygLgWJEH6YbHTv7QvjD/0hQ2GQPtMAiPUU0bKF9m43MHHp2OfnR9d++uoo9</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1534C0D1-F7B1-4833-8FCB-AD0CE4A452EA}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\opt\elastic\data\__data\Empire GD_csv_20190917_024827224\GD_Event_Call_Fact.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="75"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Fact_Key"
+              DTS:DTSID="{F8A9080F-EF30-479D-A827-63DCD5ECA8DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Created Date"
+              DTS:DTSID="{659C5D47-D9FB-4564-A17E-F52AE55A6F6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Modified Date"
+              DTS:DTSID="{2046C17C-2705-41E9-81AB-071407B3E3DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start_Date"
+              DTS:DTSID="{9572CD0A-A09A-49B5-82E2-5360A1304AB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="End_Date"
+              DTS:DTSID="{24BEC5DB-8BC1-4848-AE87-C04922C65D57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Txn_Date"
+              DTS:DTSID="{394FEBDD-4ED1-4F3A-B3C8-2A0D0D993472}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Create Date"
+              DTS:DTSID="{04AF0331-45EE-4376-9379-3113F32BEBD2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fiscal Date"
+              DTS:DTSID="{74C3DAD6-7361-4AE9-B498-A83BC3FF851D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fiscal Month"
+              DTS:DTSID="{C5122561-A11D-47C0-A6C2-6857DD00B895}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fiscal Year"
+              DTS:DTSID="{66208D7B-4594-4FA3-854D-120A89ADFBB7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fiscal_Date_Dim_Id"
+              DTS:DTSID="{1FFF1CCD-EEB5-44FD-BBD9-A93CA9FD662A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event Fact Id"
+              DTS:DTSID="{75F4663D-677D-49A6-8463-B6322C0D25FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Account Call Fact Id"
+              DTS:DTSID="{2B298CD1-6067-4009-83A8-B2A4D6981806}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Contact Dim Id"
+              DTS:DTSID="{C95F783E-AA5E-45ED-AAC9-CDB29164DC84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Person Dim Id"
+              DTS:DTSID="{88D124FC-3E5B-4F2C-BF55-284E49B6D918}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Account Dim Id"
+              DTS:DTSID="{DEFA9DA1-516B-48FF-9967-D67F03114CCE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Acct Univ Dim Id"
+              DTS:DTSID="{5E879E05-2D92-4655-9D39-0FD1DBD4D979}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Product Dim Id"
+              DTS:DTSID="{EF22180B-EE0D-49A5-843E-E4E5F486147C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Geography Dim Id"
+              DTS:DTSID="{3B2EEE00-517A-4A88-ADF2-AE0F3024B5D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Sequence"
+              DTS:DTSID="{7F7A1FEC-FB31-42DC-9039-FABE1F83D5F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Activity_Key"
+              DTS:DTSID="{76DF02D4-D1EE-4313-8C15-1B693001B211}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Date"
+              DTS:DTSID="{67AB5D70-F05A-48FD-8565-E5D37B2A0515}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Time"
+              DTS:DTSID="{521574C8-E983-40DD-9F07-12256CF57539}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Week"
+              DTS:DTSID="{F8BD12B3-8BAE-4C00-9273-048EB671E054}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Event_Call_Year"
+              DTS:DTSID="{3DC8BDA5-7608-4F94-8855-1CB1ADDC62B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Start_Date_Id"
+              DTS:DTSID="{3B0B25B3-9BB7-4F61-9772-98FE96D8EE88}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="End_Date_Id"
+              DTS:DTSID="{67BC34B7-558A-45A1-8417-D3227BD6C58D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Txn_Date_Id"
+              DTS:DTSID="{7F6BCEB7-5B3C-40B1-AC94-8917AF9A1F42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Create_Date_Id"
+              DTS:DTSID="{35D01B48-FD31-4839-8586-C8B3072399B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fiscal_Date_Id"
+              DTS:DTSID="{9D1B9F7A-36A5-4038-92E0-A4D0A46DEEDC}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DelayValidation="True"
+      DTS:DTSID="{A10F11DD-5B7B-4DF2-B43A-C26C2268F6D5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destination - GD_Event_Call_Fact"
+              usesDispositions="true"
+              validateExternalMetadata="False"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GD_Event_Call_Fact]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Fact_Key]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="75"
+                      cachedName="Event_Call_Fact_Key"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Fact_Key]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Fact_Key]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Created Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Created Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Created Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Created Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Modified Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Modified Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Modified Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Modified Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Start_Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Start_Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Start_Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[End_Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="End_Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[End_Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Txn_Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Txn_Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Txn_Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Create Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Create Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Create Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Fiscal Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fiscal Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Fiscal Month]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fiscal Month"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Month]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Month]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Fiscal Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fiscal Year"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Year]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Fiscal_Date_Dim_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fiscal_Date_Dim_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal_Date_Dim_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Dim_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event Fact Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event Fact Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event Fact Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event Fact Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Account Call Fact Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Account Call Fact Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Account Call Fact Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Call Fact Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Contact Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Contact Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Contact Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Contact Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Person Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Person Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Person Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Person Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Account Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Account Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Account Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Acct Univ Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Acct Univ Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Acct Univ Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Acct Univ Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Product Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Product Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Product Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Product Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Geography Dim Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Geography Dim Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Geography Dim Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Geography Dim Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Sequence]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Sequence"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Sequence]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Sequence]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Activity_Key]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Activity_Key"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Activity_Key]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Activity_Key]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Date"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Date]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Time"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Time]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Time]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Week]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Week"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Week]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Week]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Event_Call_Year]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Event_Call_Year"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Year]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Start_Date_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Start_Date_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Start_Date_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[End_Date_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="End_Date_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[End_Date_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Txn_Date_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Txn_Date_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Txn_Date_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Create_Date_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Create_Date_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Create_Date_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create_Date_Id]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].Columns[Fiscal_Date_Id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Fiscal_Date_Id"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal_Date_Id]"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Fact_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="75"
+                      name="Event_Call_Fact_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Created Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Created Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Modified Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Modified Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Start_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[End_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Txn_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Txn_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Create Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Create Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal_Date_Dim_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal_Date_Dim_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event Fact Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Account Call Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Account Call Fact Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Contact Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Contact Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Person Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Person Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Account Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Account Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Acct Univ Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Acct Univ Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Product Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Product Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Geography Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Geography Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Sequence]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Activity_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Activity_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Time" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Week" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Event_Call_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Start_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[End_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Txn_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Txn_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Create_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Create_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input].ExternalColumns[Fiscal_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal_Date_Id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Source - GD_Event_Call_Fact_csv"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Fact_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Fact_Key]"
+                      length="75"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Fact_Key]"
+                      name="Event_Call_Fact_Key"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Created Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Created Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Created Date]"
+                      name="Created Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Modified Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Modified Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Modified Date]"
+                      name="Modified Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Start_Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date]"
+                      name="Start_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[End_Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date]"
+                      name="End_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Txn_Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date]"
+                      name="Txn_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Create Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create Date]"
+                      name="Create Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Date]"
+                      name="Fiscal Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Month]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Month]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Month]"
+                      name="Fiscal Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Year]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal Year]"
+                      name="Fiscal Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Dim_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal_Date_Dim_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Dim_Id]"
+                      name="Fiscal_Date_Dim_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event Fact Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event Fact Id]"
+                      name="Event Fact Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Call Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Account Call Fact Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Call Fact Id]"
+                      name="Account Call Fact Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Contact Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Contact Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Contact Dim Id]"
+                      name="Contact Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Person Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Person Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Person Dim Id]"
+                      name="Person Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Account Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Account Dim Id]"
+                      name="Account Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Acct Univ Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Acct Univ Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Acct Univ Dim Id]"
+                      name="Acct Univ Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Product Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Product Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Product Dim Id]"
+                      name="Product Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Geography Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Geography Dim Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Geography Dim Id]"
+                      name="Geography Dim Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Sequence]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Sequence]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Sequence]"
+                      name="Event_Call_Sequence"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Activity_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Activity_Key]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Activity_Key]"
+                      name="Event_Call_Activity_Key"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Date]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Date]"
+                      name="Event_Call_Date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Time]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Time]"
+                      name="Event_Call_Time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Week]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Week]"
+                      name="Event_Call_Week"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Year]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Event_Call_Year]"
+                      name="Event_Call_Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Start_Date_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Start_Date_Id]"
+                      name="Start_Date_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[End_Date_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[End_Date_Id]"
+                      name="End_Date_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Txn_Date_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Txn_Date_Id]"
+                      name="Txn_Date_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Create_Date_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Create_Date_Id]"
+                      name="Create_Date_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal_Date_Id]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].Columns[Fiscal_Date_Id]"
+                      name="Fiscal_Date_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Fact_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="75"
+                      name="Event_Call_Fact_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Created Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Created Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Modified Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Modified Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Start_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[End_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Txn_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Txn_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Create Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Create Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Month" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal_Date_Dim_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal_Date_Dim_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event Fact Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Account Call Fact Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Account Call Fact Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Contact Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Contact Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Person Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Person Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Account Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Account Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Acct Univ Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Acct Univ Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Product Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Product Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Geography Dim Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Geography Dim Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Sequence]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Activity_Key]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Activity_Key" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Time" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Week]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Week" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Event_Call_Year]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Event_Call_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Start_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Start_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[End_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="End_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Txn_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Txn_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Create_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Create_Date_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output].ExternalColumns[Fiscal_Date_Id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Fiscal_Date_Id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Preparation SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:DTSID="{0A24B87F-01D2-45B6-AFF3-EA82BA17C554}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Preparation SQL Task 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{3A2A1FEF-87CF-407B-8299-8EA69709EF8B}"
+          SQLTask:SqlStatementSource="truncate table dbo.[GD_Event_Call_Fact]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{991D847E-6610-4C48-9B42-B36D32713999\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{991D847E-6610-4C48-9B42-B36D32713999}"
+      DTS:From="Package\Preparation SQL Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{991D847E-6610-4C48-9B42-B36D32713999}"
+      DTS:To="Package\Data Flow Task 1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="25,209.5" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Preparation SQL Task 1"
+          TopLeft="8.50000000000003,107.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{991D847E-6610-4C48-9B42-B36D32713999\}]"
+          TopLeft="107,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Data Flow Task 1\Derived Column"
+          TopLeft="136,120" />
+        <NodeLayout
+          Size="247,42"
+          Id="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact"
+          TopLeft="88.5,217.5" />
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv"
+          TopLeft="87.5,5.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+          TopLeft="213.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.5"
+              Start="0,0"
+              End="0,65">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Derived Column Output]"
+          TopLeft="213.5,162">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.5"
+              Start="0,0"
+              End="0,48">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
