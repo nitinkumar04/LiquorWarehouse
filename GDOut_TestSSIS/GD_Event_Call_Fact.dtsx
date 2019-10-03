@@ -6,36 +6,36 @@
   DTS:CreatorComputerName="DARLA"
   DTS:CreatorName="Darla\Darla Falk"
   DTS:Description="SSIS Package Description"
-  DTS:DTSID="{A242076F-D047-4D3F-8E17-C0DA3C9D2531}"
+  DTS:DTSID="{AE74844C-95CE-4528-A03E-98481EE34A17}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.0900.40"
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="GD_Event_Call_Fact Package"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{176BE783-AE81-4795-B727-8AAC593A9D2E}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{209C4808-F5F7-408B-9C7B-C3BF0ABC53A5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{C0FFC5EA-CC49-4C14-933B-DF004DDB069F}"
+      DTS:DTSID="{3A2A1FEF-87CF-407B-8299-8EA69709EF8B}"
       DTS:ObjectName="DestinationConnectionOLEDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=ec2-34-220-132-77.us-west-2.compute.amazonaws.com;User ID=Mike;Initial Catalog=aaMike_LiquorWarehouseStage_1_0;Provider=SQLNCLI11.1;Auto Translate=false;">
+          DTS:ConnectionString="Data Source=ec2-34-220-132-77.us-west-2.compute.amazonaws.com;User ID=Mike;Initial Catalog=aaDarla_LiquorWarehouseStage_1_0;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=false;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4UkMdToKn0iOVKJd8+y4qAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACwe1VtQe9cLvVHSXukRKUTJBu0ZwXQ5bO3O/SQQoTaZgAAAAAOgAAAAAIAACAAAABd0znao8hSNchJvvwvBJ+DuicSIcGOElDGzjdNMMcioiAAAAB52umtVVUL5gtoS5brNlrrDx33ZZIDuPslVr+yKNSgkUAAAACcgm4ig7DAbr4vPpvs/5cGRbjTVdmYzvpjON3QGlpyrkcl+gZ2nxTGt4ZlzNEMf1wGsY+3Af20ZNjKz7EI/NUl</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4UkMdToKn0iOVKJd8+y4qAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABPbwky9P3kjrD60DCT4fNkequigpWav92Mlf583wSjcwAAAAAOgAAAAAIAACAAAAADDbSv9clB6CHUCR9FvjJNwBPU4cxp2jEeqqu0GuwsnCAAAAD/JOjuQ5kp3rhenrz2sLZtF91YnB8y2azR4xQ9+U9x6EAAAADEYgjHYPmuJpD8NqxQMzOU82FsHygLgWJEH6YbHTv7QvjD/0hQ2GQPtMAiPUU0bKF9m43MHHp2OfnR9d++uoo9</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{94F6F362-397C-463D-A93E-D66259EF26A7}"
+      DTS:DTSID="{1534C0D1-F7B1-4833-8FCB-AD0CE4A452EA}"
       DTS:ObjectName="SourceConnectionFlatFile">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -46,7 +46,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\AvaG\Work\GreatVines\Data Team\SQL Server Development\Test Data\GD_Event_Call_Fact.csv">
+          DTS:ConnectionString="C:\opt\elastic\data\__data\Empire GD_csv_20190917_024827224\GD_Event_Call_Fact.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -55,7 +55,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Fact_Key"
-              DTS:DTSID="{3F683C6B-907A-4FB2-9195-8D3286F9B091}"
+              DTS:DTSID="{F8A9080F-EF30-479D-A827-63DCD5ECA8DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Created Date"
-              DTS:DTSID="{6243896A-B128-4A76-981C-44AD425CE632}"
+              DTS:DTSID="{659C5D47-D9FB-4564-A17E-F52AE55A6F6C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -73,7 +73,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Modified Date"
-              DTS:DTSID="{B062ABF0-72B3-44E4-980F-53B48E790126}"
+              DTS:DTSID="{2046C17C-2705-41E9-81AB-071407B3E3DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -82,7 +82,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Start_Date"
-              DTS:DTSID="{746F17CF-75DE-44C2-8BBF-A4EDB99F22EE}"
+              DTS:DTSID="{9572CD0A-A09A-49B5-82E2-5360A1304AB4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,7 +91,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="End_Date"
-              DTS:DTSID="{ADB7127D-CEEF-4CB9-A49F-05383F4EC9A5}"
+              DTS:DTSID="{24BEC5DB-8BC1-4848-AE87-C04922C65D57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -100,7 +100,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Txn_Date"
-              DTS:DTSID="{F42CA63B-AB3B-4D22-9952-59E085EE5621}"
+              DTS:DTSID="{394FEBDD-4ED1-4F3A-B3C8-2A0D0D993472}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -109,7 +109,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Create Date"
-              DTS:DTSID="{47923A30-2B6F-4434-99A9-7914B7E6424D}"
+              DTS:DTSID="{04AF0331-45EE-4376-9379-3113F32BEBD2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +118,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fiscal Date"
-              DTS:DTSID="{ABE543A2-2FFC-4148-AD54-7941EF227582}"
+              DTS:DTSID="{74C3DAD6-7361-4AE9-B498-A83BC3FF851D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -127,7 +127,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fiscal Month"
-              DTS:DTSID="{4C2B0A47-1AC7-488C-9BB9-C77D72577629}"
+              DTS:DTSID="{C5122561-A11D-47C0-A6C2-6857DD00B895}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -136,7 +136,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fiscal Year"
-              DTS:DTSID="{73EB8F30-CE02-467E-BD2E-86AF609F88F8}"
+              DTS:DTSID="{66208D7B-4594-4FA3-854D-120A89ADFBB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -145,7 +145,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fiscal_Date_Dim_Id"
-              DTS:DTSID="{A3DD89D8-97D0-4E4F-B697-3DCBE62EA082}"
+              DTS:DTSID="{1FFF1CCD-EEB5-44FD-BBD9-A93CA9FD662A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -154,7 +154,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event Fact Id"
-              DTS:DTSID="{DD98CFA7-9F89-4874-AD1B-C07239D19AF4}"
+              DTS:DTSID="{75F4663D-677D-49A6-8463-B6322C0D25FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,7 +163,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Account Call Fact Id"
-              DTS:DTSID="{B14B9823-2486-4A04-907B-DBBD7935A8A5}"
+              DTS:DTSID="{2B298CD1-6067-4009-83A8-B2A4D6981806}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -172,7 +172,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Contact Dim Id"
-              DTS:DTSID="{2AAC2630-EBD1-4635-A273-498C7ACAE005}"
+              DTS:DTSID="{C95F783E-AA5E-45ED-AAC9-CDB29164DC84}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -181,7 +181,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Person Dim Id"
-              DTS:DTSID="{A9834F11-F93B-4F23-958C-EA99A1878641}"
+              DTS:DTSID="{88D124FC-3E5B-4F2C-BF55-284E49B6D918}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -190,7 +190,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Account Dim Id"
-              DTS:DTSID="{B7F54EC3-9603-4BDE-AFF9-6977466E23C7}"
+              DTS:DTSID="{DEFA9DA1-516B-48FF-9967-D67F03114CCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -199,7 +199,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Acct Univ Dim Id"
-              DTS:DTSID="{B6E4A470-890A-4359-8AE1-36B9BEE89E31}"
+              DTS:DTSID="{5E879E05-2D92-4655-9D39-0FD1DBD4D979}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -208,7 +208,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Product Dim Id"
-              DTS:DTSID="{55296349-E4D9-49D5-9BD3-EB193FEDB460}"
+              DTS:DTSID="{EF22180B-EE0D-49A5-843E-E4E5F486147C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -217,7 +217,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Geography Dim Id"
-              DTS:DTSID="{E8EC6C1E-98C3-4515-812C-E07262A816F7}"
+              DTS:DTSID="{3B2EEE00-517A-4A88-ADF2-AE0F3024B5D9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -226,7 +226,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Sequence"
-              DTS:DTSID="{348294BC-6F88-466E-B1CA-ABB5056B7624}"
+              DTS:DTSID="{7F7A1FEC-FB31-42DC-9039-FABE1F83D5F2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -235,7 +235,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Activity_Key"
-              DTS:DTSID="{0B4176D0-41C5-4DD2-89E9-3FD9710AA119}"
+              DTS:DTSID="{76DF02D4-D1EE-4313-8C15-1B693001B211}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -244,7 +244,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Date"
-              DTS:DTSID="{7D9940B8-A5CE-4E10-A3CF-B1D4E7257479}"
+              DTS:DTSID="{67AB5D70-F05A-48FD-8565-E5D37B2A0515}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -253,7 +253,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Time"
-              DTS:DTSID="{EF1EF3EF-11E1-40D6-99B2-CBF7F7BAB22C}"
+              DTS:DTSID="{521574C8-E983-40DD-9F07-12256CF57539}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -262,7 +262,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Week"
-              DTS:DTSID="{EC4AC369-86F0-4CEA-9814-FB4F98946A69}"
+              DTS:DTSID="{F8BD12B3-8BAE-4C00-9273-048EB671E054}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -271,7 +271,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Event_Call_Year"
-              DTS:DTSID="{384C3BAD-30B0-459A-AC2E-E12F7C12C92F}"
+              DTS:DTSID="{3DC8BDA5-7608-4F94-8855-1CB1ADDC62B2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -280,7 +280,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Start_Date_Id"
-              DTS:DTSID="{A150A16D-797A-4806-B01E-526984CAF002}"
+              DTS:DTSID="{3B0B25B3-9BB7-4F61-9772-98FE96D8EE88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -289,7 +289,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="End_Date_Id"
-              DTS:DTSID="{B135F436-08EC-4D37-91C1-09116849F22D}"
+              DTS:DTSID="{67BC34B7-558A-45A1-8417-D3227BD6C58D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -298,7 +298,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Txn_Date_Id"
-              DTS:DTSID="{D1F0E666-7F91-47C6-BB7D-4643EDD79EAE}"
+              DTS:DTSID="{7F6BCEB7-5B3C-40B1-AC94-8917AF9A1F42}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -307,7 +307,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Create_Date_Id"
-              DTS:DTSID="{FF58C172-54A6-4EA9-929C-519534405211}"
+              DTS:DTSID="{35D01B48-FD31-4839-8586-C8B3072399B7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -316,7 +316,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fiscal_Date_Id"
-              DTS:DTSID="{42BFFC02-5054-4670-BD31-42ABB592E236}"
+              DTS:DTSID="{9D1B9F7A-36A5-4038-92E0-A4D0A46DEEDC}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -329,7 +329,7 @@
       DTS:refId="Package\Data Flow Task 1"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:DelayValidation="True"
-      DTS:DTSID="{A2731EEA-74DA-44AA-9925-B9E036649DCA}"
+      DTS:DTSID="{A10F11DD-5B7B-4DF2-B43A-C26C2268F6D5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:FailPackageOnFailure="True"
       DTS:LocaleID="-1"
@@ -341,6 +341,55 @@
           defaultBufferSize="3145728"
           version="1">
           <components>
+            <component
+              refId="Package\Data Flow Task 1\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
             <component
               refId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact"
               componentClassID="Microsoft.OLEDBDestination"
@@ -1773,8 +1822,13 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+              refId="Package\Data Flow Task 1.Paths[Derived Column Output]"
               endId="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact.Inputs[Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task 1\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task 1\Derived Column.Inputs[Derived Column Input]"
               name="Flat File Source Output"
               startId="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv.Outputs[Flat File Source Output]" />
           </paths>
@@ -1784,7 +1838,7 @@
     <DTS:Executable
       DTS:refId="Package\Preparation SQL Task 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:DTSID="{95408336-0107-4FC7-8E3F-AB94F1FC1D04}"
+      DTS:DTSID="{0A24B87F-01D2-45B6-AFF3-EA82BA17C554}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:FailPackageOnFailure="True"
       DTS:LocaleID="-1"
@@ -1794,19 +1848,19 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{C0FFC5EA-CC49-4C14-933B-DF004DDB069F}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [GDOutTest].[GD_Event_Call_Fact]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{3A2A1FEF-87CF-407B-8299-8EA69709EF8B}"
+          SQLTask:SqlStatementSource="truncate table dbo.[GD_Event_Call_Fact]&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[{BAD11DF2-5FB7-4F51-9CA3-03F403F41058\}]"
+      DTS:refId="Package.PrecedenceConstraints[{991D847E-6610-4C48-9B42-B36D32713999\}]"
       DTS:CreationName=""
-      DTS:DTSID="{BAD11DF2-5FB7-4F51-9CA3-03F403F41058}"
+      DTS:DTSID="{991D847E-6610-4C48-9B42-B36D32713999}"
       DTS:From="Package\Preparation SQL Task 1"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="{BAD11DF2-5FB7-4F51-9CA3-03F403F41058}"
+      DTS:ObjectName="{991D847E-6610-4C48-9B42-B36D32713999}"
       DTS:To="Package\Data Flow Task 1" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -1830,7 +1884,7 @@
           Id="Package\Preparation SQL Task 1"
           TopLeft="8.50000000000003,107.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[{BAD11DF2-5FB7-4F51-9CA3-03F403F41058\}]"
+          Id="Package.PrecedenceConstraints[{991D847E-6610-4C48-9B42-B36D32713999\}]"
           TopLeft="107,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1858,33 +1912,61 @@
     design-time-name="Package\Data Flow Task 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="NaN,NaN"
-          Id="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv"
-          TopLeft="NaN,NaN" />
+          Size="158,42"
+          Id="Package\Data Flow Task 1\Derived Column"
+          TopLeft="136,120" />
         <NodeLayout
-          Size="NaN,NaN"
+          Size="247,42"
           Id="Package\Data Flow Task 1\Destination - GD_Event_Call_Fact"
-          TopLeft="NaN,NaN" />
+          TopLeft="88.5,217.5" />
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Data Flow Task 1\Source - GD_Event_Call_Fact_csv"
+          TopLeft="87.5,5.5" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Flat File Source Output]"
-          TopLeft="NaN,NaN">
+          TopLeft="213.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="{assembly:Null}"
+              EndConnector="0,72.5"
               Start="0,0"
-              End="0,0">
+              End="0,65">
               <mssgle:Curve.Segments>
-                <assembly:Null />
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65" />
+                </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Derived Column Output]"
+          TopLeft="213.5,162">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.5"
+              Start="0,0"
+              End="0,48">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

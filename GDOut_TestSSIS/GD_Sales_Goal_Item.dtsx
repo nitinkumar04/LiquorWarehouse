@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="GD_Sales_Goal_Item"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{5AA47D2C-58A8-4023-AFE4-DC48D8C9466D}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{2B7990E6-F4C1-45A4-86D1-08B575708CB7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,7 +28,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAINUV7S3bD02L2tdn1RnWMQAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACu0ilZwkRFvMsMdh75U1EqpTi+NFQzvxw+LU4hgCG9/AAAAAAOgAAAAAIAACAAAAA75vci27fl0ly9uS3orSgX1rrxSN8+3JG75CgdnZ6iVSAAAACK7Lz0I9DIHiITrvrUOyrknFKcXhtvE65Sn2NkurBjHkAAAAC1UR3faYkYqDHv9QcnV2tUcDccMl/Sm5oenyNJJCVZC1WgbOrAVCV1y7os4DJ3kihWeQYkCe+KWohIQ7DuyEK1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4UkMdToKn0iOVKJd8+y4qAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAhv5Yz6QIzO7K8isEwt9Srw6Mc5mA0XfkecOQl8yOb6QAAAAAOgAAAAAIAACAAAABDH5gckYNtegJs/+jwlYb+zsqHwb00KMO9QrFE7RLKzyAAAAA//P7KWfCqzNvqi5XqXGX9fPDuxVf2w48kpSU/ZEGxvEAAAAA0mNa8v+RQfKMDMOuFQMmzb25OmF91Mmp0z01WOpd+MBysCCA8TJepTB4Z6yXxG40cnB/q3Ku/ANY7cW+g0wUe</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
