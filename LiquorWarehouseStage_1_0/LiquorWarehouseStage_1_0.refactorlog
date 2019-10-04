@@ -105,4 +105,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="LoadParameterLogID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="085c1314-72d7-4051-916e-95fa8a0f8929" ChangeDateTime="10/04/2019 06:40:36">
+    <Property Name="ElementName" Value="[GDOut].[GD_RAD_Fact].[RAD Source File&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_RAD_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RAD Source File" />
+  </Operation>
 </Operations>
