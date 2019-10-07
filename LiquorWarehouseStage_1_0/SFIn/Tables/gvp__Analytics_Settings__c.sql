@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [dbo].[gvp__Analytics_Settings__c]
 (
-  [Id] CHAR(18) NOT NULL, 
-  OwnerId char(18) not null,
-  IsDeleted varchar(10) not null,
+    [Id] CHAR(18) NOT NULL, 
+    OwnerId char(18) not null,
+    IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	RecordTypeId char(18) not null,
 	CreatedDate datetime not null,

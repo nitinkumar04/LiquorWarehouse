@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFIN].[gvp__Sales_Goal_Transition__mdt]
 (
-	Id CHAR(18) NOT NULL PRIMARY KEY, 
+	Id CHAR(18) NOT NULL, 
     DeveloperName NVARCHAR(100) NULL, 
     gvp__Goal_Transaction_Type__c NVARCHAR(10) NULL, 
     gvp__Goal_Type__c NVARCHAR(40) NULL, 
