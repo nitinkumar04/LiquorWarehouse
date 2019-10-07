@@ -8,5 +8,6 @@
     [Language] NCHAR(10) NULL, 
     [MasterLabel] NVARCHAR(100) NULL, 
     [NamespacePrefix] NVARCHAR(20) NULL, 
-    [QualifiedApiName] NVARCHAR(100) NULL
+    [QualifiedApiName] NVARCHAR(100) NULL,
+	CONSTRAINT [PK_gvp__Analytics_Field_Matrix__mdt] PRIMARY KEY ([Id])
 )
