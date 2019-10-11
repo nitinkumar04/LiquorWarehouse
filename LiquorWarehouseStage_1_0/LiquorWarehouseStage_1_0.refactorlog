@@ -112,4 +112,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="RAD Source File" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="4a84073b-4503-4e9c-a801-479182f8e5ff" ChangeDateTime="10/10/2019 11:30:56">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Total_Off_Premise__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Total_Off_Premise__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="53dbc334-cb25-454e-9dde-b977717792dd" ChangeDateTime="10/10/2019 11:31:08">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Transportation__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Transportation__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ad9af99-4478-4b24-956d-50fa6ff79b53" ChangeDateTime="10/10/2019 11:31:16">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Samples__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Samples__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7354b31f-8556-4347-affd-5af70d052f2d" ChangeDateTime="10/10/2019 11:31:21">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Non_Retail_Sales__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Non_Retail_Sales__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e7a3de3c-2832-4bfb-8959-01b695887d1f" ChangeDateTime="10/10/2019 11:31:24">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Military_On__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Military_On__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bfefd6cc-10e1-4915-a2c2-38fe41e559f2" ChangeDateTime="10/10/2019 11:31:31">
+    <Property Name="ElementName" Value="[SFIn].[gvp__Depletion__c].[ gvp__Breakage__c]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[SFIn].[gvp__Depletion__c]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Breakage__c" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3ca0e3aa-c1ac-40bd-ab3e-145edcfe2936" ChangeDateTime="10/11/2019 11:07:21">
+    <Property Name="ElementName" Value="[GDOut].[GD_Depletion_Fact].[Depltion Adjustments]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Depletion_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Depletion Adjustments" />
+  </Operation>
 </Operations>

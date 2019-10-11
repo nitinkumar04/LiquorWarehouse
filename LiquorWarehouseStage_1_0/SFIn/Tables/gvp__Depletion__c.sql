@@ -40,5 +40,16 @@
 	gvp__Custom_Fact_2__c decimal(14,4) null,
 	gvp__Distributor_Item_Number__c varchar(20) null,
 	gvp__Source_System__c nvarchar(20) null
-    CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]), 
+    [gvp__Breakage__c] DECIMAL(14, 4) NULL, 
+    [gvp__Military_Off__c] DECIMAL(14, 4) NULL, 
+    [gvp__Military_On__c] DECIMAL(14, 4) NULL, 
+    [gvp__Non_Retail_Sales__c] DECIMAL(14, 4) NULL, 
+    [gvp__Samples__c] DECIMAL(14, 4) NULL, 
+    [gvp__Sub_Distributor_Sales__c ] DECIMAL(14, 4) NULL, 
+    [gvp__Supplier_Returns__c] DECIMAL(14, 4) NULL, 
+    [gvp__Total_Off_Premise__c] DECIMAL(14, 4) NULL, 
+    [gvp__Total_On_Premise__c] DECIMAL(14, 4) NULL, 
+    [gvp__Transportation__c] DECIMAL(14, 4) NULL, 
+    [gvp__Unclassified_Sales__c] DECIMAL(14, 4) NULL 
 )
