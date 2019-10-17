@@ -2,7 +2,7 @@
 (
 	[Id] CHAR(18) NOT NULL, 
     [DeveloperName] NVARCHAR(100) NULL, 
-    [gvp__Attribute_Id_Offset__c] DECIMAL(8, 1) NULL, 
+    [gvp__Attribute_Id_Offset__c] DECIMAL(8, 0) NULL, 
     [gvp__Attribute_Identifier__c] NVARCHAR(100) NULL, 
     [Label] NVARCHAR(100) NULL, 
     [Language] NCHAR(10) NULL, 
