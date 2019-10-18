@@ -161,4 +161,249 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Depletion Adjustments" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="3786587c-9ddf-485c-9d74-38d6bb76b74a" ChangeDateTime="10/16/2019 10:55:21">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Fact Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Id&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7cbc9c1-a82f-4ff8-932c-1e30add006da" ChangeDateTime="10/16/2019 10:55:23">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Fact Name&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Name&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="889c8592-b5de-4785-954f-1a0c831c1352" ChangeDateTime="10/16/2019 10:55:29">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Fact URL&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact URL&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="207f9203-86b7-4c79-a083-c5110dd3c1b8" ChangeDateTime="10/16/2019 10:55:36">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Fact Type&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Type&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="042439dd-d748-4b8b-90d5-f6cf1e072dbb" ChangeDateTime="10/16/2019 10:55:38">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Fact Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="67aa8b64-7c00-4790-bfee-73c77058b9df" ChangeDateTime="10/16/2019 10:55:41">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Fact Name&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ecd80f51-0e8b-4c9d-8294-cdfe84bf9aa5" ChangeDateTime="10/16/2019 10:55:42">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Fact URL&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact URL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b20fca67-5b51-453b-aca7-6640fbe7f932" ChangeDateTime="10/16/2019 10:55:47">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Fact Type&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Fact Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ac3783f-22e8-4507-8059-f6b168b619c3" ChangeDateTime="10/16/2019 10:55:48">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Product Dim Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="&quot;Product Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="88fb79be-ae34-4a94-8d93-c438ef1d4620" ChangeDateTime="10/16/2019 10:55:50">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Geography Dim Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="&quot;Geography Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="39d4b110-1e64-4173-9f25-e48243e5ffe2" ChangeDateTime="10/16/2019 10:55:53">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Transaction Type Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="&quot;Transaction Type Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="abacf357-50bd-4e38-abb8-b0fa34c8614f" ChangeDateTime="10/16/2019 10:55:55">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Product Dim Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Product Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5a029485-7992-4f30-a626-4f16091d8b15" ChangeDateTime="10/16/2019 10:55:59">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Geography Dim Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Geography Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="050a623a-2884-4328-9110-0f9982884b61" ChangeDateTime="10/16/2019 10:56:03">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Transaction Type Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Transaction Type Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3e67b8df-21cf-400c-80c8-e3cdd4e4b428" ChangeDateTime="10/16/2019 10:56:06">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Fiscal Year&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fiscal Year&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="40b16b86-6efe-45ab-b6bc-d6acc40c29bb" ChangeDateTime="10/16/2019 10:56:08">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Fiscal Month&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fiscal Month&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="17be78e0-ac9e-4f08-bff9-e11f58f5e927" ChangeDateTime="10/16/2019 10:56:11">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Key&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Key&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ad8f479-0745-47f6-9018-320951625c6b" ChangeDateTime="10/16/2019 10:56:18">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Order Type&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Order Type&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="855a99ec-3483-4a97-8db3-e222508bcb90" ChangeDateTime="10/16/2019 10:56:21">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Status&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Status&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f472de7a-8b59-4272-99f9-00dc5ff02475" ChangeDateTime="10/16/2019 10:56:23">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Order Type&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Order Type" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="81674c28-b10d-49c8-9bc1-3de9ae0fb575" ChangeDateTime="10/16/2019 10:56:25">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Key&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Key" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6969c2cb-74be-430c-94ce-8240ac2be2ad" ChangeDateTime="10/16/2019 10:56:30">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Status&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Status" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="45ebc105-682a-48b4-91e4-f26fa461fccb" ChangeDateTime="10/16/2019 10:56:34">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Custom 1&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Custom 1&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8d6871c3-60a6-4f32-8c62-2696f0ca051c" ChangeDateTime="10/16/2019 10:56:38">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Custom 2&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Custom 2&quot;" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8ad12758-1ecd-4f08-b8c3-9fd18c187ca4" ChangeDateTime="10/16/2019 10:56:40">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Custom 1&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Custom 1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c10f4535-1632-4166-b335-478b5d9052e5" ChangeDateTime="10/16/2019 10:56:44">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Shipment Custom 2&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Custom 2" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a7b151ae-0a9b-4905-bccd-d647d5f40aad" ChangeDateTime="10/16/2019 10:56:48">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Account Dim Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Account Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="30cafcc7-ed69-4423-941e-c03c11b8b158" ChangeDateTime="10/16/2019 10:56:54">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Rpt Current Ind&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Rpt Current Ind" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8cdd6519-9b0f-444c-8b28-3c8c2a07cae0" ChangeDateTime="10/16/2019 10:56:57">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Currency Dim Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Currency Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f75060d1-300e-4cd1-b585-57f662d44cd3" ChangeDateTime="10/16/2019 10:57:01">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Acct Univ Dim Id&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Acct Univ Dim Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d91d92a3-c950-4f97-a167-34398a3ecc33" ChangeDateTime="10/16/2019 10:57:09">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Source System&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Source System" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ab5c63ba-4324-439f-b848-56bd142b15c1" ChangeDateTime="10/16/2019 10:57:13">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Order Number&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Order Number" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c8c34e54-868f-42f5-bfcb-d9bd8ccb5f2a" ChangeDateTime="10/16/2019 10:57:20">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[&quot;Shipment Invoice Number&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Shipment Invoice Number" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5ecee328-e2bf-434f-a52b-863006e138cf" ChangeDateTime="10/16/2019 11:53:29">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Fiscal Year&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fiscal Year" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9a52c55b-a527-4508-9351-049186a8b24e" ChangeDateTime="10/16/2019 11:53:33">
+    <Property Name="ElementName" Value="[GDOut].[GD_Shipment_Fact].[Fiscal Month&quot;]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Shipment_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Fiscal Month" />
+  </Operation>
 </Operations>
