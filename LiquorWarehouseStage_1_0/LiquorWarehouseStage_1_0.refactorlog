@@ -406,4 +406,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Fiscal Month" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="bd14419e-92eb-46ab-bd25-a9969a7c077e" ChangeDateTime="10/24/2019 23:01:08">
+    <Property Name="ElementName" Value="[GDOut].[GD_Sales_Order_Fact].[Sales Order Fact URL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Sales_Order_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sales Order Fact Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="799bdee8-2feb-4377-9187-dbae92d5829d" ChangeDateTime="10/24/2019 23:01:14">
+    <Property Name="ElementName" Value="[GDOut].[GD_Sales_Order_Fact].[Sales Order Fact Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Sales_Order_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sales Order Fact URL" />
+  </Operation>
 </Operations>
