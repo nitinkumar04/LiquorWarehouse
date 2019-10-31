@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [SFIn].[gvp__Event__c](
-	[Id] [char](20) NOT NULL,
+	[Id] [char](18) NOT NULL,
 	[IsDeleted] [varchar](10) NULL,
 	[Name] [varchar](20) NULL,
-	[RecordTypeId] [char](20) NULL,
+	[RecordTypeId] [char](18) NULL,
 	[CreatedDate] [datetime] NULL,
 	[CreatedById] [varchar](30) NULL,
 	[LastModifiedDate] [datetime] NULL,
