@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Acct_Univ_Mktg_Group_Dim](
-	[Marketing Group Dim Id] [char](18) NOT NULL,
+	[Marketing Group Dim Id] [char](18) NULL,
 	[Created Date] [date] NULL,
 	[Modified Date] [date] NULL,
 	[Marketing Group Id] [char](18) NULL,
@@ -23,7 +23,5 @@
 	[Marketing Group Owner Last Name] [nvarchar](50) NULL,
 	[Marketing Group Owner First Name] [nvarchar](50) NULL,
 	[Marketing Group Owner Name] [nvarchar](80) NULL,
-	[Marketing Group Owner Email] [nvarchar](75) NULL,
-	CONSTRAINT [PK_GD_Acct_Univ_Mktg_Group_Dim] PRIMARY KEY ([Marketing Group Dim Id])
-) ON [PRIMARY]
+	[Marketing Group Owner Email] [nvarchar](75) NULL)
 GO
