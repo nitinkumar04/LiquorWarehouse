@@ -125,7 +125,7 @@
     [Account Shipping State]            NVARCHAR (30)  NULL,
     [Account Shipping Zip]              NVARCHAR (20)  NULL,
     [Account Shipping Country]          NVARCHAR (25)   NULL,
-    [Account Rank]                      VARCHAR (5)    NULL,
+    [Account Rank]                      VARCHAR (17)    NULL,
     [Territory Custom 3]                NVARCHAR (200) NULL,
     [Territory Custom 4]                NVARCHAR (200) NULL,
     [Territory Custom 5]                NVARCHAR (200) NULL,
