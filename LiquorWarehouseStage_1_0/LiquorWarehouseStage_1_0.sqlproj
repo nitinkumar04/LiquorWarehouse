@@ -381,6 +381,7 @@
     <Build Include="SFIn\Tables\gvp__Event__c.sql" />
     <Build Include="GDOut\Tables\GD_Spend_Dim.sql" />
     <Build Include="GDOut\Tables\GD_Sales_Order_Fact.sql" />
+    <Build Include="dbo\Tables\Currency.sql" />
     <Build Include="GDOut\Tables\GD_Spend_Fact.sql" />
   </ItemGroup>
   <ItemGroup>
