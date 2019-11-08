@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [GDOut].[GD_Account_KA1_Dim](
 	[Key Acct Chain Dim Id] [varchar](18) NOT NULL,
-	[Created Date] [datetime] NULL,
-	[Modified Date] [datetime] NULL,
+	[Created Date] DATE NULL,
+	[Modified Date] DATE NULL,
 	[Key Acct Chain Id] [varchar](18) NULL,
 	[Key Acct Chain URL] [nvarchar](200) NULL,
 	[Key Acct Chain URL2] [nvarchar](200) NULL,
