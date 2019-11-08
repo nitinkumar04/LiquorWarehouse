@@ -23,8 +23,9 @@ begin
   insert into TypeData(Type_Id,Type_Name,Type_Plural,Type_Group,Type_Subtype,Type_Order)
     select Type_Id, Type_Name, Type_Plural, Type_Group, Type_Subtype, Type_Order from Global..TypeData
 
-
-  -- Dates
+  -- Currency
+  insert into Currency(Currency_Dim_Id, Currency_ISO_Code, Currency_Conversion_Rate, Currency_Decimal_Places, Currency_Is_Active, Currency_Is_Corporate, Currency_Corporate_ISO_Code)
+    select Currency_Dim_Id, Currency_ISO_Code, Currency_Conversion_Rate, Currency_Decimal_Places, Currency_Is_Active, Currency_Is_Corporate, Currency_Corporate_ISO_Code from Global..Currency
 
 
 end
