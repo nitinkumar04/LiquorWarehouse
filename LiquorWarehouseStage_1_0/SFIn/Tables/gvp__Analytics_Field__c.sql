@@ -16,6 +16,5 @@
     gvp__Object_Id__c VARCHAR(100) NULL, 
     gvp__Quantity_Type__c VARCHAR(100) NULL, 
     gvp__Type__c VARCHAR(100) NULL, 
-    gvp__Valid_Result_Report_Metric__c VARCHAR(100) NULL,
-	CONSTRAINT [PK_gvp__Analytics_Field__c] PRIMARY KEY ([Id])
+    gvp__Valid_Result_Report_Metric__c VARCHAR(100) NULL
 )
