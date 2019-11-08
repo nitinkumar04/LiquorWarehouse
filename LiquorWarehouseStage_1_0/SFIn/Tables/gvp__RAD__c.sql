@@ -12,7 +12,7 @@
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
 	gvp__Brand__c nvarchar(100) null,
-	gvp__Cases_YTD__c decimal(14,4) null,
+	gvp__Cases_YTD__c decimal(14,2) null,
 	gvp__Date__c date null,
 	gvp__Distributor__c char(18) null,
 	gvp__Item__c char(18) null,
