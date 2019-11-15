@@ -420,4 +420,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Sales Order Fact URL" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="307aa939-2601-4fb6-8374-35478ce9be92" ChangeDateTime="11/14/2019 16:32:03">
+    <Property Name="ElementName" Value="[dbo].[GoodDataSalesGoalReportExecutionMetaData].[SalesGoalPlan]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[GoodDataSalesGoalReportExecutionMetaData]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="gvp__Sales_Goal_Plan__c" />
+  </Operation>
 </Operations>

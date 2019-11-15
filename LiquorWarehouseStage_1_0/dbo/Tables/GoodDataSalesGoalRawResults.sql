@@ -6,5 +6,6 @@
   SecondaryAttributeName  varchar(100)      null,
   SecondaryAttributeValue varchar(18)       null,
   MetricName              varchar(100)      not null,
-  MetricValue             varchar(100)      not null
+  MetricValue             varchar(100)      not null, 
+    [CreateDate] DATETIME NOT NULL DEFAULT getdate()
   )

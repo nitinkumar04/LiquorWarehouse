@@ -393,6 +393,7 @@
     <Build Include="SFIn\Tables\gvp__Analytics_Settings__c.sql" />
     <Build Include="dbo\Tables\GoodDataObjectID.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Goal_Transition__mdt.sql" />
+    <Build Include="dbo\Tables\GoodDataSalesGoalReportExecutionMetaData.sql" />
     <Build Include="dbo\Tables\Currency.sql" />
     <Build Include="GDOut\Tables\GD_Spend_Fact.sql" />
   </ItemGroup>
