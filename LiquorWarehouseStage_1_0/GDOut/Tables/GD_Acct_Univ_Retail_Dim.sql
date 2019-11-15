@@ -20,8 +20,8 @@
     [Account Number of Locations]               VARCHAR (5)  NULL,
     [Account Family Owner Code]                 VARCHAR (20)  NULL,
     [Account Immediate Parent State]            NVARCHAR (35)  NULL,
-    [Account Immediate Parent State FIPS Code]  VARCHAR (2)  NULL,
-    [Account Immediate Parent County FIPS Code] VARCHAR (5)  NULL,
+    [Account Immediate Parent State FIPS Code]  VARCHAR (10)  NULL,
+    [Account Immediate Parent County FIPS Code] VARCHAR (10)  NULL,
     [Account Outlet Number]                     VARCHAR (50)  NULL,
     [Account Outlet Place Name]                 VARCHAR (20) NULL,
     [Account Number of FTEs]                    VARCHAR (6)  NULL,
@@ -31,7 +31,6 @@
     [Account Weekly Volume]                     VARCHAR (8)  NULL,
     [Account Distributor Name]                  NVARCHAR (100)  NULL,
     [Account Distributor Team]                  NVARCHAR (100)  NULL,
-    [Account Distributor Rep]                   NVARCHAR (100)  NULL, 
-    CONSTRAINT [PK_GD_Acct_Univ_Retail_Dim] PRIMARY KEY ([Account Retail Dim Id])
+    [Account Distributor Rep]                   NVARCHAR (100)  NULL
 );
 
