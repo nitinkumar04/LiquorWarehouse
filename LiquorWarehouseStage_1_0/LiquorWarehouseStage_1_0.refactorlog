@@ -427,4 +427,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="gvp__Sales_Goal_Plan__c" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="d37bd4a0-cea9-4d21-881f-e561dfd46f34" ChangeDateTime="12/12/2019 13:29:49">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[BTG Listing]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BTG_Listing" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dec7b3cd-206c-4ae2-ab24-1af5a38e77e9" ChangeDateTime="12/12/2019 13:29:55">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[Megacall Contacted Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Megacall Contacted_Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="30c3610d-97cf-45d3-8239-604749ac03d7" ChangeDateTime="12/12/2019 13:30:01">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[Megacall Contacted Email]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Megacall Contacted_Email" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4e86d065-0ea1-460b-a398-d74e105bb798" ChangeDateTime="12/12/2019 13:30:09">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[Megacall Contacted Title]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Megacall Contacted_Title" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ce942efa-c0aa-4496-b7c3-718ed0ba193a" ChangeDateTime="12/18/2019 10:21:44">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[Megacall Contacted_Email]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Megacall Contacted Email" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="75da20be-ac8f-4542-aa83-6a594c887f6d" ChangeDateTime="12/18/2019 10:22:12">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[Megacall Contacted_Title]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Megacall Contacted Title" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dbc92585-f4ea-4875-9409-6e8493479a30" ChangeDateTime="12/18/2019 10:23:52">
+    <Property Name="ElementName" Value="[GDOut].[GD_Activity_Fact].[BTG_Listing]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GDOut].[GD_Activity_Fact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BTG Listing" />
+  </Operation>
 </Operations>
