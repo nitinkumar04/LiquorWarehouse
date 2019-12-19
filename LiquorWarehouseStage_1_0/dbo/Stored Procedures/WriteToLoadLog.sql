@@ -34,8 +34,9 @@ begin
 
   if isnull(@error, '') <> '' -- This means there wasn't an error.  This table will store validation errors.  Can be changed later to exclude if it causes confusion.
   begin
-    insert into LoadErrorLog (RUUID, SnapName, ErrorDateTime, Error, Reason) values (
+    insert into LoadErrorLog (RUUID, PipelineName, SnapName, ErrorDateTime, Error, Reason) values (
       @ruuid,
+      @pipelinename,
       @snapname,
       getdate(),
       @error,
