@@ -14,17 +14,29 @@
 
 AS
 begin
-  if isnull(@pipelinename, '') <> '' -- @pipeline name comes through as null when validating a pipeline that has errors.  We don't want to store validation records.
+  -- @pipeline name comes through as null when validating a pipeline that has errors.  We don't want to store validation records.  
+  if isnull(@pipelinename, '') <> '' 
+
+  -- Consolidate the statuses into Completed, Error, and Other
+  declare @ConsolidatedExecutionStatus varchar(25)
+  set @ConsolidatedExecutionStatus = 
+    case 
+      when isnull(@error, '') = '' then 'Completed'
+      when isnull(@error, '') <> '' then 'Error'
+      else 'Other'
+    end
+  
   begin
+    -- If a record already exists for that ruuid, then update it rather than write a new record (this can happen if the error pipeline takes longer to run than the parent pipeine)
+    if @ConsolidatedExecutionStatus = 'Error' and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
+      update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where RUUID = @ruuid
+
+    else
     insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows) values (
       @pipelinename, 
       @snaplogicassetid,
       @ruuid,
-      case 
-        when isnull(@error, '') = '' then 'Completed'
-        when isnull(@error, '') <> '' then 'Error'
-        else 'Other'
-      end, --ExecutionStatus
+      @ConsolidatedExecutionStatus,
       convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
       convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
       @insertrows, 
