@@ -31,6 +31,7 @@
     [Account Weekly Volume]                     VARCHAR (8)  NULL,
     [Account Distributor Name]                  NVARCHAR (100)  NULL,
     [Account Distributor Team]                  NVARCHAR (100)  NULL,
-    [Account Distributor Rep]                   NVARCHAR (100)  NULL
+    [Account Distributor Rep]                   NVARCHAR (100)  NULL, 
+    CONSTRAINT [PK_GD_Acct_Univ_Retail_Dim] PRIMARY KEY ([Account Retail Dim Id])
 );
 
