@@ -1,4 +1,7 @@
 ﻿CREATE TABLE [GDOut].[GD_Sales_Goal_Item](
+	[Sales Goal Fact Id] [varchar](50) NOT NULL,
+	[Sales Goal Id] [varchar](50) NULL,
+	[Sales Goal Name] [varchar](300) NULL,
 	[Created Date] [varchar](50) NULL,
 	[Modified Date] [varchar](50) NULL,
 	[Account] [varchar](50) NULL,
@@ -29,12 +32,10 @@
 	[Sales Goal Estimate 9L Cases] [varchar](50) NULL,
 	[Sales Goal Estimate Cases] [varchar](50) NULL,
 	[Sales Goal Full Case Equivalent] [varchar](50) NULL,
-	[Sales Goal Id] [varchar](50) NULL,
 	[Sales Goal Key] [varchar](50) NULL,
 	[Sales Goal Mid Period 9L Cases] [varchar](50) NULL,
 	[Sales Goal Mid Period Cases] [varchar](50) NULL,
 	[Sales Goal Mid-Period] [varchar](50) NULL,
-	[Sales Goal Name] [varchar](300) NULL,
 	[Sales Goal Period Type] [varchar](50) NULL,
 	[Sales Goal Physical Cases] [varchar](50) NULL,
 	[Sales Goal Primary Volume] [varchar](50) NULL,
@@ -67,7 +68,6 @@
 	[Sales Goal Custom Fact 2] [varchar](50) NULL,
 	[Sales Goal Custom Fact 3] [varchar](50) NULL,
 	[Account Record Type Id] [varchar](50) NULL,
-	[Sales Goal Fact Id] [varchar](50) NULL,
 	[Sales Goal Fact Granularity] [varchar](50) NULL,
 	[Objective Fact Id] [varchar](50) NULL,
 	[Account Set Dim Id] [varchar](50) NULL,
@@ -85,7 +85,8 @@
 	[Sales Goal Plan Description] [varchar](1000) NULL,
 	[Sales Goal Plan Parent Id] [varchar](50) NULL,
 	[Sales Goal Plan Ind] [varchar](50) NULL,
-	[Sales Goal Product Name] [varchar](100) NULL
+	[Sales Goal Product Name] [varchar](100) NULL, 
+    CONSTRAINT [PK_GD_Sales_Goal_Item] PRIMARY KEY ([Sales Goal Fact Id])
 )
 
 
