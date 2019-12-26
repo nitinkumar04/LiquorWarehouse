@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [GDOut].[GD_Acct_Univ_Mktg_Group_Dim](
 	[Marketing Group Dim Id] [char](18) NOT NULL,
-	[Created Date] [date] NULL,
-	[Modified Date] [date] NULL,
+	[Created Date] [nvarchar](10) NULL,
+	[Modified Date] [nvarchar](10) NULL,
 	[Marketing Group Id] [char](18) NULL,
 	[Marketing Group URL] [nvarchar](100) NULL,
 	[Marketing Group URL2] [nvarchar](100) NULL,

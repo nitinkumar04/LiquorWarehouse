@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [GDOut].[GD_Acct_Univ_KA1_Dim](
 	[Key Acct Chain Dim Id] [char](18) NOT NULL,
-	[Created Date] [date] NULL,
-	[Modified Date] [date] NULL,
+	[Created Date] [nvarchar](10) NULL,
+	[Modified Date] [nvarchar](10) NULL,
 	[Key Acct Chain Id] [char](18) NULL,
 	[Key Acct Chain URL] [nvarchar](100) NULL,
 	[Key Acct Chain URL2] [nvarchar](100) NULL,
