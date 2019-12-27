@@ -26,6 +26,6 @@
 	[Territory Name] [varchar](200) NULL,
 	[RecType] [varchar](200) NULL,
 	[Created Date] [varchar](200) NULL,
-	[Modified Date] [varchar](200) NULL,
-	CONSTRAINT [GD_Accounts_for_HQ3] PRIMARY KEY ([Account Id])
+	[Modified Date] [varchar](200) NULL, 
+    CONSTRAINT [PK_GD_Accounts_for_HQ3] PRIMARY KEY ([Account Id])
 );
