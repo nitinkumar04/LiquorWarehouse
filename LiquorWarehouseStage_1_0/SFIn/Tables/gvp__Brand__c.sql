@@ -16,7 +16,7 @@
     [gvp__Custom_2__c]          NVARCHAR (200)  NULL,
     [gvp__Key_Brand__c]         VARCHAR (10)   NULL,
     [gvp__Visible_on_Auth__c]   VARCHAR (10)   NULL,
-    [gvp__Attachments__c]       DECIMAL (4, 1) NULL,
+    [gvp__Attachments__c]       DECIMAL (6, 1) NULL,
     [gvp__Custom_Picklist_1__c] NVARCHAR (200)  NULL,
     [gvp__Custom_Picklist_2__c] NVARCHAR (200)  NULL,
     [OwnerId] CHAR(18) NULL, 
