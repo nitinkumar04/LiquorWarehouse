@@ -1,5 +1,4 @@
-﻿
-CREATE TABLE [GDOut].[GD_Product_Dim](
+﻿CREATE TABLE [GDOut].[GD_Product_Dim](
 	[Product Dim Id]						varchar(37) NOT NULL,
 	[Product Dim Name]					nvarchar(100) NULL,
 	[Product Dim Granularity]		varchar(15) NULL,
@@ -91,7 +90,7 @@ CREATE TABLE [GDOut].[GD_Product_Dim](
 	[Size Primary Conversion]		varchar(14) NULL,
 	[Size Secondary Conversion] varchar(14) NULL,
 	[Size Standard FCE]					varchar(3) NULL,
-	[Size ML Sort]							varchar(5) NULL,
+	[Size ML Sort]							varchar(10) NULL,
 	[Item ABV]									varchar(9) NULL,
 	[Item Description]					nvarchar(100) NULL,
 	[Item FOB DI]								varchar(8) NULL,
