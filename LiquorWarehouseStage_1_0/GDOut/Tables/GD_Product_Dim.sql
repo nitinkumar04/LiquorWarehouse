@@ -34,7 +34,7 @@
 	[Size URL]									nvarchar(100) NULL,
 	[Size Key]									varchar(30) NULL,
 	[Size Name]									nvarchar(100) NULL,
-	[Size Liter Volume]					varchar(5) NULL,
+	[Size Liter Volume]					varchar(10) NULL,
 	[Label Size Id]							varchar(37) NULL,
 	[Label Size Key]						varchar(100) NULL,
 	[Label Size Name]						nvarchar(100) NULL,
