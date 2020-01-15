@@ -38,7 +38,7 @@ begin
       @ruuid,
       @ConsolidatedExecutionStatus,
       convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
-      convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
+      convert(datetime, substring(replace(@endtime, 'T', ' '), 1, 23)), 
       @insertrows, 
       @updaterows, 
       @deleterows)
