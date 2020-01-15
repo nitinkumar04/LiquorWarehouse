@@ -7,6 +7,7 @@
   ExecutionStatus   varchar(25)   not null,
   StartTime         datetime      not null,
   EndTime           datetime      null,
+  Duration          as DateDiff(second, StartTime, EndTime),
   InsertRows        int           null,
   UpdateRows        int           null,
   DeleteRows        int           null, 
