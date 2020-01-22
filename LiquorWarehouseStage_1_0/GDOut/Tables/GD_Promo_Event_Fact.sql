@@ -33,7 +33,7 @@
 	[Promo_Event_Drinks_Purchased] [varchar](50) NULL,
 	[Promo_Event_Actual_Cost] [varchar](50) NULL,
 	[Promo_Event_Brand_Promoted] [varchar](50) NULL,
-	[Promo_Event_Description] [varchar](80) NULL,
+	[Promo_Event_Description] [varchar](500) NULL,
 	[Promo_Event_ERF_Received] [varchar](50) NULL,
 	[Promo_Event_Total_Budget] [varchar](50) NULL,
 	[Promo_Event_Bartab_Budget] [varchar](50) NULL,
