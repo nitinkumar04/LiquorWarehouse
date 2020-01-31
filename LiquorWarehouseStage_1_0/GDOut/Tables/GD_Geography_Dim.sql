@@ -9,7 +9,7 @@
 	[Modified Date]       				char(10) NULL,
 	[Company Key]	        				varchar(50) NULL,
 	[Company Name]	       				varchar(50) NULL,
-	[Division Key] 		      			varchar(20) NULL,
+	[Division Key] 		      			varchar(50) NULL,
 	[Division Name] 		      		varchar(50) NULL,
 	[Region Key] 			        		varchar(50) NULL,
 	[Region Name] 					      varchar(50) NULL,
