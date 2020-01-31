@@ -73,7 +73,7 @@
 	gvp__Minimum_Value__c decimal(4,1) null,
 	gvp__Product__c nvarchar(100) null,
 	gvp__Reference_Report_ID__c varchar(20) null,
-	gvp__Reference_Value__c decimal(9,2) null,
+	gvp__Reference_Value__c decimal(11,2) null,
 	gvp__Sales_Goal_Plan__c char(18) null,
 	gvp__Sales_Team_Division__c char(18) null,
 	gvp__User_Type__c nvarchar(100) null,
