@@ -61,3 +61,7 @@
 	gvp__Most_Recent__c varchar(10) null
     CONSTRAINT [PK_gvp__Survey__c] PRIMARY KEY ([Id]) 
 )
+
+GO
+
+CREATE INDEX IX_Survey_SurveyPeriod ON [SFIn].[gvp__Survey__c] ([gvp__Survey_Period__c]) INCLUDE ([Name], [RecordTypeId], [CreatedDate], [SystemModstamp], [gvp__Account__c], [gvp__Date_of_Survey__c], [gvp__Surveyed_by__c], [gvp__Status__c], [gvp__External_Id__c], [gvp__Geolocation__Latitude__s], [gvp__Geolocation__Longitude__s], [gvp__Previous_Survey__c], [gvp__Distance_m__c], [gvp__Submitted_Date_Time__c], [gvp__Mobile_Survey__c], [gvp__Source__c], [gvp__Account_Team__c], [gvp__Audited__c], [gvp__Audit_Notes__c], [gvp__Audit_Status__c], [gvp__Audited_Survey__c], [gvp__Sales_Team_Division__c], [gvp__Custom_Currency_1__c], [gvp__Custom_Currency_2__c], [gvp__Custom_Date_1__c], [gvp__Custom_Date_2__c], [gvp__Custom_Number_1__c], [gvp__Custom_Number_2__c], [gvp__Custom_Picklist_1__c], [gvp__Custom_Picklist_2__c], [gvp__Custom_Text_1__c], [gvp__Custom_Text_2__c], [gvp__Custom_Text_3__c], [gvp__Custom_Text_4__c], [gvp__Custom_Text_5__c])
