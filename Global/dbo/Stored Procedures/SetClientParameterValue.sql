@@ -3,6 +3,9 @@ begin
   declare @clientid int
   declare @parameterid int
   declare @ParameterNameUnderscores varchar(100)
+  declare @ParameterDataType varchar(100)
+  declare @isnumeric int
+  declare @isdate int
 
   -- Check for sql injection
   if charindex(';', @clientname, 0) > 0
@@ -12,7 +15,7 @@ begin
 
   -- Replace Spaces with underscores
   set @ParameterNameUnderscores = replace(@ParameterName, ' ', '_')
-      
+     
   -- Exit if parameter name doesn't exist
   if not exists(select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)
     return(1);
@@ -23,6 +26,20 @@ begin
 
   else
     begin
+      /* Now that we know that the parameter exists, exit if parameter value doesn't match the ParameterDataType */
+      -- Determine datatype of parametervalue argument
+      set @isnumeric = (select isnumeric(@parametervalue))
+      set @isdate = (select isdate(@parametervalue))
+      
+      -- Get the dataype of the parameter
+      set @ParameterDataType = (select ParameterDataType from Parameter where ParameterName = @ParameterNameUnderscores)
+      
+      -- If the value doesn't match the datatype then exit
+      if (@ParameterDataType like '%date%' and @isdate = 0) or (@ParameterDataType in ('int', 'decimal', 'money') and @isnumeric = 0)
+        return(1);
+
+      /* End check parameter value datatype */
+
       -- Get the client and parameter ids
       set @clientid = (select ClientID from Client where ClientName = @clientname)
       set @parameterid = (select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)

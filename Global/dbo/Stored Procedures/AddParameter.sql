@@ -19,6 +19,10 @@ begin
   if exists(select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)
     return(1);
 
+  -- Exit if the parameter isn't an accepted datatype
+  if @datatype not in ('int', 'decimal', 'money', 'char', 'varchar', 'nchar', 'nvarchar', 'date', 'datetime')
+    return(1);
+
   else
     begin
       -- Get the Client ID
