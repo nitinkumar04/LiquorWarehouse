@@ -12,7 +12,7 @@
 	[Transaction Type Id]              [char](18)     NULL,
 	[Acct HQ Id]                       [char](18)     NULL  DEFAULT '-1',
 	[Person Dim Id]                    [char](18)     NULL  DEFAULT '-1',
-	[Product Dim Id]                   [char](18)     NULL  DEFAULT '-1',
+	[Product Dim Id]                   VARCHAR(18)     NULL  DEFAULT '-1',
 	[Start Date]                       [char](10)     NULL,
 	[End Date]                         [char](10)     NULL,
 	[Transaction Date]                 [char](10)     NULL,
