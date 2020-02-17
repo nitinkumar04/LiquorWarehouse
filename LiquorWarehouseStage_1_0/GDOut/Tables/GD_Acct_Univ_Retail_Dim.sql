@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Acct_Univ_Retail_Dim] (
-    [Account Retail Dim Id]                     CHAR (18)  NOT NULL,
+    [Account Retail Dim Id]                     VARCHAR(18)  NOT NULL,
     [Created Date]                              VARCHAR (20)  NULL,
     [Modified Date]                             VARCHAR (20)  NULL,
     [Account Customer Number]                   VARCHAR (120) NULL,
