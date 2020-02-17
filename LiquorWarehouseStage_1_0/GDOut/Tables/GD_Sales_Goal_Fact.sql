@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GDOut].[GD_Sales_Goal_Fact](
-	[Sales Goal Fact Id] [char](18) NOT NULL,
+	[Sales Goal Fact Id] VARCHAR(18) NOT NULL,
 	[Sales Goal Fact Name] [nvarchar](150) NULL,
 	[Sales Goal Fact URL] [nvarchar](200) NULL,
 	[Sales Goal Fact Granularity] [nvarchar](30) NULL,
@@ -24,7 +24,7 @@
 	[Fiscal Year] [nvarchar](5) NULL,
 	[Fiscal Date Dim Id] [char](10) NULL,
 	[Txn Alt Date] [date] NULL,
-	[Sales Goal Id] [char](18) NULL,
+	[Sales Goal Id] VARCHAR(18) NULL,
 	[Sales Goal Name] [nvarchar](100) NULL,
 	[Sales Goal URL] [nvarchar](200) NULL,
 	[Sales Goal Type] [nvarchar](50) NULL,

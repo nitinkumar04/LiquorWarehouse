@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [GDOut].[GD_Media_Fact](
-	[Media Fact Id] [char](18),
+	[Media Fact Id] VARCHAR(18),
 	[Media Name] [nvarchar](100) NULL,
 	[Media URL] [nvarchar](200) NULL,
 	[Created Date] CHAR(10) NULL,
 	[Modified Date] CHAR(10) NULL,
-	[Person Dim Id] [char](18) NULL,
-	[Account Dim Id] [char](18) NULL,
-	[Acct Univ Dim Id] [char](18) NULL,
-	[Product Dim Id] [char](18) NULL,
+	[Person Dim Id] VARCHAR(18) NULL,
+	[Account Dim Id] VARCHAR(18) NULL,
+	[Acct Univ Dim Id] VARCHAR(18) NULL,
+	[Product Dim Id] VARCHAR(18) NULL,
 	[Txn Type Id] [nvarchar](3) NULL,
 	[Txn Date] DATE NULL,
 	[Fiscal Date] DATE NULL,
@@ -17,7 +17,7 @@
 	[Media Time] CHAR(8) NULL,
 	[Media Key] [nvarchar](19) NULL,
 	[Media Record Type] [varchar](6) NULL,
-	[Media Attachments] CHAR(18) NULL,
+	[Media Attachments] VARCHAR(18) NULL,
 	[Media Comments] NVARCHAR(300) NULL,
 	[Media Geocode] [varchar](100) NULL,
 	[Media Latitude] DECIMAL(21, 18) NULL,
@@ -39,7 +39,7 @@
 	[Media Product Size Key] [varchar](max) NULL,
 	[Txn_Date_Id] [int] NULL,
 	[Fiscal_Date_Id] [int] NULL,
-	[Competitor Dim Id] [char](18),
+	[Competitor Dim Id] VARCHAR(18),
 	 CONSTRAINT [PK_GD_Media_Fact] PRIMARY KEY ([Media Fact Id])
 ) ON [PRIMARY]
 GO
