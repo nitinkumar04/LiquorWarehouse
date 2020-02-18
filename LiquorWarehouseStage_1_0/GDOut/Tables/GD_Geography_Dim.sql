@@ -47,7 +47,7 @@
 	[Distributor Custom 3]	 	  	nvarchar(255) NULL,
 	[Distributor Custom 4] 			  nvarchar(255) NULL,
 	[Distributor Custom 5]  			nvarchar(255) NULL,
-	[Distributor Description] 		nvarchar(300) NULL,
+	[Distributor Description] 		nvarchar(2000) NULL,
 	[Distributor Custom Checkbox 1] nvarchar(100) NULL,
 	[Distributor Custom Checkbox 2] nvarchar(100) NULL,
 	[Distributor Custom 6]   			nvarchar(255) NULL,
