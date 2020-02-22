@@ -22,13 +22,14 @@ begin
   set @ConsolidatedExecutionStatus = 
     case 
       when isnull(@error, '') = '' then 'Completed'
+      when isnull(@error, '') = 'Completed with Log Error' then 'Completed with Log Error'
       when isnull(@error, '') <> '' then 'Error'
       else 'Other'
     end
   
   begin
     -- If a record already exists for that ruuid, then update it rather than write a new record (this can happen if the error pipeline takes longer to run than the parent pipeine)
-    if @ConsolidatedExecutionStatus = 'Error' and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
+    if @ConsolidatedExecutionStatus in ('Error', 'Completed with Log Error') and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
       update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where RUUID = @ruuid
 
     else
