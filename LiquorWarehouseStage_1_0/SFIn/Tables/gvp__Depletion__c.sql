@@ -38,8 +38,8 @@
 	gvp__Custom_2__c nvarchar(200) null,
 	gvp__Custom_Fact_1__c decimal(14,4) null,
 	gvp__Custom_Fact_2__c decimal(14,4) null,
-	gvp__Distributor_Item_Number__c varchar(20) null,
-	gvp__Source_System__c nvarchar(20) null
+	gvp__Distributor_Item_Number__c varchar(255) null,
+	gvp__Source_System__c nvarchar(100) null
     CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([Id]), 
     [gvp__Breakage__c] DECIMAL(14, 4) NULL, 
     [gvp__Military_Off__c] DECIMAL(14, 4) NULL, 

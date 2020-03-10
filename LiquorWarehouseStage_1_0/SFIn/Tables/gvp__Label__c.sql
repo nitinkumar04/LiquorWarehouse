@@ -18,7 +18,7 @@
     [gvp__Region_Sub__c]         NVARCHAR (100)  NULL,
     [gvp__Region__c]             NVARCHAR (100)  NULL,
     [gvp__Type__c]               NVARCHAR (100)  NULL,
-    [gvp__Variety__c]            NVARCHAR (100)  NULL,
+    [gvp__Variety__c]            NVARCHAR (255)  NULL,
     [gvp__Vineyard__c]           NVARCHAR (100)  NULL,
     [gvp__Broken_Case_Exempt__c] VARCHAR (10)   NULL,
     [gvp__Ownership__c]          NVARCHAR (100)  NULL,
