@@ -1,0 +1,7 @@
+﻿CREATE TABLE SRSIn.[SRSCHAIN]
+(
+  RECORDTYPE    varchar(6)  NOT NULL,
+  CHAIN         varchar(10) NOT NULL,
+  [DESC]        varchar(50) NOT NULL, 
+    CONSTRAINT [PK_SRSCHAIN] PRIMARY KEY ([CHAIN])
+)
