@@ -1,0 +1,26 @@
+﻿CREATE TABLE [SFIn].[ContentDocument] (
+    [Id]                                        char (18)   NOT NULL,
+    [CreatedDate]                               DATETIME NOT NULL,
+    [CreatedById]                               CHAR (18) NOT NULL,
+	[OwnerId]                                   CHAR (18) NOT NULL,
+    [LastModifiedDate]                          DATETIME  NULL,
+    [LastModifiedById]                          CHAR (18) NULL,
+    [SystemModstamp]                            DATETIME NULL,
+	[IsArchived]                                VARCHAR (10) NOT NULL,
+	[ArchivedById]								CHAR (18) NULL,
+	[ArchivedDate]                    		    DATE  NULL,
+	[Title]                                     NVARCHAR (100)  NULL, 
+	[PublishStatus]         				    VARCHAR (5) NULL,	
+	[LatestPublishedVersionId]					CHAR (18) NULL,
+	[ParentId]									CHAR (18) NULL,	
+    [LastViewedDate]                            DATETIME NULL,
+    [LastReferencedDate]                        DATETIME NULL,	
+	[Description]                               NVARCHAR (500)  NULL, 
+	[ContentSize]						 		VARCHAR (10) NULL,
+	[FileType]         						    VARCHAR (30) NULL,
+	[FileExtension]         				    VARCHAR (10) NULL,
+	[SharingOption]         				    VARCHAR (5) NULL,
+    [ContentModifiedDate]                       DATETIME NULL,
+    CONSTRAINT [PK_ContentDocument] PRIMARY KEY ([Id])
+);
+GO
