@@ -416,6 +416,10 @@
     <Build Include="SRSIn\Tables\SRSVALUE.sql" />
     <Build Include="SRSIn\Tables\ITEMMAST.sql" />
     <Build Include="SRSIn\Tables\OUTDA.sql" />
+    <Build Include="SFIn\Tables\ContentVersion.sql" />
+    <Build Include="SFIn\Tables\ContentDocumentLink.sql" />
+    <Build Include="SFIn\Tables\ContentDocument.sql" />
+    <Build Include="SFIn\Tables\ContentDistribution.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="aaMike_LiquorWarehouseStage_1_0.publish.xml" />
