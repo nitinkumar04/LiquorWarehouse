@@ -11,5 +11,6 @@
   InsertRows        int           null,
   UpdateRows        int           null,
   DeleteRows        int           null, 
+    [UnchangedRows] INT NULL, 
     CONSTRAINT [PK_LoadLog] PRIMARY KEY ([LoadLogID])
 )

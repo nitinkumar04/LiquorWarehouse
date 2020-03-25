@@ -1,0 +1,31 @@
+﻿CREATE TABLE [GVW].[Inventory_Fact] (
+    [Inventory Fact Id]            VARCHAR (18)   NOT NULL,
+    [Inventory Fact Name]          VARCHAR (50)   NULL,
+    [Inventory Fact URL]           NVARCHAR (200) NULL,
+    [Transaction Type Id]          VARCHAR (20)   NULL,
+    [Product Dim Id]               VARCHAR (18)   NULL,
+    [Txn Date]                       VARCHAR (10)       NULL,
+    [Fiscal Date]                    VARCHAR (10)       NULL,
+    [Fiscal Month]                 VARCHAR (5)    NULL,
+    [Fiscal Year]                  VARCHAR (5)    NULL,
+    [Fiscal Date Dim Id]             VARCHAR (18)   NULL,
+    [Created Date]                   VARCHAR (10)       NULL,
+    [Modified Date]                  VARCHAR (10)       NULL,
+    [Inventory Id]                 VARCHAR (20)   NULL,
+    [Inventory Name]               VARCHAR (50)   NULL,
+    [Inventory Item Key]           VARCHAR (50)   NULL,
+    [Inventory Location]           VARCHAR (50)   NULL,
+    [Inventory Warehouse]          VARCHAR (50)   NULL,
+    [Inventory Quantity]             DECIMAL(14, 6)   NULL,
+    [Inventory Quantity On Hand]     VARCHAR (20)   NULL,
+    [Inventory Quantity On Order]    VARCHAR (20)   NULL,
+    [Inventory 9L Cases]             DECIMAL(14, 6)  NULL,
+    [Inventory Primary Volume]       DECIMAL(14, 6)  NULL,
+    [Inventory Secondary Volume]     DECIMAL(14, 6)  NULL,
+    [Inventory Full Case Equivalent] DECIMAL(14, 6)  NULL,
+    [Txn_Date_Id]                    VARCHAR (20)   NULL,
+    [Fiscal_Date_Id]                 VARCHAR (20)   NULL, 
+    CONSTRAINT [PK_Inventory_Fact] PRIMARY KEY ([Inventory Fact Id])
+);
+
+

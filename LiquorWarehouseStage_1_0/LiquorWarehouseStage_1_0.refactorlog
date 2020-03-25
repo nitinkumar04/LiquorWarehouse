@@ -476,4 +476,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="BTG Listing" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="ccf6f33a-9bef-48b9-af0b-b903ea64649e" ChangeDateTime="03/25/2020 14:22:41">
+    <Property Name="ElementName" Value="[GVW].[TxnType].[GVWDeletedDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[TxnType]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="GVWDeleted" />
+  </Operation>
 </Operations>

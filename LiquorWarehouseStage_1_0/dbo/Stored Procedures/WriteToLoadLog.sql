@@ -10,7 +10,8 @@
   @reason varchar(1000),
   @snapname varchar(100),
   @updaterows int = null, 
-  @deleterows int = null
+  @deleterows int = null,
+  @unchangedrows int = null
 
 AS
 begin
@@ -33,7 +34,7 @@ begin
       update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where RUUID = @ruuid
 
     else
-    insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows) values (
+    insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows, UnchangedRows) values (
       @pipelinename, 
       @snaplogicassetid,
       @ruuid,
@@ -42,7 +43,8 @@ begin
       convert(datetime, substring(replace(@endtime, 'T', ' '), 1, 23)), 
       @insertrows, 
       @updaterows, 
-      @deleterows)
+      @deleterows,
+      @unchangedrows)
   end
 
   if isnull(@error, '') <> '' -- This means there wasn't an error.  This table will store validation errors.  Can be changed later to exclude if it causes confusion.
