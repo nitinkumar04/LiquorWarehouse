@@ -126,7 +126,6 @@
     <Folder Include="SFIn\Tables\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="SFIn\Stored Procedures" />
     <Folder Include="dbo\Views" />
     <Folder Include="SFOut" />
     <Folder Include="SFOut\Tables" />
@@ -334,19 +333,12 @@
     <Build Include="SFIn\Tables\gvp__POS_Placement__c.sql" />
     <Build Include="SFIn\Tables\gvp__Well__c.sql" />
     <Build Include="SFIn\Tables\gvp__GoodData_Translation_Settings__c.sql" />
-    <Build Include="SFIn\Stored Procedures\DimRetailerSourceQuery.sql" />
-    <Build Include="SFIn\Stored Procedures\DimActivitySourceQuery.sql" />
     <Build Include="dbo\Tables\State.sql" />
-    <Build Include="SFIn\Stored Procedures\DimProductSizeQuery.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="SFIn\Tables\gvp__Sales_Sequence__c.sql" />
     <Build Include="dbo\Tables\Country.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence_Step__c.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence_Step_Status__c.sql" />
     <Build Include="SFIn\Tables\LWDistributorParentRecordsAsChildren.sql" />
-    <Build Include="SFIn\Stored Procedures\DimDistributorSourceQuery.sql" />
     <Build Include="SFIn\Tables\LWRetailerParentRecordsAsChildren.sql" />
     <Build Include="dbo\Tables\LoadLog.sql" />
     <Build Include="dbo\Tables\LoadDataDateTime.sql" />
@@ -456,8 +448,8 @@
     <Build Include="GVW\Tables\Acct_Univ_Retail_Dim.sql" />
     <Build Include="GVW\Tables\Activity_Fact.sql" />
     <Build Include="GVW\Tables\Activity_Goal_Dim.sql" />
-    <Build Include="GVW\Tables\Competitor.sql" />
-    <Build Include="GVW\Tables\Contact_Dim.sql" />
+    <Build Include="GVW\Tables\CompetitorDim.sql" />
+    <Build Include="GVW\Tables\ContactDim.sql" />
     <Build Include="GVW\Tables\Currency_Dim.sql" />
     <Build Include="GVW\Tables\Depletion_Fact.sql" />
     <Build Include="GVW\Tables\Distributor_Hier_Dim.sql" />

@@ -483,4 +483,67 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="GVWDeleted" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="908610cb-4ccf-4c35-899c-60cfda0585fd" ChangeDateTime="03/25/2020 16:34:18">
+    <Property Name="ElementName" Value="[dbo].[Source].[SourceID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Source]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="29517875-bafa-4dbf-82fe-58d20d6b2a93" ChangeDateTime="03/25/2020 16:34:24">
+    <Property Name="ElementName" Value="[dbo].[Source].[SourceName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Source]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ce1c890c-90c8-48c4-b604-2c96a0d0d02b" ChangeDateTime="03/25/2020 19:55:52">
+    <Property Name="ElementName" Value="[GVW].[CompetitorDim].[ExternalID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[CompetitorDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExternalId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ddbf63ba-4ae0-47de-aa15-76af0ff5d52a" ChangeDateTime="03/25/2020 19:55:56">
+    <Property Name="ElementName" Value="[GVW].[CompetitorDim].[SizeExternalID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[CompetitorDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SizeExternalId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dd78ce65-a885-42c4-8e99-936529254642" ChangeDateTime="03/25/2020 19:56:02">
+    <Property Name="ElementName" Value="[GVW].[CompetitorDim].[ExternalId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[CompetitorDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ExternalID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4055cf17-262a-479f-bab6-a8823498d989" ChangeDateTime="03/25/2020 19:56:06">
+    <Property Name="ElementName" Value="[GVW].[CompetitorDim].[SizeExternalId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[CompetitorDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SizeExternalID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0242782d-d366-4412-8a70-3846841b0eaa" ChangeDateTime="03/25/2020 19:57:39">
+    <Property Name="ElementName" Value="[GVW].[CompetitorDim].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[CompetitorDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f1a89331-8eef-4d4d-80b1-1d04e2fd852c" ChangeDateTime="03/25/2020 20:51:46">
+    <Property Name="ElementName" Value="[GVW].[ContactDim].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ContactDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="389b2b38-fa6c-4e61-aa82-52e1d9cbba10" ChangeDateTime="03/25/2020 20:51:50">
+    <Property Name="ElementName" Value="[GVW].[ContactDim].[AccountId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ContactDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountID" />
+  </Operation>
 </Operations>
