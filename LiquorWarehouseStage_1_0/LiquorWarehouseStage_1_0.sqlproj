@@ -415,7 +415,7 @@
     <Build Include="SFIn\Tables\ContentDocument.sql" />
     <Build Include="SFIn\Tables\ContentDistribution.sql" />
     <Build Include="Security\GVW.sql" />
-    <Build Include="GVW\Tables\Account_Call_Fact.sql" />
+    <Build Include="GVW\Tables\AccountCallFact.sql" />
     <Build Include="GVW\Tables\Account_Custom_Dim.sql" />
     <Build Include="GVW\Tables\Account_Dim.sql" />
     <Build Include="GVW\Tables\Account_Hier_Dim.sql" />
@@ -425,27 +425,27 @@
     <Build Include="GVW\Tables\Account_Mktg_Group_Dim.sql" />
     <Build Include="GVW\Tables\Account_Owner_Dim.sql" />
     <Build Include="GVW\Tables\Account_Retail_Dim.sql" />
-    <Build Include="GVW\Tables\Account_Set_Dim.sql" />
-    <Build Include="GVW\Tables\Account_Team_Dim.sql" />
-    <Build Include="GVW\Tables\Accounts_For_HQ_By.sql" />
-    <Build Include="GVW\Tables\Accounts_For_HQ1.sql" />
-    <Build Include="GVW\Tables\Accounts_For_HQ2.sql" />
-    <Build Include="GVW\Tables\Accounts_for_HQ3.sql" />
-    <Build Include="GVW\Tables\Acct_HQ_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Listing_Fact.sql" />
-    <Build Include="GVW\Tables\Acct_Record_Type_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Segment_Dim.sql" />
+    <Build Include="GVW\Tables\AccountSetDim.sql" />
+    <Build Include="GVW\Tables\AccountTeamDim.sql" />
+    <Build Include="GVW\Tables\AccountsforHQBy.sql" />
+    <Build Include="GVW\Tables\AccountsforHQ1.sql" />
+    <Build Include="GVW\Tables\AccountsforHQ2.sql" />
+    <Build Include="GVW\Tables\AccountsforHQ3.sql" />
+    <Build Include="GVW\Tables\AcctHQDim.sql" />
+    <Build Include="GVW\Tables\AcctListingFact.sql" />
+    <Build Include="GVW\Tables\AcctRecordTypeDim.sql" />
+    <Build Include="GVW\Tables\AcctSegmentDim.sql" />
     <Build Include="GVW\Tables\Acct_Type_Dim.sql" />
     <Build Include="GVW\Tables\Acct_Univ_Custom_Dim.sql" />
     <Build Include="GVW\Tables\Acct_Univ_Dim.sql" />
     <Build Include="GVW\Tables\Acct_Univ_Dim_All.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_Hier_Dim.sql" />
+    <Build Include="GVW\Tables\AcctUnivHierDim.sql" />
     <Build Include="GVW\Tables\Acct_Univ_HQ_By_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_KA1_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_KA2_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_Mktg_Group_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_Owner_Dim.sql" />
-    <Build Include="GVW\Tables\Acct_Univ_Retail_Dim.sql" />
+    <Build Include="GVW\Tables\AcctUnivKA1Dim.sql" />
+    <Build Include="GVW\Tables\AcctUnivKA2Dim.sql" />
+    <Build Include="GVW\Tables\AcctUnivMktgGroupDim.sql" />
+    <Build Include="GVW\Tables\AcctUnivOwnerDim.sql" />
+    <Build Include="GVW\Tables\AcctUnivRetailDim.sql" />
     <Build Include="GVW\Tables\Activity_Fact.sql" />
     <Build Include="GVW\Tables\Activity_Goal_Dim.sql" />
     <Build Include="GVW\Tables\CompetitorDim.sql" />
@@ -492,8 +492,5 @@
   <ItemGroup>
     <None Include="aaMike_LiquorWarehouseStage_1_0.publish.xml" />
     <None Include="aaMike_LiquorWarehouseStage_1_02.publish.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="LiquorWarehouseStage_1_0.refactorlog" />
   </ItemGroup>
 </Project>
