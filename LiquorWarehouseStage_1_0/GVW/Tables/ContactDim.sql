@@ -47,7 +47,6 @@
 	[OwnerFullName] [varchar](50) NULL,
 	[OwnerEmail] [varchar](100) NULL,
 	[AccountID] [varchar](50) NULL,
-	[AcctUnivId] [varchar](50) NULL,
 	[Role] [varchar](200) NULL,
 	[Custom1] [varchar](200) NULL,
 	[Custom2] [varchar](200) NULL,

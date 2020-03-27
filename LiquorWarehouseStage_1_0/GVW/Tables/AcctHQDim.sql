@@ -2,13 +2,13 @@
 	[GVWAcctHQSKey] int identity(1,1),
 	[CreatedDate] DATE NULL,
 	[ModifiedDate] DATE NULL,
-	[Id] [varchar](18) NULL,
+	[ID] [varchar](18) NULL,
 	[URL] [nvarchar](200) NULL,
 	[Name] [nvarchar](100) NULL,
 	[NameNumber] [nvarchar](200) NULL,
 	[RecordType] [varchar](30) NULL,
 	[Level] [nvarchar](20) NULL,
-	[Key] [nvarchar](100) NULL,
+	[ExternalID] [nvarchar](100) NULL,
 	[City] [nvarchar](100) NULL,
 	[State] [nvarchar](100) NULL,
 	[KeyAccount] [nvarchar](10) NULL,
@@ -17,7 +17,7 @@
 	[Custom3] [nvarchar](200) NULL,
 	[Custom4] [nvarchar](200) NULL,
 	[Custom5] [nvarchar](200) NULL,
-	[OwnerId] [varchar](18) NULL,
+	[OwnerID] [varchar](18) NULL,
 	[OwnerURL] [nvarchar](200) NULL,
 	[OwnerLastName] [nvarchar](100) NULL,
 	[OwnerFirstName] [nvarchar](100) NULL,
@@ -25,7 +25,7 @@
 	[OwnerEmail] [nvarchar](200) NULL, 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AcctHQDim] PRIMARY KEY (GVWAcctHQSKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AcctHQDim] PRIMARY KEY (GVWAcctHQSKey)
 );

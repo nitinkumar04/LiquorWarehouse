@@ -2,13 +2,13 @@
     [GVWAcctUnivKA1SKey] int identity(1,1),	
 	[CreatedDate] [nvarchar](10) NULL,
 	[ModifiedDate] [nvarchar](10) NULL,
-	[Id] VARCHAR(18) NULL,
+	[ID] VARCHAR(18) NULL,
 	[URL] [nvarchar](100) NULL,
 	[Name] [nvarchar](250) NULL,
 	[NameNumber] [nvarchar](400) NULL,
 	[RecordType] [nvarchar](100) NULL,
 	[Level] [nvarchar](80) NULL,
-	[Key] [varchar](70) NULL,
+	[ExternalID] [varchar](70) NULL,
 	[City] [nvarchar](50) NULL,
 	[State] [nvarchar](35) NULL,
 	[KeyAccount] [varchar](10) NULL,
@@ -17,17 +17,17 @@
 	[Custom3] [nvarchar](255) NULL,
 	[Custom4] [nvarchar](255) NULL,
 	[Custom5] [nvarchar](255) NULL,
-	[OwnerId] VARCHAR(18) NULL,
+	[OwnerID] VARCHAR(18) NULL,
 	[OwnerURL] [nvarchar](100) NULL,
 	[OwnerLastName] [nvarchar](50) NULL,
 	[OwnerFirstName] [nvarchar](50) NULL,
 	[OwnerFullName] [nvarchar](80) NULL,
 	[OwnerEmail] [nvarchar](75) NULL,
-	[TerritoryKey] [nvarchar](45) NULL,
+	[TerritoryExternalID] [nvarchar](45) NULL,
 	[TerritoryName] [nvarchar](200) NULL,
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AcctUnivKA1Dim] PRIMARY KEY (GVWAcctUnivKA1SKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AcctUnivKA1Dim] PRIMARY KEY (GVWAcctUnivKA1SKey)
 );

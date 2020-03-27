@@ -1,18 +1,18 @@
-﻿CREATE TABLE [GVW].[AcctUnivOwnerDim] (
-	[GVWAcctUnivOwnerSKey] int identity(1,1),
-   	[CreatedDate] CHAR(10) NULL,
-	[ModifiedDate] CHAR(10) NULL,
-	[ID] VARCHAR(18) NULL,
+﻿CREATE TABLE [GVW].[DistributorOwnerDim] (
+	[GVWDistributorOwnerSKey] int identity(1,1),
+	[ID] VARCHAR(18) NOT NULL,
 	[Name] [nvarchar](110) NULL,
-	[URL] [nvarchar](200) NULL,
 	[Granularity] [nvarchar](30) NULL,
+	[URL] [nvarchar](200) NULL,
+	[CreatedDate] [char](10) NULL,
+	[ModifiedDate] [char](10) NULL,
 	[Key1] [varchar](75) NULL,
 	[Key2] [varchar](75) NULL,
 	[EmailKey] [varchar](100) NULL,
 	[LastName] [nvarchar](80) NULL,
 	[FirstName] [nvarchar](50) NULL,
 	[Salutation] [nvarchar](30) NULL,
-	[RecordType] VARCHAR(18) NULL,
+	[RecordType] [char](18) NULL,
 	[Street] [nvarchar](300) NULL,
 	[City] [nvarchar](100) NULL,
 	[State] [nvarchar](50) NULL,
@@ -39,9 +39,9 @@
 	[ProfileName] [varchar](50) NULL,
 	[ManagerID] VARCHAR(18) NULL,
 	[ManagerURL] [nvarchar](200) NULL,
-	[ManagerLastName] [nvarchar](80) NULL,
-	[ManagerFirstName] [varchar](50) NULL,
-	[ManagerFullName] [nvarchar](110) NULL,
+	[ManagerLast Name] [nvarchar](80) NULL,
+	[ManagerFirst Name] [varchar](50) NULL,
+	[ManagerFull Name] [nvarchar](110) NULL,
 	[ManagerEmail] [varchar](50) NULL,
 	[OwnerID] VARCHAR(18) NULL,
 	[OwnerURL] [nvarchar](200) NULL,
@@ -58,6 +58,6 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-	GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_AcctUnivOwnerDim] PRIMARY KEY (GVWAcctUnivOwnerSKey)
+    GVWDeleted BIT NULL DEFAULT '0'
+	CONSTRAINT [PK_DistributorOwnerDim] PRIMARY KEY ([GVWDistributorOwnerSKey])
 );
