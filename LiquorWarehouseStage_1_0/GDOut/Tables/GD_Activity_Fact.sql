@@ -34,7 +34,7 @@
     [Megacall Id]                 VARCHAR (300)  NULL,
     [Megacall Name]               VARCHAR (100)  NULL,
     [Megacall URL]                NVARCHAR (200) NULL,
-    [Megacall Notes]              VARCHAR (100)  NULL,
+    [Megacall Notes]              VARCHAR (255)  NULL,
     [Megacall Status]             VARCHAR (30)   NULL,
     [Megacall Type]               VARCHAR (50)   NULL,
     [Menu Drink Name]             VARCHAR (100)  NULL,
@@ -108,7 +108,7 @@
     [Image_Ind]                   VARCHAR (20)   NULL,
     [Image_Description]           VARCHAR (100)  NULL,
     [Image_URL_Dashboard]         VARCHAR (200)  NULL,
-    [Image_URL_Table]             VARCHAR (100)   NULL,
+    [Image_URL_Table]             VARCHAR (200)   NULL,
     [Spend Dim Id]                VARCHAR (40)   NULL, 
     CONSTRAINT [PK_GD_Activity_Fact] PRIMARY KEY ([Activity Fact Id])
 );
