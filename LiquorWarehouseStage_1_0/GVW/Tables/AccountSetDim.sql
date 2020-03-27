@@ -1,17 +1,14 @@
 ﻿CREATE TABLE [GVW].[AccountSetDim](
 	[GVWAccountSetSKey] int identity(1,1),
-	[AccountSetDimId]              VARCHAR(18)      NOT NULL,
-	[AccountSetDimName]            [nvarchar](100) NULL,
-	[AccountSetDimURL]             [nvarchar](250) NULL,
+	[ID]              VARCHAR(18)      NOT NULL,
+	[Name]            [nvarchar](100) NULL,
+	[URL]             [nvarchar](250) NULL,
 	[Granularity]     [varchar](50)   NULL,
-	[AccountDimId]                  VARCHAR(18)      NULL,
+	[AccountDimID]                  VARCHAR(18)      NULL,
 	[CreatedDate]                    [char](10)      NULL,
 	[ModifiedDate]                   [char](10)      NULL,
-	[Id]                  VARCHAR(18)      NULL,
-	[Name]                [nvarchar](100) NULL,
-	[URL]                 [nvarchar](250) NULL,
 	[Test]                [varchar](10)   NULL,
-	[MemberId]           VARCHAR(18)      NULL,
+	[MemberID]           VARCHAR(18)      NULL,
 	[MemberURL]          [nvarchar](250) NULL,
 	[MemberName]         [nvarchar](200) NULL,
 	[AccountNameNumber] [nvarchar](250) NULL, 
@@ -25,10 +22,10 @@
 	[CustomText4]       [nvarchar](200) NULL,
 	[CustomText5]       [nvarchar](200) NULL,
 	[Description]         [nvarchar](200) NULL,
-	[ExternalId]         [varchar](50)   NULL,
+	[ExternalID]         [varchar](50)   NULL,
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AccountSetDim] PRIMARY KEY (GVWAccountSetSKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AccountSetDim] PRIMARY KEY (GVWAccountSetSKey) 
 );

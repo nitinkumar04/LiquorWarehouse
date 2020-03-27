@@ -1,19 +1,19 @@
-﻿CREATE TABLE [GVW].[AccountsforHQ3](
-	[GVWAccountsforHQ3SKey] int identity(1,1),
-	[Id] [varchar](18) NOT NULL,
+﻿CREATE TABLE [GVW].[AccountsforHQ2Dim](
+	[GVWAccountsforHQ2SKey] int identity(1,1),
+	[ID] [varchar](18) NOT NULL,
 	[URL] [nvarchar](500) NULL,
 	[Name] [varchar](200) NULL,
 	[City] [varchar](200) NULL,
 	[State] [varchar](200) NULL,
 	[KeyAccount] [varchar](200) NULL,
-	[OwnerId] [varchar](18) NULL,
+	[OwnerID] [varchar](18) NULL,
 	[OwnerURL] [nvarchar](500) NULL,
 	[OwnerLastName] [varchar](200) NULL,
 	[OwnerFirstName] [varchar](200) NULL,
 	[OwnerFullName] [varchar](200) NULL,
 	[OwnerEmail] [varchar](200) NULL,
 	[Level] [varchar](200) NULL,
-	[Key] [varchar](200) NULL,
+	[ExternalID] [varchar](200) NULL,
 	[NameNumber] [varchar](500) NULL,
 	[Custom1] [varchar](200) NULL,
 	[Custom2] [varchar](200) NULL,
@@ -30,7 +30,7 @@
 	[ModifiedDate] [varchar](200) NULL, 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AccountsforHQ3] PRIMARY KEY (GVWAccountsforHQ3SKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AccountsforHQ2Dim] PRIMARY KEY (GVWAccountsforHQ2SKey)
 );

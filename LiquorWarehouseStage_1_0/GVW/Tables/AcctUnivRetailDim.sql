@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [GVW].[AcctUnivRetailDim] (
 	[GVWAcctUnivRetailSKey] int identity(1,1),
-    [Id]                     VARCHAR(18)  NOT NULL,
+    [ID]                     VARCHAR(18)  NOT NULL,
     [CreatedDate]                              VARCHAR (20)  NULL,
     [ModifiedDate]                             VARCHAR (20)  NULL,
     [CustomerNumber]                   VARCHAR (120) NULL,
-    [BDNId]                            VARCHAR (40)  NULL,
+    [BDNID]                            VARCHAR (40)  NULL,
     [DBAName]                          NVARCHAR (100) NULL,
     [BDNDateofData]                  CHAR (12)  NULL,
     [BDNLastUpdate]                   VARCHAR (10)  NULL,
@@ -35,7 +35,7 @@
     [DistributorRep]                   NVARCHAR (100)  NULL, 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AcctUnivRetailDim] PRIMARY KEY (GVWAcctUnivRetailSKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AcctUnivRetailDim] PRIMARY KEY (GVWAcctUnivRetailSKey)
 );

@@ -1,6 +1,6 @@
-﻿CREATE TABLE [GVW].[AccountsforHQ1](
+﻿CREATE TABLE [GVW].[AccountsforHQ1Dim](
 	[GVWAccountsforHQ1SKey] int identity(1,1),
-	[Id] [varchar](18) NOT NULL,
+	[ID] [varchar](18) NOT NULL,
 	[URL] [nvarchar](500) NULL,
 	[Name] [varchar](200) NULL,
 	[RecordType] [varchar](200) NULL,
@@ -17,7 +17,7 @@
 	[ModifiedDate] [varchar](200) NULL, 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
-    GVWSourceID  INT default (-1)
-    CONSTRAINT [PK_AccountsforHQ1] PRIMARY KEY (GVWAccountsforHQ1SKey) NOT NULL, 
-    [GVWDeleted] BIT NULL
+    GVWSourceID  INT default (-1),
+	GVWDeleted BIT NULL DEFAULT '0'
+    CONSTRAINT [PK_AccountsforHQ1Dim] PRIMARY KEY (GVWAccountsforHQ1SKey) 
 );
