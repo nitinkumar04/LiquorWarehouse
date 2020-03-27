@@ -546,4 +546,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AccountID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e70640cf-a636-4de6-b218-0e170e31f64c" ChangeDateTime="03/26/2020 21:40:35">
+    <Property Name="ElementName" Value="[GVW].[ContactDim].[Created Date]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ContactDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedDate" />
+  </Operation>
 </Operations>

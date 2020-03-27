@@ -51,6 +51,7 @@ begin
         167             varchar
         40              date
         173             binary
+        104             bit
     */
 
     -- Create the column name portion of the insert query
@@ -72,6 +73,7 @@ begin
         when system_type_id = 175 and size > 6 then '''Invalid''' -- long char
         when system_type_id = 175 and size <= 6 then '''?'''
 				when system_type_id = 173 then '0x0000000000000000'
+        when system_type_id = 104 then '0'
       end
       from #columns
       order by id
@@ -99,6 +101,7 @@ begin
         when system_type_id = 175 and size > 6 then '''No Data''' -- long char
         when system_type_id = 175 and size <= 6 then '''-'''
 				when system_type_id = 173 then '0x0000000000000000'
+        when system_type_id = 104 then '0'
       end
       from #columns
       order by id

@@ -493,4 +493,7 @@
     <None Include="aaMike_LiquorWarehouseStage_1_0.publish.xml" />
     <None Include="aaMike_LiquorWarehouseStage_1_02.publish.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="LiquorWarehouseStage_1_0.refactorlog" />
+  </ItemGroup>
 </Project>

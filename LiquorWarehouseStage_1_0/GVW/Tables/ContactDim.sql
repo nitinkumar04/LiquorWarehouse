@@ -1,11 +1,10 @@
 ﻿CREATE TABLE [GVW].[ContactDim](
   GVWContactSKey  int     identity(1,1),
 	[ID] [varchar](50) NOT NULL,
-	[Name] [varchar](100) NULL,
 	[Granularity] [varchar](50) NULL,
 	[URL] [varchar](100) NULL,
-	[Created Date] [varchar](50) NULL,
-	[Modified Date] [varchar](50) NULL,
+	[CreatedDate] [varchar](50) NULL,
+	[ModifiedDate] [varchar](50) NULL,
 	[CustomerExternalID] [varchar](50) NULL,
 	[SalesmanExternalID] [varchar](50) NULL,
 	[EmailExternalID] [varchar](50) NULL,
@@ -47,7 +46,6 @@
 	[OwnerFullName] [varchar](50) NULL,
 	[OwnerEmail] [varchar](100) NULL,
 	[AccountID] [varchar](50) NULL,
-	[AcctUnivId] [varchar](50) NULL,
 	[Role] [varchar](200) NULL,
 	[Custom1] [varchar](200) NULL,
 	[Custom2] [varchar](200) NULL,
@@ -59,6 +57,7 @@
   GVWLastModifiedDate datetime default getdate() NOT NULL,
   GVWSourceID   int   default (0) NOT NULL,
   GVWDeleted    bit   default 0 NOT NULL,
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
     CONSTRAINT [PK_ContactDim] PRIMARY KEY ([GVWContactSKey])
 ) ON [PRIMARY]
 GO
