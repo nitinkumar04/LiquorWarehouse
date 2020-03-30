@@ -416,7 +416,6 @@
     <Build Include="SFIn\Tables\ContentDistribution.sql" />
     <Build Include="Security\GVW.sql" />
     <Build Include="GVW\Tables\AccountCallFact.sql" />
-    <Build Include="GVW\Tables\AccountDim.sql" />
     <Build Include="GVW\Tables\AccountSetDim.sql" />
     <Build Include="GVW\Tables\AccountTeamDim.sql" />
     <Build Include="GVW\Tables\AccountsforHQByDim.sql" />
@@ -457,11 +456,11 @@
     <Build Include="GVW\Tables\PersonDim.sql" />
     <Build Include="GVW\Tables\Product_Dim.sql" />
     <Build Include="GVW\Tables\ProductSetDim.sql" />
-    <Build Include="GVW\Tables\Promo_Event_Fact.sql" />
-    <Build Include="GVW\Tables\RAD_Fact.sql" />
+    <Build Include="GVW\Tables\PromoEventFact.sql" />
+    <Build Include="GVW\Tables\RADFact.sql" />
     <Build Include="GVW\Tables\SalesDivisionDim.sql" />
     <Build Include="GVW\Tables\SalesDriverDim.sql" />
-    <Build Include="GVW\Tables\Sales_Goal_Fact.sql" />
+    <Build Include="GVW\Tables\SalesGoalFact.sql" />
     <Build Include="GVW\Tables\Sales_Goal_Item.sql" />
     <Build Include="GVW\Tables\Sales_Order_Fact.sql" />
     <Build Include="GVW\Tables\Shipment_Fact.sql" />
