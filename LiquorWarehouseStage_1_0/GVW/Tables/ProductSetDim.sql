@@ -1,0 +1,26 @@
+﻿CREATE TABLE [GVW].[ProductSetDim] (
+	[GVWProductSetSKey] int identity(1,1),
+    [ID]          VARCHAR (18)  NOT NULL,
+    [Name]        VARCHAR (100) NULL,
+    [URL]         VARCHAR (200) NULL,
+    [Granularity] VARCHAR (50)  NULL,
+    [CreatedDate]                CHAR(10)      NULL,
+    [ModifiedDate]               CHAR(10)      NULL,
+    [ProductDimID]              VARCHAR (18)  NULL,
+    [ProductSetID]              VARCHAR (18)  NULL,
+    [ProductSetName]            VARCHAR (100) NULL,
+    [ProductSetURL]             VARCHAR (200) NULL,
+    [ProductSetProductLevel]   VARCHAR (50)  NULL,
+    [ProductSetBrandName]      VARCHAR (100) NULL,
+    [ProductSetLabelName]      VARCHAR (200) NULL,
+    [ProductSetItemName]       VARCHAR (200) NULL,
+    [ProdSetMemberID]          VARCHAR (18)  NULL,
+    [ProdSetMemberName]        VARCHAR (100) NULL,
+    [ProdSetMemberURL]         VARCHAR (200) NULL,
+    [ProdSetMemberPosition]    SMALLINT      NULL, 
+    GVWCreatedDate       datetime    default getdate() NOT NULL,
+    GVWLastModifiedDate  datetime    default getdate() NOT NULL,
+    GVWSourceID  INT default (-1),
+    GVWDeleted BIT NULL DEFAULT '0'
+	CONSTRAINT [PK_ProductSetDim] PRIMARY KEY ([GVWProductSetSKey])
+);
