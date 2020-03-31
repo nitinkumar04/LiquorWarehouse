@@ -44,7 +44,7 @@
 	gvp__Account_Call__c varchar(10) null,
 	gvp__Account_Call_Id__c char(18) null,
 	gvp__Event_is_Past__c varchar(10) null,
-	gvp__External_Id__c varchar(30) null,
+	gvp__External_Id__c varchar(100) null,
 	gvp__Approved__c varchar(10) null,
 	gvp__Account_Call_Send_Email_Date__c date null,
 	gvp__Account_Call_Send_Email__c varchar(10) null,
