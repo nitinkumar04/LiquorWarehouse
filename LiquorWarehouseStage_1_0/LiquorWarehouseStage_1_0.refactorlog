@@ -553,4 +553,158 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CreatedDate" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="86216ee2-91b8-4e47-bdbe-114711c0adc9" ChangeDateTime="03/30/2020 14:05:02">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountHierarchyDimID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AcctHierDimID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7ad08ca2-e01a-43fd-a394-7ff8e06d116e" ChangeDateTime="03/30/2020 14:05:21">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AcctHierDimID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AcctUnivHierDimID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b304b7d0-5c30-410d-9e8b-ee9743940a74" ChangeDateTime="03/30/2020 14:05:26">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountRetailDimID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AcctUnivRetailDimID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f91939e5-6772-47e1-a5d5-589ddf557008" ChangeDateTime="03/30/2020 14:06:06">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustomerPriority]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerPriority" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b6aa370-0fec-4221-a020-2a902465120d" ChangeDateTime="03/30/2020 14:06:15">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustomCheckbox1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomCheckbox1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c9778e98-d58a-453d-8437-64e6e51b6895" ChangeDateTime="03/30/2020 14:06:20">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustomCheckbox2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomCheckbox2" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6eccb5b1-2e39-4e81-b2bf-9a1638f48668" ChangeDateTime="03/30/2020 14:06:22">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom6]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom6" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6f07826e-00fb-4c4e-bfd8-d1897d34efec" ChangeDateTime="03/30/2020 14:06:25">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom7]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom7" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ae8a60c0-dcd8-4041-8c6e-83db52f02edb" ChangeDateTime="03/30/2020 14:06:28">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom8]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom8" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9a616c08-8c3c-4170-bb32-b3c924fce620" ChangeDateTime="03/30/2020 14:06:31">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom9]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom9" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2efb8e9a-116b-454c-922a-531d274ba36b" ChangeDateTime="03/30/2020 14:06:35">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom10]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom10" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="12f0f78e-2896-441b-b070-8271461d7d8d" ChangeDateTime="03/30/2020 14:06:38">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustomDate1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomDate1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a3764f3f-dd5e-442e-89f3-b98bb7a6135e" ChangeDateTime="03/30/2020 14:06:46">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustomDate2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomDate2" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7396c68a-a1f6-4b1c-a7df-af44aa450a80" ChangeDateTime="03/30/2020 16:47:00">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom1" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e41554c8-85e4-422f-b34d-7a9e76d8af10" ChangeDateTime="03/30/2020 16:47:02">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom2" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="37caa1f3-16ac-4727-ad61-42e13191389d" ChangeDateTime="03/30/2020 16:47:06">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom3]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom3" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e7d67de8-d5be-4b5e-ad18-55907b04f23e" ChangeDateTime="03/30/2020 16:47:08">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom4]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom4" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8e085d5b-3121-4026-83ef-cf4c10e9496a" ChangeDateTime="03/30/2020 16:47:11">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AccountCustom5]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Custom5" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9d97c091-be63-420e-a4d8-ff6a5fab4cbb" ChangeDateTime="03/31/2020 19:32:34">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[ChainInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ChainIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b61d5304-fe76-4077-bd39-0bf6d047ecfa" ChangeDateTime="03/31/2020 21:16:31">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AcctUnivDimID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd07ed86-4ff3-4e20-bf17-963265403b72" ChangeDateTime="03/31/2020 21:16:34">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AcctUnivDimName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6ce026aa-781e-417b-9397-809c7cd80be2" ChangeDateTime="03/31/2020 21:16:39">
+    <Property Name="ElementName" Value="[GVW].[AcctUnivDim].[AcctUnivDimURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[AcctUnivDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="URL" />
+  </Operation>
 </Operations>
