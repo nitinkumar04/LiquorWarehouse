@@ -27,5 +27,9 @@
     [TxnDateID]             VARCHAR(8)     NULL,
     [CreateDateID]          VARCHAR(5)     NULL,
     [FiscalDateID]          VARCHAR(5)     NULL, 
+	GVWCreatedDate      Datetime    default getdate() NOT NULL,
+    GVWLastModifiedDate Datetime    default getdate() NOT NULL,
+    GVWSourceID  INT default (1),
+    GVWDeleted BIT NULL DEFAULT '0'
     CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([EventCallFactKey])
 );

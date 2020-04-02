@@ -61,6 +61,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PKDepletionFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ID])
 );
 
