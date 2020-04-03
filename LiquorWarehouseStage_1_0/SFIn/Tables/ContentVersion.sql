@@ -43,7 +43,7 @@
 	[gvp__Brand__c]                      	    CHAR (18) NULL,                             
     [gvp__Label__c]                      	    CHAR (18) NULL,		                        
 	[gvp__Product_Name__c]                      NVARCHAR (255)  NULL,                       
-	[gvp__Type__c]         					    VARCHAR (30) NULL,                          
+	[gvp__Type__c]         					    VARCHAR (200) NULL,                          
 	[gvp__Objective_Creator_Template__c]        VARCHAR (30) NULL,                          
 	[gvp__Geolocation__Latitude__s]     	    VARCHAR (30) NULL,                          
  	[gvp__Geolocation__Longitude__s]     	    VARCHAR (30) NULL,                          
