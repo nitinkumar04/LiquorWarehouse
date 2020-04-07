@@ -25,7 +25,7 @@
 [gvp__Custom_Fact_1__c] [decimal](16, 2) NULL,
 [gvp__Custom_Fact_2__c] [decimal](16, 2) NULL,
 [gvp__Date_Delivered__c] [date] NULL,
-[gvp__External_Id__c] [char](19) NULL,
+[gvp__External_Id__c] [char](64) NULL,
 [gvp__Item__c] [char](18) NULL,
 [gvp__Label__c] [char](18) NULL,
 [gvp__POS_Item__c] [char](18) NULL,

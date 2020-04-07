@@ -3,6 +3,7 @@
 	[Id] char(18) NOT NULL , 
   [IsDeleted] VARCHAR(10) NULL, 
   [ParentId] char(18) NULL, 
+  [ParentIdType] varchar(50) NULL,
   [Name] NVARCHAR(200) NOT NULL, 
   [IsPrivate] VARCHAR(10) NULL, 
   [ContentType] VARCHAR(100) NULL, 
