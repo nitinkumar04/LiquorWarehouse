@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVW].[GeographyDim]
 (
-	[GVWGeographyDimSKey] int identity(1,1),
+	[GVWGeographySKey] int identity(1,1),
 	[ID] 				    VARCHAR(18) NOT NULL,
 	[Name]	  		  nvarchar(200) NULL,
 	[Granularity]		varchar(20) NULL,
@@ -88,5 +88,5 @@
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
 	GVWHash VARCHAR(32) NOT NULL DEFAULT 0,
-	CONSTRAINT [PK_GeographyDim] PRIMARY KEY ([GVWGeographyDimSKey])
+	CONSTRAINT [PK_GeographyDim] PRIMARY KEY ([GVWGeographySKey])
 );
