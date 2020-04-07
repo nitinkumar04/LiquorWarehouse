@@ -34,7 +34,7 @@
 [Survey Question Target Currency] [nvarchar](5) NULL,
 [Survey Question Target Number] [nvarchar](15) NULL,
 [Survey Question Target Percentage] [nvarchar](5) NULL,
-[Survey Question Target Text List] [nvarchar](20) NULL,
+[Survey Question Target Text List] [nvarchar](150) NULL,
 [Survey Question Target YesNo] [nvarchar](5) NULL,
 [Survey Question Type] [nvarchar](10) NULL,
 [Product Dim Id] [varchar](37) NULL,

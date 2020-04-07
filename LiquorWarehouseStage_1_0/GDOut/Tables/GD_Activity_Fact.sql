@@ -92,7 +92,7 @@
     [Presentation Tasted]         NVARCHAR (50)  NULL,
     [Product Dim Id]              VARCHAR (18)   NULL,
     [Program Name]                VARCHAR (200)   NULL,
-    [Program Record Type]         VARCHAR (18)   NULL,
+    [Program Record Type]         VARCHAR (100)   NULL,
     [Sales Division Dim Id]       VARCHAR (18)   NULL,
     [Scan Advertised]             VARCHAR (200)   NULL,
     [Scan Amount]                   VARCHAR (20)   NULL,
