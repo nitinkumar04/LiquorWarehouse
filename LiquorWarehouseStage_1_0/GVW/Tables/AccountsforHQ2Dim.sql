@@ -32,5 +32,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
 	GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_AccountsforHQ2Dim] PRIMARY KEY (GVWAccountsforHQ2SKey)
+    CONSTRAINT [PK_AccountsforHQ2Dim] PRIMARY KEY (GVWAccountsforHQ2SKey), 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );
