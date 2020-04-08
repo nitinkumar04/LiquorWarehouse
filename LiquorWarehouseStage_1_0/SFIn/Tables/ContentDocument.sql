@@ -9,7 +9,7 @@
 	[IsArchived]                                VARCHAR (10) NOT NULL,
 	[ArchivedById]								CHAR (18) NULL,
 	[ArchivedDate]                    		    DATE  NULL,
-	[Title]                                     NVARCHAR (100)  NULL, 
+	[Title]                                     NVARCHAR (150)  NULL, 
 	[PublishStatus]         				    VARCHAR (5) NULL,	
 	[LatestPublishedVersionId]					CHAR (18) NULL,
 	[ParentId]									CHAR (18) NULL,	
