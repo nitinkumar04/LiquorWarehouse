@@ -5,10 +5,10 @@
     [Type]          VARCHAR (20)   NULL,
     [CreatedDate]                   CHAR(10)       NULL,
     [ModifiedDate]                  CHAR(10)      NULL,
-    [ProductDimID]               VARCHAR (20)   NULL,
+    [ProductDimID]               VARCHAR (20)   NOT NULL,
     [GeographyDimID]             VARCHAR (20)   NULL,
     [TransactionTypeID]          VARCHAR (5)    NULL,
-    [TxnDate]                      Date       NULL,
+    [TxnDate]                      Date       NOT NULL,
     [FiscalDate]                   Date       NULL,
     [FiscalYear]                  VARCHAR (6)    NULL,
     [FiscalMonth]                 VARCHAR (4)    NULL,
@@ -33,7 +33,7 @@
     [Custom2]           NVARCHAR (200) NULL,
     [Fact1]               VARCHAR (50)   NULL,
     [Fact2]               VARCHAR (50)   NULL,
-    [AccountDimID]               VARCHAR (20)   NULL,
+    [AccountDimID]               VARCHAR (20)   NOT NULL,
     [RptCurrentInd]    VARCHAR (3)    NULL,
     [FiscalDateDimID]             CHAR(10)       NULL,
     [DistItemNumber]   NVARCHAR(255)   NULL,
@@ -60,7 +60,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ID])
+    GVWDeleted BIT NULL DEFAULT '0', 
+    CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ProductDimID], [TxnDate], [AccountDimID])
 );
 

@@ -10,7 +10,7 @@
 	[FiscalMonth]                   [char](2)       NULL,
 	[FiscalYear]                    [char](4)       NULL,
 	[FiscalDateDimID]             VARCHAR(18)      NULL,
-	[AccountDimID]                 VARCHAR(18)      NULL DEFAULT '-1',
+	[AccountDimID]                 VARCHAR(18)      NOT NULL DEFAULT '-1',
 	[ContactDimID]                 VARCHAR(18)      NULL DEFAULT '-1',
 	[PersonDimID]                  VARCHAR(18)      NULL DEFAULT '-1',
 	[ActivityGoalDimID]           VARCHAR(18)      NULL DEFAULT '-1',
@@ -64,5 +64,5 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([AccountDimID], [ID])
 );

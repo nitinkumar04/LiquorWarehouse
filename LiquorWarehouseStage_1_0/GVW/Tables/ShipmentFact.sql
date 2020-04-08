@@ -5,10 +5,10 @@
 	[Type] [varchar](6) NULL,
 	[CreatedDate] [nvarchar](10) NULL,
 	[ModifiedDate] [nvarchar](10) NULL,
-	[ProductDimID] VARCHAR(18) NULL,
+	[ProductDimID] VARCHAR(18) NOT NULL,
 	[GeographyDimID] VARCHAR(18) NULL,
 	[TransactionTypeID] [varchar](5) NULL,
-	[TxnDate] [nvarchar](10) NULL,
+	[TxnDate] [nvarchar](10) NOT NULL,
 	[FiscalDate] [nvarchar](10) NULL,
 	[FiscalYear] [varchar](6) NULL,
 	[FiscalMonth] [varchar](4) NULL,
@@ -27,12 +27,12 @@
 	[Custom2] [nvarchar](200) NULL,
 	[Fact1] [decimal](15, 8) NULL,
 	[Fact2] [decimal](15, 8) NULL,
-	[AccountDimID] VARCHAR(18) NULL,
+	[AccountDimID] VARCHAR(18) NOT NULL,
 	[RptCurrentInd] [varchar](3) NULL,
 	[FiscalDateDimID] [nvarchar](10) NULL,
 	[CurrencyDimID] VARCHAR(18) NULL,
 	[SourceSystem] [varchar](20) NULL,
-	[OrderNumber] [varchar](30) NULL,
+	[OrderNumber] [varchar](30) NOT NULL,
 	[InvoiceNumber] [varchar](50) NULL,
 	[StartDate] [nvarchar](10) NULL,
 	[EndDate] [nvarchar](10) NULL,
@@ -45,5 +45,5 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_ShipmentFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_ShipmentFact] PRIMARY KEY ([TxnDate], [OrderNumber], [AccountDimID], [ProductDimID])
 );

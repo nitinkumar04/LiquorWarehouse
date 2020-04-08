@@ -5,11 +5,11 @@
 	[Type] [varchar](8) NULL,
 	[CreatedDate] CHAR(10) NULL,
 	[ModifiedDate] CHAR(10) NULL,
-	[AccountDimID] VARCHAR(18) NULL,
-	[ProductDimID] VARCHAR(18) NULL,
+	[AccountDimID] VARCHAR(18) NOT NULL,
+	[ProductDimID] VARCHAR(18) NOT NULL,
 	[GeographyDimID] VARCHAR(18) NULL,
 	[TransactionTypeID] [varchar](5) NULL,
-	[TxnDate] [date] NULL,
+	[TxnDate] [date] NOT NULL,
 	[FiscalDate] [date] NULL,
 	[FiscalYear] [varchar](6) NULL,
 	[FiscalMonth] [varchar](5) NULL,
@@ -32,9 +32,9 @@
 	[FiscalDateDimID] VARCHAR(10) NULL,
 	[SalesRepDimID] VARCHAR(18) NULL,
 	[CurrencyDimID] [varchar](5) NULL,
-	[InvoiceNumber] [varchar](20) NULL,
+	[InvoiceNumber] [varchar](20) NOT NULL,
 	[OutletExternalID] NVARCHAR(255) NULL,
-	[DistItemNumber] [varchar](30) NULL,
+	[DistItemNumber] [varchar](30) NOT NULL,
 	[SalesRepCode] NVARCHAR(255) NULL,
 	[SalesRepName] NVARCHAR(255) NULL,
 	[BottleDepositAmount] MONEY NULL,
@@ -65,5 +65,5 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_RADFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_RADFact] PRIMARY KEY ([AccountDimID], [ProductDimID], [InvoiceNumber], [DistItemNumber], [TxnDate])
 );

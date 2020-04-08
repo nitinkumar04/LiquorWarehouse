@@ -4,7 +4,7 @@
     [ModifiedDate]            CHAR(10)    NULL,
     [StartDate]               CHAR(10)    NULL,
     [EndDate]                 CHAR(10)    NULL,
-    [TxnDate]                 CHAR(10)    NULL,
+    [TxnDate]                 CHAR(10)    NOT NULL,
     [FiscalDate]              CHAR(10)    NULL,
     [FiscalMonth]             CHAR(2)     NULL,
     [FiscalYear]              CHAR(4)     NULL,
@@ -12,11 +12,11 @@
     [EventFactID]           VARCHAR(18)    NULL DEFAULT '-1',
     [AccountCallFactID]     VARCHAR(18)    NULL DEFAULT '-1',
     [ContactDimID]          VARCHAR(18)    NULL DEFAULT '-1',
-    [PersonDimID]           VARCHAR(18)    NULL DEFAULT '-1',
-    [AccountDimID]          VARCHAR(18)    NULL DEFAULT '-1',
+    [PersonDimID]           VARCHAR(18)    NOT NULL DEFAULT '-1',
+    [AccountDimID]          VARCHAR(18)    NOT NULL DEFAULT '-1',
     [ProductDimID]          VARCHAR(18)    NULL DEFAULT '-1',
     [GeographyDimID]        VARCHAR(18)    NULL DEFAULT '-1',
-    [EventCallSequence]       VARCHAR(10) NULL,
+    [EventCallSequence]       VARCHAR(10) NOT NULL,
     [EventCallActivityKey]    VARCHAR(50) NULL,
     [EventCallDate]         CHAR(10)    NULL,
     [EventCallTime]         CHAR(5)     NULL,
@@ -31,5 +31,5 @@
     GVWLastModifiedDate Datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (1),
     GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([EventCallFactKey])
+    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [EventCallSequence], [TxnDate])
 );
