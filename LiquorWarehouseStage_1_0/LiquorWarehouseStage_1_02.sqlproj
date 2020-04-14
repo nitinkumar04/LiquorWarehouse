@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>LiquorWarehouseStage_1_0</Name>
+    <Name>LiquorWarehouseStage_1_02</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{efce299a-18bf-485a-a316-8924eb28720f}</ProjectGuid>
@@ -478,6 +478,8 @@
   <ItemGroup>
     <None Include="aaMike_LiquorWarehouseStage_1_0.publish.xml" />
     <None Include="aaMike_LiquorWarehouseStage_1_02.publish.xml" />
+    <None Include="LiquorWarehouse_1_0_2.publish.xml" />
+    <None Include="LiquorWarehouseStage_1_02.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_0.refactorlog" />

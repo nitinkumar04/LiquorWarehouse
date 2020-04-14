@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouse_1_0", "Liqu
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Global", "Global\Global.sqlproj", "{70645DB8-73D3-46BA-BBEA-469406910AF5}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouseStage_1_0", "LiquorWarehouseStage_1_0\LiquorWarehouseStage_1_0.sqlproj", "{EFCE299A-18BF-485A-A316-8924EB28720F}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouseStage_1_02", "LiquorWarehouseStage_1_0\LiquorWarehouseStage_1_02.sqlproj", "{EFCE299A-18BF-485A-A316-8924EB28720F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MiscellaneousQueries", "MiscellaneousQueries\MiscellaneousQueries.sqlproj", "{F4BAF7D2-C77B-4836-8DB0-9A1BE519A242}"
 EndProject
