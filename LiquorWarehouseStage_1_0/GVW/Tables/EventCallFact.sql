@@ -1,5 +1,4 @@
 ﻿CREATE TABLE [GVW].[EventCallFact] (
-	[EventCallFactKey]        VARCHAR(75) NOT NULL,
     [CreatedDate]             CHAR(10)    NULL,
     [ModifiedDate]            CHAR(10)    NULL,
     [StartDate]               CHAR(10)    NULL,
@@ -16,12 +15,12 @@
     [AccountDimID]          VARCHAR(18)    NOT NULL DEFAULT '-1',
     [ProductDimID]          VARCHAR(18)    NULL DEFAULT '-1',
     [GeographyDimID]        VARCHAR(18)    NULL DEFAULT '-1',
-    [EventCallSequence]       VARCHAR(10) NOT NULL,
-    [EventCallActivityKey]    VARCHAR(50) NULL,
-    [EventCallDate]         CHAR(10)    NULL,
-    [EventCallTime]         CHAR(5)     NULL,
-    [EventCallWeek]         CHAR(2)     NULL,
-    [EventCallYear]         CHAR(4)     NULL,
+    [Sequence]       VARCHAR(10) NOT NULL,
+    [ActivityKey]    VARCHAR(50) NULL,
+    [Date]         CHAR(10)    NULL,
+    [Time]         CHAR(5)     NULL,
+    [Week]         CHAR(2)     NULL,
+    [Year]         CHAR(4)     NULL,
     [StartDateID]           VARCHAR(8)     NULL,
     [EndDateID]             VARCHAR(8)     NULL,
     [TxnDateID]             VARCHAR(8)     NULL,
@@ -31,5 +30,5 @@
     GVWLastModifiedDate Datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (1),
     GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [EventCallSequence], [TxnDate])
+    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [Sequence], [TxnDate])
 );

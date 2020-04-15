@@ -707,4 +707,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="URL" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="72549ec4-9601-4a0a-a191-e339efac8bbb" ChangeDateTime="04/13/2020 17:57:08">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[PreviousInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PreviousIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1537d79f-5c62-461f-98ce-0b53c88978ba" ChangeDateTime="04/13/2020 17:57:15">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[MobileInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MobileIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7a40409c-77c3-4e59-a25f-6ceecd3a8bb7" ChangeDateTime="04/13/2020 17:57:25">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[AuditedInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AuditedIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="11b5e971-c6f4-45bc-a21d-a459f8e0093b" ChangeDateTime="04/13/2020 18:11:19">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[AnsweredInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AnsweredIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="35abd757-22ea-4c15-9180-835f66981841" ChangeDateTime="04/13/2020 18:15:01">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[AnswerConditionalInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AnswerConditionalIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="69778e9d-c0d7-494b-a529-dd9a29db047d" ChangeDateTime="04/13/2020 18:15:31">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[AnswerMultipleInd]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AnswerMultipleIndicator" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="249f1a08-762f-4c73-b818-1797282f58b6" ChangeDateTime="04/13/2020 19:40:34">
+    <Property Name="ElementName" Value="[GVW].[SurveyFact].[OrderFact]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SurveyOrderFact" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b27c55df-6a7c-4dc2-aafe-a1531e581061" ChangeDateTime="04/15/2020 13:36:00">
+    <Property Name="ElementName" Value="[GVW].[EventCallFact].[EventCallSequence]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[EventCallFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Sequence" />
+  </Operation>
 </Operations>
