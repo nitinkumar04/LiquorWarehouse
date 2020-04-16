@@ -16,7 +16,7 @@
     [ExternalID]                VARCHAR (100)  NULL,
     [SourceFile]        VARCHAR (60)   NULL,
     [PhysicalCases]       DECIMAL(12, 6)   NULL,
-    [9LCases]             DECIMAL(10, 6)   NULL,
+    [9LCases]             DECIMAL(12, 6)   NULL,
     [FullCaseEquivalent] DECIMAL(14, 4)   NULL,
     [PrimaryVolume]       DECIMAL(14, 4)   NULL,
     [SecondaryVolume]     DECIMAL(14, 4)   NULL,
