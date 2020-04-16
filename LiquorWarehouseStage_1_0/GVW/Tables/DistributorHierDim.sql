@@ -1,8 +1,8 @@
 ﻿CREATE TABLE [GVW].[DistributorHierDim] (
 	[GVWDistributorHierSKey] int identity(1,1),
     [ID] VARCHAR(18)      NOT NULL,
-    [Created Date]                 CHAR (10)      NULL,
-    [Modified Date]                CHAR (10)      NULL,
+    [CreatedDate]                 CHAR (10)      NULL,
+    [ModifiedDate]                CHAR (10)      NULL,
     [DistHQ4ID]                 VARCHAR(18)      NULL,
     [DistHQ4URL]                VARCHAR (250)  NULL,
     [DistHQ4Name]               VARCHAR (200)  NULL,
