@@ -13,7 +13,7 @@
     [FiscalYear]                  VARCHAR (6)    NULL,
     [FiscalMonth]                 VARCHAR (4)    NULL,
     [TxnAltDate]                  Date       NULL,
-    [ExternalID]                VARCHAR (100)  NULL,
+    [DepletionKey]                VARCHAR (100)  NULL,
     [SourceFile]        VARCHAR (60)   NULL,
     [PhysicalCases]       DECIMAL(12, 6)   NULL,
     [9LCases]             DECIMAL(12, 6)   NULL,

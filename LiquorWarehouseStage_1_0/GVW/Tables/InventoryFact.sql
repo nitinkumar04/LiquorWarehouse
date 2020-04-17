@@ -11,7 +11,7 @@
     [FiscalDateDimID]             VARCHAR (18)   NULL,
     [CreatedDate]                   VARCHAR (10)       NULL,
     [ModifiedDate]                  VARCHAR (10)       NULL,
-    [ItemKey]           VARCHAR (50)   NULL,
+    [ItemExternalID]           VARCHAR (50)   NULL,
     [Location]           VARCHAR (50)   NULL,
     [Warehouse]          VARCHAR (50)   NULL,
     [Quantity]             DECIMAL(14, 6)   NULL,
