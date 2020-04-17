@@ -63,6 +63,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
+    GVWDeleted BIT NULL DEFAULT '0',
+	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
 	CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([AccountDimID], [ID])
 );
