@@ -1,9 +1,13 @@
 ﻿CREATE TABLE [GVW].[EventCallFact] (
+    [PersonDimID]           VARCHAR(18)    NOT NULL DEFAULT '-1',
+    [AccountDimID]          VARCHAR(18)    NOT NULL DEFAULT '-1',
+    [TxnDate]                 CHAR(10)    NOT NULL DEFAULT '1/1/1900',
+    [Sequence]       VARCHAR(10) NOT NULL DEFAULT '-1',
+    EventCallFactKey          varchar(75) NOT NULL,
     [CreatedDate]             CHAR(10)    NULL,
     [ModifiedDate]            CHAR(10)    NULL,
     [StartDate]               CHAR(10)    NULL,
     [EndDate]                 CHAR(10)    NULL,
-    [TxnDate]                 CHAR(10)    NOT NULL,
     [FiscalDate]              CHAR(10)    NULL,
     [FiscalMonth]             CHAR(2)     NULL,
     [FiscalYear]              CHAR(4)     NULL,
@@ -11,11 +15,8 @@
     [EventFactID]           VARCHAR(18)    NULL DEFAULT '-1',
     [AccountCallFactID]     VARCHAR(18)    NULL DEFAULT '-1',
     [ContactDimID]          VARCHAR(18)    NULL DEFAULT '-1',
-    [PersonDimID]           VARCHAR(18)    NOT NULL DEFAULT '-1',
-    [AccountDimID]          VARCHAR(18)    NOT NULL DEFAULT '-1',
     [ProductDimID]          VARCHAR(18)    NULL DEFAULT '-1',
     [GeographyDimID]        VARCHAR(18)    NULL DEFAULT '-1',
-    [Sequence]       VARCHAR(10) NOT NULL,
     [ActivityKey]    VARCHAR(50) NULL,
     [Date]         CHAR(10)    NULL,
     [Time]         CHAR(5)     NULL,
@@ -26,9 +27,10 @@
     [TxnDateID]             VARCHAR(8)     NULL,
     [CreateDateID]          VARCHAR(5)     NULL,
     [FiscalDateID]          VARCHAR(5)     NULL, 
-	GVWCreatedDate      Datetime    default getdate() NOT NULL,
+  	GVWCreatedDate      Datetime    default getdate() NOT NULL,
     GVWLastModifiedDate Datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (1),
-    GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [Sequence], [TxnDate])
+    GVWDeleted BIT NOT NULL DEFAULT '0',
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT '0',
+    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [Sequence], [TxnDate], GVWDeleted)
 );
