@@ -9,7 +9,7 @@
 	[FiscalDate]                    [char](10)      NULL,
 	[FiscalMonth]                   [char](2)       NULL,
 	[FiscalYear]                    [char](4)       NULL,
-	[FiscalDateDimID]             VARCHAR(18)      NULL,
+	[FiscalDateDimID]             Char(10)      NULL,
 	[AccountDimID]                 VARCHAR(18)      NOT NULL DEFAULT '-1',
 	[ContactDimID]                 VARCHAR(18)      NULL DEFAULT '-1',
 	[PersonDimID]                  VARCHAR(18)      NULL DEFAULT '-1',
@@ -63,6 +63,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
+    GVWDeleted BIT NULL DEFAULT '0',
+	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
 	CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([AccountDimID], [ID])
 );

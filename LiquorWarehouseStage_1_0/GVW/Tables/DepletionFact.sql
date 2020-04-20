@@ -13,10 +13,10 @@
     [FiscalYear]                  VARCHAR (6)    NULL,
     [FiscalMonth]                 VARCHAR (4)    NULL,
     [TxnAltDate]                  Date       NULL,
-    [ExternalID]                VARCHAR (100)  NULL,
+    [DepletionKey]                VARCHAR (100)  NULL,
     [SourceFile]        VARCHAR (60)   NULL,
     [PhysicalCases]       DECIMAL(12, 6)   NULL,
-    [9LCases]             DECIMAL(10, 6)   NULL,
+    [9LCases]             DECIMAL(12, 6)   NULL,
     [FullCaseEquivalent] DECIMAL(14, 4)   NULL,
     [PrimaryVolume]       DECIMAL(14, 4)   NULL,
     [SecondaryVolume]     DECIMAL(14, 4)   NULL,
@@ -61,6 +61,7 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0', 
+	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
     CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ProductDimID], [TxnDate], [AccountDimID])
 );
 

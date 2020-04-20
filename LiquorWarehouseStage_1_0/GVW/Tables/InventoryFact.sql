@@ -11,7 +11,7 @@
     [FiscalDateDimID]             VARCHAR (18)   NULL,
     [CreatedDate]                   VARCHAR (10)       NULL,
     [ModifiedDate]                  VARCHAR (10)       NULL,
-    [ItemKey]           VARCHAR (50)   NULL,
+    [ItemExternalID]           VARCHAR (50)   NULL,
     [Location]           VARCHAR (50)   NULL,
     [Warehouse]          VARCHAR (50)   NULL,
     [Quantity]             DECIMAL(14, 6)   NULL,
@@ -26,6 +26,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
+    GVWDeleted BIT NULL DEFAULT '0',
+	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
 	CONSTRAINT [PK_InventoryFact] PRIMARY KEY ([ID])
 );

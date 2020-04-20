@@ -763,4 +763,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Sequence" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="21afd4eb-2010-4268-8000-7f1b61e5dbc2" ChangeDateTime="04/17/2020 22:33:48">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[TransactionDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TxnDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b25f9341-ff46-4c41-8124-8af872a24e41" ChangeDateTime="04/17/2020 22:34:03">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[MegacallID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="28e5322a-384a-4c58-9c41-c155a6403dfb" ChangeDateTime="04/17/2020 22:34:06">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[MegacallName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8f7122e1-7894-4372-8a54-5f0f2d7986ec" ChangeDateTime="04/17/2020 22:34:11">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[MegacallURL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="URL" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f5359914-6d53-48a1-a9ce-e0a52b569163" ChangeDateTime="04/17/2020 22:34:15">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[MegacallNotes]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Notes" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cd5afc20-2281-4a31-8d31-9d261103f624" ChangeDateTime="04/17/2020 23:09:50">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[URL]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountCallURL" />
+  </Operation>
 </Operations>
