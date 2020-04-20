@@ -9,7 +9,7 @@
 	[FiscalDate]                    [char](10)      NULL,
 	[FiscalMonth]                   [char](2)       NULL,
 	[FiscalYear]                    [char](4)       NULL,
-	[FiscalDateDimID]             VARCHAR(18)      NULL,
+	[FiscalDateDimID]             Char(10)      NULL,
 	[AccountDimID]                 VARCHAR(18)      NOT NULL DEFAULT '-1',
 	[ContactDimID]                 VARCHAR(18)      NULL DEFAULT '-1',
 	[PersonDimID]                  VARCHAR(18)      NULL DEFAULT '-1',
