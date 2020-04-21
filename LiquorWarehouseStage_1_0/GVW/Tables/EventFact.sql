@@ -31,7 +31,7 @@
     [IsRecurrence]     VARCHAR  (10)   NULL,
     [RecurrenceType]   VARCHAR  (30)   NULL,
     [IsPast]           VARCHAR  (30)   NULL,
-    [ExternalId]               VARCHAR  (50)   NULL,
+    [ExternalId]               VARCHAR  (70)   NULL,
     [Approved]          VARCHAR  (10)   NULL,
     [RptCurrentInd]   VARCHAR  (10)   NULL,
     [RptFromDate]     CHAR     (10)   NULL,
@@ -44,5 +44,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_EventFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_EventFact] PRIMARY KEY ([ID]), 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );

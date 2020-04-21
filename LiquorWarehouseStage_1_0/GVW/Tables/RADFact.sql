@@ -65,5 +65,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_RADFact] PRIMARY KEY ([AccountDimID], [ProductDimID], [InvoiceNumber], [DistItemNumber], [TxnDate])
+	CONSTRAINT [PK_RADFact] PRIMARY KEY ([AccountDimID], [ProductDimID], [InvoiceNumber], [DistItemNumber], [TxnDate]), 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );
