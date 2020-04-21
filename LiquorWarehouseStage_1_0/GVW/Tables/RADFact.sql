@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [GVW].[RADFact](
-	[ID] VARCHAR(18),
+	[ID] VARCHAR(18) NOT NULL,
 	[Name] [varchar](300) NULL,
 	[URL] [nvarchar](200) NULL,
 	[Type] [varchar](8) NULL,
@@ -65,6 +65,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_RADFact] PRIMARY KEY ([AccountDimID], [ProductDimID], [InvoiceNumber], [DistItemNumber], [TxnDate]), 
+	CONSTRAINT [PK_RADFact] PRIMARY KEY ([ID]), 
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );
