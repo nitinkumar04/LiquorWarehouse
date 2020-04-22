@@ -12,7 +12,7 @@ begin
         left outer join LoadDataDateTime lddt on lddt.PipelineName = ll.PipelineName
       where lddt.PipelineName is null 
 
-  -- Update DataDateTime with the StartTime of the previous load that completed successfully (TBD how to determine if a load was successful)
+  -- Update DataDateTime with the StartTime of the previous load that completed successfully
   update lddt set
     StartDataDateTime = case when TruncateTableDefault = 0 then ll.StartTime else '1/1/1900' end,
     TruncateTableNextLoad = TruncateTableDefault
@@ -20,7 +20,7 @@ begin
     inner join (
       select PipelineName, SnapLogicAssetID, max(StartTime) as StartTime 
       from LoadLog 
-      --where ExecutionStatus = 'Completed' 
+      where ExecutionStatus = 'Completed' 
       group by PipelineName, SnapLogicAssetID) ll on ll.PipelineName = lddt.PipelineName
 
 end
