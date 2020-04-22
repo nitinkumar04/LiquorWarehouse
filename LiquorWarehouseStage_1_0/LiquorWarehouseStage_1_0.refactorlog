@@ -805,4 +805,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AccountCallURL" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="c842279b-2d8b-4b6b-9a14-4292b0a2a309" ChangeDateTime="04/21/2020 07:45:03">
+    <Property Name="ElementName" Value="[GVW].[SurveyDim].[SurveyQuestionTargetText List]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[SurveyDim]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SurveyQuestionTargetTextList" />
+  </Operation>
 </Operations>

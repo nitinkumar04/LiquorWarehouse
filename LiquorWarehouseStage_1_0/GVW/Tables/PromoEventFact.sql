@@ -37,7 +37,7 @@
 	[TotalBudget] [varchar](50) NULL,
 	[BartabBudget] [varchar](50) NULL,
 	[StaffBudget] [varchar](50) NULL,
-	[FeaturedDrink] [varchar](50) NULL,
+	[FeaturedDrink] [varchar](300) NULL,
 	[ConsumersSampled] [varchar](50) NULL,
 	[SamplesGiven] [varchar](50) NULL,
 	[SamplersRequired] [varchar](50) NULL,
@@ -51,11 +51,11 @@
 	[CustomFact2] [nvarchar](200) NULL,
 	[ActualBarTab] [varchar](50) NULL,
 	[ActualStaffCost] [varchar](50) NULL,
-	[BartenderFeedback] [varchar](250) NULL,
-	[CustomerFeedback] [varchar](250) NULL,
+	[BartenderFeedback] NVARCHAR(250) NULL,
+	[CustomerFeedback] NVARCHAR(250) NULL,
 	[RecordTypeID] [varchar](50) NULL,
 	[RecordType] [varchar](50) NULL,
-	[Program] [varchar](50) NULL,
+	[Program] [varchar](60) NULL,
 	[ProgramType] [varchar](50) NULL,
 	[ProductGranularity] [varchar](50) NULL,
 	[ProductName] [varchar](50) NULL,
@@ -71,5 +71,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_PromoEventFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_PromoEventFact] PRIMARY KEY ([ID]), 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );

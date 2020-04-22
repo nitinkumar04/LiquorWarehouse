@@ -31,7 +31,7 @@
 	[RptCurrentInd] [varchar](3) NULL,
 	[FiscalDateDimID] [nvarchar](10) NULL,
 	[CurrencyDimID] VARCHAR(18) NULL,
-	[SourceSystem] [varchar](20) NULL,
+	[SourceSystem] [varchar](60) NULL,
 	[OrderNumber] [varchar](30) NOT NULL,
 	[InvoiceNumber] [varchar](50) NULL,
 	[StartDate] [nvarchar](10) NULL,
@@ -45,5 +45,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_ShipmentFact] PRIMARY KEY ([TxnDate], [OrderNumber], [AccountDimID], [ProductDimID])
+	CONSTRAINT [PK_ShipmentFact] PRIMARY KEY ([TxnDate], [OrderNumber], [AccountDimID], [ProductDimID]), 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );

@@ -35,7 +35,7 @@
 [SurveyQuestionTargetCurrency] [nvarchar](5) NULL,
 [SurveyQuestionTargetNumber] [nvarchar](15) NULL,
 [SurveyQuestionTargetPercentage] [nvarchar](5) NULL,
-[SurveyQuestionTargetText List] [nvarchar](20) NULL,
+[SurveyQuestionTargetTextList] [nvarchar](20) NULL,
 [SurveyQuestionTargetYesNo] [nvarchar](5) NULL,
 [SurveyQuestionType] [nvarchar](10) NULL,
 [ProductDimID] [varchar](37) NULL,
