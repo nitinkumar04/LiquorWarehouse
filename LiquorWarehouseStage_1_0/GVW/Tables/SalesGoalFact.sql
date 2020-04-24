@@ -30,7 +30,7 @@
 	[SalesGoalRecordType] [nvarchar](30) NULL,
 	[SalesGoalPeriodType] [varchar](30) NULL,
 	[SalesGoalCategory] [nvarchar](30) NULL,
-	[SalesGoalExternalID] [nvarchar](30) NULL,
+	[SalesGoalExternalID] [nvarchar](150) NULL,
 	[SalesGoalPhysicalCases] [nvarchar](50) NULL,
 	[SalesGoal9LCases] [nvarchar](50) NULL,
 	[SalesGoalPrimaryVolume] [nvarchar](50) NULL,

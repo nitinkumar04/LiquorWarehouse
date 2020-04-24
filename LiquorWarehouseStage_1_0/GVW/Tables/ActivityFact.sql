@@ -48,6 +48,7 @@
     [EventERFReceived]          VARCHAR (100)  NULL,
     [EventFeaturedDrink]        VARCHAR (500)  NULL,
     [ExternalID]                VARCHAR (20)   NULL,
+	[FactType]				VARCHAR (10) NULL,
     [FiscalDate]                   DATE       NULL,
     [FiscalYear]                 VARCHAR (10)   NULL,
     [FiscalMonth]                VARCHAR (4)    NULL,
