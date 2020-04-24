@@ -94,5 +94,5 @@
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
 	GVWHash VARCHAR(32) NOT NULL DEFAULT 0,
-	CONSTRAINT [PK_SalesGoalFact] PRIMARY KEY ([ID])
+	CONSTRAINT [PK_SalesGoalFact] PRIMARY KEY ([ID], [TxnDate])
 );
