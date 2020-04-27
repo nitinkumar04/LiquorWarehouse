@@ -1,7 +1,8 @@
-﻿CREATE TABLE [GVW].[ActivityOwnerByAccount]
-(
-	AcctUnivDimID VARCHAR(18),
-	ActivityOwnerDimID VARCHAR(18),
+﻿CREATE TABLE [GVW].[ActivityOwnerByAcct](
+    GVWActivityOwnerByAcctSKey int identity(1,1),
+    ID      VARCHAR (40) NOT NULL,
+	AccountDimID VARCHAR(18),
+	ActivityOwnerDimID VARCHAR(40),
 	FirstName VARCHAR(512),
 	FullName VARCHAR(512),
 	LastName VARCHAR(512),
