@@ -7,7 +7,7 @@ begin
   -- If @LookForNewTables is true, then query the LoadLog for tables that exist there, but not in the LoadDataDateTime table
   if @LookForNewTables = 1
     insert into LoadDataDateTime
-      select distinct ll.PipelineName, ll.SnapLogicAssetID, '1/1/1900', '1/1/2030', 0, 0
+      select distinct ll.PipelineName, ll.SnapLogicAssetID, '1/1/1900', '1/1/2030', 0, 0, 0
       from LoadLog ll
         left outer join LoadDataDateTime lddt on lddt.PipelineName = ll.PipelineName
       where lddt.PipelineName is null 
@@ -22,5 +22,5 @@ begin
       from LoadLog 
       where ExecutionStatus = 'Completed' 
       group by PipelineName, SnapLogicAssetID) ll on ll.PipelineName = lddt.PipelineName
-
+  where lddt.FullLoadDefault = 0
 end
