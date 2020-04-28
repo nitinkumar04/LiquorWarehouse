@@ -1,7 +1,6 @@
 ﻿CREATE TABLE [GVW].[ActivityFact] (
     [ID]            VARCHAR (20)   NOT NULL,
     [URL]                NVARCHAR (200) NULL,
-    [ActivityGoalDimID]        VARCHAR (20)   NULL DEFAULT '-1',
     [AccountDimID]              VARCHAR (30)   NULL DEFAULT '-1',
     [AccountTeamDimID]         VARCHAR (20)   NULL DEFAULT '-1',
     [AccountCallName]               VARCHAR (100)  NULL,
