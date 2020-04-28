@@ -54,7 +54,8 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-	GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_AcctUnivHierDim] PRIMARY KEY (GVWAcctUnivHiersKey), 
+	  GVWDeleted BIT NULL DEFAULT '0',
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
+  CONSTRAINT [PK_AcctUnivHierDim] PRIMARY KEY (GVWAcctUnivHiersKey)
+
 );
