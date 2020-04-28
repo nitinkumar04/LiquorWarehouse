@@ -4,6 +4,8 @@
 	[Name] [varchar](20) NULL, 
 	URL NVARCHAR (100)  NULL,
 	Granularity NVARCHAR (30)  NULL,
+	VisitSequenceID [varchar](20) NULL,
+	VisitSequenceName [varchar](20) NULL,
 	VisitSequenceSegment [varchar](100) NULL,
 	VisitSequenceActive [varchar](10) NULL,
 	GeographyExternalID [varchar](50) NULL,
