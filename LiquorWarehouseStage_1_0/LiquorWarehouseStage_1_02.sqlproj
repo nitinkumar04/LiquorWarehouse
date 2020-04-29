@@ -472,6 +472,7 @@
     <Build Include="dbo\Stored Procedures\UpdateTable.sql" />
     <Build Include="GVW\Tables\ActivityOwnerByAcct.sql" />
     <Build Include="GVW\Tables\VisitSequenceDim.sql" />
+    <Build Include="GVW\Tables\VisitSequenceFact.sql" />
     <Build Include="dbo\Tables\TempAcctUnivDim.sql" />
   </ItemGroup>
   <ItemGroup>
