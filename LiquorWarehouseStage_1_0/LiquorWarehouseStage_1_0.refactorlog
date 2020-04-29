@@ -812,4 +812,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SurveyQuestionTargetTextList" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="14f0cbfd-cddc-4dbf-b53c-0fdecf27c24e" ChangeDateTime="04/29/2020 17:47:31">
+    <Property Name="ElementName" Value="[dbo].[TempSurveyFactIDsToDelete].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TempSurveyFactIDsToDelete]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
 </Operations>

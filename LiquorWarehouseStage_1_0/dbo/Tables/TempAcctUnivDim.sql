@@ -1,4 +1,4 @@
-﻿CREATE TABLE [GVW].[TempAcctUnivDim] (
+﻿CREATE TABLE [TempAcctUnivDim] (
     [ID]                    VARCHAR(18)  NOT NULL,
     [Name]                  NVARCHAR (250)  NULL,
     [Granularity]           VARCHAR (20)   NULL,
