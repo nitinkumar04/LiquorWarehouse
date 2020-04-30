@@ -16,6 +16,8 @@
 	CreateDateID                 varchar(10)   NULL,
 	TxnDateID                    varchar(10)   NULL,
 	TxnAltDateID                varchar(10)   NULL,
+	StartDate 				DATE		 NULL, 
+    EndDate				    DATE 		NULL, 
 	FiscalDateID                 varchar(10)   NULL,
 	VisitSequenceDimID			VARCHAR(18) NULL,
 	AccountCallID					VARCHAR(18) NULL,
