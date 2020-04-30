@@ -65,5 +65,10 @@
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
 	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
-	CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([AccountDimID], [ID])
+	[StartDate] DATE NULL, 
+    [EndDate] DATE NULL, 
+    [AccountCallEndTime] TIME NULL, 
+    [AccountCallEndDate] DATE NULL, 
+    [VisitSequenceStatusID] VARCHAR(18) NULL, 
+    CONSTRAINT [PK_AccountCallFact] PRIMARY KEY ([AccountDimID], [ID])
 );
