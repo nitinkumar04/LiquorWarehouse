@@ -62,6 +62,6 @@
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0', 
 	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
-    CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ProductDimID], [TxnDate], [AccountDimID])
+    CONSTRAINT [PK_DepletionFact] PRIMARY KEY ([ID], [ProductDimID], [TxnDate], [AccountDimID])
 );
 

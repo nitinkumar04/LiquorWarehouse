@@ -84,7 +84,7 @@
 	[LabelCustomCheckbox2] [nvarchar](100) NULL,
 	[LabelCustomPicklist1] [nvarchar](200) NULL,
 	[LabelCustomPicklist2] [nvarchar](200) NULL,
-	[LabelExternalID]			varchar(70) NULL,
+	[LabelExternalID]			NVARCHAR(70) NULL,
 	[LabelID] VARCHAR(18) NULL,
 	[LabelKeyLabel] [varchar](10) NULL,
 	[LabelName]				nvarchar(200) NULL,
