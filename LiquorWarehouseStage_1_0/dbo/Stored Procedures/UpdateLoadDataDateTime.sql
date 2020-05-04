@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[UpdateLoadDataDateTime]  as
+﻿CREATE PROCEDURE [dbo].[UpdateLoadDataDateTime]  @PipelinePrefix varchar(20) as
 begin
   -- Updates the LoadDataDateTime table with the date range for the next load, based off of the time of the last successful load.  
   --  It does not change the TruncateTable boolean in the table, only the date
@@ -8,6 +8,8 @@ begin
       from LoadLog ll
         left outer join LoadDataDateTime lddt on lddt.PipelineName = ll.PipelineName
       where lddt.PipelineName is null 
+        and ll.PipelineName like @PipelinePrefix + '%'
+
 
   -- Update DataDateTime with the StartTime of the previous load that completed successfully
   update lddt set
@@ -18,6 +20,7 @@ begin
       select PipelineName, SnapLogicAssetID, max(StartTime) as StartTime 
       from LoadLog 
       where ExecutionStatus = 'Completed' 
-      group by PipelineName, SnapLogicAssetID) ll on ll.PipelineName = lddt.PipelineName
+        and PipelineName like @PipelinePrefix + '%'
+              group by PipelineName, SnapLogicAssetID) ll on ll.PipelineName = lddt.PipelineName
   where lddt.FullLoadDefault = 0
 end
