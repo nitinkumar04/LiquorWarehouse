@@ -1,4 +1,4 @@
-﻿CREATE TABLE [TempSurveyFact](
+CREATE TABLE [TempSurveyFact](
 	[AccountDimID]                    VARCHAR(18)      NULL DEFAULT '-1',
 	[AccountTeamDimID]               VARCHAR(18)      NULL,
 	[AccountUniverseDimID]           VARCHAR(18)      NULL DEFAULT '-1',
