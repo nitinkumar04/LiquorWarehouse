@@ -65,13 +65,11 @@ begin
     select @values = coalesce(@values + ', ', '') + 
       case 
         when system_type_id = 56 then '-2' -- int
-        when (system_type_id = 231 or system_type_id = 167) and size > 6 then '''Invalid''' -- long nvarchar or varchar
-        when (system_type_id = 231 or system_type_id = 167) and size <= 6 then '''?''' -- short nvarchar or varchar
+        when system_type_id in (167, 231, 175) and columnname like '%id' then '''-2''' -- char/varchar/nvarchar that aren't SF Id's
+        when system_type_id in (167, 231, 175) and size > 6 then '''Invalid''' -- long nvarchar, varchar, or char
+        when system_type_id in (167, 231, 175) and size <= 6 then '''?''' -- short nvarchar, varchar, or char
         when columnname in ('GVWCreatedDate', 'GVWModifiedDate') then '''' + convert(varchar, getdate()) + '''' -- our system create and modify dates
         when (system_type_id = 61 or system_type_id = 40) then '''1/1/1899''' -- datetime and date
-        when system_type_id = 175 and columnname like '%id' then '''-2''' -- char that aren't SF Id's
-        when system_type_id = 175 and size > 6 then '''Invalid''' -- long char
-        when system_type_id = 175 and size <= 6 then '''?'''
 				when system_type_id = 173 then '0x0000000000000000'
         when system_type_id = 104 then '0'
       end
@@ -93,13 +91,11 @@ begin
     select @values = coalesce(@values + ', ', '') + 
       case 
         when system_type_id = 56 then '-1' -- int
-        when (system_type_id = 231 or system_type_id = 167) and size > 6 then '''No Data''' -- long nvarchar or varchar
-        when (system_type_id = 231 or system_type_id = 167) and size <= 6 then '''-''' -- short nvarchar or varchar
+        when system_type_id in (167, 231, 175) and columnname like '%id' then '''-1''' -- char/varchar/nvarchar that aren't SF Id's
+        when system_type_id in (167, 231, 175) and size > 6 then '''Unknown''' -- long nvarchar, varchar, or char
+        when system_type_id in (167, 231, 175) and size <= 6 then '''-''' -- short nvarchar, varchar, or char
         when columnname in ('GVWCreatedDate', 'GVWModifiedDate') then '''' + convert(varchar, getdate()) + '''' -- our system create and modify dates
         when (system_type_id = 61 or system_type_id = 40) then '''1/1/1900''' -- datetime and date
-        when system_type_id = 175 and columnname like '%id' then '''-1''' -- char that aren't SF Id's
-        when system_type_id = 175 and size > 6 then '''No Data''' -- long char
-        when system_type_id = 175 and size <= 6 then '''-'''
 				when system_type_id = 173 then '0x0000000000000000'
         when system_type_id = 104 then '0'
       end
