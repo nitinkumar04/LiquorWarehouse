@@ -27,6 +27,7 @@
 	[Geocode]           [varchar](100)  NULL,
 	[Date]              [char](10)      NULL,
 	[Time]              [varchar](10)   NULL,
+	[CallDuration] VARCHAR(50) NULL, 
 	[Custom1]          [varchar](255)  NULL,
 	[Custom2]          [varchar](255)  NULL,
 	[Custom3]          [varchar](255)  NULL,
