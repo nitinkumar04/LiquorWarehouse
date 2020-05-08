@@ -67,7 +67,7 @@
 	[StartDateID] [int] NULL,
 	[FiscalDateID] [int] NULL,
 	[CreateDateID] [int] NULL,
-	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT 'N',
+	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT '-1',
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),

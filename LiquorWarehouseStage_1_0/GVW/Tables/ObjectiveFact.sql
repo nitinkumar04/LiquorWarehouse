@@ -77,7 +77,7 @@
 	[RptThruDateID]                 [VARCHAR](5)       NULL,
 	[ProductSetDimID]               VARCHAR(18)      NULL DEFAULT 'N',
 	[SalesGoalFactID]               VARCHAR(18)      NULL DEFAULT 'N',
-	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT 'N',
+	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT '-1',
     GVWCreatedDate      Datetime    default getdate() NOT NULL,
     GVWLastModifiedDate Datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),

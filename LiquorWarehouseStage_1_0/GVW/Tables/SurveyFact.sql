@@ -104,7 +104,7 @@
 	[TxnDateID]                       [varchar](50)   NULL,
 	[Type]                  [varchar](200)  NULL,
 	[URL]                   [varchar](250)  NULL,
-	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT 'N',
+	VisitSequenceStatusID           VARCHAR(18)      NULL DEFAULT '-1',
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
