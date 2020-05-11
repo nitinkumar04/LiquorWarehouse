@@ -58,7 +58,7 @@ begin
     select 'GVW ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 0 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'GVW' order by t.name
 
   -- Set TruncateTableDefault and TruncateTableNextLoad Flags
-  update LoadDataDateTime set TruncateTableDefault = 1, TruncateTableNextLoad = 1 where PipelineName in ('GVW AccountCallFact', 'GVW Contact')
+  update LoadDataDateTime set TruncateTableDefault = 1, TruncateTableNextLoad = 1 where PipelineName in ('GVW AccountCallFact', 'GVW ContactDim')
 
  
 end
