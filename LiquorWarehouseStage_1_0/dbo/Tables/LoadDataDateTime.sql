@@ -1,7 +1,6 @@
 ﻿CREATE TABLE [dbo].[LoadDataDateTime]
 (
   PipelineName               varchar(100) not null,
-  SnapLogicAssetID           char(36)    not null,
   StartDataDateTime          datetime    not null,
   EndDataDateTime            datetime    not null    default '1/1/2030',
   TruncateTableNextLoad      bit         not null    default 0,

@@ -4,7 +4,7 @@ begin
   --  It does not change the TruncateTable boolean in the table, only the date
 
   insert into LoadDataDateTime
-      select distinct ll.PipelineName, ll.SnapLogicAssetID, '1/1/1900', '1/1/2030', 0, 0, 0
+      select distinct ll.PipelineName, '1/1/1900', '1/1/2030', 0, 0, 0
       from LoadLog ll
         left outer join LoadDataDateTime lddt on lddt.PipelineName = ll.PipelineName
       where lddt.PipelineName is null 
@@ -17,10 +17,10 @@ begin
     TruncateTableNextLoad = TruncateTableDefault
   from LoadDataDateTime lddt
     inner join (
-      select PipelineName, SnapLogicAssetID, max(StartTime) as StartTime 
+      select PipelineName, max(StartTime) as StartTime 
       from LoadLog 
       where ExecutionStatus = 'Completed' 
         and PipelineName like @PipelinePrefix + '%'
-              group by PipelineName, SnapLogicAssetID) ll on ll.PipelineName = lddt.PipelineName
+              group by PipelineName) ll on ll.PipelineName = lddt.PipelineName
   where lddt.FullLoadDefault = 0
 end
