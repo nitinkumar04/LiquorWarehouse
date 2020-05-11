@@ -2,12 +2,13 @@
 begin
 /****** Inserts data into Stage Tables from Global Database for data that is not sourced from SalesForce ******/
 
-  -- Insert into the Source Tables 
+  /* Insert into the Source Tables */
   truncate table Source
   insert into Source values ('LiquorWarehouse')
   insert into Source values ('Salesforce')
 
-  -- Geo Data
+  
+  /* Geo Data */
   truncate table [State]
   insert into [State](StateSN, StateLN, StateCountry)
     select StateSN, StateLN, StateCountry from Global..[State]
@@ -25,7 +26,8 @@ begin
     select top 1 with ties ZCTA5, [STATE], COUNTY, GEOID from Global..FIPS_Zip
 	order by row_number() over (partition by ZCTA5 order by cast(POPPT as int) Desc)
 
-  -- Type Data
+  
+  /* Type Data */
   truncate table AccountType
   insert into AccountType(Acct_Type)
     select Acct_Type from Global..AccountType
@@ -34,9 +36,29 @@ begin
   insert into TypeData(Type_Id,Type_Name,Type_Plural,Type_Group,Type_Subtype,Type_Order)
     select Type_Id, Type_Name, Type_Plural, Type_Group, Type_Subtype, Type_Order from Global..TypeData
 
-  -- Currency
+ 
+  /* Currency */
   truncate table Currency
   insert into Currency(Currency_Dim_Id, Currency_ISO_Code, Currency_Conversion_Rate, Currency_Decimal_Places, Currency_Is_Active, Currency_Is_Corporate, Currency_Corporate_ISO_Code)
     select Currency_Dim_Id, Currency_ISO_Code, Currency_Conversion_Rate, Currency_Decimal_Places, Currency_Is_Active, Currency_Is_Corporate, Currency_Corporate_ISO_Code from Global..Currency
 
+ 
+  /* LoadDataDateTime */
+  truncate table LoadDataDateTime
+  
+  -- SFIn
+  insert into LoadDataDateTime
+    select 'SFIn ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 1 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'SFIn' order by t.name
+
+  -- Set FullLoadDefault Flag
+  update LoadDataDateTime set FullLoadDefault = 0 where PipelineName like 'Account' and PipelineName not like 'gvp__Survey%' and PipelineName not like 'gvp__Sales_Goal%'
+
+  -- GVW
+  insert into LoadDataDateTime
+    select 'GVW ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 0 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'GVW' order by t.name
+
+  -- Set TruncateTableDefault and TruncateTableNextLoad Flags
+  update LoadDataDateTime set TruncateTableDefault = 1, TruncateTableNextLoad = 1 where PipelineName in ('GVW AccountCallFact', 'GVW Contact')
+
+ 
 end
