@@ -106,11 +106,12 @@
     [TransactionType]            VARCHAR (20)   NULL,
     [TxnDateID]                   VARCHAR (20)   NULL,
     [TxnDate]              DATE       NULL,
+	[VisitSequenceStatusID] VARCHAR(18) NULL DEFAULT '-1', 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
 	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
-	CONSTRAINT [PK_ActivityFact] PRIMARY KEY ([ID])
+    CONSTRAINT [PK_ActivityFact] PRIMARY KEY ([ID])
 );
 
