@@ -7,7 +7,7 @@
 	[VersionNumber]						 		VARCHAR (10) NULL,		                    
 	[Title]         						    VARCHAR (255) NULL,	                        
 	[Description]                               NVARCHAR (500)  NULL,                       
-	[ReasonForChange]         					VARCHAR (30) NULL,	                        
+	[ReasonForChange]         					VARCHAR (100) NULL,	                        
 	[SharingOption]         				    VARCHAR (5) NULL,	                        
 	[PathOnClient]         					    VARCHAR (200) NULL,                          
 	[RatingCount]						 		VARCHAR (10) NULL,                                   
