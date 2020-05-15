@@ -11,6 +11,7 @@
 	[FiscalYear]                    [char](4)       NULL,
 	[FiscalDateDimID]             Char(10)      NULL,
 	[AccountDimID]                 VARCHAR(18)      NOT NULL DEFAULT '-1',
+    [ActivityOwnerByAccountID]            VARCHAR (36)   NOT NULL,
 	[ContactDimID]                 VARCHAR(18)      NULL DEFAULT '-1',
 	[PersonDimID]                  VARCHAR(18)      NULL DEFAULT '-1',
 	[ActivityGoalDimID]           VARCHAR(18)      NULL DEFAULT '-1',

@@ -43,7 +43,7 @@
 	[ItemExternalID] varchar(60) NULL,
 	[ItemFOBDI]								varchar(20) NULL,
 	[ItemFOBWarehouse]				varchar(20) NULL,
-	[ItemFullCaseEquivalent] [varchar](20) NULL,
+	[ItemFullCaseEquivalent] [varchar](30) NULL,
 	[ItemID] VARCHAR(18) NULL,
 	[ItemKeyItem] [varchar](10) NULL,
 	[ItemNABCACode] [varchar](20) NULL,
