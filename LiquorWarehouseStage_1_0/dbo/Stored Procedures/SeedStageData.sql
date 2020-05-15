@@ -6,6 +6,7 @@ begin
   truncate table Source
   insert into Source values ('LiquorWarehouse')
   insert into Source values ('Salesforce')
+  insert into Source values ('ERP')
 
   
   /* Geo Data */
