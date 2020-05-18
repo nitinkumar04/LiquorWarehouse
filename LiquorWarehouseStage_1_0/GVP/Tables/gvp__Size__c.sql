@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIn].[gvp__Size__c] (
+﻿CREATE TABLE [GVP].[gvp__Size__c] (
     [Id]                                char (18)     NOT NULL,
     [IsDeleted]                         VARCHAR (10)     NULL,
     [Name]                              NVARCHAR (200)    NULL,
@@ -19,7 +19,7 @@
     [gvp__Custom_1__c]                  NVARCHAR (200)    NULL,
     [gvp__Custom_2__c]                  NVARCHAR (200)    NULL,
     [gvp__Package_Type__c]              NVARCHAR (20)     NULL,
-    [gvp__Is_Active__c]                 VARCHAR (10)     NULL
-    CONSTRAINT [PK_gvp__Size__c] PRIMARY KEY ([Id])
+    [gvp__Is_Active__c]                 VARCHAR (10)     NULL,
+    CONSTRAINT [PK_gvp__Size__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
