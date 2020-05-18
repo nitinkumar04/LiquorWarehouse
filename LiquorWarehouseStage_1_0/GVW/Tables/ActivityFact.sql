@@ -7,7 +7,7 @@
     [AccountCallStatus]             VARCHAR (800)  NULL,
     [ActivityID]            VARCHAR (20)   NOT NULL,
     [ActivityOwnerByAccountID]            VARCHAR (36)   NOT NULL,
-    [ActitvityName]               VARCHAR (100)  NULL,
+    [ActivityName]               VARCHAR (100)  NULL,
     [ActivityStatus]             VARCHAR (800)  NULL,
     [ActivityURL]                NVARCHAR (200) NULL,
     [AuthorizationNew]           VARCHAR (500)  NULL,

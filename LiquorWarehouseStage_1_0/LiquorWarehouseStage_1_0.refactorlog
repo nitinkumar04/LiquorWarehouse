@@ -819,4 +819,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8b13c99e-af76-4119-ae7e-057820b96465" ChangeDateTime="05/18/2020 20:41:34">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[ActitvityName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ActivityName" />
+  </Operation>
 </Operations>
