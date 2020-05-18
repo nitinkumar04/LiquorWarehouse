@@ -54,6 +54,8 @@
 	[TxnAltDateID]                [varchar](10)   NULL,
 	[CreateDateID]                 [varchar](10)   NULL,
 	[FiscalDateID]                 [varchar](10)   NULL,
+	[StartDateID]                 [varchar](10)   NULL,
+	[EndDateID]                 [varchar](10)   NULL,
 	[ImageID]                       VARCHAR(18)   NULL,
 	[ImageName]                     [varchar](200)  NULL,
 	[ImageURL]                      [varchar](250)  NULL,
