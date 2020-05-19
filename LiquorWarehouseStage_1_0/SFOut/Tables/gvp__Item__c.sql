@@ -44,7 +44,7 @@
     [gvp__Units__c]                         DECIMAL(5, 1)              NULL,
     [gvp__Vintage__c]                       VARCHAR (40)     NULL,
     [gvp__BrandLookup__c]                   NVARCHAR (100)    NULL,
-    [gvp__Item_Key__c]                      VARCHAR (60)     NULL,
+    [gvp__Item_Key__c]                      VARCHAR (60)     NOT NULL,
     [gvp__Available__c]                     VARCHAR (10)     NULL,
     [gvp__Price_Comments__c]                VARCHAR (200)    NULL,
     [gvp__X9L_Equivalent__c]                DECIMAL (14, 11) NULL,
@@ -70,6 +70,6 @@
     [gvp__Custom_Fact_1__c]                 DECIMAL (12, 6)  NULL,
     [gvp__Custom_Fact_2__c]                 DECIMAL (12, 6)  NULL,
     [gvp__Proof__c]                         DECIMAL (5, 2)   NULL,
-    CONSTRAINT [PK_gvp__Item__c] PRIMARY KEY ([gvp__Item_Number__c])
+    CONSTRAINT [PK_gvp__Item__c] PRIMARY KEY ([gvp__Item_Key__c], [gvp__Item_Number__c])
 );
 
