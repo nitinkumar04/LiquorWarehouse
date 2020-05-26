@@ -12,7 +12,12 @@ begin
   /* Create the 'set' clause of the update statement */
   
   -- Create a row for each column that sets it equal to the temp table version of itself
-  select 'g.' + c.name + '=t.' + c.name as columnupdate into #temp
+  select 
+    case 
+      when c.name not like '9%' then 'g.' + c.name + '=t.' + c.name 
+      else 'g.[' + c.name + ']=t.[' + c.name + ']'
+    end as columnupdate 
+  into #temp
   from sys.columns c 
     inner join sys.tables t on t.object_id = c.object_id 
   where t.name = @tablename
