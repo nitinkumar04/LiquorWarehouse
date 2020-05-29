@@ -33,7 +33,7 @@
 	[FirstPublishLocationId]					CHAR (18) NULL,                             
 	[Origin]         						    VARCHAR (5) NULL,                           
 	[ContentLocation]         				    VARCHAR (5) NULL,	                        
-	[TextPreview]                               NVARCHAR (100)  NULL,                       
+	[TextPreview]                               NVARCHAR (255)  NULL,                       
 	[ExternalDocumentInfo1]                     NVARCHAR (100)  NULL,                       
 	[ExternalDocumentInfo2]                     NVARCHAR (100)  NULL, 	                    
 	[ExternalDataSourceId]						CHAR (18) NULL,  	                        
