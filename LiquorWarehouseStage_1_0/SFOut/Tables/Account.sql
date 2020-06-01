@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFOut].[Account] (
     [Id]                                        char (18)   NULL,
-    [IsDeleted]                                 VARCHAR (10) NOT NULL,
+    [IsDeleted]                                 VARCHAR (10) NULL,
     [MasterRecordId]                            CHAR (18)  NULL,
     [Name]                                      NVARCHAR (250)  NULL,
     [Type]                                      NVARCHAR (100)  NULL,
