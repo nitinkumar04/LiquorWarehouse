@@ -12,10 +12,12 @@ begin
     begin
       -- Get the ID values for the parameter variables
       declare @clientid int 
+      declare @defaultclientid int
       declare @fromenvironmentid int
       declare @toenvironmentid int
 
       set @clientid = (select clientid from client where ClientName = @clientname)
+      set @defaultclientid = (select clientid from client where ClientName = 'default')
       set @fromenvironmentid = (select environmentid from Environment where EnvironmentName = @fromenvironment)
       set @toenvironmentid = (select environmentid from Environment where EnvironmentName = @toenvironment)
 
@@ -41,5 +43,13 @@ begin
         where cp.ClientID = @clientid
           and cp.EnvironmentID = @fromenvironmentid
           and cp1.Active = 1
+
+      -- Now clean up any records that are equal to the default values
+      delete cp 
+      from ClientParameter cp
+        inner join ClientParameter cp1 on cp1.ParameterID = cp.ParameterID and cp1.ParameterValue = cp.ParameterValue
+      where cp.ClientID = @clientid
+        and cp1.ClientID = @defaultclientid
+
     end
 end

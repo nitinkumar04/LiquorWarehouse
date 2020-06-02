@@ -6,6 +6,7 @@
 as
 begin
   declare @clientid int
+  declare @defaultclientid int
   declare @environmentid int
   declare @parameterid int
   declare @ParameterNameUnderscores varchar(100)
@@ -51,13 +52,19 @@ begin
 
       /* End check parameter value datatype */
 
-      -- Get the client, environment, and parameter ids
+      -- Get the client, default client, environment, and parameter ids
       set @clientid = (select ClientID from Client where ClientName = @clientname)
+      set @defaultclientid = (select ClientID from Client where ClientName = 'default')
       set @environmentid = (select EnvironmentID from Environment where EnvironmentName = @environmentname)
       set @parameterid = (select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)
 
-      -- If the client/parameter pair exists then update it
+      -- If the client/parameter pair exists and the new value is the same as the default value, then delete the row
       if exists (select ParameterID from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid)
+        and @parametervalue = (select ParameterValue from ClientParameter where ClientID = @defaultclientid and ParameterID = @parameterid)
+        delete from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid
+
+      -- If the client/parameter pair exists and the new value is not the same as the default value, then update it
+      else if exists (select ParameterID from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid)
         update ClientParameter set ParameterValue = @parametervalue, LastModifiedDate = getdate() 
           where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid
 
