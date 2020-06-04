@@ -38,7 +38,7 @@
 	gvp__Parent_Program__c char(18) null,
 	gvp__Program_Budget_Balance__c money null,
 	gvp__Program_Code__c nvarchar(125) null,
-	gvp__Program_Goal__c nvarchar(200) null,
+	gvp__Program_Goal__c nvarchar(250) null,
 	gvp__Program_Manager__c char(18) null,
 	gvp__Region__c nvarchar(100) null,
 	gvp__Start_Date__c date null,
