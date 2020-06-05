@@ -1,0 +1,30 @@
+﻿CREATE TABLE [ERPIn].[Distributor]
+(
+  Distributor_Key   varchar(255) NOT NULL, 
+  Distributor_Name  varchar(255) NOT NULL,
+  Street_1          varchar(255),
+  Street_2          varchar(255),
+  City              varchar(40),
+  State             varchar(20),
+  Zip_Code          varchar(20),
+  Country           varchar(40),
+  Phone             varchar(20),
+  Fax               varchar(20),
+  Territory_Key     varchar(32) NOT NULL,
+  Territory_Name    varchar(80) NOT NULL,
+  Region_Key        varchar(32) NOT NULL,
+  Region_Name       varchar(80) NOT NULL,
+  Division_Key      varchar(32) NOT NULL,
+  Division_Name     varchar(80) NOT NULL,
+  Company_Key       varchar(32) NOT NULL,
+  Company_Name      varchar(80) NOT NULL,
+  Customer_Type     varchar(80) NOT NULL,
+  Owner             varchar(80),
+  Owner_Key         varchar(32),
+  Distributor_ID    varchar(255),
+  Data_Source       varchar(20),
+  Last_Update       date,
+  Custom_Date_1     date,
+  Dist_Group        varchar(255)
+    CONSTRAINT [PK_Distributor] PRIMARY KEY ([Distributor_Key])
+)
