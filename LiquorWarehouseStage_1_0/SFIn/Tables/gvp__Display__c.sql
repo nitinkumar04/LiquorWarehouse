@@ -17,7 +17,7 @@
 	gvp__Brand__c char(18) null,
 	gvp__Date_Installed__c date null,
 	gvp__Date_Removed__c date null,
-	gvp__Days_on_Display__c decimal(5,1) null,
+	gvp__Days_on_Display__c decimal(7,2) null,
 	gvp__Is_Current__c varchar(10) null,
 	gvp__Item__c char(18) null,
 	gvp__Label__c char(18) null,
