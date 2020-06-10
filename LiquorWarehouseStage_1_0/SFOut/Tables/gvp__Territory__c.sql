@@ -1,5 +1,5 @@
-﻿CREATE TABLE [SFIn].[gvp__Territory__c] (
-    [Id]                     char (18)  NOT NULL,
+﻿CREATE TABLE [SFOut].[gvp__Territory__c] (
+    [Id]                     char (18)  NULL,
     [IsDeleted]              VARCHAR (10) NULL,
     [Name]                   NVARCHAR (200) NULL,
     [CreatedDate]            DATETIME NULL,
@@ -11,7 +11,7 @@
     [LastReferencedDate]     DATETIME NULL,
     [gvp__Region__c]         char (18) NULL,
     [gvp__Division__c]       char (18) NULL,
-    [gvp__Territory_Code__c] NVARCHAR (45) NULL,
+    [gvp__Territory_Code__c] NVARCHAR (45) NOT NULL,
     [gvp__Owner__c]          char (18) NULL,
     [gvp__Custom_1__c]       NVARCHAR (200) NULL,
     [gvp__Custom_2__c]       NVARCHAR (200) NULL,
@@ -22,6 +22,6 @@
     [gvp__Region_List__c]    NVARCHAR (100) NULL,
     [gvp__Custom_5__c]       NVARCHAR (200) NULL,
     [gvp__Is_Active__c]      VARCHAR (10) NULL, 
-    CONSTRAINT [PK_gvp__Territory__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_gvp__Territory__c] PRIMARY KEY ([gvp__Territory_Code__c]) 
 );
 

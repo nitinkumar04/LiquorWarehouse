@@ -338,8 +338,6 @@
     <Build Include="dbo\Tables\Country.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence_Step__c.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Sequence_Step_Status__c.sql" />
-    <Build Include="SFIn\Tables\LWDistributorParentRecordsAsChildren.sql" />
-    <Build Include="SFIn\Tables\LWRetailerParentRecordsAsChildren.sql" />
     <Build Include="dbo\Tables\LoadLog.sql" />
     <Build Include="dbo\Tables\LoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\UpdateLoadDataDateTime.sql" />
@@ -552,6 +550,14 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="SFOut\Tables\gvp__Region__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="SFOut\Tables\gvp__Territory__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="GVP\Tables\User.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
