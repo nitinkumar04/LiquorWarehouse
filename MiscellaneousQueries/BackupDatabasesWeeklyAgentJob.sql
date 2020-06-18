@@ -12,11 +12,11 @@
 USE [msdb]
 GO
 
-/****** Object:  Job [BackupDatabases - Weekly]    Script Date: 6/16/2020 8:59:06 PM ******/
+/****** Object:  Job [BackupDatabases - Weekly]    Script Date: 6/17/2020 2:33:15 PM ******/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
-/****** Object:  JobCategory [Database Maintenance]    Script Date: 6/16/2020 8:59:06 PM ******/
+/****** Object:  JobCategory [Database Maintenance]    Script Date: 6/17/2020 2:33:15 PM ******/
 IF NOT EXISTS (SELECT name FROM msdb.dbo.syscategories WHERE name=N'Database Maintenance' AND category_class=1)
 BEGIN
 EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name=N'Database Maintenance'
@@ -36,7 +36,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'BackupDatabases - Weekly',
 		@category_name=N'Database Maintenance', 
 		@owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [Copy Latest Backup from Daily to Weekly S3 folder]    Script Date: 6/16/2020 8:59:06 PM ******/
+/****** Object:  Step [Copy Latest Backup from Daily to Weekly S3 folder]    Script Date: 6/17/2020 2:33:15 PM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Copy Latest Backup from Daily to Weekly S3 folder', 
 		@step_id=1, 
 		@cmdexec_success_code=0, 
@@ -47,16 +47,16 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Copy Lat
 		@retry_attempts=0, 
 		@retry_interval=0, 
 		@os_run_priority=0, @subsystem=N'PowerShell', 
-		@command=N'$SourceKey = "Daily/DailyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
+		@command=N'$SourceKey = "PROD-2017/Daily/DailyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
 
-$DestinationKey = "Weekly/WeeklyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
+$DestinationKey = "PROD-2017/Weekly/WeeklyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
 
 Copy-S3Object -BucketName greatvines-sql-server-backups -Key $SourceKey -DestinationKey $DestinationKey
 ', 
 		@database_name=N'master', 
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [Delete Old Weekly Backup]    Script Date: 6/16/2020 8:59:06 PM ******/
+/****** Object:  Step [Delete Old Weekly Backup]    Script Date: 6/17/2020 2:33:15 PM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete Old Weekly Backup', 
 		@step_id=2, 
 		@cmdexec_success_code=0, 
@@ -67,11 +67,11 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete O
 		@retry_attempts=0, 
 		@retry_interval=0, 
 		@os_run_priority=0, @subsystem=N'PowerShell', 
-		@command=N'Remove-S3Object -BucketName greatvines-sql-server-backups -Key ("Weekly/WeeklyBackups-" + ((Get-Date).AddDays(-35)).ToString("yyyyMMdd") + ".zip") -force', 
+		@command=N'Remove-S3Object -BucketName greatvines-sql-server-backups -Key ("PROD-2017/Weekly/WeeklyBackups-" + ((Get-Date).AddDays(-35)).ToString("yyyyMMdd") + ".zip") -force', 
 		@database_name=N'master', 
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [Report Failure]    Script Date: 6/16/2020 8:59:06 PM ******/
+/****** Object:  Step [Report Failure]    Script Date: 6/17/2020 2:33:15 PM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Report Failure', 
 		@step_id=3, 
 		@cmdexec_success_code=0, 
@@ -110,5 +110,4 @@ QuitWithRollback:
     IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION
 EndSave:
 GO
-
 
