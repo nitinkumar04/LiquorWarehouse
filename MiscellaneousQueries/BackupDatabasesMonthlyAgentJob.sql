@@ -1,22 +1,11 @@
-﻿/*    ==Scripting Parameters==
-
-    Source Server Version : SQL Server 2017 (14.0.3023)
-    Source Database Engine Edition : Microsoft SQL Server Standard Edition
-    Source Database Engine Type : Standalone SQL Server
-
-    Target Server Version : SQL Server 2017
-    Target Database Engine Edition : Microsoft SQL Server Standard Edition
-    Target Database Engine Type : Standalone SQL Server
-*/
-
-USE [msdb]
+﻿USE [msdb]
 GO
 
-/****** Object:  Job [BackupDatabases - Monthly]    Script Date: 6/16/2020 8:59:47 PM ******/
+/****** Object:  Job [BackupDatabases - Monthly]    Script Date: 6/18/2020 10:17:26 AM ******/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
-/****** Object:  JobCategory [Database Maintenance]    Script Date: 6/16/2020 8:59:47 PM ******/
+/****** Object:  JobCategory [Database Maintenance]    Script Date: 6/18/2020 10:17:26 AM ******/
 IF NOT EXISTS (SELECT name FROM msdb.dbo.syscategories WHERE name=N'Database Maintenance' AND category_class=1)
 BEGIN
 EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name=N'Database Maintenance'
@@ -36,7 +25,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'BackupDatabases - Monthly',
 		@category_name=N'Database Maintenance', 
 		@owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [Copy Latest Backup from Daily to Monthly S3 Bucket]    Script Date: 6/16/2020 8:59:47 PM ******/
+/****** Object:  Step [Copy Latest Backup from Daily to Monthly S3 Bucket]    Script Date: 6/18/2020 10:17:27 AM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Copy Latest Backup from Daily to Monthly S3 Bucket', 
 		@step_id=1, 
 		@cmdexec_success_code=0, 
@@ -47,16 +36,16 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Copy Lat
 		@retry_attempts=0, 
 		@retry_interval=0, 
 		@os_run_priority=0, @subsystem=N'PowerShell', 
-		@command=N'$SourceKey = "Daily/DailyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
+		@command=N'$SourceKey = "PROD-2017/Daily/DailyBackups-" + (Get-Date -format "yyyyMMdd") + ".zip"
 
-$DestinationKey = "Monthly/MonthlyBackups-" + (Get-Date -format "yyyyMM") + ".zip"
+$DestinationKey = "PROD-2017/Monthly/MonthlyBackups-" + (Get-Date -format "yyyyMM") + ".zip"
 
 Copy-S3Object -BucketName greatvines-sql-server-backups -Key $SourceKey -DestinationKey $DestinationKey
 ', 
 		@database_name=N'master', 
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [Report Failure]    Script Date: 6/16/2020 8:59:47 PM ******/
+/****** Object:  Step [Report Failure]    Script Date: 6/18/2020 10:17:27 AM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Report Failure', 
 		@step_id=2, 
 		@cmdexec_success_code=0, 
@@ -95,5 +84,4 @@ QuitWithRollback:
     IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION
 EndSave:
 GO
-
 
