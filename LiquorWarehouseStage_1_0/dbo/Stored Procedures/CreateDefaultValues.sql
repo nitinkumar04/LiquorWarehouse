@@ -40,7 +40,7 @@ begin
         inner join sys.schemas s on t.schema_id = s.schema_id
       where t.name = @tablename 
         and s.name = @schemaname
-        and (c.is_nullable = 0 or c.name like '%Description%' or c.name like '%Name%')
+        and (c.is_nullable = 0 or c.name like '%Description%')-- or c.name like '%Name%')
 
     /*
     system_type_id  datatype
