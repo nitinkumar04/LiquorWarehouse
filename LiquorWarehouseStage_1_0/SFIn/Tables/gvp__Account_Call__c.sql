@@ -14,7 +14,7 @@
 	[gvp__Activity_Goal__c] char(18) null,
 	gvp__Date_of_Call__c datetime null,
 	gvp__Distributor_in_Attendance__c char(18) null,
-	gvp__Notes__c nvarchar(300),
+	gvp__Notes__c nvarchar(255),
 	gvp__Person_Contacted__c char(18) null,
 	gvp__Status__c nvarchar(25),
 	gvp__Type_of_Call__c nvarchar(100) null,

@@ -1,4 +1,4 @@
-﻿CREATE TABLE GVW.VisitSequenceFact(									
+﻿CREATE TABLE GVW.AccountCallSequenceFact(									
     ID           VARCHAR(18)      NOT NULL,                           
 	Name         varchar(250)  NULL,                                  
 	CreatedDate                   char(10)      NULL,                 
@@ -15,12 +15,12 @@
 	StartDateID                    varchar(10)   NULL,
 	EndDateID                    varchar(10)   NULL,
 	FiscalDateID                 varchar(10)   NULL,                  
-	VisitSequenceDimID			VARCHAR(18) NULL,                     
+	AccountCallSequenceDimID			VARCHAR(18) NULL,                     
 	AccountCallID					VARCHAR(18) NULL,                 
 	GVWCreatedDate       datetime    default getdate() NOT NULL,      
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,      
     GVWSourceID  INT default (-1),                                    
     GVWDeleted BIT NULL DEFAULT '0',
 	GVWHash VARCHAR(32) NOT NULL DEFAULT 0, 
-	CONSTRAINT PK_VisitSequenceFact PRIMARY KEY (ID)
+	CONSTRAINT PK_AccountCallSequenceFact PRIMARY KEY (ID)
 );

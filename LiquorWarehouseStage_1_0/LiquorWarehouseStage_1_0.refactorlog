@@ -826,4 +826,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ActivityName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="d446ab81-1648-43dd-aaca-6e85e99c64b9" ChangeDateTime="06/24/2020 01:32:27">
+    <Property Name="ElementName" Value="[GVW].[ActivityFact].[VisitSequenceStatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ActivityFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountCallSequenceStatusID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="86c5193d-d406-481c-bb93-1360da45c28f" ChangeDateTime="06/24/2020 01:34:59">
+    <Property Name="ElementName" Value="[GVW].[PromoEventFact].[VisitSequenceStatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[PromoEventFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountCallSequenceStatusID" />
+  </Operation>
 </Operations>
