@@ -13,7 +13,7 @@
 	LastReferencedDate datetime null,
 	gvp__Category__c nvarchar(100) null,
 	gvp__Product_Only__c nvarchar(100) null,
-	gvp__Question_Text__c nvarchar(270) null,
+	gvp__Question_Text__c nvarchar(255) null,
 	gvp__Type__c nvarchar(100) null,
 	gvp__Question_List__c nvarchar(2000) null,
 	gvp__Sales_Driver__c nvarchar(100) null,
