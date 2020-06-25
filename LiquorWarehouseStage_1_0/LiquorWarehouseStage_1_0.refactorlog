@@ -840,4 +840,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AccountCallSequenceStatusID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e2d6b879-c1b5-4a36-9a7e-cead76b64e1e" ChangeDateTime="06/25/2020 01:58:34">
+    <Property Name="ElementName" Value="[GVW].[ObjectiveFact].[VisitSequenceStatusID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[GVW].[ObjectiveFact]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AccountCallSequenceStatusID" />
+  </Operation>
 </Operations>
