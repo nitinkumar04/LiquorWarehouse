@@ -56,7 +56,7 @@
 [SurveyPlanCustomText3] [nvarchar](100) NULL,
 [SurveyPlanCustomText4] [nvarchar](100) NULL,
 [SurveyPlanCustomText5] [nvarchar](100) NULL,
-[SurveyQuestionClusterName] [nvarchar](50) NULL,
+[SurveyQuestionClusterName] [nvarchar](60) NULL,
 [SurveyQuestionClusterNumber] [nvarchar](5) NULL,
 [SurveyPlanPublished] [nvarchar](5) NULL,
 [SurveyPlanExternalID] [nvarchar](5) NULL,
