@@ -5,7 +5,7 @@
     [AccountTeamDimID]         VARCHAR (20)   NULL DEFAULT '-1',
     [AccountCallName]               VARCHAR (100)  NULL,
     [AccountCallStatus]             VARCHAR (800)  NULL,
-    [ActivityID]            VARCHAR (20)   NOT NULL,
+    [AccountCallID]            VARCHAR (20)   NOT NULL,
     [ActivityOwnerByAccountID]            VARCHAR (36)   NOT NULL,
     [ActivityName]               VARCHAR (100)  NULL,
     [ActivityStatus]             VARCHAR (800)  NULL,
