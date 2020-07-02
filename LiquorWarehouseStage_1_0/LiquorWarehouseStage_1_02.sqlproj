@@ -561,5 +561,7 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="SFOut\Tables\gvp__RAD__c.sql" />
+    <Build Include="GVP\Tables\gvp__RAD__c.sql" />
   </ItemGroup>
 </Project>
