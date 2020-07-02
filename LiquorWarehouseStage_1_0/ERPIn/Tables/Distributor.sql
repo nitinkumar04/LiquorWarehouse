@@ -25,6 +25,16 @@
   Data_Source       varchar(20),
   Last_Update       date,
   Custom_Date_1     date,
-  Dist_Group        varchar(255)
+  Dist_Group        varchar(255),
+  Custom_1          nvarchar(255),
+  Custom_2          nvarchar(255),
+  Custom_3          nvarchar(255),
+  Custom_4          nvarchar(255),
+  Custom_5          nvarchar(255), 
+  Custom_6          nvarchar(255),
+  Custom_7          nvarchar(255),
+  Custom_8          nvarchar(255),
+  Custom_9          nvarchar(255),
+  Custom_10         nvarchar(255), 
     CONSTRAINT [PK_Distributor] PRIMARY KEY ([Distributor_Key])
 )

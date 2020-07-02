@@ -60,5 +60,10 @@
   Custom_3              nvarchar(255),
   Custom_4              nvarchar(255),
   Custom_5              nvarchar(255), 
+  Custom_6              nvarchar(255),
+  Custom_7              nvarchar(255),
+  Custom_8              nvarchar(255),
+  Custom_9              nvarchar(255),
+  Custom_10             nvarchar(255), 
     CONSTRAINT [PK_Retailer] PRIMARY KEY ([Retailer_Key], [Retailer_Ext_Key])
 )
