@@ -17,8 +17,8 @@
   Tax_Amount              money,
   Addl_Charges_Amt        money,
   Deposit_Amt             money,
-  Custom_1                varchar(255),
-  Custom_2                varchar(255),
+  Custom_1                nvarchar(255),
+  Custom_2                nvarchar(255),
   Unit_of_Measure         varchar(20)
     CONSTRAINT [PK_RAD] PRIMARY KEY ([Item_Key], [Distribuyor_Key], [Retailer_Ext_Key], [Date_of_Data])
 )
