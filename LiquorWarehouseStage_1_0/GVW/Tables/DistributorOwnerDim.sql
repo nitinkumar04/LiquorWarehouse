@@ -2,7 +2,7 @@
 	[GVWDistributorOwnerSKey] int identity(1,1),
 	[ID] VARCHAR(18) NOT NULL,
 	[Name] [nvarchar](110) NULL,
-	[Granularity] [nvarchar](30) NULL,
+	[Granularity] [nvarchar](50) NULL,
 	[URL] [nvarchar](200) NULL,
 	[CreatedDate] [char](10) NULL,
 	[ModifiedDate] [char](10) NULL,

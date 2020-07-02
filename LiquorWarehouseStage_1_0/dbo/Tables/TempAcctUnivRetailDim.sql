@@ -1,5 +1,4 @@
-﻿CREATE TABLE [GVW].[AcctUnivRetailDim] (
-	[GVWAcctUnivRetailSKey] int identity(1,1),
+﻿CREATE TABLE [dbo].[TempAcctUnivRetailDim] (
     [ID]                     VARCHAR(18)  NOT NULL,
     [CreatedDate]                              VARCHAR (20)  NULL,
     [ModifiedDate]                             VARCHAR (20)  NULL,
@@ -17,8 +16,8 @@
     [GeoPrecisionCode]                VARCHAR (20)  NULL,
     [Latitude]                          VARCHAR (19)  NULL,
     [Longitude]                         VARCHAR (19)  NULL,
-    [LicenseNumber]                    NVARCHAR(25)  NULL,
-    [NumberofLocations]               VARCHAR (8)  NULL,
+    [LicenseNumber]                    VARCHAR (20)  NULL,
+    [NumberofLocations]               VARCHAR (5)  NULL,
     [FamilyOwnerCode]                 VARCHAR (20)  NULL,
     [ImmediateParentState]            NVARCHAR (35)  NULL,
     [ImmediateParentStateFIPSCode]  VARCHAR (10)  NULL,
@@ -37,6 +36,6 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
 	GVWDeleted BIT NULL DEFAULT '0'
-    CONSTRAINT [PK_AcctUnivRetailDim] PRIMARY KEY (GVWAcctUnivRetailSKey), 
+    CONSTRAINT [PK_AcctUnivRetailDim] PRIMARY KEY ([ID]), 
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
 );
