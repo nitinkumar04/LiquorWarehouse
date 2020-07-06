@@ -14,7 +14,7 @@
     [gvp__Accomplish_by__c]                DATE            NULL,
     [gvp__Brand__c]                        char (18)    NULL,
     [gvp__Cases_per_Year__c]               DECIMAL (8, 2)  NULL,
-    [gvp__Description__c]                  NVARCHAR (500)   NULL,
+    [gvp__Description__c]                  NVARCHAR (255)   NULL,
     [gvp__Details__c]                      NVARCHAR (500)   NULL,
     [gvp__Item__c]                         char (18)    NULL,
     [gvp__Label__c]                        char (18)    NULL,

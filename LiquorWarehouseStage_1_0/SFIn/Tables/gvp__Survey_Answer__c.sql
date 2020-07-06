@@ -15,7 +15,7 @@
 	gvp__Answer_Currency__c money null,
 	gvp__Answer_Number__c decimal(24,8) null,
 	gvp__Answer_Percent__c decimal(4,1) null,
-	gvp__Answer_Text__c nvarchar(300) null,
+	gvp__Answer_Text__c nvarchar(255) null,
 	gvp__Order__c decimal(10,1) null,
 	gvp__Question__c char(18) null,
 	gvp__Survey__c char(18) null,
