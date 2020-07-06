@@ -64,7 +64,7 @@
 	[TxnDateID]                    [varchar](10)   NULL,
 	[TxnDate]                       [char](10)      NULL,
 	[Type]              [varchar](200)  NULL,
-    [VisitSequenceStatusID] VARCHAR(18) NULL DEFAULT '-1', 
+    [AccountCallSequenceStatusID] VARCHAR(18) NULL DEFAULT '-1', 
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
