@@ -567,5 +567,7 @@
     <Build Include="ERPIn\Tables\Retailer.sql" />
     <Build Include="GVP\Tables\gvp__Shipment__c.sql" />
     <Build Include="SFOut\Tables\gvp__Shipment__c.sql" />
+    <Build Include="GVP\Tables\Contact_1.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Segment__c_1.sql" />
   </ItemGroup>
 </Project>
