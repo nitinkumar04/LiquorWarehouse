@@ -13,7 +13,7 @@
 	LastReferencedDate datetime null,
 	gvp__End_Date__c date null,
   gvp__External_Id__c varchar(25) null,
- 	gvp__Goal_Plan_Description__c nvarchar(250) null,
+ 	gvp__Goal_Plan_Description__c nvarchar(255) null,
 	gvp__Goal_Plan_Name__c nvarchar(250) null,
 	gvp__Parent_Goal_Plan__c char(18) null,
 	gvp__Product__c nvarchar(100) null,

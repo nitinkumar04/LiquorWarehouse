@@ -21,6 +21,7 @@
     [gvp__Division_List__c]  NVARCHAR (100) NULL,
     [gvp__Region_List__c]    NVARCHAR (100) NULL,
     [gvp__Custom_5__c]       NVARCHAR (200) NULL,
-    [gvp__Is_Active__c]      VARCHAR (10) NULL 
+    [gvp__Is_Active__c]      VARCHAR (10) NULL, 
+    CONSTRAINT [PK_gvp__Territory__c] PRIMARY KEY ([Id]) 
 );
 

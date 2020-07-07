@@ -10,43 +10,48 @@
   @reason varchar(1000),
   @snapname varchar(100),
   @updaterows int = null, 
-  @deleterows int = null
+  @deleterows int = null,
+  @unchangedrows int = null
 
 AS
 begin
-  -- @pipeline name comes through as null when validating a pipeline that has errors.  We don't want to store validation records.  
-  if isnull(@pipelinename, '') <> '' 
-
   -- Consolidate the statuses into Completed, Error, and Other
   declare @ConsolidatedExecutionStatus varchar(25)
   set @ConsolidatedExecutionStatus = 
     case 
       when isnull(@error, '') = '' then 'Completed'
-      when isnull(@error, '') = 'Completed with Log Error' then 'Completed with Log Error'
       when isnull(@error, '') <> '' then 'Error'
       else 'Other'
     end
   
+  /* Load log */
+
+  if @snaplogicassetid <> 'Validation' -- we don't want to log validations, only executions
   begin
-    -- If a record already exists for that ruuid, then update it rather than write a new record (this can happen if the error pipeline takes longer to run than the parent pipeine)
-    if @ConsolidatedExecutionStatus in ('Error', 'Completed with Log Error') and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
+    -- If a record already exists for that ruuid, then update it rather than write a new record (this happens when the error pipeline and log results snap both call the logging SP
+    if @ConsolidatedExecutionStatus in ('Error') and exists (select 1 from LoadLog where ruuid = @ruuid and ExecutionStatus <> 'Error')
       update LoadLog set ExecutionStatus = @ConsolidatedExecutionStatus where RUUID = @ruuid
 
     else
-    insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows) values (
-      @pipelinename, 
-      @snaplogicassetid,
-      @ruuid,
-      @ConsolidatedExecutionStatus,
-      convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
-      convert(datetime, substring(replace(@endtime, 'T', ' '), 1, 23)), 
-      @insertrows, 
-      @updaterows, 
-      @deleterows)
+      insert into LoadLog (PipelineName, SnapLogicAssetID, RUUID, ExecutionStatus, StartTime, EndTime, InsertRows, UpdateRows, DeleteRows, UnchangedRows) values (
+        @pipelinename, 
+        @snaplogicassetid,
+        @ruuid,
+        @ConsolidatedExecutionStatus,
+        convert(datetime, substring(replace(@starttime, 'T', ' '), 1, 23)), 
+        convert(datetime, substring(replace(@endtime, 'T', ' '), 1, 23)), 
+        @insertrows, 
+        @updaterows, 
+        @deleterows,
+        @unchangedrows)
   end
 
-  if isnull(@error, '') <> '' -- This means there wasn't an error.  This table will store validation errors.  Can be changed later to exclude if it causes confusion.
+  /* Load Error Log */
+
+  if @ConsolidatedExecutionStatus = 'Error'
   begin
+    -- Set @ruuid = 'validation' if snaplogicassetid = 'validation' to highlight that it was a validation and not an execution.  There isn't a valid ruuid for validations, anyway.  Not sure where the value is coming from
+    if @snaplogicassetid = 'Validation' set @ruuid = 'Validation'
     insert into LoadErrorLog (RUUID, PipelineName, SnapName, ErrorDateTime, Error, Reason) values (
       @ruuid,
       @pipelinename,
@@ -55,6 +60,7 @@ begin
       @error,
       @reason)
   end
+
 end
 GO
 

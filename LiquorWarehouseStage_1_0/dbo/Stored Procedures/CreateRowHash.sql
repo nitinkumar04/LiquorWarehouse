@@ -13,7 +13,7 @@ begin
   declare @sourceID varchar(2)
 
   -- Get the sourceID
-  select @sourceID = convert(varchar(2), SourceID) from [Source] where SourceName = @SourceName 
+  select @sourceID = convert(varchar(2), ID) from [Source] where [Name] = @SourceName 
 
   -- Get the columns that are strings (non-strings must be converted to string)
   select @stringcolumns = coalesce(@stringcolumns + ', ','') + name 

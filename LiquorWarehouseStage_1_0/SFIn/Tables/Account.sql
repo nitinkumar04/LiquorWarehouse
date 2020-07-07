@@ -115,7 +115,7 @@
     [gvp__Latitude_Longitude_Precision_Code__c] NVARCHAR (100)  NULL,
     [gvp__Latitude__c]                          DECIMAL(14,11)  NULL,
     [gvp__License_Expiration__c]                DATE  NULL,
-    [gvp__License_Number__c]                    VARCHAR (20)  NULL,
+    [gvp__License_Number__c]                    VARCHAR (30)  NULL,
     [gvp__License_Type__c]                      NVARCHAR (100)  NULL,
     [gvp__Liquor_Indicator__c]                  VARCHAR (100)  NULL,
     [gvp__Longitude__c]                         DECIMAL(14,11) NULL,

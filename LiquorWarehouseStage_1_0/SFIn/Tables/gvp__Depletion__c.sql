@@ -46,7 +46,7 @@
     [gvp__Military_On__c] DECIMAL(14, 4) NULL, 
     [gvp__Non_Retail_Sales__c] DECIMAL(14, 4) NULL, 
     [gvp__Samples__c] DECIMAL(14, 4) NULL, 
-    [gvp__Sub_Distributor_Sales__c ] DECIMAL(14, 4) NULL, 
+    [gvp__Sub_Distributor_Sales__c] DECIMAL(14, 4) NULL, 
     [gvp__Supplier_Returns__c] DECIMAL(14, 4) NULL, 
     [gvp__Total_Off_Premise__c] DECIMAL(14, 4) NULL, 
     [gvp__Total_On_Premise__c] DECIMAL(14, 4) NULL, 

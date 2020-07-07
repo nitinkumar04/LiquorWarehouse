@@ -36,7 +36,7 @@
 	[gvp__Drinks_Sold__c] [varchar](40) NULL,
 	[gvp__Event_Report_Form_Received__c] [varchar](40) NULL,
 	[gvp__Featured_Drink__c] NVARCHAR(255) NULL,
-	[gvp__Promotion_Description__c] NVARCHAR(2000) NULL,
+	[gvp__Promotion_Description__c] NVARCHAR(255) NULL,
 	[gvp__Samplers_Required__c] [varchar](40) NULL,
 	[gvp__Samples_Given__c] [varchar](40) NULL,
 	[gvp__Staff_1__c] [varchar](20) NULL,
