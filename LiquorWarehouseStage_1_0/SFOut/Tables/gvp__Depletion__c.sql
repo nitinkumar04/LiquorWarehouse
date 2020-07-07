@@ -30,7 +30,7 @@
 	gvp__BDN_Transfers_In__c decimal(9,4) null,
 	gvp__BDN_Transfers_Out__c decimal(9,4) null,
 	gvp__BDN_Wholesale_Sales__c decimal(10,4) null,
-	gvp__Depletion_Key__c varchar(95) null,
+	gvp__Depletion_Key__c varchar(95) not null,
 	gvp__Month__c INT null,
 	gvp__Year__c varchar(4) null,
 	gvp__Source_File__c varchar(80) null,
