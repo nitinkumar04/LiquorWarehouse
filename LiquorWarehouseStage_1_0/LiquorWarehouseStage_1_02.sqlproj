@@ -574,5 +574,6 @@
     <Build Include="GVP\Tables\gvp__Competitor__c.sql" />
     <Build Include="GVP\Tables\gvp__Event__c.sql" />
     <Build Include="GVP\Tables\gvp__Account_Call__c.sql" />
+    <Build Include="ERPIn\Tables\Depletion.sql" />
   </ItemGroup>
 </Project>
