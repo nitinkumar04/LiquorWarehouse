@@ -571,5 +571,8 @@
     <Build Include="GVP\Tables\Contact.sql" />
     <Build Include="GVP\Tables\gvp__Depletion__c.sql" />
     <Build Include="SFOut\Tables\gvp__Depletion__c.sql" />
+    <Build Include="GVP\Tables\gvp__Competitor__c.sql" />
+    <Build Include="GVP\Tables\gvp__Event__c.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Call__c.sql" />
   </ItemGroup>
 </Project>
