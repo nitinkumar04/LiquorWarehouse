@@ -565,5 +565,7 @@
     <Build Include="GVP\Tables\gvp__RAD__c.sql" />
     <Build Include="ERPIn\Tables\RAD.sql" />
     <Build Include="ERPIn\Tables\Retailer.sql" />
+    <Build Include="GVP\Tables\gvp__Shipment__c.sql" />
+    <Build Include="SFOut\Tables\gvp__Shipment__c.sql" />
   </ItemGroup>
 </Project>
