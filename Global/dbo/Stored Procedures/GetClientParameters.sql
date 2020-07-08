@@ -1,8 +1,9 @@
-﻿CREATE procedure [dbo].[GetClientParameters] @clientname varchar(100), @rowsorcolumns varchar(7) as
+﻿CREATE procedure [dbo].[GetClientParameters] @clientname varchar(100), @environmentname varchar(100), @rowsorcolumns varchar(7) as
 begin
   -- Check for sql injection
   if charindex(';', @clientname, 0) > 0
     or charindex(';', @rowsorcolumns, 0) > 0
+    or charindex(';', @environmentname, 0) > 0
   return(1);
 
   -- Snaplogic errors if nocount is off
@@ -10,6 +11,8 @@ begin
 
   -- Parameter error handling
   if not exists(select ClientID from Client where ClientName = @clientname)
+    return(1);
+  if not exists(select EnvironmentID from Environment where EnvironmentName = @environmentname)
     return(1);
   if @rowsorcolumns <> 'rows' and @rowsorcolumns <> 'columns'
     return(1);
@@ -40,7 +43,9 @@ begin
   from #Parameters tp
     inner join ClientParameter cp on tp.ParameterID = cp.ParameterID
     inner join Client c on c.ClientID = cp.ClientID
+    inner join Environment e on cp.EnvironmentID = e.EnvironmentID
   where c.ClientName = @clientname
+    and e.EnvironmentName = @environmentname
 
   -- Coalesce the values, this needs to be in a separate table in order to simplify the pivot below
   insert into #ParametersCoalesced

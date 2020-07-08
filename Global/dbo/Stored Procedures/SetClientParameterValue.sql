@@ -1,6 +1,13 @@
-﻿CREATE procedure SetClientParameterValue @clientname varchar(100), @parametername varchar(100), @parametervalue varchar(100) as
+﻿CREATE procedure SetClientParameterValue 
+  @clientname varchar(100), 
+  @environmentname varchar(100),
+  @parametername varchar(100), 
+  @parametervalue varchar(100)
+as
 begin
   declare @clientid int
+  declare @defaultclientid int
+  declare @environmentid int
   declare @parameterid int
   declare @ParameterNameUnderscores varchar(100)
   declare @ParameterDataType varchar(100)
@@ -11,6 +18,7 @@ begin
   if charindex(';', @clientname, 0) > 0
     or charindex(';', @parametername, 0) > 0
     or charindex(';', @parametervalue, 0) > 0
+    or charindex(';', @environmentname, 0) > 0
   return(1);
 
   -- Replace Spaces with underscores
@@ -22,6 +30,10 @@ begin
 
   -- Exit if client doesn't exist
   else if not exists(select ClientID from Client where ClientName = @clientname)
+    return(1);
+
+  -- Exit if the environment doesn't exist
+  else if not exists(select EnvironmentID from Environment where EnvironmentName = @environmentname)
     return(1);
 
   else
@@ -40,19 +52,26 @@ begin
 
       /* End check parameter value datatype */
 
-      -- Get the client and parameter ids
+      -- Get the client, default client, environment, and parameter ids
       set @clientid = (select ClientID from Client where ClientName = @clientname)
+      set @defaultclientid = (select ClientID from Client where ClientName = 'default')
+      set @environmentid = (select EnvironmentID from Environment where EnvironmentName = @environmentname)
       set @parameterid = (select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)
 
-      -- If the client/parameter pair exists then update it
-      if exists (select ParameterID from ClientParameter where ClientID = @clientid and ParameterID = @parameterid)
+      -- If the client/parameter pair exists and the new value is the same as the default value, then delete the row
+      if exists (select ParameterID from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid)
+        and @parametervalue = (select ParameterValue from ClientParameter where ClientID = @defaultclientid and ParameterID = @parameterid)
+        delete from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid
+
+      -- If the client/parameter pair exists and the new value is not the same as the default value, then update it
+      else if exists (select ParameterID from ClientParameter where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid)
         update ClientParameter set ParameterValue = @parametervalue, LastModifiedDate = getdate() 
-          where ClientID = @clientid and ParameterID = @parameterid
+          where ClientID = @clientid and EnvironmentID = @environmentid and ParameterID = @parameterid
 
       -- Otherwise insert the client/parameter pair and value
       else
-        insert into ClientParameter (ClientID, ParameterID, ParameterValue, CreateDate, LastModifiedDate) 
-          values (@clientid, @parameterid, @parametervalue, getdate(), getdate())
+        insert into ClientParameter (ClientID, EnvironmentID, ParameterID, ParameterValue, CreateDate, LastModifiedDate) 
+          values (@clientid, @environmentid, @parameterid, @parametervalue, getdate(), getdate())
     
     end
 end

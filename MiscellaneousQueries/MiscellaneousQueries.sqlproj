@@ -62,6 +62,9 @@
     <None Include="CreateUser.sql" />
     <None Include="DatabaseSetup.sql" />
     <None Include="TestClientData.sql" />
+    <None Include="BackupDatabasesDailyAgentJob.sql" />
+    <None Include="BackupDatabasesWeeklyAgentJob.sql" />
+    <None Include="BackupDatabasesMonthlyAgentJob.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LoadClientParameters.sql" />
