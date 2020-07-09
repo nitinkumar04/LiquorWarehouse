@@ -574,5 +574,11 @@
     <Build Include="GVP\Tables\gvp__Competitor__c.sql" />
     <Build Include="GVP\Tables\gvp__Event__c.sql" />
     <Build Include="GVP\Tables\gvp__Account_Call__c.sql" />
+    <Build Include="ERPIn\Tables\Depletion.sql" />
+    <Build Include="dbo\Tables\TempAccountsforHQByDim.sql" />
+    <Build Include="dbo\Tables\TempAcctUnivRetailDim.sql" />
+    <Build Include="dbo\Tables\TempDepletionFact.sql" />
+    <Build Include="dbo\Tables\TempObjectiveFact.sql" />
+    <Build Include="dbo\Tables\TempSurveyFactIDsToDelete.sql" />
   </ItemGroup>
 </Project>

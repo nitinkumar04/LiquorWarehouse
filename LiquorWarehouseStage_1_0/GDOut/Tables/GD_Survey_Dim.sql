@@ -55,7 +55,7 @@
 [Survey Plan Custom Text 3] [nvarchar](5) NULL,
 [Survey Plan Custom Text 4] [nvarchar](50) NULL,
 [Survey Plan Custom Text 5] [nvarchar](5) NULL,
-[Survey Question Cluster Name] [nvarchar](50) NULL,
+[Survey Question Cluster Name] [nvarchar](255) NULL,
 [Survey Question Cluster Number] [nvarchar](5) NULL,
 [Survey Plan Published] [nvarchar](5) NULL,
 [Survey Plan Key] [nvarchar](5) NULL,
