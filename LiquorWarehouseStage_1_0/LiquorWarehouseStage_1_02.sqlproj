@@ -582,4 +582,7 @@
     <Build Include="dbo\Tables\TempSurveyFactIDsToDelete.sql" />
     <Build Include="ERPIn\Tables\Orders.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
+  </ItemGroup>
 </Project>
