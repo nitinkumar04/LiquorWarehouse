@@ -575,4 +575,7 @@
     <Build Include="GVP\Tables\gvp__Event__c.sql" />
     <Build Include="GVP\Tables\gvp__Account_Call__c.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
+  </ItemGroup>
 </Project>
