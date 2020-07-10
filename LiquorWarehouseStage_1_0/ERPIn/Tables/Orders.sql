@@ -13,5 +13,5 @@
 	Physical_Cases			    decimal(16,2) not null,
 	Extended_Price				money         null,
 	Extended_Price_2			money,
-    CONSTRAINT [PK_Orders] PRIMARY KEY ([Order_Number],[Order_Line_Number],[Distributor_Key],[Item_Key])
+    CONSTRAINT [PK_Orders] PRIMARY KEY ([Order_Number],[Order_Line_Number])
 )
