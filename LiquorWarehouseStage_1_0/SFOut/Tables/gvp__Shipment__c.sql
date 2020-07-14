@@ -13,7 +13,7 @@
 	LastReferencedDate datetime null,
 	gvp__Distributor__c char(18) not null,
 	gvp__Brand__c nvarchar(100) null,
-	gvp__Cases_YTD__c decimal(11,3) not null,
+	gvp__Cases_YTD__c decimal(11,3) null,
 	gvp__Date_of_Delivery__c date null,
 	gvp__Date_of_Order__c date null,
 	gvp__Item__c char(18) null,
