@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [SFIn].[Contact] (
-    [Id]                               char (18)     NOT NULL,
+    [Id]                               varchar (18)     NOT NULL,
     [IsDeleted]                        VARCHAR (10)     NOT NULL,
     [MasterRecordId]                   char (18)     NULL,
     [AccountId]                        char (18)     NULL,

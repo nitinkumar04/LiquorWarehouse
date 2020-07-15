@@ -581,6 +581,7 @@
     <Build Include="dbo\Tables\TempObjectiveFact.sql" />
     <Build Include="dbo\Tables\TempSurveyFactIDsToDelete.sql" />
     <Build Include="ERPIn\Tables\Orders.sql" />
+    <Build Include="ERPIn\Tables\RADErrors.sql" />
     <Build Include="SFIn\Tables\gvp__GD_Filter_List__c.sql" />
     <Build Include="SFIn\Tables\gvp__GD_Metric__c.sql" />
     <Build Include="SFIn\Tables\gvp__GD_Time_Series__c.sql" />

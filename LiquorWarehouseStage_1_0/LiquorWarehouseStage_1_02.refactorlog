@@ -7,4 +7,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Distributor_Key" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="b0987767-180d-4c64-91cf-37681a20dbab" ChangeDateTime="07/10/2020 18:42:22">
+    <Property Name="ElementName" Value="[ERPIn].[RAD].[Extended_Price2]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[ERPIn].[RAD]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Extended_Price_2" />
+  </Operation>
 </Operations>
