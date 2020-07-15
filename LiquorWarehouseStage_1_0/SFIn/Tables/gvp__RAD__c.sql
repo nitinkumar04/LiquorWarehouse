@@ -38,9 +38,9 @@
 	gvp__Extended_Price_2__c money null,
 	gvp__Local_Tax__c money null,
 	gvp__Source_System__c varchar(25) null,
-	gvp__Account_Team__c char(18) null,
-	gvp__SalesPerson__c char(18) null,
-	gvp__Sales_Team_Division__c char(18) null
+	gvp__Account_Team__c varchar(18) null,
+	gvp__SalesPerson__c varchar(18) null,
+	gvp__Sales_Team_Division__c varchar(18) null
 
     CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([Id]) 
 )

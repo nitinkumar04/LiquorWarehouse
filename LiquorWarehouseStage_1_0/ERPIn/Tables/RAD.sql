@@ -8,7 +8,7 @@
   Date_of_Data            date          NOT NULL,
   Physical_Cases          decimal(16,2) NOT NULL,
   Extended_Price          money,
-  Extended_Price2         money,
+  [Extended_Price_2]         money,
   Invoice_Number          varchar(255),
   Dist_Item_Number        varchar(255),
   Order_Number            varchar(255),
@@ -19,6 +19,6 @@
   Deposit_Amt             money,
   Custom_1                nvarchar(255),
   Custom_2                nvarchar(255),
-  Unit_of_Measure         varchar(20)
-    CONSTRAINT [PK_RAD] PRIMARY KEY ([Item_Key], [Distributor_Key], [Retailer_Ext_Key], [Date_of_Data], Invoice_Number)
+  Unit_of_Measure         varchar(20), 
+  [SourceFile] VARCHAR(100) NULL
 )
