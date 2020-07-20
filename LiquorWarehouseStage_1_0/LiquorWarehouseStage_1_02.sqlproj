@@ -589,6 +589,9 @@
     <Build Include="SFIn\Tables\gvp__GD_Transaction_Type__c.sql" />
     <Build Include="SFIn\Tables\gvp__GD_UnitOfMeasure__c.sql" />
     <Build Include="ERPIn\Tables\AccountTeam.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Team__c.sql" />
+    <Build Include="SFOut\Tables\gvp__Account_Team__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Team_Division__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
