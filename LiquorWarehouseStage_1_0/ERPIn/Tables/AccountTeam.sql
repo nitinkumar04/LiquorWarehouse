@@ -1,0 +1,21 @@
+﻿CREATE TABLE [ERPIn].[AccountTeam](
+	Account_Team_Key 	varchar(50) 	NOT NULL,
+	Account_Key 		varchar(50) 	NOT NULL,
+	Salesperson_Key 	varchar(50) 	NULL,
+	Manager_1_Key 		varchar(50) 	NULL,
+	Manager_2_Key 		varchar(50) 	NULL,
+	Manager_3_Key 		varchar(50) 	NULL,
+	Custom_1 			nvarchar(200) 	NULL,
+	Custom_2 			nvarchar(200) 	NULL,
+	Custom_3 			nvarchar(200) 	NULL,
+	Custom_4 			nvarchar(200) 	NULL,
+	Custom_5 			nvarchar(200) 	NULL,
+	Sales_Division_Key	varchar(50) 	NOT NULL,
+	Sales_Division_Name nvarchar(200) 	NOT NULL,
+	Salesperson_Name 	nvarchar(200) 	NULL,
+	Manager_1_Name 		nvarchar(200) 	NULL,
+	Manager_2_Name 		nvarchar(200) 	NULL,
+	Manager_3_Name 		nvarchar(200) 	NULL,
+	Distributor_Key 	varchar(50) 	NULL,
+	CONSTRAINT [PK_AccountTeam] PRIMARY KEY (Account_Team_Key)
+     )
