@@ -1,23 +1,23 @@
 ﻿CREATE TABLE [GVP].[gvp__RAD__c]
 (
-  [Id] char(18) NOT NULL, 
+  [Id] char(18) NULL, 
 	IsDeleted varchar(10) not null,
-	Name nvarchar(100) not null,
+	Name nvarchar(100) null,
 	CreatedDate datetime not null,
-	CreatedById char(18) not null,
+	CreatedById char(18) null,
 	LastModifiedDate datetime not null,
-	LastModifiedById char(18) not null,
+	LastModifiedById char(18) null,
 	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Account__c char(18) null,
+	gvp__Account__c char(18) NOT null,
 	gvp__Brand__c nvarchar(100) null,
 	gvp__Cases_YTD__c decimal(14,2) null,
-	gvp__Date__c date null,
-	gvp__Distributor__c char(18) null,
-	gvp__Item__c char(18) null,
+	gvp__Date__c date NOT null,
+	gvp__Distributor__c char(18) NOT null,
+	gvp__Item__c char(18) NOT null,
 	gvp__Label__c nvarchar(100) null,
-	gvp__Physical_Cases__c FLOAT null,
+	gvp__Physical_Cases__c DECIMAL(16, 2) null,
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
@@ -42,5 +42,5 @@
 	gvp__SalesPerson__c varchar(18) null,
 	gvp__Sales_Team_Division__c varchar(18) null
 
-CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([Id]) 
+CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Item__c], [gvp__Distributor__c], [gvp__Account__c], [gvp__Date__c]) 
 )
