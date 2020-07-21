@@ -14,8 +14,17 @@ begin
   declare @OrderNumberWhereClause varchar(100)
 
 	-- Beginning of the sql statement
-  set @sql = 'insert into sfout (gvp__Distributor__c, gvp__Shipement_Key__c, isDeleted)
-    (select gvp__Distributor__c, gvp__Shipement_Key__c, ''true'' from GVP.gvp__Shipment__c where '
+  set @sql = 'insert into sfout.gvp__Shipment__c (gvp__Distributor__c, gvp__Shipment_Key__c, gvp__Date_of_Order__c, gvp__Item__c, isDeleted)
+    (select 
+			s.gvp__Distributor__c, 
+			s.gvp__Shipment_Key__c, 
+			s.gvp__Date_of_Order__c, 
+			s.gvp__Item__c,
+			''true'' 
+		from GVP.gvp__Shipment__c s
+			inner join gvp.Account ad on ad.Id = s.gvp__Distributor__c
+			inner join gvp.gvp__Item__c i on i.Id = s.gvp__Item__c
+		where '
 
 	
 	/* Order Date */
@@ -51,7 +60,7 @@ begin
 	if @DistributorKey = ''
 		set @DistributorWhereClause = ''
 	else 
-		set @DistributorWhereClause = ' and gvp__Distributor__c = ''' + @DistributorKey + ''''
+		set @DistributorWhereClause = ' and ad.gvp__Account_Key__c = ''' + @DistributorKey + ''''
 
 
 	/* Item */
@@ -59,7 +68,7 @@ begin
 	if @ItemKey = ''
 		set @ItemWhereClause = ''
 	else 
-		set @ItemWhereClause = ' and gvp__Item__c = ''' + @ItemKey + ''''
+		set @ItemWhereClause = ' and i.gvp__Item_Key__c = ''' + @ItemKey + ''''
 
 
 	/* Order Number */
@@ -70,10 +79,9 @@ begin
 		set @OrderNumberWhereClause = ' and gvp__Order_Number__c = ''' + @OrderNumber + ''''
 
 	-- Add all the individual where clauses together
-  set @sql = @sql + @DateWhereClause + @DistributorWhereClause + @ItemWhereClause + @OrderNumberWhereClause + ')'
+  set @sql = @sql + @DateWhereClause + @DistributorWhereClause + @ItemWhereClause + @OrderNumberWhereClause + ' and s.isDeleted = ''false'')'
 
   --print (@sql)
 	exec (@sql)
 
 end
-
