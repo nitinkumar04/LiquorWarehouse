@@ -33,7 +33,7 @@ begin
     return(1);
 
   -- Exit if the environment doesn't exist
-  else if not exists(select EnvironmentID from Environment where EnvironmentName = @environmentname)
+  else if not exists(select EnvironmentID from Environment where EnvironmentName = @environmentname) and @environmentname <> 'Default'
     return(1);
 
   else
@@ -55,7 +55,7 @@ begin
       -- Get the client, default client, environment, and parameter ids
       set @clientid = (select ClientID from Client where ClientName = @clientname)
       set @defaultclientid = (select ClientID from Client where ClientName = 'default')
-      set @environmentid = (select EnvironmentID from Environment where EnvironmentName = @environmentname)
+      set @environmentid = (select EnvironmentID from Environment where EnvironmentName = @environmentname) 
       set @parameterid = (select ParameterID from Parameter where ParameterName = @ParameterNameUnderscores)
 
       -- If the client/parameter pair exists and the new value is the same as the default value, then delete the row

@@ -34,7 +34,7 @@ begin
           values (@ParameterNameUnderscores, @datatype, @description, getdate(), getdate())
         
         -- Set the Default value for the parameter
-        exec SetClientParameterValue 'Default', @ParameterNameUnderscores, @defaultvalue
+        exec SetClientParameterValue 'Default', 'Default', @ParameterNameUnderscores, @defaultvalue
       commit;
     end
 end
