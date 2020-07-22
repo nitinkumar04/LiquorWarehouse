@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFOut].[gvp__Shipment__c]
 (
     [Id] char(18) NULL, 
-	IsDeleted varchar(10) null,
+	IsDeleted varchar(10) NOT null,
 	Name nvarchar(100) null,
 	CreatedDate datetime null,
 	CreatedById char(18) null,
@@ -11,7 +11,7 @@
 	LastActivityDate date null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
-	gvp__Distributor__c char(18) not null,
+	gvp__Distributor__c char(18) null,
 	gvp__Brand__c nvarchar(100) null,
 	gvp__Cases_YTD__c decimal(11,3) null,
 	gvp__Date_of_Delivery__c date null,
@@ -33,5 +33,5 @@
 	gvp__Custom_Fact_1__c decimal(15,8) null,
 	gvp__Custom_Fact_2__c decimal(15,8) null,
 	gvp__Source_System__c varchar(100) null
-    CONSTRAINT [PK_gvp__Shipment__c] PRIMARY KEY ([gvp__Shipment_Key__c]) 
+    CONSTRAINT [PK_gvp__Shipment__c] PRIMARY KEY ([isDeleted],[gvp__Shipment_Key__c]) 
 )

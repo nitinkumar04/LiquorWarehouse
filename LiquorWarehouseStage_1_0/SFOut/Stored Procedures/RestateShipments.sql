@@ -1,5 +1,5 @@
 ﻿create procedure [ERPIn].[RestateShipments]
-  @OrderDate varchar(10) = null,
+ @OrderDate varchar(10) = null,
   @DistributorKey varchar(50) = '',
   @ItemKey varchar(50) = '',
   @OrderNumber varchar(100) = ''
@@ -14,8 +14,9 @@ begin
   declare @OrderNumberWhereClause varchar(100)
 
 	-- Beginning of the sql statement
-  set @sql = 'insert into sfout.gvp__Shipment__c (gvp__Distributor__c, gvp__Shipment_Key__c, gvp__Date_of_Order__c, gvp__Item__c, isDeleted)
+  set @sql = 'insert into sfout.gvp__Shipment__c (Id, gvp__Distributor__c, gvp__Shipment_Key__c, gvp__Date_of_Order__c, gvp__Item__c, isDeleted)
     (select 
+			s.Id,
 			s.gvp__Distributor__c, 
 			s.gvp__Shipment_Key__c, 
 			s.gvp__Date_of_Order__c, 
