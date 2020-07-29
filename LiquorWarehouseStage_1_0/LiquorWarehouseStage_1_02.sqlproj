@@ -595,6 +595,10 @@
     <Build Include="GVP\Tables\gvp__Sales_Team_Division__c.sql" />
     <Build Include="SFOut\Stored Procedures\RestateShipments.sql" />
     <Build Include="GVP\Tables\Event.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Objective__c.sql" />
+    <Build Include="GVP\Tables\gvp__Objective_Creator_Template__c.sql" />
+    <Build Include="GVP\Tables\gvp__Product_Set__c.sql" />
+    <Build Include="GVP\Tables\gvp__Product_Set_Member__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
