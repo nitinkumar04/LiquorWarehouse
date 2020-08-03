@@ -602,6 +602,9 @@
     <Build Include="GVP\Tables\gvp__Survey_Plan_Question__c.sql" />
     <Build Include="GVP\Tables\gvp__Survey_Plan__c.sql" />
     <Build Include="GVP\Tables\gvp__Survey_Bank__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Goal__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Goal_Plan__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Goal_Detail__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
