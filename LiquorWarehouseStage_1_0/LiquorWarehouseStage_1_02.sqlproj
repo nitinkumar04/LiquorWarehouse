@@ -594,6 +594,7 @@
     <Build Include="SFOut\Tables\gvp__Account_Team__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Team_Division__c.sql" />
     <Build Include="SFOut\Stored Procedures\RestateShipments.sql" />
+    <Build Include="SFOut\Stored Procedures\RestateDepletions.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />

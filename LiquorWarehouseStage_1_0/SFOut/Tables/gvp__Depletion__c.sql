@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFOut].[gvp__Depletion__c]
 (
   [Id] char(18) NULL, 
-	IsDeleted varchar(10) null,
+	IsDeleted varchar(10) NOT null,
 	Name nvarchar(100) null,
 	CreatedDate datetime null,
 	CreatedById char(18) null,
@@ -51,5 +51,5 @@
     [gvp__Total_On_Premise__c] DECIMAL(14, 4) NULL, 
     [gvp__Transportation__c] DECIMAL(14, 4) NULL, 
     [gvp__Unclassified_Sales__c] DECIMAL(14, 4) NULL
-	 CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([gvp__Depletion_Key__c])
+	 CONSTRAINT [PK_gvp__Depletion__c] PRIMARY KEY ([gvp__Depletion_Key__c], [IsDeleted])
 )
