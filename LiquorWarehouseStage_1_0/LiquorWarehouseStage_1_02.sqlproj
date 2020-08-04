@@ -606,8 +606,6 @@
     <Build Include="GVP\Tables\gvp__Sales_Goal__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Goal_Plan__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Goal_Detail__c.sql" />
-    <Build Include="GVP\Tables\gvp__Sales_Order__c.sql" />
-    <Build Include="GVP\Tables\gvp__Sales_Order_Item__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
