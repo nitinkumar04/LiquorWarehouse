@@ -32,7 +32,7 @@
   [YearQuarterLN]             char(13)    NOT NULL,
 	[WeekDay]                   bit         NOT NULL,
   [Holiday]                   bit         NOT NULL,
-  [HolidayName]               varchar(100) NULL,
+  [HolidayName]               NVARCHAR(100) NULL,
   [HolidayNameEnglish]        varchar(100) NULL,
   [DateNumber]                int         NOT NULL
   CONSTRAINT [PK_FiscalDate] PRIMARY KEY ([FiscalDate]) 
