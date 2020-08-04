@@ -53,7 +53,7 @@
     [FD_Workday_Ind]          VARCHAR (50) NULL,
     [FD_Weekend_Ind]          VARCHAR (50) NULL,
     [FD_Holiday_Ind]          VARCHAR (50) NULL,
-    [FD_Holiday_Local_Name]   VARCHAR (50) NULL,
+    [FD_Holiday_Local_Name]   NVARCHAR(50) NULL,
     [FD_Holiday_English_Name] VARCHAR (50) NULL,
     [Txn_Date]                VARCHAR (50) NULL,
     [Fiscal_Date_Offset]      VARCHAR (50) NULL,
