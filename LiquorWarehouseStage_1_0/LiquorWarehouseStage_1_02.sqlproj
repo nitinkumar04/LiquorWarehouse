@@ -608,6 +608,27 @@
     <Build Include="GVP\Tables\gvp__Sales_Goal_Detail__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Order__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Order_Item__c.sql" />
+    <Build Include="GVP\Tables\gvp__GoodData_Translation_Settings__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Sequence_Step_Status__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Sequence_Step__c.sql" />
+    <Build Include="GVP\Tables\gvp__By_the_Glass__c.sql" />
+    <Build Include="GVP\Tables\gvp__Cocktail_Menu__c.sql" />
+    <Build Include="GVP\Tables\gvp__Display__c.sql" />
+    <Build Include="GVP\Tables\gvp__Distributor_Meeting__c.sql" />
+    <Build Include="GVP\Tables\gvp__Program__c.sql" />
+    <Build Include="GVP\Tables\gvp__Order_Commitment__c.sql" />
+    <Build Include="GVP\Tables\gvp__POS_Placement__c.sql" />
+    <Build Include="GVP\Tables\gvp__POS_Material__c.sql" />
+    <Build Include="GVP\Tables\gvp__Presentation__c.sql" />
+    <Build Include="GVP\Tables\gvp__Retail_Ad__c.sql" />
+    <Build Include="GVP\Tables\gvp__Scan__c.sql" />
+    <Build Include="GVP\Tables\gvp__Staff_Training__c.sql" />
+    <Build Include="GVP\Tables\gvp__Staff_Incentive__c.sql" />
+    <Build Include="GVP\Tables\Task.sql" />
+    <Build Include="GVP\Tables\gvp__Well__c.sql" />
+    <Build Include="GVP\Tables\gvp__Wine_List__c.sql" />
+    <Build Include="GVP\Tables\gvp__Authorization__c.sql" />
+    <Build Include="GVP\Tables\gvp__Placement__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
