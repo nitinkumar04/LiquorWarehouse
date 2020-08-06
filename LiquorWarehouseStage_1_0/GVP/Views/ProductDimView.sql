@@ -1,4 +1,4 @@
-﻿CREATE VIEW [GVP].[ProductDimResults]
+﻿CREATE VIEW [GVP].[ProductDimView]
 	AS SELECT
   ps.Id as ID,
   'Product Set' as Granularity
