@@ -138,6 +138,7 @@
     <Folder Include="GVP" />
     <Folder Include="GVP\Tables" />
     <Folder Include="SFOut\Stored Procedures" />
+    <Folder Include="GVP\Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="GDOut\Tables\GD_Acct_Univ_Retail_Dim.sql">
@@ -629,6 +630,7 @@
     <Build Include="GVP\Tables\gvp__Wine_List__c.sql" />
     <Build Include="GVP\Tables\gvp__Authorization__c.sql" />
     <Build Include="GVP\Tables\gvp__Placement__c.sql" />
+    <Build Include="GVP\Views\ProductDimResults.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
