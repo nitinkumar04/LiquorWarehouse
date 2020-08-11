@@ -633,6 +633,9 @@
     <Build Include="GVP\Views\ProductDimView.sql" />
     <Build Include="GVP\Tables\gvp__Budget__c.sql" />
     <Build Include="GVP\Tables\gvp__Budget_Plan__c.sql" />
+    <Build Include="GVP\Tables\gvp__Invoice__c.sql" />
+    <Build Include="GVP\Tables\gvp__Planned_Spend__c.sql" />
+    <Build Include="GVP\Tables\gvp__Expense__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
