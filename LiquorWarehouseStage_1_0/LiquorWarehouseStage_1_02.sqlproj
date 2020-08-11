@@ -631,6 +631,8 @@
     <Build Include="GVP\Tables\gvp__Authorization__c.sql" />
     <Build Include="GVP\Tables\gvp__Placement__c.sql" />
     <Build Include="GVP\Views\ProductDimView.sql" />
+    <Build Include="GVP\Tables\gvp__Budget__c.sql" />
+    <Build Include="GVP\Tables\gvp__Budget_Plan__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
