@@ -14,7 +14,7 @@
     [gvp__Item__c]        char (18)   NULL,
     [gvp__Label__c]       char (18)   NULL,
     [gvp__Position__c]    DECIMAL (8, 4) NULL,
-    [gvp__External_Id__c] char (18)   NULL,
+    [gvp__External_Id__c] VARCHAR(60)   NULL,
     CONSTRAINT [PK_gvp__Product_Set_Member__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
