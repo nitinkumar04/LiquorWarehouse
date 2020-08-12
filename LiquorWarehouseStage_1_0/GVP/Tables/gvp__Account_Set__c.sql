@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SFIn].[gvp__Account_Set__c]
+﻿CREATE TABLE [GVP].[gvp__Account_Set__c]
 (
   [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
