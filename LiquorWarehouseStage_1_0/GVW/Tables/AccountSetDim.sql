@@ -22,7 +22,7 @@
 	[CustomText4]       [nvarchar](200) NULL,
 	[CustomText5]       [nvarchar](200) NULL,
 	[Description]         [nvarchar](200) NULL,
-	[ExternalID]         [varchar](50)   NULL,
+	[ExternalID]         [varchar](200)   NULL,
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),

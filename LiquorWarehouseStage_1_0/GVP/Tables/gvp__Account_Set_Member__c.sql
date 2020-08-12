@@ -12,6 +12,6 @@
 	LastReferencedDate datetime null,
 	gvp__Account_Set__c char(18) not null,
 	gvp__Account__c char(18) not null,
-	gvp__External_Id__c varchar(20) null
+	gvp__External_Id__c varchar(200) null
     CONSTRAINT [PK_gvp__Account_Set_Member__c] PRIMARY KEY ([Id]) 
 )

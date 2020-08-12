@@ -33,7 +33,7 @@
 	gvp__Region__c char(18) null,
 	gvp__Territory__c char(18) null,
 	gvp__Number_of_Accounts__c decimal(6,1) null,
-	gvp__External_Id__c varchar(50) null,
+	gvp__External_Id__c varchar(200) null,
 	[OwnerId] CHAR(18) NULL,
     CONSTRAINT [PK_gvp__Account_Set__c] PRIMARY KEY ([Id])
     
