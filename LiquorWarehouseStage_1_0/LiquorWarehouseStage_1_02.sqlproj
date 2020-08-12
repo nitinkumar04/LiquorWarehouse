@@ -636,6 +636,8 @@
     <Build Include="GVP\Tables\gvp__Invoice__c.sql" />
     <Build Include="GVP\Tables\gvp__Planned_Spend__c.sql" />
     <Build Include="GVP\Tables\gvp__Expense__c.sql" />
+    <Build Include="GVP\Tables\UserRole.sql" />
+    <Build Include="GVP\Tables\Profile.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
