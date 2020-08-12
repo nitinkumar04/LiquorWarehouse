@@ -60,9 +60,14 @@
     <Folder Include="GDOut" />
     <Folder Include="GDOut\Stored Procedures" />
     <Folder Include="GDOut\Tables" />
+    <Folder Include="public" />
+    <Folder Include="public\Functions" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GDOut\Stored Procedures\DeleteClientData.sql" />
     <None Include="GDOut\Tables\Redshift Schema.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="public\Functions\deleteclientdata.sql" />
   </ItemGroup>
 </Project>

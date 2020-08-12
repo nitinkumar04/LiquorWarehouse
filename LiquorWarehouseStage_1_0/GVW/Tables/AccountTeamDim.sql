@@ -8,7 +8,7 @@
 	[AccountDimID] VARCHAR(18) NULL,
 	[ManagerDimID] VARCHAR(18) NULL,
 	[PersonDimID] VARCHAR(18) NULL,
-	[AccountNameNumber] [nvarchar](50) NULL,
+	[AccountNameNumber] [nvarchar](150) NULL,
 	[Custom1] [nvarchar](200) NULL,
 	[Custom2] [nvarchar](200) NULL,
 	[Custom3] [nvarchar](200) NULL,
