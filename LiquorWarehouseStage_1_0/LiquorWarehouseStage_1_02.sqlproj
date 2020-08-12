@@ -640,6 +640,11 @@
     <Build Include="GVP\Tables\Profile.sql" />
     <Build Include="GVP\Tables\gvp__Account_Set__c.sql" />
     <Build Include="GVP\Tables\gvp__Account_Set_Member__c.sql" />
+    <Build Include="GVP\Tables\Attachment.sql" />
+    <Build Include="GVP\Tables\ContentDistribution.sql" />
+    <Build Include="GVP\Tables\ContentDocument.sql" />
+    <Build Include="GVP\Tables\ContentDocumentLink.sql" />
+    <Build Include="GVP\Tables\ContentVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
