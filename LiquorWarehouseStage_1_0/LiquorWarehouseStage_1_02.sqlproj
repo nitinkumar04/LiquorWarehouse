@@ -646,13 +646,13 @@
     <Build Include="GVP\Tables\ContentDocumentLink.sql" />
     <Build Include="GVP\Tables\ContentVersion.sql" />
     <Build Include="GVP\Tables\gvp__Media__c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_Filter_List_c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_Metric_c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_Time_Series_c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_Top_X_c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_Transaction_Type_c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_Filter_List__c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_Metric__c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_Time_Series__c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_Top_X__c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_Transaction_Type__c.sql" />
     <Build Include="GVP\Tables\gvp_GD_UnitOfMeasure_c.sql" />
-    <Build Include="GVP\Tables\gvp_Sales_Sequence_c.sql" />
+    <Build Include="GVP\Tables\gvp__GD_UnitOfMeasure__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
