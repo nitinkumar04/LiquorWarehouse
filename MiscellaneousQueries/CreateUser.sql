@@ -12,15 +12,11 @@ USE [<client>_LiquorWarehouseStage_<version>]
 GO
 CREATE USER [<client>] FOR LOGIN [<client>]
 GO
-USE [<client>_LiquorWarehouseStage_<version>]
-GO
 ALTER ROLE [db_datareader] ADD MEMBER [<client>]
-GO
-USE [<client>_LiquorWarehouseStage_<version>]
 GO
 ALTER ROLE [db_datawriter] ADD MEMBER [<client>]
 GO
-USE [<client>_LiquorWarehouseStage_<version>]
-GO
 ALTER ROLE [db_executor] ADD MEMBER [<client>]
+GO
+ALTER ROLE [db_ddladmin] ADD MEMBER [<client>]
 GO
