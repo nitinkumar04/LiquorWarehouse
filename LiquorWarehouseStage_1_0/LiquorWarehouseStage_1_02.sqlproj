@@ -651,8 +651,8 @@
     <Build Include="GVP\Tables\gvp__GD_Time_Series__c.sql" />
     <Build Include="GVP\Tables\gvp__GD_Top_X__c.sql" />
     <Build Include="GVP\Tables\gvp__GD_Transaction_Type__c.sql" />
-    <Build Include="GVP\Tables\gvp_GD_UnitOfMeasure_c.sql" />
     <Build Include="GVP\Tables\gvp__GD_UnitOfMeasure__c.sql" />
+    <Build Include="GVP\Tables\gvp__Sales_Sequence__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
