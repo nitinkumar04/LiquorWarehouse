@@ -653,6 +653,8 @@
     <Build Include="GVP\Tables\gvp__GD_Transaction_Type__c.sql" />
     <Build Include="GVP\Tables\gvp__GD_UnitOfMeasure__c.sql" />
     <Build Include="GVP\Tables\gvp__Sales_Sequence__c.sql" />
+    <Build Include="GVP\Tables\gvp__Survey_Answer__c.sql" />
+    <Build Include="GVP\Tables\gvp__Survey__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
