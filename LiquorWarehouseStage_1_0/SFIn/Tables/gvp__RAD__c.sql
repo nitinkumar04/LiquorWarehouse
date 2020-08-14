@@ -17,7 +17,7 @@
 	gvp__Distributor__c char(18) NOT null,
 	gvp__Item__c char(18) NOT null,
 	gvp__Label__c nvarchar(100) null,
-	gvp__Physical_Cases__c DECIMAL(16, 2) null,
+	gvp__Physical_Cases__c DECIMAL(16, 2) NOT null DEFAULT 0,
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
@@ -42,5 +42,5 @@
 	gvp__SalesPerson__c varchar(18) null,
 	gvp__Sales_Team_Division__c varchar(18) null
 
-    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c]) 
+    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], [Id]) 
 )
