@@ -21,6 +21,7 @@
 	[FileExtension]         				    VARCHAR (10) NULL,
 	[SharingOption]         				    VARCHAR (5) NULL,
     [ContentModifiedDate]                       DATETIME NULL,
+	[IsDeleted]									VARCHAR (10) NULL,
     CONSTRAINT [PK_ContentDocument] PRIMARY KEY ([Id])
 );
 GO
