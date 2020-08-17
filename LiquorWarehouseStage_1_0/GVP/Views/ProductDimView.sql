@@ -1,13 +1,21 @@
-﻿CREATE VIEW [GVP].[ProductDimView]
-	AS SELECT
+﻿CREATE VIEW [GVP].[ProductDimView] AS
+SELECT
   ps.Id as ID,
-  'Product Set' as Granularity
+  'Product Set' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   SFIn.gvp__Product_Set__c ps
 UNION
 SELECT
   i.Id as ID,
-  'Item' as Granularity
+  'Item' as Granularity,
+  i.gvp__X9L_Equivalent__c as Item9LEquivalent,
+  0.0 as ItemFullCaseEquivalent,
+  i.gvp__Units__c * s.gvp__Primary_Conversion__c as ItemPrimaryEquivalent,
+  i.gvp__Units__c * s.gvp__Secondary_Conversion__c as ItemSecondaryEquivalent
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -17,7 +25,11 @@ FROM
 UNION
 Select
   l.Id + '-' + s.Id as ID,
-  'Label-Size' as Granularity
+  'Label-Size' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -27,7 +39,11 @@ FROM
 UNION
 Select
   b.Id + '-' + s.Id as ID,
-  'Brand-Size' as Granularity
+  'Brand-Size' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -37,7 +53,11 @@ FROM
 UNION
 Select
   s.Id as ID,
-  'Size' as Granularity
+  'Size' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -47,20 +67,32 @@ FROM
 UNION
 Select
   l.Id as ID,
-  'Label' as Granularity
+  'Label' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   GVP.gvp__Label__c l
   join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
 UNION
 SELECT
   b.Id as ID,
-  'Brand' as Granularity
+  'Brand' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   GVP.gvp__Brand__c b
 UNION
 Select
   sup.Id as ID,
-  'Supplier' as Granularity
+  'Supplier' as Granularity,
+  null as Item9LEquivalent,
+  null as ItemFullCaseEquivalent,
+  null as ItemPrimaryEquivalent,
+  null as ItemSecondaryEquivalent
 FROM
   GVP.gvp__Brand__c b
   join GVP.Account sup on sup.id = b.gvp__Supplier__c
