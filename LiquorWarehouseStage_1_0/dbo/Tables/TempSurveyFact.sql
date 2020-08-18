@@ -84,8 +84,6 @@ CREATE TABLE [TempSurveyFact](
 	[PreviousID]                VARCHAR(18)      NULL,
 	[PreviousIndicator]               [varchar](50)   NULL,
 	[ProductDimID]                    [varchar](50)   NULL DEFAULT '-1',
-	[RptFromDate]                     [varchar](50)   NULL,
-	[RptFromDateID]                  [varchar](50)   NULL,
 	[SalesDivisionDimID]             VARCHAR(18)      NULL,
 	[Source]                     [varchar](200)  NULL,
 	[SpendDimID]                      VARCHAR(18)      NULL DEFAULT '-1',
