@@ -1,21 +1,35 @@
 ﻿CREATE VIEW [GVP].[ProductDimView] AS
 SELECT
   ps.Id as ID,
+  ps.Name as Name,
   'Product Set' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  null as BrandName,
+  null as ItemName,
+  null as LabelName,
+  null as LabelType,
+  null as SizeExternalID,
+  null as SizeName
 FROM
   SFIn.gvp__Product_Set__c ps
 UNION
 SELECT
   i.Id as ID,
+  i.Name as Name,
   'Item' as Granularity,
   i.gvp__X9L_Equivalent__c as Item9LEquivalent,
   0.0 as ItemFullCaseEquivalent,
   i.gvp__Units__c * s.gvp__Primary_Conversion__c as ItemPrimaryEquivalent,
-  i.gvp__Units__c * s.gvp__Secondary_Conversion__c as ItemSecondaryEquivalent
+  i.gvp__Units__c * s.gvp__Secondary_Conversion__c as ItemSecondaryEquivalent,
+  b.Name as BrandName,
+  i.Name as ItemName,
+  l.Name as LabelName,
+  l.gvp__Type__c as LabelType,
+  s.gvp__Size_Key__c as SizeExternalID,
+  s.Name as SizeName
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -25,11 +39,18 @@ FROM
 UNION
 Select
   l.Id + '-' + s.Id as ID,
+  l.Name + '-' + s.Name as Name,
   'Label-Size' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  b.Name as BrandName,
+  null as ItemName,
+  l.Name as LabelName,
+  l.gvp__Type__c as LabelType,
+  s.gvp__Size_Key__c as SizeExternalID,
+  s.Name as SizeName
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -39,11 +60,18 @@ FROM
 UNION
 Select
   b.Id + '-' + s.Id as ID,
+  b.Name + '-' + s.Name as Name,
   'Brand-Size' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  b.Name as BrandName,
+  null as ItemName,
+  null as LabelName,
+  null as LabelType,
+  s.gvp__Size_Key__c as SizeExternalID,
+  s.Name as SizeName
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -53,11 +81,18 @@ FROM
 UNION
 Select
   s.Id as ID,
+  s.Name as Name,
   'Size' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  null as BrandName,
+  null as ItemName,
+  null as LabelName,
+  null as LabelType,
+  s.gvp__Size_Key__c as SizeExternalID,
+  s.Name as SizeName
 FROM
   [GVP].[gvp__Item__c] i
   join GVP.gvp__Label__c l on l.id = i.gvp__Label__c
@@ -67,32 +102,53 @@ FROM
 UNION
 Select
   l.Id as ID,
+  l.Name as Name,
   'Label' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  b.Name as BrandName,
+  null as ItemName,
+  l.Name as LabelName,
+  l.gvp__Type__c as LabelType,
+  null as SizeExternalID,
+  null as SizeName
 FROM
   GVP.gvp__Label__c l
   join GVP.gvp__Brand__c b on b.id = l.gvp__Brand__c
 UNION
 SELECT
   b.Id as ID,
+  b.Name as Name,
   'Brand' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  b.Name as BrandName,
+  null as ItemName,
+  null as LabelName,
+  null as LabelType,
+  null as SizeExternalID,
+  null as SizeName
 FROM
   GVP.gvp__Brand__c b
 UNION
 Select
   sup.Id as ID,
+  sup.Name as Name,
   'Supplier' as Granularity,
   null as Item9LEquivalent,
   null as ItemFullCaseEquivalent,
   null as ItemPrimaryEquivalent,
-  null as ItemSecondaryEquivalent
+  null as ItemSecondaryEquivalent,
+  null as BrandName,
+  null as ItemName,
+  null as LabelName,
+  null as LabelType,
+  null as SizeExternalID,
+  null as SizeName
 FROM
   GVP.gvp__Brand__c b
   join GVP.Account sup on sup.id = b.gvp__Supplier__c
