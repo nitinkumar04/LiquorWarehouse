@@ -14,7 +14,7 @@
     [gvp__X9_Liter_Eqv__c]              DECIMAL (21, 12) NULL,
     [gvp__Primary_Conversion__c]        DECIMAL (19, 12) NULL,
     [gvp__Secondary_Conversion__c]      DECIMAL (19, 12) NULL,
-    [gvp__Standard_Bottles_Per_Case__c] DECIMAL (14, 12) NULL,
+    [gvp__Standard_Bottles_Per_Case__c] DECIMAL (18, 0) NULL,
     [gvp__Container_Type__c]            NVARCHAR (30)     NULL,
     [gvp__Custom_1__c]                  NVARCHAR (200)    NULL,
     [gvp__Custom_2__c]                  NVARCHAR (200)    NULL,
