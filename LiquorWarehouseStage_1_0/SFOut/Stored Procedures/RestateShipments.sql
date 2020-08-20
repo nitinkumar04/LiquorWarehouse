@@ -1,5 +1,5 @@
 ﻿create procedure [ERPIn].[RestateShipments]
- @OrderDate varchar(10) = null,
+  @OrderDate varchar(10) = null,
   @DistributorKey varchar(50) = '',
   @ItemKey varchar(50) = '',
   @OrderNumber varchar(100) = ''
