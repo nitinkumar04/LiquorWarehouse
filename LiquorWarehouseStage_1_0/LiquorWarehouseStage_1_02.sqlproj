@@ -655,6 +655,7 @@
     <Build Include="GVP\Tables\gvp__Sales_Sequence__c.sql" />
     <Build Include="GVP\Tables\gvp__Survey_Answer__c.sql" />
     <Build Include="GVP\Tables\gvp__Survey__c.sql" />
+    <Build Include="SFOut\Stored Procedures\RestateRAD.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
