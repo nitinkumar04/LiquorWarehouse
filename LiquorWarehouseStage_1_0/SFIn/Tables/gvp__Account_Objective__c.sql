@@ -20,7 +20,7 @@
     [gvp__Label__c]                        char (18)    NULL,
     [gvp__Priority__c]                     VARCHAR (20)    NULL,
     [gvp__Results__c]                      NVARCHAR (500)   NULL,
-    [gvp__Status__c]                       NVARCHAR (25)    NULL,
+    [gvp__Status__c]                       NVARCHAR (75)    NULL,
     [gvp__Account_Call__c]                 char (18)    NULL,
     [gvp__Owner__c]                        char (18)    NULL,
     [gvp__Type__c]                         NVARCHAR (50)    NULL,
