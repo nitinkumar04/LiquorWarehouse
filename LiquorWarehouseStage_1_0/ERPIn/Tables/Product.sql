@@ -22,7 +22,7 @@
   ABV                   decimal(4,2),
   Item_Key              varchar(255) not null,
   gvp__Custom_1__c      varchar(80),
-  Package_Type          varchar(10),
+  Package_Type          varchar(20) NOT NULL DEFAULT '',
   Container             varchar(20),
   Primary_Conversion    decimal(15,3),
   Secondary_Conversion  decimal(15,3),
