@@ -70,6 +70,16 @@
     [gvp__Custom_Fact_1__c]                 DECIMAL (12, 6)  NULL,
     [gvp__Custom_Fact_2__c]                 DECIMAL (12, 6)  NULL,
     [gvp__Proof__c]                         DECIMAL (5, 2)   NULL,
+    [Active_LSB__c] VARCHAR(10) NULL, 
+    [Active_LMWA__c] VARCHAR(10) NULL,
+	[Active_PMT__c]  VARCHAR(10) NULL,
+    [Organic__c] VARCHAR(10) NULL, 
+    [Gluten_Free__c] VARCHAR(10) NULL, 
+    [Preservative_Free__c] VARCHAR(10) NULL, 
+    [Vegan_Friendly__c] VARCHAR(10) NULL, 
+    [Lower_Carb__c] VARCHAR(10) NULL, 
+    [LM_Item_Number__c] VARCHAR(100) NULL, 
+    [LSB_Item_Number__c] VARCHAR(100) NULL, 
+    [PMT_Item_Number__c] VARCHAR(100) NULL, 
     CONSTRAINT [PK_gvp__Item__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
-
