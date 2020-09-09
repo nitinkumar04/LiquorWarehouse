@@ -22,7 +22,7 @@
 	[BrandURL] [nvarchar](100) NULL,
 	[BrandVisible] [varchar](10) NULL,
 	[Item9LEquivalent] [varchar](20) NULL,
-	[ItemABV] [varchar](9) NULL,
+	[ItemABV] [varchar](12) NULL,
 	[ItemAttachments] [varchar](10) NULL,
 	[ItemAvailable] [varchar](10) NULL,
 	[ItemCustom1] [nvarchar](200) NULL,
