@@ -53,7 +53,7 @@ begin
 
   -- Return the values as either rows or columns
   if @rowsorcolumns = 'rows'
-    select ParameterName, ParameterValue from #ParametersCoalesced
+    select ParameterName, ParameterValue from #ParametersCoalesced order by ParameterName
 
   -- Pivot the results so that each parameter name is a column with one row of data
   else
