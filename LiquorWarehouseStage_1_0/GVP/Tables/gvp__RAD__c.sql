@@ -42,5 +42,5 @@
 	gvp__SalesPerson__c varchar(18) null,
 	gvp__Sales_Team_Division__c varchar(18) null
 
-CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Item__c], [gvp__Distributor__c], [gvp__Account__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c) 
+CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Item__c], [gvp__Distributor__c], [gvp__Account__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
 )
