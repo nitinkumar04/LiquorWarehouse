@@ -657,6 +657,7 @@
     <Build Include="GVP\Tables\gvp__Survey__c.sql" />
     <Build Include="SFOut\Stored Procedures\RestateRAD.sql" />
     <Build Include="GVP\Views\SpendDimView.sql" />
+    <Build Include="ERPIn\Tables\Budget_Goal_Months.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
