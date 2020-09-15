@@ -38,7 +38,7 @@
 	[ItemCustomCheckbox2] [nvarchar](100) NULL,
 	[ItemCustomFact1] [nvarchar](200) NULL,
 	[ItemCustomFact2] [nvarchar](200) NULL,
-	[ItemDescription] [nvarchar](100) NULL,
+	[ItemDescription] [nvarchar](200) NULL,
 	[ItemDesignation] [nvarchar](100) NULL,
 	[ItemExternalID] varchar(60) NULL,
 	[ItemFOBDI]								varchar(20) NULL,
