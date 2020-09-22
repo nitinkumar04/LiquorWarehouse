@@ -526,7 +526,7 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="ERPIn\Tables\Distributor.sql" />
+    <Build Include="ERPIn\Tables\Distributors.sql" />
     <Build Include="SFOut\Tables\gvp__Division__c.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
