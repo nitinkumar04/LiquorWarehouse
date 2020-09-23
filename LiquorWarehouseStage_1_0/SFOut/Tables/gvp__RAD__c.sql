@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [SFOut].[gvp__RAD__c]
 (
   [Id] char(18) NULL, 
-	IsDeleted varchar(10) null,
+	IsDeleted varchar(10) NOT null DEFAULT 'false',
 	Name nvarchar(100) null,
 	CreatedDate datetime null,
 	CreatedById char(18) null,
@@ -42,6 +42,6 @@
 	gvp__SalesPerson__c varchar(18) null,
 	gvp__Sales_Team_Division__c varchar(18) null, 
     [TransactionType] CHAR NULL, 
-    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c)
+    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, IsDeleted)
 
 )

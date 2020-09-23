@@ -14,7 +14,7 @@ begin
   declare @RetailerWhereClause varchar(100)
 
 	-- Beginning of the sql statement
-  set @sql = 'insert into sfout.gvp__RAD__c (Id, gvp__Distributor__c, gvp__RAD_Key__c, gvp__Date__c, gvp__Item__c, gvp__Account__c, isDeleted)
+  set @sql = 'insert into sfout.gvp__RAD__c (Id, gvp__Distributor__c, gvp__RAD_Key__c, gvp__Date__c, gvp__Item__c, gvp__Account__c, gvp__Dist_Inv_Number__c, gvp__Dist_Item_Number__c, isDeleted)
     (select 
 			r.Id,
 			r.gvp__Distributor__c, 
@@ -22,6 +22,8 @@ begin
 			r.gvp__Date__c, 
 			r.gvp__Item__c,
       r.gvp__Account__c,
+      r.gvp__Dist_Inv_Number__c,
+      r.gvp__Dist_Item_Number__c,
 			''true'' 
 		from GVP.gvp__RAD__c r
       inner join gvp.Account ar on ar.Id = r.gvp__Account__c
