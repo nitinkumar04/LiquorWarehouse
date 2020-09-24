@@ -1,13 +1,13 @@
-﻿CREATE TABLE [SFOut].[gvp__RAD__c]
+﻿CREATE TABLE [Tempgvp__RAD__c]
 (
-  [Id] char(18) NULL, 
-	IsDeleted varchar(10) NOT null DEFAULT 'false',
+  [Id] char(18), 
+	IsDeleted varchar(10) not null,
 	Name nvarchar(100) null,
-	CreatedDate datetime null,
+	CreatedDate datetime not null,
 	CreatedById char(18) null,
-	LastModifiedDate datetime null,
+	LastModifiedDate datetime not null,
 	LastModifiedById char(18) null,
-	SystemModstamp datetime null,
+	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) NOT null,
@@ -21,7 +21,7 @@
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
-	gvp__RAD_Key__c NVARCHAR(255),
+	gvp__RAD_Key__c NVARCHAR(255) null,
 	gvp__Salesman__c char(18) null,
 	gvp__Source_File__c NVARCHAR(255) null,
 	gvp__Distributor_Sales_Rep__c nvarchar(255) null,
@@ -40,8 +40,7 @@
 	gvp__Source_System__c varchar(25) null,
 	gvp__Account_Team__c varchar(18) null,
 	gvp__SalesPerson__c varchar(18) null,
-	gvp__Sales_Team_Division__c varchar(18) null, 
-    [TransactionType] CHAR NULL, 
-    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, IsDeleted)
+	gvp__Sales_Team_Division__c varchar(18) null
 
+CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Item__c], [gvp__Distributor__c], [gvp__Account__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
 )

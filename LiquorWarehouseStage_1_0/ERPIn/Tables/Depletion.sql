@@ -6,7 +6,7 @@
   Distributor_Key             varchar(255)  null,
   Item_Key                    varchar(255)  null,
   Date_of_Data                VARCHAR(10)          null,
-  Physical_Cases              decimal(16,2) null,
+  Physical_Cases              decimal(16,4) null,
   Opening_Balance             money         null,
   Closing_Balance             money         null,
   Adjustments                 money,
