@@ -12,7 +12,7 @@
   Invoice_Number          varchar(255),
   Dist_Item_Number        varchar(255),
   Order_Number            varchar(255),
-  Sales_Rep_Key           varchar(20),
+  Sales_Rep_Key           varchar(40),
   Sales_Div_Key           varchar(20),
   Tax_Amount              money,
   Addl_Charges_Amt        money,
