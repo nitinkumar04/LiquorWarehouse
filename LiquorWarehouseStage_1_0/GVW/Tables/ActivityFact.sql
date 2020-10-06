@@ -81,7 +81,7 @@
     [POSItemName]               VARCHAR (100)   NULL,
     [POSQuantity]                  VARCHAR (50)   NULL,
     [PresentationAction]         VARCHAR (50)   NULL,
-    [PresentationProposedUsage] NVARCHAR (50)  NULL,
+    [PresentationProposedUsage] NVARCHAR (100)  NULL,
     [PresentationReaction]       NVARCHAR (50)  NULL,
     [PresentationTasted]         NVARCHAR (50)  NULL,
     [Price]                NVARCHAR (50)  NULL,
