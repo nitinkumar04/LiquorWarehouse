@@ -62,7 +62,7 @@
     [TradeChannel]             NVARCHAR (100)  NULL,
     [TradeSubChannel]         NVARCHAR (100)  NULL,
     [ChainIndicator]                 NVARCHAR(100)  NULL,
-    [OnPremiseIndicator]      VARCHAR (10)  NULL,
+    [OnPremiseIndicator]      VARCHAR (30)  NULL,
     [StoreStatus]              NVARCHAR(100)  NULL,
     [ActiveIndicator]          VARCHAR (25)   NULL,
     [MarketingGroupCode]      VARCHAR (20) NULL,
