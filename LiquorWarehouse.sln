@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiquorWarehouse_1_0", "LiquorWarehouse_1_0\LiquorWarehouse_1_0.sqlproj", "{B49ACD9D-2B20-4D34-A6DB-9211984A560B}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "GDOut_TestSSIS", "GDOut_TestSSIS\GDOut_TestSSIS.dtproj", "{D7E1487F-D416-4ACC-BB62-8E770A95950F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Redshift", "Redshift\Redshift.sqlproj", "{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BrownForman", "BrownForman\BrownForman.sqlproj", "{10ACD90B-B65C-4770-940C-E9631B378E0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,15 @@ Global
 		{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C83B98C0-2BFE-4B2B-89CE-86D1E74EAA16}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10ACD90B-B65C-4770-940C-E9631B378E0D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
