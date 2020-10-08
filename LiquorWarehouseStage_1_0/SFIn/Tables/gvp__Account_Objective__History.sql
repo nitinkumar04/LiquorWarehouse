@@ -5,8 +5,8 @@
     [CreatedById] char (18)  NULL,
     [CreatedDate] DATETIME      NULL,
     [Field]       VARCHAR (50)  NULL,
-    [OldValue]    VARCHAR (300) NULL,
-    [NewValue]    VARCHAR (300) NULL,
+    [OldValue]    NVARCHAR(300) NULL,
+    [NewValue]    NVARCHAR(300) NULL,
     CONSTRAINT [PK_gvp__Account_Objective__History] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
