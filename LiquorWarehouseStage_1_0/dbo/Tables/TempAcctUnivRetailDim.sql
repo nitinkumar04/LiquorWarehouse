@@ -16,7 +16,7 @@
     [GeoPrecisionCode]                VARCHAR (20)  NULL,
     [Latitude]                          VARCHAR (19)  NULL,
     [Longitude]                         VARCHAR (19)  NULL,
-    [LicenseNumber]                    VARCHAR (25)  NULL,
+    [LicenseNumber]                    VARCHAR (100)  NULL,
     [NumberofLocations]               VARCHAR (8)  NULL,
     [FamilyOwnerCode]                 VARCHAR (20)  NULL,
     [ImmediateParentState]            NVARCHAR (35)  NULL,
