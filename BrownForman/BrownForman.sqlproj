@@ -65,6 +65,9 @@
     <Build Include="BFOut\Tables\Product.sql" />
     <Build Include="BFOut\Tables\Customer.sql" />
     <Build Include="BFOut\Tables\SurveyPlan.sql" />
+    <Build Include="BFOut\Tables\Question.sql" />
+    <Build Include="BFOut\Tables\Answer.sql" />
+    <Build Include="BFOut\Tables\SalesHierarchy.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="BrownForman.publish.xml" />

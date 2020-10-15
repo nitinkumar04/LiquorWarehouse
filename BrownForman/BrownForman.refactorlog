@@ -14,4 +14,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ZIP_Code" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="db5fce3e-dcd9-49cb-88a7-ca390ef3aeba" ChangeDateTime="10/13/2020 20:22:33">
+    <Property Name="ElementName" Value="[BFOut].[Answer].[Srv_TGT_ANS_MET]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[BFOut].[Answer]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Srv_Tgt_Ans_Met" />
+  </Operation>
 </Operations>
