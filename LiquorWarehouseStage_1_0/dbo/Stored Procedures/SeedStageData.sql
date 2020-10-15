@@ -51,9 +51,6 @@ begin
   insert into LoadDataDateTime
     select 'SFIn ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 1 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'SFIn' order by t.name
 
-  -- Removing SFIn gvp__Activity_Goal__c from the list 
-  Delete LoadDataDateTime where PipelineName='SFIn gvp__Activity_Goal__c'
-
   -- Set FullLoadDefault Flag
   Update LoadDataDateTime
   Set FullLoadDefault=0
