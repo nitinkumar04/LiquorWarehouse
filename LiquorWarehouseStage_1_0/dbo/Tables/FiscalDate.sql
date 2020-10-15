@@ -1,4 +1,5 @@
 ﻿CREATE TABLE [dbo].[FiscalDate](
+	[ReportDate] [date] NOT NULL,
 	[FiscalDate] [date] NOT NULL,
 	[DayNumberOfYear] [int] NOT NULL,
 	[DayNumberOfQuarter] [int] NOT NULL,
@@ -35,7 +36,8 @@
 	[HolidayName] [nvarchar](100) NULL,
 	[HolidayNameEnglish] [varchar](100) NULL,
 	[DateNumber] [int] NOT NULL,
- CONSTRAINT [PK_FiscalDate] PRIMARY KEY CLUSTERED 
+ [FiscalDateNumber] INT NOT NULL, 
+    CONSTRAINT [PK_FiscalDate] PRIMARY KEY CLUSTERED 
 (
 	[FiscalDate] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]

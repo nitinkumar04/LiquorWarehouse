@@ -15,7 +15,7 @@
     [GeographyDimID]        VARCHAR(18)   NULL DEFAULT '-1',
     [ProductDimID]          VARCHAR(18)   NULL DEFAULT '-1',
     [TransactionTypeID]     CHAR     (18)   NULL DEFAULT 'EVT',
-    [Subject]           VARCHAR  (255)  NULL,
+    [Subject]           NVARCHAR  (255)  NULL,
     [Location]          VARCHAR  (255)  NULL,
     [IsAllDay]        VARCHAR  (6)    NULL,
     [DurationMin]      VARCHAR  (10)   NULL,
