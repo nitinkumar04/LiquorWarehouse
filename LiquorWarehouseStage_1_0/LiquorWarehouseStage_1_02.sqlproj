@@ -261,7 +261,6 @@
     <Build Include="SFIn\Tables\gvp__Scan__c.sql" />
     <Build Include="SFIn\Tables\gvp__Wine_List__c.sql" />
     <Build Include="SFIn\Tables\gvp__POS_Material__c.sql" />
-    <Build Include="SFIn\Tables\gvp__Activity_Goal__c.sql" />
     <Build Include="SFIn\Tables\gvp__Program__c.sql" />
     <Build Include="SFIn\Tables\gvp__Display__c.sql" />
     <Build Include="SFIn\Tables\gvp__Presentation__c.sql" />

@@ -52,14 +52,22 @@ begin
     select 'SFIn ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 1 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'SFIn' order by t.name
 
   -- Set FullLoadDefault Flag
-  update LoadDataDateTime set FullLoadDefault = 0 where PipelineName like 'Account' and PipelineName not like 'gvp__Survey%' and PipelineName not like 'gvp__Sales_Goal%'
+  Update LoadDataDateTime
+  Set FullLoadDefault=0
+  where PipelineName in
+	(select 'SFIn ' + t.name from sys.tables t 
+	inner join sys.schemas s on s.schema_id = t.schema_id 
+	inner join sys.tables tgvp on t.name=tgvp.name
+	inner join sys.schemas sgvp on sgvp.schema_id = tgvp.schema_id 
+	where s.name = 'SFIn' and sgvp.name ='GVP')
 
   -- GVW
   insert into LoadDataDateTime
     select 'GVW ' + t.name, '1/1/1900', '1/1/2030', 0, 0, 0 from sys.tables t inner join sys.schemas s on s.schema_id = t.schema_id where s.name = 'GVW' order by t.name
 
-  -- Set TruncateTableDefault and TruncateTableNextLoad Flags
-  update LoadDataDateTime set TruncateTableDefault = 1, TruncateTableNextLoad = 1 where PipelineName in ('GVW AccountCallFact', 'GVW ContactDim')
+  -- Set GVW FiscalDateDim FullLoadDefault to 1
+  Update LoadDataDateTime
+  Set FullLoadDefault=1 where PipelineName='GVW FiscalDateDim'
 
  
 end
