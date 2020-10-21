@@ -69,6 +69,7 @@
     [gvp__Alternate_User_3__c]             char (18)    NULL,
     [gvp__Product_Set__c]                  char (18)    NULL,
     [gvp__Sales_Goal__c]                   char (18)    NULL,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Account_Objective__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 

@@ -62,6 +62,7 @@
 	gvp__Custom_Text_5__c nvarchar(200) null,
 	gvp__End_Date__c date null,
 	gvp__Spend_Type__c nvarchar(100) null,
-	gvp__Start_Date__c date null
+	gvp__Start_Date__c date null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Expense__c] PRIMARY KEY ([Id]) 
 )

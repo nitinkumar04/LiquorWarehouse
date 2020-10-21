@@ -47,6 +47,7 @@
 	gvp__Custom_Text_4__c nvarchar(200) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
 	gvp__Spend_Type__c nvarchar(100) null,
-	gvp__Account__c char(18) null
+	gvp__Account__c char(18) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Budget__c] PRIMARY KEY ([Id]) 
 )

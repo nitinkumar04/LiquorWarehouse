@@ -58,6 +58,7 @@
 	gvp__Custom_Text_3__c nvarchar(200) null,
 	gvp__Custom_Text_4__c nvarchar(200) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Most_Recent__c varchar(10) null
     CONSTRAINT [PK_gvp__Survey__c] PRIMARY KEY ([Id]) 
 )

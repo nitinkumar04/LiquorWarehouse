@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFIn].[gvp__Planned_Spend__c]
 (
-  [Id] char(18) NOT NULL, 
+    [Id] char(18) NOT NULL, 
 	OwnerId char(18) not null,
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
@@ -36,6 +36,7 @@
 	gvp__Custom_Text_2__c nvarchar(255) null,
 	gvp__Custom_Text_3__c nvarchar(255) null,
 	gvp__Custom_Text_4__c nvarchar(255) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Custom_Text_5__c nvarchar(255) null
     CONSTRAINT [PK_gvp__Planned_Spend__c] PRIMARY KEY ([Id]) 
 )

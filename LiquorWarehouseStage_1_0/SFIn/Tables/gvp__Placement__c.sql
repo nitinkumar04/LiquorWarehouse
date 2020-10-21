@@ -1,10 +1,10 @@
 ﻿CREATE TABLE [SFIn].[gvp__Placement__c]
 (
-  [Id] char(18) NOT NULL ,
+    [Id] char(18) NOT NULL ,
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
-  OwnerId char(18) null,
-  RecordTypeId char(18) not null,
+    OwnerId char(18) null,
+    RecordTypeId char(18) not null,
 	CreatedDate datetime not null,
 	CreatedById char(18) not null,
 	LastModifiedDate datetime not null,
@@ -14,7 +14,7 @@
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,	
-  gvp__Authorization__c char(18) null,
+    gvp__Authorization__c char(18) null,
 	gvp__Compliance__c nvarchar(100) null,
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(200) null,
@@ -39,5 +39,6 @@
 	gvp__Custom_Text_1__c nvarchar(200) null,
 	gvp__Custom_Text_2__c nvarchar(200) null,
 	gvp__Program__c char(18) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Placement__c] PRIMARY KEY ([Id])
 )

@@ -39,6 +39,7 @@
 	gvp__Custom_Currency_1__c money null,
 	gvp__Custom_Currency_2__c money null, 
     [OwnerId] CHAR(18) NULL, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Authorization__c] PRIMARY KEY ([Id])
 
 )

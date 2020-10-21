@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFIn].[gvp__Invoice__c]
 (
-  [Id] char(18) NOT NULL, 
+    [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	RecordTypeId char(18) not null,
@@ -49,6 +49,7 @@
 	gvp__Custom_Text_4__c nvarchar(200) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
 	gvp__Payment_Method__c nvarchar(100) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Posting_Date__c date null
     CONSTRAINT [PK_gvp__Invoice__c] PRIMARY KEY ([Id]) 
 )
