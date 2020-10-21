@@ -38,7 +38,7 @@
 	gvp__Manager_1__c nvarchar(100) null,
 	gvp__Manager_2__c nvarchar(100) null,
 	gvp__Manager_3__c nvarchar(100) null,
-	gvp__Audit_Notes__c nvarchar(300) null,
+	gvp__Audit_Notes__c nvarchar(500) null,
 	gvp__Audit_Status__c nvarchar(100) null,
 	gvp__Audited_Survey__c char(18) null,
 	gvp__Sales_Team_Division__c char(18) null,
