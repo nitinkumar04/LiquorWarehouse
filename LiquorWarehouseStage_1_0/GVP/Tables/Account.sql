@@ -170,6 +170,7 @@
     [gvp__Beer_Volume__c] NVARCHAR(100) NULL, 
     [gvp__Liquor_Volume__c] NVARCHAR(100) NULL, 
     [gvp__Wine_Volume__c] NVARCHAR(100) NULL, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
 );
 

@@ -79,6 +79,7 @@
 	gvp__Target_Label__c char(18) null,
 	gvp__Target_Product_Set__c char(18) null,
 	gvp__Target_Program__c char(18) null,
-	gvp__Target_Size__c char(18) null
+	gvp__Target_Size__c char(18) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Survey_Plan_Question__c] PRIMARY KEY ([Id]) 
 )

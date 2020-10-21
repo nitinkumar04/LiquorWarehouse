@@ -47,6 +47,7 @@
 	gvp__Sales_Order_Key__c varchar(60) null,
 	gvp__Order_Item_Count__c decimal(4,1) null,
 	gvp__ERP_Id__c varchar(110) null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Attachments__c decimal(4,1) null 
     CONSTRAINT [PK_gvp__Sales_Order__c] PRIMARY KEY ([Id]) 
 )

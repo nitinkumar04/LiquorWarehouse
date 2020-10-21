@@ -39,6 +39,7 @@
 	gvp__Custom_Picklist_2__c nvarchar(200) null,
 	gvp__Custom_Picklist_3__c nvarchar(200) null,
 	gvp__Custom_Picklist_4__c nvarchar(200) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__POS_Material__c] PRIMARY KEY ([Id])
 
 )

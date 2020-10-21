@@ -39,5 +39,6 @@
 	gvp__Custom_Text_1__c nvarchar(200) null,
 	gvp__Custom_Text_2__c nvarchar(200) null,
 	gvp__Program__c char(18) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Placement__c] PRIMARY KEY ([Id])
 )

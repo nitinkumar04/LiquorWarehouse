@@ -34,6 +34,7 @@
 	[gvp__Account_Call_Send_Email_Date__c] [date] NULL,
 	[gvp__Account_Call_Send_Email__c] VARCHAR(10) NULL,
 	[gvp__Account_Call_Status__c] NVARCHAR(30) NULL,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
  CONSTRAINT [PK_gvp__Well__c] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC

@@ -32,6 +32,7 @@
 	gvp__Item_Depletion_Allowance__c money null,
 	gvp__Quantity_Per_Carton__c varchar(10) null,
 	gvp__Supplier_Discount_Participation__c money null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Supplier_Provided_Promotion_Code__c varchar(20) null
 
     CONSTRAINT [PK_gvp__Sales_Order_Item__c] PRIMARY KEY ([Id]) 

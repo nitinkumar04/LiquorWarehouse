@@ -51,7 +51,8 @@
 	gvp__Answer_Size__c char(18) null,
 	gvp__Is_Answered__c varchar(10) null,
 	gvp__Matching_Target_Points_Auxiliary__c decimal(4,1) null,
-	gvp__Met_Target__c varchar(10) not null
+	gvp__Met_Target__c varchar(10) not null,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Survey_Answer__c] PRIMARY KEY ([Id]) 
 )
 

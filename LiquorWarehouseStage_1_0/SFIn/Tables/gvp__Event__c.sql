@@ -66,5 +66,6 @@
 	[gvp__Account_Call_Send_Email_Date__c] [date] NULL,
 	[gvp__Account_Call_Send_Email__c] [varchar](40) NULL,
 	[gvp__Account_Call_Status__c] [varchar](40) NULL, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Event__c] PRIMARY KEY ([Id])
 )

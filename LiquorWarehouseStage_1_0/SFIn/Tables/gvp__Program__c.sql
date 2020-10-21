@@ -3,7 +3,7 @@
 	[Id] char(18) NOT NULL ,
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
-  RecordTypeId char(18) not null,
+    RecordTypeId char(18) not null,
 	CreatedDate datetime not null,
 	CreatedById char(18) not null,
 	LastModifiedDate datetime not null,
@@ -71,5 +71,6 @@
 	gvp__Custom_Text_4__c nvarchar(270) null,
 	gvp__Custom_Text_5__c nvarchar(200) null,
 	gvp__Spend_Type__c nvarchar(100) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Program__c] PRIMARY KEY ([Id])
 )

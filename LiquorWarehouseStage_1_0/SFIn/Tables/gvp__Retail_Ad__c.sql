@@ -34,5 +34,6 @@
 	gvp__Account_Call_Send_Email_Date__c date null,
 	gvp__Account_Call_Send_Email__c varchar(10) null,
 	gvp__Account_Call_Status__c nvarchar(50) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Retail_Ad__c] PRIMARY KEY ([Id])
 )
