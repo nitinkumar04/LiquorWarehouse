@@ -48,6 +48,7 @@
 	gvp__Sales_Sequence_End_Date_Time__c datetime null,
 	gvp__Sales_Sequence_Start_Date_Time__c datetime null, 
     [gvp__Visit_Sequence_Duration_in_Minutes__c] DECIMAL(8, 2) NULL, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Account_Call__c] PRIMARY KEY ([Id])
 
 )

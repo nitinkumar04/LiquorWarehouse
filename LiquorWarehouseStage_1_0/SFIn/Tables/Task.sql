@@ -50,6 +50,7 @@
 	gvp__Account_Call_Status__c nvarchar(50) null,
 	gvp__Box_URL__c nvarchar(100) null,
 	gvp__Related_Account_Call__c char(18) null, 
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_Task] PRIMARY KEY ([Id])
 
 )
