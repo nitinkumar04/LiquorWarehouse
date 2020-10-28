@@ -6,5 +6,5 @@
   GVWLastModifiedDate       datetime    default getdate() NOT NULL,
   GVWSourceID               INT default (-1),
 	GVWDeleted                BIT NULL DEFAULT '0', 
-    CONSTRAINT [PK_TempAccountsforHQByDim] PRIMARY KEY ([AcctUnivDimID], [AcctHQDimID])
+    CONSTRAINT [PK_TempAccountsforHQByDim] PRIMARY KEY ([AcctUnivDimID], [AcctHQDimID], [Type])
 );
