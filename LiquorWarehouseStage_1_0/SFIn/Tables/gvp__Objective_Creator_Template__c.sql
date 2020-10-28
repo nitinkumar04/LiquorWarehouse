@@ -17,6 +17,7 @@
     [gvp__Assigned_Date__c]      DATE          NULL,
     [gvp__Description__c]        NVARCHAR (255) NULL,
     [gvp__Territory__c]          char (18)  NULL,
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
     CONSTRAINT [PK_gvp__Objective_Creator_Template__c] PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
