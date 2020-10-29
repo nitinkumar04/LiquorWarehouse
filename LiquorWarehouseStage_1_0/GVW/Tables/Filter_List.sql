@@ -6,6 +6,7 @@
 		a__filter_list_dim_package VARCHAR(512),
 		cp__filter_list_dim_id VARCHAR(512) NOT NULL PRIMARY KEY,
 		f__filter_list_dim_fact VARCHAR(14),
-		l__filter_list_dim_name__filter_list_dim_sort VARCHAR(512)
+		l__filter_list_dim_name__filter_list_dim_sort VARCHAR(512),
+		IsDeleted			VARCHAR(10)
 
 )
