@@ -36,7 +36,7 @@
 	[HolidayName] [nvarchar](100) NULL,
 	[HolidayNameEnglish] [varchar](100) NULL,
 	[DateNumber] [int] NOT NULL,
- [FiscalDateNumber] INT NOT NULL, 
+ [FiscalDateNumber] INT NULL, 
     CONSTRAINT [PK_FiscalDate] PRIMARY KEY CLUSTERED 
 (
 	[FiscalDate] ASC
