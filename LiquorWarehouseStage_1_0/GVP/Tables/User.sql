@@ -41,7 +41,7 @@
     [Extension]                  VARCHAR(20) NULL,
     [FederationIdentifier]       VARCHAR (160) NULL,
     [gvp__End_of_Day__c]         CHAR (2) NULL,
-    [gvp__Geography_Key__c]      VARCHAR (30) NULL,
+    [gvp__Geography_Key__c]      VARCHAR (50) NULL,
     [gvp__GoodData_User_Type__c] VARCHAR (100) NULL,
     [gvp__Start_of_Day__c]       CHAR (2) NULL,
     [gvp__User_Key__c]           VARCHAR (100) NULL,

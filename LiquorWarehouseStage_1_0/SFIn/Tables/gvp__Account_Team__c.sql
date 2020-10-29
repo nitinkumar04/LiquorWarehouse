@@ -17,7 +17,7 @@
 	gvp__Custom_3__c nvarchar(200) null,
 	gvp__Custom_4__c nvarchar(200) null,
 	gvp__Custom_5__c nvarchar(200) null,
-	gvp__External_Id__c varchar(75) null,
+	gvp__External_Id__c varchar(100) null,
 	gvp__Manager_1__c char(18) null,
 	gvp__Manager_2__c char(18) null,
 	gvp__Manager_3__c char(18) null,

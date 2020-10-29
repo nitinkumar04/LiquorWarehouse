@@ -47,7 +47,7 @@
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(100) null,
 	gvp__Custom_3__c nvarchar(100) null,
-	gvp__Custom_4__c nvarchar(100) null,
+	gvp__Custom_4__c nvarchar(200) null,
 	gvp__Custom_5__c nvarchar(100) null,
 	gvp__Custom_Fact_1__c decimal(16,8) null,
 	gvp__Custom_Fact_2__c decimal(15,8) null,

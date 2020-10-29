@@ -17,7 +17,7 @@
 	gvp__Goal_Plan_Name__c nvarchar(250) null,
 	gvp__Parent_Goal_Plan__c char(18) null,
 	gvp__Product__c nvarchar(100) null,
-	gvp__Record_Type__c char(18) null,
+	gvp__Record_Type__c NVARCHAR(100) null,
 	gvp__Sales_Goal__c char(18) null,
 	gvp__Start_Date__c date null,
 	gvp__Cloning__c varchar(10) null,
