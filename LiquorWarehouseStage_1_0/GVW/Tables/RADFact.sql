@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [GVW].[RADFact](
 	[ID] VARCHAR(18) NOT NULL,
+	LineNumber VARCHAR(128) NULL DEFAULT 1,
 	[Name] [varchar](300) NULL,
 	[URL] [nvarchar](200) NULL,
 	[Type] [varchar](8) NULL,
