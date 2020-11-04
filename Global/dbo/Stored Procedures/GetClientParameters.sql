@@ -172,7 +172,7 @@ end
 
   -- Coalesce the values, this needs to be in a separate table in order to simplify the pivot below for Prod
   insert into #ParametersCoalesced3
-    select  'Prod' as EnvironmentName, ParameterName, coalesce(ClientSpecificValue, DefaultValue) as ParameterValue from #Parameters2
+    select  'Prod' as EnvironmentName, ParameterName, coalesce(ClientSpecificValue, DefaultValue) as ParameterValue from #Parameters3
 
 
   -- Return the values as either rows or columns
@@ -181,7 +181,8 @@ end
 		   'Test' as EnvironmentName, pc2.ParameterValue,
 		   'Prod' as EnvironmentName, pc3.ParameterValue 
 		   from #ParametersCoalesced1 pc1 join #ParametersCoalesced2 pc2 on pc1.ParameterName=pc2.ParameterName
-		                                  join #ParametersCoalesced2 pc3 on pc2.ParameterName=pc3.ParameterName
+		                                  join #ParametersCoalesced3 pc3 on pc2.ParameterName=pc3.ParameterName
+			order by pc1.ParameterName							 
 
 
   -- Pivot the results so that each parameter name is a column with one row of data
