@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [SFIn].[gvp__RAD__c]
 (
+  IdentityField int  identity(1,1) not null,
   [Id] char(18), 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
@@ -42,6 +43,14 @@
 	gvp__SalesPerson__c varchar(18) null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	gvp__Sales_Team_Division__c varchar(18) null
-
-    CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
+	CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (IdentityField)
+  --  CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
 )
+
+GO
+
+CREATE INDEX [IX_gvp__RAD__c_Column] ON [SFIn].[gvp__RAD__c] ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c)
+
+GO
+
+CREATE INDEX [IX_gvp__RAD__c_Column_1] ON [SFIn].[gvp__RAD__c] ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Date__c])
