@@ -35,5 +35,6 @@
 	gvp__RAD__c char(18) null,
 	gvp__Shipment_Date__c date null,
 	gvp__Status__c nvarchar(25) null,
+    CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 	CONSTRAINT [PK_gvp__Order_Commitment__c] PRIMARY KEY ([Id])
 )
