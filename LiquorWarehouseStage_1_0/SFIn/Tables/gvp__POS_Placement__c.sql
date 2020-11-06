@@ -34,6 +34,7 @@
 [gvp__Quantity__c] [decimal](6, 1) NULL,
 [gvp__Account_Call_Send_Email_Date__c] [date] NULL,
 [gvp__Account_Call_Send_Email__c] [varchar](10) NULL,
-[gvp__Account_Call_Status__c] [varchar](50) NULL
+[gvp__Account_Call_Status__c] [varchar](50) NULL,
+CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 CONSTRAINT [PK_gvp__POS_Placement__c] PRIMARY KEY ([Id])
 )
