@@ -11,4 +11,5 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
 	GVWDeleted BIT NULL DEFAULT '0'
+	CONSTRAINT [PK_ActivityOwnerByAcct] PRIMARY KEY (ID)
 )
