@@ -118,8 +118,6 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="GDOut\" />
-    <Folder Include="GDOut\Tables\" />
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="SFIn\" />
@@ -141,10 +139,6 @@
     <Folder Include="GVP\Views" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Retail_Dim.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -229,10 +223,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Dim.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="Security\db_executor.sql" />
     <Build Include="dbo\Stored Procedures\SeedStageData.sql">
       <AnsiNulls>On</AnsiNulls>
@@ -291,46 +281,6 @@
     <Build Include="SFIn\Tables\gvp__Shipment__c.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Goal_Plan__c.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Goal__c.sql" />
-    <Build Include="GDOut\Tables\GD_Geography_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Product_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Geography_Dim_All.sql" />
-    <Build Include="GDOut\Tables\GD_Accounts_For_HQ2.sql" />
-    <Build Include="GDOut\Tables\GD_Accounts_For_HQ1.sql" />
-    <Build Include="GDOut\Tables\GD_Accounts_For_HQ_By.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Call_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Custom_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Hier_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_HQ_By_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_KA1_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_KA2_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Mktg_Group_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Owner_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Retail_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Set_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Team_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_HQ_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Listing_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Record_Type_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Type_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Custom_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Dim_All.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Hier_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_HQ_By_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Owner_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Activity_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Activity_Goal_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Competitor.sql" />
-    <Build Include="GDOut\Tables\GD_Currency_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Depletion_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Distributor_Hier_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Distributor_Owner_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Event_Call_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Event_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Inventory_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Managed_By_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Product_Set_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Sales_Division_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Txn_Type.sql" />
     <Build Include="SFIn\Tables\gvp__POS_Placement__c.sql" />
     <Build Include="SFIn\Tables\gvp__Well__c.sql" />
     <Build Include="SFIn\Tables\gvp__GoodData_Translation_Settings__c.sql" />
@@ -343,35 +293,14 @@
     <Build Include="dbo\Tables\LoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\UpdateLoadDataDateTime.sql" />
     <Build Include="dbo\Stored Procedures\WriteToLoadLog.sql" />
-    <Build Include="GDOut\Tables\GD_Contact_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Manager_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Account_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_KA1_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_KA2_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Segment_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Acct_Univ_Mktg_Group_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Promo_Event_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Objective_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Sales_Driver_Dim.sql" />
     <Build Include="dbo\Tables\TypeData.sql" />
     <Build Include="dbo\Tables\AccountType.sql" />
     <Build Include="dbo\Tables\FIPS_County.sql" />
     <Build Include="dbo\Tables\FIPS_Zip.sql" />
-    <Build Include="GDOut\Tables\GD_Contact_Dim.sql" />
     <Build Include="dbo\Tables\FiscalDate.sql" />
-    <Build Include="GDOut\Tables\GD_Fiscal_Date_Dim.sql" />
     <Build Include="dbo\Stored Procedures\PopulateFiscalDateTable.sql" />
-    <Build Include="GDOut\Tables\GD_Survey_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Person_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Sales_Goal_Item.sql" />
     <Build Include="SFIn\Tables\gvp__Sales_Goal_Detail__c.sql" />
-    <Build Include="GDOut\Tables\GD_Media_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_RAD_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Survey_Fact.sql" />
-    <Build Include="GDOut\Tables\GD_Shipment_Fact.sql" />
     <Build Include="SFIn\Tables\gvp__Event__c.sql" />
-    <Build Include="GDOut\Tables\GD_Spend_Dim.sql" />
-    <Build Include="GDOut\Tables\GD_Sales_Order_Fact.sql" />
     <Build Include="dbo\Tables\GoodDataElementID.sql" />
     <Build Include="dbo\Tables\GoodDataURIWorkingTable.sql" />
     <Build Include="dbo\Tables\GoodDataSalesGoalPlanField.sql" />
@@ -385,22 +314,13 @@
     <Build Include="SFIn\Tables\gvp__Sales_Goal_Transition__mdt.sql" />
     <Build Include="dbo\Tables\GoodDataSalesGoalReportExecutionMetaData.sql" />
     <Build Include="dbo\Tables\Currency.sql" />
-    <Build Include="GDOut\Tables\GD_Spend_Fact.sql" />
     <Build Include="Security\SFOut.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal__c.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal_Detail__c.sql" />
     <Build Include="dbo\Views\GoalDetailResults.sql" />
     <Build Include="dbo\Views\GoalUserResults.sql" />
     <Build Include="dbo\Tables\LoadErrorLog.sql" />
-    <Build Include="GDOut\Tables\GD_Sales_Goal_Fact.sql" />
     <Build Include="SFIn\Tables\gvp__Expense_Line_Item_Association__c.sql" />
-    <Build Include="GDOut\Tables\GD_Accounts_for_HQ3.sql" />
-    <Build Include="GDOut\Tables\GD_Time_Series.sql" />
-    <Build Include="GDOut\Tables\GD_Top_X.sql" />
-    <Build Include="GDOut\Tables\GD_Transaction_Type.sql" />
-    <Build Include="GDOut\Tables\GD_Metric.sql" />
-    <Build Include="GDOut\Tables\GD_Filter_List.sql" />
-    <Build Include="GDOut\Tables\GD_UnitOfMeasure.sql" />
     <Build Include="Security\SRSIn.sql" />
     <Build Include="SRSIn\Tables\SLSDA.sql" />
     <Build Include="SRSIn\Tables\NONDA.sql" />
