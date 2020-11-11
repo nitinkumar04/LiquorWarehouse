@@ -175,6 +175,8 @@
     <Build Include="dbo\Stored Procedures\CopyClientParametersBetweenEnvironments.sql" />
     <Build Include="dbo\Stored Procedures\GetEnvironmentList.sql" />
     <Build Include="dbo\Stored Procedures\AlertToSlack.sql" />
+    <Build Include="dbo\Stored Procedures\GetSingleParameterValueForAllClients.sql" />
+    <Build Include="dbo\Stored Procedures\DeleteClient.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Global.refactorlog" />
