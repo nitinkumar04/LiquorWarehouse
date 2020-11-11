@@ -54,4 +54,4 @@ CREATE INDEX [IX_gvp__RAD__c_Column] ON [GVP].[gvp__RAD__c] ([gvp__Distributor__
 
 GO
 
-CREATE INDEX [IX_gvp__RAD__c_Column_1] ON [GVP].[gvp__RAD__c] ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Date__c]))
+CREATE INDEX [IX_gvp__RAD__c_Column_1] ON [GVP].[gvp__RAD__c] ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Date__c])
