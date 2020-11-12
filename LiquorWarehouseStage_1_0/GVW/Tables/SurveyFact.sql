@@ -23,7 +23,7 @@
 	[AnswerCustomText5]       [varchar](255)  NULL,
 	[AnsweredIndicator]               [varchar](50)   NULL,
 	[AnswerExternalID]                 [varchar](200)  NULL,
-	[AnswerID]                  VARCHAR(18)      NULL,
+	[AnswerID]                  VARCHAR(18)   NOT  NULL DEFAULT '-1',
 	[AnswerMatchTargetPoints] [varchar](50)   NULL,
 	[AnswerMostRecent]         [varchar](50)   NULL,
 	[AnswerMultipleIndicator]        [varchar](50)   NULL,
@@ -89,9 +89,9 @@
 	[SpendDimID]                      VARCHAR(18)      NULL DEFAULT '-1',
 	[StartDate]                        [varchar](50)   NULL,
 	[StartDateID]                     [varchar](50)   NULL,
-	[SurveyDimID]                     VARCHAR(18)      NULL DEFAULT '-1',
+	[SurveyDimID]                     VARCHAR(18)      NOT NULL DEFAULT '-1',
 	[SurveyExternalID]                        [varchar](200)  NULL,
-	[SurveyID]                         VARCHAR(18)      NULL,
+	[SurveyID]                         VARCHAR(18)     NOT NULL DEFAULT '-1',
 	[SurveyOrderFact]                 [varchar](100)  NULL,
 	[SurveyName]                       [varchar](100)  NULL,
 	[SurveyRecordType]                [varchar](100)  NULL,
@@ -106,6 +106,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0' 
+    GVWDeleted BIT NULL DEFAULT '0' ,
+	CONSTRAINT [PK_SurveyFact] PRIMARY KEY (SurveyDimID,SurveyID,AnswerID)
 
 );
