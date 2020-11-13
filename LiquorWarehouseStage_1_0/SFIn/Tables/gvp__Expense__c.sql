@@ -63,6 +63,17 @@
 	gvp__End_Date__c date null,
 	gvp__Spend_Type__c nvarchar(100) null,
 	gvp__Start_Date__c date null,
-	CurrencyIsoCode varchar(10) null DEFAULT 'USD'
+	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
+	--Begin Proximo custom expense columns
+	CostCenter__c     varchar(255) null,
+	GLAcct__c         varchar(255) null,
+	GVInvNum__c       varchar(255) null,
+	InvDescription__c varchar(255) null,
+	InvoiceDate__c    varchar(50)  null,
+	ItemStatus__c     varchar(255) null,
+	LineItemAmount__c varchar(50)  null,
+	VendorID__c       varchar(255) null,
+	VendorInvNum__c   varchar(255) null,
+	--End Proximo custom expense columns
     CONSTRAINT [PK_gvp__Expense__c] PRIMARY KEY ([Id]) 
 )
