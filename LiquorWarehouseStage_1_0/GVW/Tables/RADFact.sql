@@ -33,7 +33,7 @@
 	[FiscalDateDimID] VARCHAR(10) NULL,
 	[SalesRepDimID] VARCHAR(18) NULL,
 	[CurrencyDimID] [varchar](5) NULL,
-	[InvoiceNumber] [varchar](20) NOT NULL,
+	[InvoiceNumber] [varchar](50) NOT NULL,
 	[OutletExternalID] NVARCHAR(255) NULL,
 	[DistItemNumber] [varchar](30) NOT NULL,
 	[SalesRepCode] NVARCHAR(255) NULL,
