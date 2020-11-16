@@ -589,5 +589,6 @@
   <ItemGroup>
     <None Include="MaisonVillevertLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="WgrantsgpLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="VinsmoselleLiquorWarehouseStage_1_03_02.publish.xml" />
   </ItemGroup>
 </Project>
