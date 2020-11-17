@@ -7,7 +7,7 @@
 	[Name] [nvarchar](100) NULL,
 	[NameNumber] [nvarchar](200) NULL,
 	[RecordType] [varchar](30) NULL,
-	[Level] [nvarchar](20) NULL,
+	[Level] [nvarchar](80) NULL,
 	[ExternalID] [nvarchar](100) NULL,
 	[City] [nvarchar](100) NULL,
 	[State] [nvarchar](100) NULL,

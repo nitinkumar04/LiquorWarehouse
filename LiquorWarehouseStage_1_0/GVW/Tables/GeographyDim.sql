@@ -27,7 +27,7 @@
 	[DistributorOwnerFullName] 	nvarchar(250) NULL,
 	[DistributorOwnerEmail] 		nvarchar(300) NULL,
 	[DistributorID]	 	      		VARCHAR(18) NULL,
-	[DistributorLevel] 	    		varchar(50) NULL,
+	[DistributorLevel] 	    		varchar(80) NULL,
 	[DistributorURL] 			    	nvarchar(250) NULL,
 	[DistributorAccountExternalID]	   	varchar(50) NULL,
 	[DistributorName] 			    	nvarchar(200) NULL,

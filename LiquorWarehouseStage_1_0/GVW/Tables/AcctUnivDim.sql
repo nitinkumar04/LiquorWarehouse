@@ -30,7 +30,7 @@
     [OwnerFirstName]          NVARCHAR(50)   NULL,
     [OwnerFullName]           NVARCHAR (100)  NULL,
     [OwnerEmail]               NVARCHAR (200)  NULL,
-    [Level]                     VARCHAR (25)  NULL,
+    [Level]                     VARCHAR (80)  NULL,
     [ExternalID]                       VARCHAR (70)  NULL,
     [NameNumber]               NVARCHAR (320) NULL,
     [RecordType]               VARCHAR(30)  NULL,

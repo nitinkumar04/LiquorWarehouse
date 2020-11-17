@@ -33,7 +33,7 @@
 	[ActiveIndicator] [varchar](10) NULL,
 	[DoNotEmail] [varchar](10) NULL,
 	[DoNotCall] [varchar](10) NULL,
-	[Level] [nvarchar](20) NULL,
+	[Level] [nvarchar](80) NULL,
 	[SourceFile] [nvarchar](50) NULL,
 	[RoleName] [nvarchar](110) NULL,
 	[ProfileName] [varchar](50) NULL,
