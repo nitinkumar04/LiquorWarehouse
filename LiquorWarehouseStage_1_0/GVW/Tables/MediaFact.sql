@@ -21,7 +21,7 @@
 	[Geocode] [varchar](100) NULL,
 	[Heading] DECIMAL(4, 1) NULL,
 	[Latitude] DECIMAL(21, 18) NULL,
-	[Location] [varchar](8) NULL,
+	[Location] VARCHAR (100) NULL,
 	[Longitude] DECIMAL(21, 18) NULL,
 	[ModifiedDate] CHAR(10) NULL,
 	[Name] [nvarchar](100) NULL,
