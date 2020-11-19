@@ -590,5 +590,9 @@
     <None Include="MaisonVillevertLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="WgrantsgpLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="VinsmoselleLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="DonatiLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="DallaTerraLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="WGUKLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="SerrallesLiquorWarehouseStage_1_03_02.publish.xml" />
   </ItemGroup>
 </Project>
