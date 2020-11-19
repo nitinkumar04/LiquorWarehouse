@@ -29,7 +29,7 @@
 	[WorkEmail] [varchar](50) NULL,
 	[Title] [varchar](50) NULL,
 	[Company] [varchar](50) NULL,
-	[Department] [varchar](50) NULL,
+	[Department] [varchar](90) NULL,
 	[Division] [varchar](50) NULL,
 	[ActiveIndicator] [varchar](50) NULL,
 	[DoNotEmail] [varchar](50) NULL,
