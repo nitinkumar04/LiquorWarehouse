@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [GVP].[gvp__Survey_Answer__c]
 (
-  [Id] char(18) NOT NULL, 
+    IdentityField int identity(1,1),
+    [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	CreatedDate datetime not null,
@@ -53,7 +54,7 @@
 	gvp__Matching_Target_Points_Auxiliary__c decimal(18,0) null,
 	gvp__Met_Target__c varchar(10) not null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
-    CONSTRAINT [PK_gvp__Survey_Answer__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_gvp__Survey_Answer__c] PRIMARY KEY ([IdentityField]) 
 )
 
 GO
