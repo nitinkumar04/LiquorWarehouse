@@ -1,7 +1,6 @@
 ﻿CREATE TABLE [GVP].[gvp__RAD__c]
 (
-  IdentityField int identity(1,1),
-  [Id] char(18), 
+  [Id] char(18) DEFAULT '', 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) null,
 	CreatedDate datetime not null,
@@ -22,7 +21,7 @@
 	gvp__BDN_Created_Date__c date null,
 	gvp__BDN_Date_Month__c nvarchar(20) null,
 	gvp__BDN_Date_Year__c varchar(4) null,
-	gvp__RAD_Key__c NVARCHAR(255) null,
+	gvp__RAD_Key__c NVARCHAR(255) NOT null DEFAULT '',
 	gvp__Salesman__c char(18) null,
 	gvp__Source_File__c NVARCHAR(255) null,
 	gvp__Distributor_Sales_Rep__c nvarchar(255) null,
@@ -44,7 +43,7 @@
 	gvp__Sales_Team_Division__c varchar(18) null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
 
-	CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (IdentityField)
+	CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (Id,IsDeleted,gvp__RAD_Key__c,LastModifiedDate)
   --  CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY ([gvp__Distributor__c], [gvp__Account__c], [gvp__Item__c], [gvp__Dist_Inv_Number__c], [gvp__Date__c], gvp__Dist_Item_Number__c, Id) 
 )
 
