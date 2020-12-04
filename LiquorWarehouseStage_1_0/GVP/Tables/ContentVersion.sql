@@ -25,7 +25,7 @@
 	[LastModifiedById]												CHAR (18) NULL,
   [LastModifiedDate]                        DATETIME  NULL,
   [SystemModstamp]                          DATETIME NULL,
-	[TagCsv]                                  NVARCHAR (100)  NULL,
+	[TagCsv]                                  NVARCHAR (300)  NULL,
 	[FileType]         												VARCHAR (30) NULL,
 	[PublishStatus]         									VARCHAR (5) NULL,
 	[ContentSize]						 									VARCHAR (10) NULL,
