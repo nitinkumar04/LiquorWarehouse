@@ -1,13 +1,13 @@
 ﻿CREATE TABLE [GVW].[RADFact](
-	[ID] VARCHAR(18) NOT NULL,
+	[ID] VARCHAR(255) NOT NULL DEFAULT '-1' ,
 	LineNumber VARCHAR(128) NULL DEFAULT 1,
 	[Name] [varchar](300) NULL,
 	[URL] [nvarchar](200) NULL,
 	[Type] [varchar](8) NULL,
 	[CreatedDate] CHAR(10) NULL,
 	[ModifiedDate] CHAR(10) NULL,
-	[AccountDimID] VARCHAR(18) NOT NULL,
-	[ProductDimID] VARCHAR(18) NOT NULL,
+	[AccountDimID] VARCHAR(18) NULL,
+	[ProductDimID] VARCHAR(18) NULL,
 	[GeographyDimID] VARCHAR(18) NULL,
 	[TransactionTypeID] [varchar](5) NULL,
 	[TxnDate] [date] NOT NULL,
@@ -15,7 +15,7 @@
 	[FiscalYear] [varchar](6) NULL,
 	[FiscalMonth] [varchar](5) NULL,
 	[TxnAltDate] [date] NULL,
-	[ExternalID] [varchar](255) NULL,
+	[ExternalID] [varchar](255) NOT NULL DEFAULT '-1' ,
 	[SourceFile] [varchar](50) NULL,
 	[PODExternalID] [varchar](100) NULL,
 	[PhysicalCases] FLOAT NULL,
@@ -63,7 +63,8 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_RADFact] PRIMARY KEY ([ID]), 
-    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
+    GVWDeleted BIT NOT NULL DEFAULT '0'
+	, 
+    [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
+    CONSTRAINT [PK_RADFact] PRIMARY KEY (ID,ExternalID,GVWCreatedDate,GVWLastModifiedDate) 
 );
