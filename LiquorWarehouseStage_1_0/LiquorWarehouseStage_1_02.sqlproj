@@ -586,4 +586,7 @@
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="RemyCZLiquorWarehouseStage_1_03_02.publish.xml" />
+  </ItemGroup>
 </Project>
