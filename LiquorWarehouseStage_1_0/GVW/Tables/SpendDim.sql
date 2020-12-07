@@ -49,7 +49,7 @@
 [BudgetPlanName]              nvarchar(100) NULL,            
 [BudgetPlanExternalID]               nvarchar(100) NULL,            
 [BudgetPlanTargetAmount]     nvarchar(20) NULL,             
-[BudgetPlanBrandExternalID]         nvarchar(20) NULL,             
+[BudgetPlanBrandExternalID]         nvarchar(100) NULL,             
 [BudgetPlanBrandName]        nvarchar(100) NULL,            
 [BudgetPlanCostCenter]       nvarchar(100) NULL,             
 [BudgetPlanSpendType]        nvarchar(100) NULL,             
