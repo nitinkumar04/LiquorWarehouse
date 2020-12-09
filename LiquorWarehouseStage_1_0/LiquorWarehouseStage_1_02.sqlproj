@@ -588,5 +588,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="RemyCZLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="Vineyard29LiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="EQPATestLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="EuropeanCellarsLiquorWarehouseStage_1_03_02.publish.xml" />
   </ItemGroup>
 </Project>
