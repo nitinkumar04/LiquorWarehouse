@@ -32,5 +32,5 @@
     GVWSourceID  INT default (1),
     GVWDeleted BIT NOT NULL DEFAULT '0',
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT '0',
-    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [Sequence], [TxnDate])
+    CONSTRAINT [PK_EventCallFact] PRIMARY KEY ([AccountDimID], [PersonDimID], [Sequence], [TxnDate], [GVWDeleted])
 );
