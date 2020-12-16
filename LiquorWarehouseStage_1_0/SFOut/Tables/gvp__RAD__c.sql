@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFOut].[gvp__RAD__c]
 (
-  [Id] char(18) NOT NULL DEFAULT '', 
+  [Id] VARCHAR(255) NOT NULL DEFAULT '', 
 	IsDeleted varchar(10) NOT null DEFAULT 'false',
 	Name nvarchar(100) null,
 	CreatedDate datetime null,

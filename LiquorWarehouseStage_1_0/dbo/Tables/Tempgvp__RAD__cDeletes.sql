@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Tempgvp__RAD__cDeletes]
 (
-  [Id] char(18), 
+  [Id] VARCHAR(255), 
 	gvp__Account__c char(18) NOT null,
 	gvp__Date__c date NOT null,
 	gvp__Distributor__c char(18) NOT null,

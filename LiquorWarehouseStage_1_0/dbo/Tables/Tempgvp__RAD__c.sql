@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Tempgvp__RAD__c]
 (
-  [Id] char(18), 
+  [Id] VARCHAR(255), 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) null,
 	CreatedDate datetime not null,

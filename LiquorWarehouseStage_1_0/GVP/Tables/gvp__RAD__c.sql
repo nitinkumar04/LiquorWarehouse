@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [GVP].[gvp__RAD__c]
 (
-  [Id] char(18) DEFAULT '', 
+  [Id] VARCHAR(255) DEFAULT '', 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) null,
 	CreatedDate datetime not null,
