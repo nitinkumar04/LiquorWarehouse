@@ -2,7 +2,7 @@
 begin
   declare @projectid varchar(32)
   
-  set @projectid = (select top 1 gvp__Project_Id__c from sfin.gvp__Analytics_Settings__c)
+  set @projectid = (select top 1 gvp__Project_Id__c  from sfin.gvp__Analytics_Settings__c where gvp__Project_Id__c<> '*')
 
   truncate table GoodDataObjectID
     

@@ -317,8 +317,6 @@
     <Build Include="Security\SFOut.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal__c.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal_Detail__c.sql" />
-    <Build Include="dbo\Views\GoalDetailResults.sql" />
-    <Build Include="dbo\Views\GoalUserResults.sql" />
     <Build Include="dbo\Tables\LoadErrorLog.sql" />
     <Build Include="SFIn\Tables\gvp__Expense_Line_Item_Association__c.sql" />
     <Build Include="Security\SRSIn.sql" />
