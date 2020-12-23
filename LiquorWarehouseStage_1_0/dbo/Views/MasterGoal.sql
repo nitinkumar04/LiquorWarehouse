@@ -61,10 +61,10 @@ SELECT sg.gvp__Account_Segment__c
       ,sg.Id
       ,sg.RecordTypeId
       ,sg.gvp__Logging_Enabled__c
-  FROM SFIn.gvp__Sales_Goal__c sg
-  inner join sfin.gvp__Sales_Goal_Plan__c SP on SP.id = SG.gvp__Sales_Goal_Plan__c
+  FROM GVP.gvp__Sales_Goal__c sg
+  inner join GVP.gvp__Sales_Goal_Plan__c SP on SP.id = SG.gvp__Sales_Goal_Plan__c
   left outer join sfin.gvp__Analytics_Field_Matrix__mdt afm1 on afm1.gvp__Attribute_Identifier__c = sp.gvp__Secondary_Attribute__c
   left outer join sfin.gvp__Analytics_Field__c aff on afm1.gvp__Attribute_Identifier__c = aff.gvp__Field_Identifier__c
-  left outer join sfin.RecordType RT on rt.DeveloperName = SG.gvp__Account_Premise_Type__c and rt.SobjectType = 'Account'
+  left outer join GVP.RecordType RT on rt.DeveloperName = SG.gvp__Account_Premise_Type__c and rt.SobjectType = 'Account'
   where sg.gvp__Master__c = 'true'
     and sp.gvp__Is_Active__c = 'true'
