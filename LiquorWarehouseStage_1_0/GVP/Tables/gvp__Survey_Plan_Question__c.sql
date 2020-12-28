@@ -37,7 +37,7 @@
 	gvp__Type__c nvarchar(100) null,
 	gvp__Group_Name__c nvarchar(100) null,
 	gvp__Match__c nvarchar(100) null,
-	gvp__Points__c decimal(4,1) null,
+	gvp__Points__c decimal(5,1) null,
 	gvp__Question_Order__c decimal(4,1) null,
 	gvp__Related_Content__c nvarchar(100) null,
 	gvp__Full_Product_Description__c nvarchar(200) null,
