@@ -17,3 +17,4 @@
   [Description] NVARCHAR(300) NULL, 
   CONSTRAINT [PK_Attachment] PRIMARY KEY ([Id])
 )
+

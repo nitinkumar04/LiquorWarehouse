@@ -580,6 +580,12 @@
     <Build Include="GVP\Tables\CurrencyType.sql" />
     <Build Include="SFIn\Tables\CurrencyType.sql" />
     <Build Include="Security\ERPOut.sql" />
+    <Build Include="dbo\Tables\Tempgvp__Survey_Answer__c.sql" />
+    <Build Include="dbo\Tables\TempAccount.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\Tempgvp__Account_Team__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -589,7 +595,5 @@
     <None Include="Vineyard29LiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EQPATestLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EuropeanCellarsLiquorWarehouseStage_1_03_02.publish.xml" />
-    <None Include="RemyUKLiquorWarehouseStage_1_03_02.publish.xml" />
-    <None Include="BeamAustriaLiquorWarehouseStage_1_03_02.publish.xml" />
   </ItemGroup>
 </Project>

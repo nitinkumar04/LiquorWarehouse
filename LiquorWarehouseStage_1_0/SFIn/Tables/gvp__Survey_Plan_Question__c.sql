@@ -37,7 +37,7 @@
 	gvp__Type__c nvarchar(100) null,
 	gvp__Group_Name__c nvarchar(100) null,
 	gvp__Match__c nvarchar(100) null,
-	gvp__Points__c decimal(4,1) null,
+	gvp__Points__c decimal(5,1) null,
 	gvp__Question_Order__c decimal(4,1) null,
 	gvp__Related_Content__c nvarchar(100) null,
 	gvp__Full_Product_Description__c nvarchar(200) null,
@@ -80,6 +80,7 @@
 	gvp__Target_Product_Set__c char(18) null,
 	gvp__Target_Program__c char(18) null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
-	gvp__Target_Size__c char(18) null
+	gvp__Target_Size__c char(18) null,
+	gvp__Export__c nvarchar(50)
     CONSTRAINT [PK_gvp__Survey_Plan_Question__c] PRIMARY KEY ([Id]) 
 )
