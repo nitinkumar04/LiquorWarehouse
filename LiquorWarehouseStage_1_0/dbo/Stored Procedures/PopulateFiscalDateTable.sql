@@ -1,13 +1,4 @@
-﻿/*
-populatefiscaldatetable 3, '10/1/2015', '1/1/2027', 'fra'
-
-populatefiscaldatetable 0, '1/1/2015', '1/1/2027', 'usa'
-
-select * from fiscaldate
-
-*/
-
-CREATE PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
+﻿CREATE PROCEDURE [dbo].[PopulateFiscalDateTable] @fiscalmonthadjust int, @start varchar(10), @end varchar(10), @country char(3)
 as
 begin
   -- Convert parameters to dates
@@ -32,32 +23,16 @@ begin
 	    FD.DayNumberOfQuarter as DayNumberOfQuarter,
 	    CD.DayNumberOfMonth,
       CD.DayNumberOfWeek,
-	    CD.WeekdaySN, 
-	    CD.WeekdayLN,
+      CD.WeekdaySN, 
+      CD.WeekdayLN,
       FD.WeekNumberOfYear as WeekNumberOfYear,
---      CD.WeekSN,
---      CD.WeekLN,
-	    CD.MonthSN,
-	    CD.MonthLN,
+	  format (DATEADD(MONTH,-1 * @fiscalmonthadjust,fd.CalendarDate), 'MMM', 'en-US') as MonthSN,
+	  datename (month, (DATEADD(MONTH,-1 * @fiscalmonthadjust,fd.CalendarDate))) as MonthLN,
       FD.MonthNumberOfYear as MonthNumberOfYear,
       FD.MonthNumberOfQuarter MonthNumberOfQuarter, 
---	    FD.MonthYear,
---	    FD.QuarterSN,
---	    FD.QuarterLN,
-     FD.QuarterNumberOfYear,
-     FD.[Year],
-	    --FD.QuarterYear,
-     -- FD.YearWeek,
-     -- FD.YearMonth,
+      FD.QuarterNumberOfYear,
+      FD.[Year],
       CD.YearMonth,
-     -- FD.YearQuarter,
-     -- replace(FD.YearWeekSN, 'CY', 'FY'),
-     -- replace(FD.YearWeekLN, 'CY', 'FY'),
-     -- replace(FD.YearMonthSN, 'CY', 'FY'),
-     -- replace(FD.YearMonthMN, 'CY', 'FY'),
-     -- replace(FD.YearMonthLN, 'CY', 'FY'),
-     -- replace(FD.YearQuarterSN, 'CY', 'FY'),
-     -- replace(FD.YearQuarterLN, 'CY', 'FY'),
 	    CD.WeekDay,
       case when h.HolidayName is null then 0 else 1 end,
       h.HolidayName,
