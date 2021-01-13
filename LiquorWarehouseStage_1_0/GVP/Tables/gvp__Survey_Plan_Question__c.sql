@@ -81,5 +81,6 @@
 	gvp__Target_Program__c char(18) null,
 	gvp__Target_Size__c char(18) null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
+	gvp__Export__c nvarchar(50),
     CONSTRAINT [PK_gvp__Survey_Plan_Question__c] PRIMARY KEY ([Id]) 
 )
