@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="090fb8c5-8bb5-4f4d-9609-5c9022b8fde1" ChangeDateTime="01/15/2021 14:57:49">
+    <Property Name="ElementName" Value="[TraxIn].[SurveyImages].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TraxIn].[SurveyImages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SurveyAnswer_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4956cbcd-4c81-4724-8831-1f734c451649" ChangeDateTime="01/15/2021 14:58:37">
+    <Property Name="ElementName" Value="[TraxIn].[SurveyImages].[Survey_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TraxIn].[SurveyImages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Survey_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3523fe88-a299-4d3c-9450-276ec39ebe92" ChangeDateTime="01/15/2021 14:58:40">
+    <Property Name="ElementName" Value="[TraxIn].[SurveyImages].[SurveyAnswer_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TraxIn].[SurveyImages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SurveyAnswer_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="97c2f01e-5a91-4ffd-adb7-9b805ae41d6d" ChangeDateTime="01/15/2021 14:59:12">
+    <Property Name="ElementName" Value="[TraxIn].[SurveyImages].[UUID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[TraxIn].[SurveyImages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Image_UUID" />
+  </Operation>
+</Operations>
