@@ -15,6 +15,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BrownForman", "BrownForman\
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Proximo", "Proximo\Proximo.sqlproj", "{AEAB099F-F602-4E1E-8322-B6D156E1DC54}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pinata", "Pinata\Pinata.sqlproj", "{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,15 @@ Global
 		{AEAB099F-F602-4E1E-8322-B6D156E1DC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEAB099F-F602-4E1E-8322-B6D156E1DC54}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AEAB099F-F602-4E1E-8322-B6D156E1DC54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
