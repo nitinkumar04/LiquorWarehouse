@@ -317,8 +317,6 @@
     <Build Include="Security\SFOut.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal__c.sql" />
     <Build Include="SFOut\Tables\gvp__Sales_Goal_Detail__c.sql" />
-    <Build Include="dbo\Views\GoalDetailResults.sql" />
-    <Build Include="dbo\Views\GoalUserResults.sql" />
     <Build Include="dbo\Tables\LoadErrorLog.sql" />
     <Build Include="SFIn\Tables\gvp__Expense_Line_Item_Association__c.sql" />
     <Build Include="Security\SRSIn.sql" />
@@ -582,6 +580,20 @@
     <Build Include="GVP\Tables\CurrencyType.sql" />
     <Build Include="SFIn\Tables\CurrencyType.sql" />
     <Build Include="Security\ERPOut.sql" />
+    <Build Include="dbo\Tables\Tempgvp__Survey_Answer__c.sql" />
+    <Build Include="dbo\Tables\TempAccount.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\Tables\Tempgvp__Account_Team__c.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Activity__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -591,5 +603,9 @@
     <None Include="Vineyard29LiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EQPATestLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EuropeanCellarsLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="RemyUKLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="BeamAustriaLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="SalesMasterLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="aaScottLiquorWarehouseStage_1_03_50.publish.xml" />
   </ItemGroup>
 </Project>

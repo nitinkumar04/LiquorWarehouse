@@ -54,6 +54,7 @@
 	gvp__Matching_Target_Points_Auxiliary__c decimal(18,0) null,
 	gvp__Met_Target__c varchar(10) not null,
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
+	gvp__Export__c nvarchar(50),
     CONSTRAINT [PK_gvp__Survey_Answer__c] PRIMARY KEY ([IdentityField]) 
 )
 
