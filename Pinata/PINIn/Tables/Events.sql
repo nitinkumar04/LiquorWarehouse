@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [PINIn].[Events]
 (
-	RowNumber                     int identity(1,1) not null,
+	ID                            int identity(1,1) not null,
 	event_id                      varchar(100)      null,
 	event_date                    date              null,
 	event_start_time              time              null,
@@ -18,5 +18,5 @@
 	answer4                       nvarchar(255)     null,
 	answer5                       nvarchar(255)     null,
 	answer6                       nvarchar(255)     null,
-	CONSTRAINT [PK_Events] PRIMARY KEY ([RowNumber])
+	CONSTRAINT [PK_Events] PRIMARY KEY ([ID])
 )
