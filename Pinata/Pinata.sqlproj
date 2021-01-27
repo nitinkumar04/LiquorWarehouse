@@ -62,10 +62,6 @@
     <Folder Include="SFOut" />
     <Folder Include="SFOut\Tables" />
     <Folder Include="PINIn\Tables" />
-    <Folder Include="GVP" />
-    <Folder Include="GVP\Tables" />
-    <Folder Include="SFIn" />
-    <Folder Include="SFIn\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\PINIn.sql" />
@@ -73,9 +69,7 @@
     <Build Include="SFOut\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="Security\SFOut.sql" />
     <Build Include="Security\GVP.sql" />
-    <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="Security\SFIn.sql" />
-    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="SFOut\Tables\gvp__Account_Call__c.sql" />
   </ItemGroup>
 </Project>
