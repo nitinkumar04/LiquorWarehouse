@@ -1,4 +1,4 @@
-﻿CREATE TABLE SFOut.gvp__Account_Activity__c
+﻿CREATE TABLE [SFOut].gvp__Account_Activity__c
 (
 	[Id]                                 char(18)      null,
 	IsDeleted                            varchar(10)   null,
