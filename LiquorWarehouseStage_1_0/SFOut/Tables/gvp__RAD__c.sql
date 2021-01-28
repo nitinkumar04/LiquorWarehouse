@@ -40,7 +40,8 @@
 	gvp__Source_System__c varchar(25) null,
 	gvp__Account_Team__c varchar(18) null,
 	gvp__SalesPerson__c varchar(18) null,
-	gvp__Sales_Team_Division__c varchar(18) null, 
+	gvp__Sales_Team_Division__c varchar(18) null,
+	[CurrencyIsoCode] NCHAR(10) NULL DEFAULT 'USD', 
     [TransactionType] CHAR NULL, 
     CONSTRAINT [PK_gvp__RAD__c] PRIMARY KEY (gvp__RAD_Key__c,IsDeleted) 
 
