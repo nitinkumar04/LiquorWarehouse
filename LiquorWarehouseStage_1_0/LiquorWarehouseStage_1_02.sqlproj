@@ -616,6 +616,7 @@
     <Build Include="Temp\Tables\GVPgvp__Survey_Plan_Question__c.sql" />
     <Build Include="Temp\Stored Procedures\UpdateGVWFromTempTables.sql" />
     <Build Include="Temp\Stored Procedures\UpdateGVPFromTempTables.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Sales_Goal__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
