@@ -176,3 +176,7 @@
 
 
 GO
+
+
+CREATE NONCLUSTERED INDEX [IX_Account_IsDeleted_with_Account_Key] ON [GVP].[Account] ([IsDeleted])
+INCLUDE ([gvp__Account_Key__c])
