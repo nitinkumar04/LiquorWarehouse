@@ -1,5 +1,6 @@
 ﻿CREATE TABLE [ERPIn].[RAD]
 (
+  [ERPInRADSKey] int identity(1,1),
   Transaction_Type        char(1)       NOT NULL,
   Transaction_Date        date          NULL,
   Item_Key                varchar(255)  NULL,
@@ -20,5 +21,10 @@
   Custom_1                nvarchar(255),
   Custom_2                nvarchar(255),
   Unit_of_Measure         varchar(20), 
-  [SourceFile] VARCHAR(100) NULL
+  [SourceFile] VARCHAR(100) NULL, 
+    CONSTRAINT [PK_RAD] PRIMARY KEY ([ERPInRADSKey])
 )
+
+GO
+
+CREATE INDEX [IX_RAD_RADKey] ON [ERPIn].[RAD] ([Distributor_Key], [Retailer_Ext_Key], [Invoice_Number], [Item_Key], [Dist_Item_Number], [Date_of_Data])
