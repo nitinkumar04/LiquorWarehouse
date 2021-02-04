@@ -1,9 +1,9 @@
-﻿CREATE TABLE Temp.AcctUnivRetailDim (
+﻿CREATE TABLE Temp.GVWAcctUnivRetailDim (
     [ID]                     VARCHAR(18)  NOT NULL,
-    [CreatedDate]                              VARCHAR (20)  NULL,
-    [ModifiedDate]                             VARCHAR (20)  NULL,
+    [CreatedDate]                      VARCHAR (20)  NULL,
+    [ModifiedDate]                     VARCHAR (20)  NULL,
     [CustomerNumber]                   VARCHAR (120) NULL,
-    [BDNID]                            VARCHAR (40)  NULL,
+    [BDNID]                            VARCHAR (50)  NULL,
     [DBAName]                          NVARCHAR (100) NULL,
     [BDNDateofData]                  CHAR (12)  NULL,
     [BDNLastUpdate]                   VARCHAR (10)  NULL,

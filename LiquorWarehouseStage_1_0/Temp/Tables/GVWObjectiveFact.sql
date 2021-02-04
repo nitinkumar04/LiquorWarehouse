@@ -1,4 +1,4 @@
-﻿CREATE TABLE Temp.ObjectiveFact(
+﻿CREATE TABLE Temp.GVWObjectiveFact(
 	[ID]                VARCHAR(18)      NOT NULL,
 	[CreatedDate]                     [char](10)      NULL,
 	[ModifiedDate]                    [char](10)      NULL,
