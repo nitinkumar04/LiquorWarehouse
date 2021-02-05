@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFOut].[gvp__Sales_Goal__c]
 (
-  [Id] CHAR(18) NOT NULL, 
+  [Id] VARCHAR(150) NOT NULL, 
   OwnerId char(18) null,
   IsDeleted varchar(10) null,
 	Name nvarchar(250) null,

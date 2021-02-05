@@ -13,10 +13,10 @@ begin
   
   -- Create a row for each column that sets it equal to the temp table version of itself
   select 
-    case 
+    cast(case 
       when c.name not like '9%' then 'g.' + c.name + '=t.' + c.name 
       else 'g.[' + c.name + ']=t.[' + c.name + ']'
-    end as columnupdate 
+    end as varchar(8000)) as columnupdate 
   into #temp
   from sys.columns c 
     inner join sys.tables t on t.object_id = c.object_id 
