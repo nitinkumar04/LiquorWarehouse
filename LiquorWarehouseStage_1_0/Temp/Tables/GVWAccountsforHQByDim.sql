@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.[TempAccountsforHQByDim](
+﻿CREATE TABLE Temp.GVWAccountsforHQByDim(
 	[AcctUnivDimID]           varchar(18) NOT NULL,
 	[AcctHQDimID]             varchar(18) NOT NULL,
 	[Type]                    varchar(200) NOT NULL,
@@ -6,5 +6,5 @@
   GVWLastModifiedDate       datetime    default getdate() NOT NULL,
   GVWSourceID               INT default (-1),
 	GVWDeleted                BIT NULL DEFAULT '0', 
-    CONSTRAINT [PK_TempAccountsforHQByDim] PRIMARY KEY ([AcctUnivDimID], [AcctHQDimID], [Type])
+    CONSTRAINT [PK_GVWAccountsforHQByDim] PRIMARY KEY ([AcctUnivDimID], [AcctHQDimID], [Type])
 );
