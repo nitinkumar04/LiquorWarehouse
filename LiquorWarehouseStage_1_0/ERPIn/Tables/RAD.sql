@@ -27,4 +27,5 @@
 
 GO
 
-CREATE INDEX [IX_RAD_RADKey] ON [ERPIn].[RAD] ([Distributor_Key], [Retailer_Ext_Key], [Invoice_Number], [Item_Key], [Dist_Item_Number], [Date_of_Data])
+CREATE INDEX [IX_RAD_RADKey] ON [ERPIn].[RAD] ([Date_of_Data])
+INCLUDE ([Transaction_Type], [Distributor_Key], [Retailer_Ext_Key], [Invoice_Number], [Item_Key], [Dist_Item_Number])
