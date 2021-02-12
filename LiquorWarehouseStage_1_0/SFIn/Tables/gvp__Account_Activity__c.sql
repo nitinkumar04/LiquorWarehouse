@@ -69,5 +69,6 @@
 	gvp__Text_8__c                       nvarchar(255) null,
 	gvp__Text_9__c                       nvarchar(255) null,
 	gvp__Text_10__c                      nvarchar(255) null,
+	CurrencyIsoCode                      varchar(10)   null DEFAULT 'USD',
 	CONSTRAINT [PK_gvp__Account_Activity__c] PRIMARY KEY ([Id])
 );
