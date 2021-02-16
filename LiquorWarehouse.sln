@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1267
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Global", "Global\Global.sqlproj", "{70645DB8-73D3-46BA-BBEA-469406910AF5}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pinata", "Pinata\Pinata.sqlproj", "{7AE7770C-832D-4B4D-8726-A6CF9087FA8C}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom WGSAustralia", "Custom WGSAustralia\Custom WGSAustralia.sqlproj", "{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trax", "Trax\Trax.sqlproj", "{887D9982-604F-4A73-8B7D-421E4D3D311E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +99,15 @@ Global
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

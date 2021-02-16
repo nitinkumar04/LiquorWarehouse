@@ -1,4 +1,4 @@
-CREATE TABLE [TempSurveyFact](
+CREATE TABLE temp.GVWSurveyFact (
 	[AccountDimID]                    VARCHAR(18)      NULL DEFAULT '-1',
 	[AccountTeamDimID]               VARCHAR(18)      NULL,
 	[AccountUniverseDimID]           VARCHAR(18)      NULL DEFAULT '-1',
@@ -107,6 +107,6 @@ CREATE TABLE [TempSurveyFact](
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0', 
-    CONSTRAINT [PK_TempSurveyFact] PRIMARY KEY ([ID])
+    CONSTRAINT [PK_GVWSurveyFact] PRIMARY KEY ([ID])
 
 );

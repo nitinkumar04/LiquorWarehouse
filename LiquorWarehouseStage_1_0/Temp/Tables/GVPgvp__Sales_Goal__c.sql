@@ -1,15 +1,15 @@
-﻿CREATE TABLE [SFOut].[gvp__Sales_Goal__c]
+﻿CREATE TABLE temp.GVPgvp__Sales_Goal__c
 (
-  [Id] VARCHAR(150) NOT NULL, 
-  OwnerId char(18) null,
-  IsDeleted varchar(10) null,
-	Name nvarchar(250) null,
-	RecordTypeId char(18) null,
-	CreatedDate datetime null,
-	CreatedById char(18) null,
-	LastModifiedDate datetime null,
-	LastModifiedById char(18) null,
-	SystemModstamp datetime null,
+  [Id] CHAR(18) NOT NULL, 
+  OwnerId char(18) not null,
+  IsDeleted varchar(10) not null,
+	Name nvarchar(100) not null,
+	RecordTypeId char(18) not null,
+	CreatedDate datetime not null,
+	CreatedById char(18) not null,
+	LastModifiedDate datetime not null,
+	LastModifiedById char(18) not null,
+	SystemModstamp datetime not null,
 	LastViewedDate datetime null,
 	LastReferencedDate datetime null,
 	gvp__Account__c char(18) null,
@@ -47,7 +47,7 @@
 	gvp__Custom_1__c nvarchar(200) null,
 	gvp__Custom_2__c nvarchar(100) null,
 	gvp__Custom_3__c nvarchar(100) null,
-	gvp__Custom_4__c nvarchar(100) null,
+	gvp__Custom_4__c nvarchar(200) null,
 	gvp__Custom_5__c nvarchar(100) null,
 	gvp__Custom_Fact_1__c decimal(16,8) null,
 	gvp__Custom_Fact_2__c decimal(15,8) null,
@@ -73,7 +73,7 @@
 	gvp__Minimum_Value__c decimal(4,1) null,
 	gvp__Product__c nvarchar(100) null,
 	gvp__Reference_Report_ID__c varchar(20) null,
-	gvp__Reference_Value__c decimal(9,2) null,
+	gvp__Reference_Value__c decimal(11,2) null,
 	gvp__Sales_Goal_Plan__c char(18) null,
 	gvp__Sales_Team_Division__c char(18) null,
 	gvp__User_Type__c nvarchar(100) null,
@@ -90,5 +90,5 @@
 	gvp__Reference_Start_Date__c date null,
 	gvp__Logging_Enabled__c varchar(10) null
 
-    CONSTRAINT [PK_gvp__Sales_Goal__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_GVPgvp__Sales_Goal__c] PRIMARY KEY ([Id]) 
 )

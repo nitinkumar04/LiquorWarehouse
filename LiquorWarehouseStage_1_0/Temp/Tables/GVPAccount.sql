@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[TempAccount] (
+﻿CREATE TABLE Temp.GVPAccount (
     [Id]                                        char (18)   NOT NULL,
     [IsDeleted]                                 VARCHAR (10) NULL,
     [MasterRecordId]                            CHAR (18)  NULL,
@@ -171,7 +171,7 @@
     [gvp__Liquor_Volume__c] NVARCHAR(100) NULL, 
     [gvp__Wine_Volume__c] NVARCHAR(100) NULL, 
 	CurrencyIsoCode varchar(10) null DEFAULT 'USD',
-    CONSTRAINT [PK_Account] PRIMARY KEY ([Id])
+    CONSTRAINT [PK_GVPAccount] PRIMARY KEY ([Id])
 );
 
 
