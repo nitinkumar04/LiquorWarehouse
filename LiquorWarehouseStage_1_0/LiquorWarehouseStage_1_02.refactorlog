@@ -14,4 +14,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Extended_Price_2" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="d28a8226-22d2-4cd9-91d1-a6478fe996e6" ChangeDateTime="02/02/2021 16:50:09">
+    <Property Name="ElementName" Value="[ERPIn].[RAD].[IX_RAD_Column]" />
+    <Property Name="ElementType" Value="SqlIndex" />
+    <Property Name="ParentElementName" Value="[ERPIn].[RAD]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[IX_RAD_RADKey]" />
+  </Operation>
 </Operations>
