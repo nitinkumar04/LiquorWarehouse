@@ -602,6 +602,12 @@
     <Build Include="Temp\Tables\GVPgvp__Sales_Goal__c.sql" />
     <Build Include="Temp\Tables\SFOutgvp__RAD__c.sql" />
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Activity__c.sql">
+    </Build>
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
