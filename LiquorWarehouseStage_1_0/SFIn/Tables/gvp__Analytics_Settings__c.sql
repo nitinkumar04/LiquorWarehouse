@@ -23,7 +23,7 @@
     [gvp__Minimum_Goal__c] decimal(5,2) NULL, 
     [gvp__Named_Credential__c] VARCHAR(40) NULL, 
     [gvp__Profile_Id__c] CHAR(18) NULL, 
-    [gvp__Project_Id__c] CHAR(32) NOT NULL, 
+    [gvp__Project_Id__c] VARCHAR(255) NOT NULL, 
     [gvp__Sales_Goal_Filter_By_Goal_Plan__c] NCHAR(10) NULL, 
     [gvp__Save_Report_Definition__c] VARCHAR(150) NULL, 
     [gvp__Set_Goal__c] VARCHAR(150) NULL,
