@@ -60,7 +60,7 @@
     [ImageDescription]           VARCHAR (100)  NULL,
     [ImageID]                    VARCHAR (40)   NULL,
     [ImageInd]                   VARCHAR (20)   NULL,
-    [ImageName]                  VARCHAR (100)  NULL,
+    [ImageName]                  VARCHAR (255)  NULL,
     [ImageURL]                   NVARCHAR (200) NULL,
     [ImageURLDashboard]         VARCHAR (200)  NULL,
     [ImageURLTable]             VARCHAR (200)   NULL,
