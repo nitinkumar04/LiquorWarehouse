@@ -16,7 +16,7 @@
 	[FiscalMonth] [varchar](5) NULL,
 	[TxnAltDate] [date] NULL,
 	[ExternalID] [varchar](255) NOT NULL DEFAULT '-1' ,
-	[SourceFile] [varchar](50) NULL,
+	[SourceFile] [varchar](255) NULL,
 	[PODExternalID] [varchar](100) NULL,
 	[PhysicalCases] FLOAT NULL,
 	[9LCases] FLOAT NULL,
