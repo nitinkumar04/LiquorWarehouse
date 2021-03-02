@@ -1,4 +1,4 @@
-﻿CREATE TABLE [GVP].[gvp__Sales_Goal__c]
+﻿CREATE TABLE temp.GVPgvp__Sales_Goal__c
 (
   [Id] CHAR(18) NOT NULL, 
   OwnerId char(18) not null,
@@ -90,5 +90,5 @@
 	gvp__Reference_Start_Date__c date null,
 	gvp__Logging_Enabled__c varchar(10) null
 
-    CONSTRAINT [PK_gvp__Sales_Goal__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_GVPgvp__Sales_Goal__c] PRIMARY KEY ([Id]) 
 )

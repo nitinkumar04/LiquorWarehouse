@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.[TempObjectiveFact](
+﻿CREATE TABLE Temp.GVWObjectiveFact(
 	[ID]                VARCHAR(18)      NOT NULL,
 	[CreatedDate]                     [char](10)      NULL,
 	[ModifiedDate]                    [char](10)      NULL,
@@ -77,7 +77,7 @@
     GVWCreatedDate      Datetime    default getdate() NOT NULL,
     GVWLastModifiedDate Datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NULL DEFAULT '0'
-	CONSTRAINT [PK_ObjectiveFact] PRIMARY KEY ([ID]), 
+    GVWDeleted BIT NULL DEFAULT '0',
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0
+	CONSTRAINT [PK_GVWObjectiveFact] PRIMARY KEY ([ID])
 );

@@ -17,7 +17,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Proximo", "Proximo\Proximo.
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Custom WGSAustralia", "Custom WGSAustralia\Custom WGSAustralia.sqlproj", "{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trax", "Trax\Trax.sqlproj", "{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trax", "Trax\Trax.sqlproj", "{887D9982-604F-4A73-8B7D-421E4D3D311E}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,15 +89,15 @@ Global
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B2DA98F9-F3E9-4CA4-AF5B-0FF02EA2C4AB}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Development|Any CPU.Build.0 = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Development|Any CPU.Deploy.0 = Debug|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{000AFCE0-FAB5-4ACE-A8BB-5F3F6245FFF4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887D9982-604F-4A73-8B7D-421E4D3D311E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

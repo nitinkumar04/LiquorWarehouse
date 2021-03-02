@@ -6,7 +6,7 @@
     <Name>Trax</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{000afce0-fab5-4ace-a8bb-5f3f6245fff4}</ProjectGuid>
+    <ProjectGuid>{887d9982-604f-4a73-8b7d-421e4d3d311e}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -56,5 +56,23 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Security" />
+    <Folder Include="Trax" />
+    <Folder Include="Trax\Tables" />
+    <Folder Include="TraxOut" />
+    <Folder Include="TraxOut\Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Trax.sql" />
+    <Build Include="Security\TraxOut.sql" />
+    <Build Include="Trax\Tables\Image.sql" />
+    <Build Include="Trax\Tables\Scene.sql" />
+    <Build Include="Trax\Tables\Session.sql" />
+    <Build Include="TraxOut\Tables\Image.sql" />
+    <Build Include="TraxOut\Tables\Scene.sql" />
+    <Build Include="TraxOut\Tables\Session.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Trax.refactorlog" />
   </ItemGroup>
 </Project>

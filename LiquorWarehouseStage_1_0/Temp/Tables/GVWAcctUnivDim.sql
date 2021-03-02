@@ -1,4 +1,4 @@
-CREATE TABLE [TempAcctUnivDim] (
+CREATE TABLE Temp.GVWAcctUnivDim (
     [ID]                    VARCHAR(18)  NOT NULL,
     [Name]                  NVARCHAR (250)  NULL,
     [Granularity]           VARCHAR (20)   NULL,
@@ -147,5 +147,5 @@ CREATE TABLE [TempAcctUnivDim] (
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0',
     [GVWHash] VARCHAR(32) NULL
-	CONSTRAINT [PK_TempAcctUnivDim] PRIMARY KEY (ID)
+	CONSTRAINT [PK_GVWAcctUnivDim] PRIMARY KEY (ID)
 );

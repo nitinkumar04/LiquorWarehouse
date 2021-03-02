@@ -137,6 +137,9 @@
     <Folder Include="GVP\Tables" />
     <Folder Include="SFOut\Stored Procedures" />
     <Folder Include="GVP\Views" />
+    <Folder Include="Temp" />
+    <Folder Include="Temp\Tables" />
+    <Folder Include="Temp\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="SFIn\Tables\gvp__Size__c.sql">
@@ -394,8 +397,6 @@
     <Build Include="GVW\Tables\ActivityOwnerByAcct.sql" />
     <Build Include="GVW\Tables\AccountCallSequenceDim.sql" />
     <Build Include="GVW\Tables\AccountCallSequenceFact.sql" />
-    <Build Include="dbo\Tables\TempAcctUnivDim.sql" />
-    <Build Include="dbo\Tables\TempSurveyFact.sql" />
     <Build Include="Security\ERPIn.sql" />
     <Build Include="ERPIn\Tables\Product.sql" />
     <Build Include="Security\GVP.sql" />
@@ -494,11 +495,6 @@
     <Build Include="GVP\Tables\gvp__Event__c.sql" />
     <Build Include="GVP\Tables\gvp__Account_Call__c.sql" />
     <Build Include="ERPIn\Tables\Depletion.sql" />
-    <Build Include="dbo\Tables\TempAccountsforHQByDim.sql" />
-    <Build Include="dbo\Tables\TempAcctUnivRetailDim.sql" />
-    <Build Include="dbo\Tables\TempDepletionFact.sql" />
-    <Build Include="dbo\Tables\TempObjectiveFact.sql" />
-    <Build Include="dbo\Tables\TempSurveyFactIDsToDelete.sql" />
     <Build Include="ERPIn\Tables\Orders.sql" />
     <Build Include="ERPIn\Tables\RADErrors.sql" />
     <Build Include="SFIn\Tables\gvp__GD_Filter_List__c.sql" />
@@ -575,17 +571,35 @@
     <Build Include="SFOut\Stored Procedures\RestateRAD.sql" />
     <Build Include="GVP\Views\SpendDimView.sql" />
     <Build Include="ERPIn\Tables\Budget_Goal_Months.sql" />
-    <Build Include="dbo\Tables\Tempgvp__RAD__c.sql" />
-    <Build Include="dbo\Tables\Tempgvp__RAD__cDeletes.sql" />
     <Build Include="GVP\Tables\CurrencyType.sql" />
     <Build Include="SFIn\Tables\CurrencyType.sql" />
     <Build Include="Security\ERPOut.sql" />
-    <Build Include="dbo\Tables\Tempgvp__Survey_Answer__c.sql" />
-    <Build Include="dbo\Tables\TempAccount.sql">
+    <Build Include="Security\Temp.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Account_Team__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__RAD__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Survey_Answer__c.sql" />
+    <Build Include="Temp\Tables\GVPAccount.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="dbo\Tables\Tempgvp__Account_Team__c.sql" />
+    <Build Include="Temp\Tables\GVWAccountsforHQByDim.sql" />
+    <Build Include="Temp\Tables\GVWAcctUnivDim.sql" />
+    <Build Include="Temp\Tables\GVWAcctUnivRetailDim.sql" />
+    <Build Include="Temp\Tables\GVWDepletionFact.sql" />
+    <Build Include="Temp\Tables\GVWObjectiveFact.sql" />
+    <Build Include="Temp\Tables\GVWSurveyFact.sql" />
+    <Build Include="Temp\Tables\GVPAttachment.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Account_Call__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Account_Objective__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Expense__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Media__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Program__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Sales_Goal_Detail__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Survey__c.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Survey_Plan_Question__c.sql" />
+    <Build Include="Temp\Stored Procedures\UpdateGVWFromTempTables.sql" />
+    <Build Include="Temp\Stored Procedures\UpdateGVPFromTempTables.sql" />
+    <Build Include="Temp\Tables\GVPgvp__Sales_Goal__c.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -595,5 +609,9 @@
     <None Include="Vineyard29LiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EQPATestLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="EuropeanCellarsLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="RemyUKLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="BeamAustriaLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="SalesMasterLiquorWarehouseStage_1_03_02.publish.xml" />
+    <None Include="aaScottLiquorWarehouseStage_1_03_50.publish.xml" />
   </ItemGroup>
 </Project>

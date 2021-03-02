@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [SFOut].[gvp__Sales_Goal__c]
 (
-  [Id] CHAR(18) NOT NULL, 
+  [Id] VARCHAR(150) NOT NULL, 
   OwnerId char(18) null,
   IsDeleted varchar(10) null,
 	Name nvarchar(250) null,
@@ -81,7 +81,7 @@
 	gvp__Is_Active__c varchar(10) null,
 	gvp__Reference__c varchar(10) null,
 	gvp__Reported_Result_Object_Id__c varchar(20) null,
-	gvp__Goal_Plan_Name__c nvarchar(250) null,
+	gvp__Goal_Plan_Name__c nvarchar(300) null,
 	gvp__Minimum_Goal_Quantity__c decimal(5,2) null,
 	gvp__Minimum_Quantity_UOM__c nvarchar(100) null,
 	gvp__Adjustment_Comment__c nvarchar(300) null,

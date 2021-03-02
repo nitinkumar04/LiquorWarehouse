@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.[TempDepletionFact] (
+﻿CREATE TABLE Temp.GVWDepletionFact (
     [ID]            VARCHAR (20)   NOT NULL,
     [URL]           NVARCHAR (200) NULL,
     [Name]          VARCHAR (100)  NULL,
@@ -61,7 +61,7 @@
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
     GVWDeleted BIT NULL DEFAULT '0', 
-	[GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
-    CONSTRAINT [PK_TempDepletionFact] PRIMARY KEY ([ID]) 
+ 	  [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
+    CONSTRAINT [PK_GVWDepletionFact] PRIMARY KEY ([ID]) 
 );
 

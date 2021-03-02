@@ -14,7 +14,7 @@
 	[Custom3] [nvarchar](200) NULL,
 	[Custom4] [nvarchar](200) NULL,
 	[Custom5] [nvarchar](200) NULL,
-	[ExternalID] [varchar](50) NULL,
+	[ExternalID] [varchar](100) NULL,
 	[Manager1ID] VARCHAR(18) NULL,
 	[Manager1Username] [nvarchar](100) NULL,
 	[Manager1FullName] [nvarchar](200) NULL,

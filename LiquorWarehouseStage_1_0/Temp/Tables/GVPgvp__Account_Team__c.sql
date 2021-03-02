@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Tempgvp__Account_Team__c]
+﻿CREATE TABLE temp.GVPgvp__Account_Team__c
 (
 	[Id]							char(18)		not null, 
 	OwnerId							char(18)		not null,
@@ -37,5 +37,5 @@
 	gvp__End_Date__c				date			null,
 	gvp__Start_Date__c				date			null,
 	gvp__Status__c					nvarchar(100)	null
-    CONSTRAINT [PK_gvp__Account_Team__c] PRIMARY KEY ([Id]) 
+    CONSTRAINT [PK_GVPgvp__Account_Team__c] PRIMARY KEY ([Id]) 
 )
