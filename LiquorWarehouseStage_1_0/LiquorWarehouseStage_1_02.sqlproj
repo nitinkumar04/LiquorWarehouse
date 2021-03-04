@@ -616,5 +616,7 @@
     <None Include="SalesMasterLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="aaScottLiquorWarehouseStage_1_03_50.publish.xml" />
     <None Include="WgrantsgpLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="SalesDemoLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="RNDCLiquorWarehouseStage_1_03_03.publish.xml" />
   </ItemGroup>
 </Project>
