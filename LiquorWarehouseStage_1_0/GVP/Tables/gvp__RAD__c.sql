@@ -32,7 +32,7 @@
 	gvp__Custom_Fact_2__c decimal(14,4) null,
 	gvp__Additional_Charge__c money null,
 	gvp__Deposit__c money null,
-	gvp__Dist_Inv_Number__c varchar(50) NOT null DEFAULT '',
+	gvp__Dist_Inv_Number__c varchar(255) NOT null DEFAULT '',
 	gvp__Dist_Item_Number__c varchar(30) NOT null DEFAULT '',
 	gvp__Dist_Sales_Rep_Code__c VARCHAR(30) null,
 	gvp__Extended_Price_2__c money null,
