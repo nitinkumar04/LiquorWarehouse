@@ -603,6 +603,9 @@
     <Build Include="Temp\Tables\SFOutgvp__RAD__c.sql" />
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
     <Build Include="GVP\Tables\RADSnap.sql" />
+    <Build Include="GVP\Tables\gvp__Account_Activity__c.sql">
+    <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql">
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
@@ -619,5 +622,7 @@
     <None Include="WgrantsgpLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="SalesDemoLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="RNDCLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="aaAsheeshLiquorWarehouseStage_1_03_05.publish.xml" />
+    <None Include="aaHemantLiquorWarehouseStage_1_03_05.publish.xml" />
   </ItemGroup>
 </Project>
