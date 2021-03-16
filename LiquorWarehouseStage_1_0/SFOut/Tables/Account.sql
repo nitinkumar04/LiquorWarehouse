@@ -18,7 +18,7 @@
     [ShippingCity]                              NVARCHAR (100)  NULL,
     [ShippingState]                             NVARCHAR (50)  NULL,
     [ShippingPostalCode]                        NVARCHAR (20)  NULL,
-    [ShippingCountry]                           NVARCHAR (25)  NULL,
+    [ShippingCountry]                           NVARCHAR (40)  NULL,
     [ShippingLatitude]                          DECIMAL (14,11)  NULL,
     [ShippingLongitude]                         DECIMAL (14,11)  NULL,
     [ShippingGeocodeAccuracy]                   VARCHAR (20)  NULL,
