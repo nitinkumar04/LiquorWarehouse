@@ -33,9 +33,9 @@
 	[FiscalDateDimID] VARCHAR(10) NULL,
 	[SalesRepDimID] VARCHAR(18) NULL,
 	[CurrencyDimID] [varchar](5) NULL,
-	[InvoiceNumber] [varchar](50) NOT NULL,
+	[InvoiceNumber] [varchar](255) NOT NULL,
 	[OutletExternalID] NVARCHAR(255) NULL,
-	[DistItemNumber] [varchar](30) NOT NULL,
+	[DistItemNumber] [varchar](255) NOT NULL,
 	[SalesRepCode] NVARCHAR(255) NULL,
 	[SalesRepName] NVARCHAR(255) NULL,
 	[BottleDepositAmount] MONEY NULL,
@@ -63,8 +63,7 @@
     GVWCreatedDate       datetime    default getdate() NOT NULL,
     GVWLastModifiedDate  datetime    default getdate() NOT NULL,
     GVWSourceID  INT default (-1),
-    GVWDeleted BIT NOT NULL DEFAULT '0'
-	, 
+    GVWDeleted BIT NOT NULL DEFAULT '0', 
     [GVWHash] VARCHAR(32) NOT NULL DEFAULT 0, 
     CONSTRAINT [PK_RADFact] PRIMARY KEY (ID,ExternalID,GVWCreatedDate,GVWLastModifiedDate) 
 );
