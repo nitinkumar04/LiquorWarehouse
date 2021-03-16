@@ -5,7 +5,7 @@
 	[Granularity] [nvarchar](30) NULL,
 	[AccountDimID] VARCHAR(18) NULL,
 	[GeographyDimID] VARCHAR(18) NULL,
-	[ProductDimID] VARCHAR(18) NULL,
+	[ProductDimID] VARCHAR(37) NULL,
 	[SpendDimID] VARCHAR(18) NULL,
 	[TxnTypeID] VARCHAR(18) NULL,
 	[SurveyDimID] VARCHAR(18) NULL,
