@@ -6,7 +6,7 @@
     [Type]                                      NVARCHAR (100)  NULL,
     [RecordTypeId]                              CHAR (18)  NULL,
     [ParentId]                                  VARCHAR (18)  NULL,
-   [BillingStreet]                             NVARCHAR (255)  NULL,
+    [BillingStreet]                             NVARCHAR (255)  NULL,
     [BillingCity]                               NVARCHAR (100)  NULL,
     [BillingState]                              NVARCHAR (50)  NULL,
     [BillingPostalCode]                         NVARCHAR (20)  NULL,

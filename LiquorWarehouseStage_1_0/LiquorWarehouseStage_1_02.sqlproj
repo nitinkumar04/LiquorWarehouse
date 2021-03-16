@@ -602,11 +602,9 @@
     <Build Include="Temp\Tables\GVPgvp__Sales_Goal__c.sql" />
     <Build Include="Temp\Tables\SFOutgvp__RAD__c.sql" />
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
+    <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql">
-    </Build>
     <Build Include="SFIn\Tables\gvp__Account_Activity__c.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
   </ItemGroup>
   <ItemGroup>
@@ -622,6 +620,8 @@
     <None Include="SalesMasterLiquorWarehouseStage_1_03_02.publish.xml" />
     <None Include="aaScottLiquorWarehouseStage_1_03_50.publish.xml" />
     <None Include="WgrantsgpLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="SalesDemoLiquorWarehouseStage_1_03_03.publish.xml" />
+    <None Include="RNDCLiquorWarehouseStage_1_03_03.publish.xml" />
     <None Include="aaAsheeshLiquorWarehouseStage_1_03_05.publish.xml" />
     <None Include="aaHemantLiquorWarehouseStage_1_03_05.publish.xml" />
   </ItemGroup>

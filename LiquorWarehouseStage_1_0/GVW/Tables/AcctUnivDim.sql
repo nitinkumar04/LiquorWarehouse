@@ -35,7 +35,7 @@
     [NameNumber]               NVARCHAR (320) NULL,
     [RecordType]               VARCHAR(30)  NULL,
     [Street]                    NVARCHAR (255)  NULL,
-    [City]                      NVARCHAR (50)  NULL,
+    [City]                      NVARCHAR (100)  NULL,
     [State]                     NVARCHAR (50)  NULL,
     [Zip]                       NVARCHAR (20)  NULL,
     [Country]                   NVARCHAR (40)  NULL,
