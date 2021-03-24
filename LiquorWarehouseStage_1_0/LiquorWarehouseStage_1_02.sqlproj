@@ -619,9 +619,6 @@
     <Build Include="SRSIn\Tables\VOOWNDESC.sql" />
     <Build Include="SRSIn\Tables\VOCHAIN.sql" />
     <Build Include="SRSIn\Tables\VOCOT.sql" />
-    <Build Include="SRSIn\Tables\FileLayout.sql" />
-    <Build Include="SRSIn\Tables\FileHeader.sql" />
-    <Build Include="SRSIn\Tables\FileFooter.sql" />
     <Build Include="SRSIn\Tables\VOXREF.sql" />
     <Build Include="SRSIn\Tables\VIPOUT.sql" />
     <Build Include="SRSIn\Tables\SLM.sql" />
