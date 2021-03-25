@@ -604,6 +604,26 @@
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="SRSIn\Tables\CTL.sql" />
+    <Build Include="SRSIn\Tables\OUT.sql" />
+    <Build Include="SRSIn\Tables\SLS.sql" />
+    <Build Include="SRSIn\Tables\SRSCLNDR.sql" />
+    <Build Include="SRSIn\Tables\ORD.sql" />
+    <Build Include="SRSIn\Tables\NON.sql" />
+    <Build Include="SRSIn\Tables\INV.sql" />
+    <Build Include="SRSIn\Tables\ITM.sql" />
+    <Build Include="SRSIn\Tables\DEPL.sql" />
+    <Build Include="SRSIn\Tables\CTLS.sql" />
+    <Build Include="SRSIn\Tables\SRSDIST.sql" />
+    <Build Include="SRSIn\Tables\VOOWNHIER.sql" />
+    <Build Include="SRSIn\Tables\VOOWNDESC.sql" />
+    <Build Include="SRSIn\Tables\VOCHAIN.sql" />
+    <Build Include="SRSIn\Tables\VOCOT.sql" />
+    <Build Include="SRSIn\Tables\VOXREF.sql" />
+    <Build Include="SRSIn\Tables\VIPOUT.sql" />
+    <Build Include="SRSIn\Tables\SLM.sql" />
+    <Build Include="SRSIn\Tables\ITM2.sql" />
+    <Build Include="SRSIn\Tables\VIPVALUE.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
