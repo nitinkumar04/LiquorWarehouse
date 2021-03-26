@@ -1,6 +1,5 @@
 ﻿CREATE TABLE [GVP].[gvp__Shipment__c]
-(
-    [Id] char(18) NOT NULL, 
+( [Id] char(18) NOT NULL, 
 	IsDeleted varchar(10) not null,
 	Name nvarchar(100) not null,
 	CreatedDate datetime not null,
@@ -19,7 +18,7 @@
 	gvp__Item__c char(18) null,
 	gvp__Label__c nvarchar(100) null,
 	gvp__Physical_Cases__c decimal(11,3) null,
-	gvp__Shipment_Key__c varchar(100) NOT null,
+	gvp__Shipment_Key__c varchar(255) NOT null,
 	gvp__Order_Type__c nvarchar(100) null,
 	gvp__Shipment_Goal__c char(18) null,
 	gvp__Status__c nvarchar(100) null,

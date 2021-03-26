@@ -13,7 +13,7 @@
 	[FiscalYear] [varchar](6) NULL,
 	[FiscalMonth] [varchar](4) NULL,
 	[TxnAltDate] [nvarchar](10) NULL,
-	[ExternalID] [varchar](100) NULL,
+	[ExternalID] [varchar](255) NULL,
 	[OrderType] [nvarchar](100) NULL,
 	[Status] [nvarchar](100) NULL,
 	[PhysicalCases] [decimal](11, 3) NULL,
