@@ -604,6 +604,7 @@
     <Build Include="Temp\Tables\SFgvp__RAD__c.sql" />
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
+    <Build Include="dbo\Tables\GoalLevel.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="LiquorWarehouseStage_1_02.refactorlog" />
