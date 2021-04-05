@@ -7,5 +7,6 @@
 	VPCHNHCITY [varchar](35)NULL,
 	VPCHNHST [varchar](2)NULL,
 	VPCHNHZIP [varchar](9)NULL,
-	VPCHNHPHN [varchar](20)NULL
+	VPCHNHPHN [varchar](20)NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

@@ -46,5 +46,6 @@
 	[ROCLOSED] [numeric](8, 0) NULL,
 	[ROSEASOP] [numeric](2, 0) NULL,
 	[ROSEASCL] [numeric](2, 0) NULL,
-	[ROPLANO] [varchar](1) NULL
+	[ROPLANO] [varchar](1) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

@@ -25,6 +25,7 @@
   RSSLSREPID  varchar(5),
   RSREPACK    varchar(1),
   RSWHSE      varchar(8),
-  RSPARENT    varchar(25), 
+  RSPARENT    varchar(25),
+	[FILENAME] VARCHAR(100) NOT NULL
     CONSTRAINT [PK_SLSDA] PRIMARY KEY ([DISTID], [RSIDAT], [RSINV], [RSITEM])
 )

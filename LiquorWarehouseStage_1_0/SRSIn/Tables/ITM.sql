@@ -16,5 +16,6 @@
 	[IXVINTAGE] [varchar](4) NOT NULL,
 	[XGTINR] [numeric](14, 0) NOT NULL,
 	[IXREPACK] [varchar](1) NULL,
-	[IXPARENT] [varchar](8) NULL
+	[IXPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

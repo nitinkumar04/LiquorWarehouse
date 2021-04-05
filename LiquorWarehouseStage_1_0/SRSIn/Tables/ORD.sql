@@ -26,5 +26,6 @@ CREATE TABLE [SRSIn].[ORD](
 	[ORREPACK] [varchar](1) NOT NULL,
 	[ORCRTDATE] [numeric](7, 0) NOT NULL,
 	[ORCRTTIME] [numeric](6, 0) NOT NULL,
-	[ORPARENT] [varchar](8) NULL
+	[ORPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 

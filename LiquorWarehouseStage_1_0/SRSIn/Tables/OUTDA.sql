@@ -44,5 +44,6 @@
   ROLICTYPE   varchar(1),
   ROWHSE      varchar(8),
   ROPARENT    varchar(25),
-  ROLICENSE   varchar(15)
+  ROLICENSE   varchar(15),
+	[FILENAME] VARCHAR(100) NOT NULL
 )

@@ -7,7 +7,7 @@
 	DSSTR      [varchar](25) NOT NULL,
 	DSCITY     [varchar](15) NOT NULL,
 	DSSTAT     [varchar](2) NOT NULL,
-	DSZIP      NUMERIC(5,2) NOT NULL,
+	DSZIP      NUMERIC(5,0) NOT NULL,
 	DSPHON      NUMERIC(11) NOT NULL,
 	DSCNT1     [varchar](30) NOT NULL,
 	DSEML1     [varchar](60) NOT NULL,
@@ -26,5 +26,6 @@
 	DSMKT# [varchar](10)  NULL,
 	DSMARKET [varchar](60)  NULL,
 	DSREP# [varchar](10)  NULL,
-	DSREPNAME [varchar](60)  NULL
+	DSREPNAME [varchar](60)  NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

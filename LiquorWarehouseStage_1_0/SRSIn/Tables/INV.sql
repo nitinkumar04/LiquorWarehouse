@@ -18,5 +18,6 @@
 	[RIDITEM] [varchar](10) NULL,
 	[RIITMSTS] [varchar](1) NULL,
 	[RIREPACK] [varchar](1) NULL,
-	[RIPARENT] [varchar](8) NULL
+	[RIPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

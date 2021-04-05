@@ -8,5 +8,6 @@
 	[CTUOM] [varchar](1) NOT NULL,
 	[CTDATE] [varchar](6) NOT NULL,
 	[CTPARENT] [varchar](8) NULL,
-	[CTDISTITEM] [varchar](10) NULL
+	[CTDISTITEM] [varchar](10) NULL,
+	 [FILENAME] VARCHAR(100) NOT NULL
 )

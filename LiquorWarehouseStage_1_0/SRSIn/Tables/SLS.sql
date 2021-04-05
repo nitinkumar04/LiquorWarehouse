@@ -42,5 +42,6 @@
 	[RSLINE#] [varchar](6) NULL,
 	[RSREFINV] [varchar](25) NULL,
 	[RSFRONT4] [numeric](14, 0) NOT NULL,
-	[RSPERIOD] [numeric](6, 0) NULL
+	[RSPERIOD] [numeric](6, 0) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

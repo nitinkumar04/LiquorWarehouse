@@ -31,5 +31,6 @@
   CAT3        varchar(20),
   CAT4        varchar(20),
   CAT5        varchar(20),
-  CAT6        varchar(20)
+  CAT6        varchar(20),
+	[FILENAME] VARCHAR(100) NOT NULL
 )

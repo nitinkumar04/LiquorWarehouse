@@ -5,5 +5,6 @@
 	[INRANK] [varchar](13) NULL,
 	[INTYPE] [varchar](3) NOT NULL,
 	[INTERR] [numeric](2, 0) NULL,
-	[INTERRDESC] [varchar](30) NULL
+	[INTERRDESC] [varchar](30) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 

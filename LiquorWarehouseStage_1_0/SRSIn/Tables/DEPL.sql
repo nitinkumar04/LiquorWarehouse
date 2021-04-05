@@ -40,5 +40,6 @@
 	[NRLSTSALE] [varchar](8) NULL,
 	[INAVGSLS] [numeric](8, 0) NULL,
 	[INPARENT] [varchar](8) NULL,
-	[SMPERIOD] [numeric](6, 0) NOT NULL
+	[SMPERIOD] [numeric](6, 0) NOT NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 
