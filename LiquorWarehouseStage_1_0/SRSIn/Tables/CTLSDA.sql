@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[CTLS](
+﻿CREATE TABLE [SRSIn].[CTLSDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
 	[VIPSRS] [varchar](5) NOT NULL,

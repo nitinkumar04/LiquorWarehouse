@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[DEPL](
+﻿CREATE TABLE [SRSIn].[DEPLDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMDIST] [varchar](14) NOT NULL,
 	[SMACTD] [numeric](6, 0) NOT NULL,
