@@ -604,7 +604,7 @@
     <Build Include="GVP\Tables\RADSnap.sql" />
     <Build Include="GVP\Tables\gvp__Account_Activity__c.sql" />
     <Build Include="SRSIn\Tables\SRSCLNDR.sql" />
-    <Build Include="SRSIn\Tables\ORD.sql" />
+    <Build Include="SRSIn\Tables\ORDDA.sql" />
     <Build Include="SRSIn\Tables\INVDA.sql" />
     <Build Include="SRSIn\Tables\ITMDA.sql" />
     <Build Include="SRSIn\Tables\DEPLDA.sql" />
@@ -616,7 +616,7 @@
     <Build Include="SRSIn\Tables\VOCOT.sql" />
     <Build Include="SRSIn\Tables\VOXREF.sql" />
     <Build Include="SRSIn\Tables\VIPOUT.sql" />
-    <Build Include="SRSIn\Tables\SLM.sql" />
+    <Build Include="SRSIn\Tables\SLMDA.sql" />
     <Build Include="SRSIn\Tables\ITM2DA.sql" />
     <Build Include="SRSIn\Tables\VIPVALUE.sql" />
   </ItemGroup>

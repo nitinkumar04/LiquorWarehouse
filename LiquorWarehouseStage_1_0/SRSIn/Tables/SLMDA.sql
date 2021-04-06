@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[SLM]
+﻿CREATE TABLE [SRSIn].[SLMDA]
 (
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMSUPP] [varchar](10) NOT NULL,

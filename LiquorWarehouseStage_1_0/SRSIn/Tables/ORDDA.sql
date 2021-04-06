@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [SRSIn].[ORD](
+CREATE TABLE [SRSIn].[ORDDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
 	[ORLINE#] [numeric](7, 0) NULL,
