@@ -5,5 +5,6 @@
 	[SCDATA] [varchar](8) NOT NULL,
 	[SCPARENT] [varchar](8) NOT NULL,
 	[SCSTARTDT] [numeric](8, 0) NOT NULL,
-	[SCENDDT] [numeric](8, 0) NOT NULL
+	[SCENDDT] [numeric](8, 0) NOT NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

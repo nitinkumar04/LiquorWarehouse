@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[DEPL](
+﻿CREATE TABLE [SRSIn].[DEPLDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMDIST] [varchar](14) NOT NULL,
 	[SMACTD] [numeric](6, 0) NOT NULL,
@@ -40,5 +40,6 @@
 	[NRLSTSALE] [varchar](8) NULL,
 	[INAVGSLS] [numeric](8, 0) NULL,
 	[INPARENT] [varchar](8) NULL,
-	[SMPERIOD] [numeric](6, 0) NOT NULL
+	[SMPERIOD] [numeric](6, 0) NOT NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 

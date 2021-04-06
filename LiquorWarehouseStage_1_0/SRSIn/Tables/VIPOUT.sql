@@ -54,7 +54,8 @@
 	VPSEAOPN Numeric(2)NULL,
 	VPSEACLS Numeric(2)NULL,
 	MAXABV [varchar](128)NULL,
-	ROLLUPID [varchar](128)NULL
+	ROLLUPID [varchar](128)NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )
 
 

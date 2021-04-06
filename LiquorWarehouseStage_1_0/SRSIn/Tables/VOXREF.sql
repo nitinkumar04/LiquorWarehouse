@@ -7,5 +7,6 @@
 	VPST [varchar](2) NOT NULL,
 	VPPARENT [varchar](25)NULL,
 	TDLINXCD [varchar](7)NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 
 )

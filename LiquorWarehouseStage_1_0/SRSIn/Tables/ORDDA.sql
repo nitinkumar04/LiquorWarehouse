@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [SRSIn].[ORD](
+CREATE TABLE [SRSIn].[ORDDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
 	[ORLINE#] [numeric](7, 0) NULL,
@@ -26,5 +26,6 @@ CREATE TABLE [SRSIn].[ORD](
 	[ORREPACK] [varchar](1) NOT NULL,
 	[ORCRTDATE] [numeric](7, 0) NOT NULL,
 	[ORCRTTIME] [numeric](6, 0) NOT NULL,
-	[ORPARENT] [varchar](8) NULL
+	[ORPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 
