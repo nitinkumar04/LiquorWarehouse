@@ -6,5 +6,4 @@
   CODE        varchar(3)  NOT NULL,
   [DESC]      varchar(50) NOT NULL,
 	[FILENAME] VARCHAR(100) NOT NULL
-    CONSTRAINT [PK_SRSVALUE] PRIMARY KEY ([FIELD], [CODE]),
 )

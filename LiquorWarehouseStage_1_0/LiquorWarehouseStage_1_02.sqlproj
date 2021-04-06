@@ -610,7 +610,7 @@
     <Build Include="SRSIn\Tables\SRSCLNDR.sql" />
     <Build Include="SRSIn\Tables\ORD.sql" />
     <Build Include="SRSIn\Tables\NON.sql" />
-    <Build Include="SRSIn\Tables\INV.sql" />
+    <Build Include="SRSIn\Tables\INVDA.sql" />
     <Build Include="SRSIn\Tables\ITM.sql" />
     <Build Include="SRSIn\Tables\DEPL.sql" />
     <Build Include="SRSIn\Tables\CTLS.sql" />

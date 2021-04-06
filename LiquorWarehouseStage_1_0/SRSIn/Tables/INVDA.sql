@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[INV](
+﻿CREATE TABLE [SRSIn].[INVDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
 	[VIPSRS] [varchar](5) NULL,
