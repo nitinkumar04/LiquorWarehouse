@@ -70,10 +70,10 @@
 	,[ROWHSE] [varchar](8) NULL
 	,[ROPARENT] [varchar](25) NULL
 	,[ROLICENSE] [varchar](15) NULL
-	,[ROOPEN] [numeric](16,0) NOT NULL
-	,[ROCLOSED] [numeric](16,0) NOT NULL
-	,[ROSEASOP] [numeric](16,0) NOT NULL
-	,[ROSEASCL] [numeric](16,0) NOT NULL
-	,[ROPLANO] [varchar](100) NOT NULL
+	,[ROOPEN] [numeric](16,0)  NULL
+	,[ROCLOSED] [numeric](16,0)  NULL
+	,[ROSEASOP] [numeric](16,0)  NULL
+	,[ROSEASCL] [numeric](16,0)  NULL
+	,[ROPLANO] [varchar](30)  NULL
 	,[FILENAME] [varchar](100) NOT NULL
 )
