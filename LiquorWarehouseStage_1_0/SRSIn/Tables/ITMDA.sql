@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[ITM](
+﻿CREATE TABLE [SRSIn].[ITMDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SUPPID] [varchar](10) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
@@ -16,5 +16,6 @@
 	[IXVINTAGE] [varchar](4) NOT NULL,
 	[XGTINR] [numeric](14, 0) NOT NULL,
 	[IXREPACK] [varchar](1) NULL,
-	[IXPARENT] [varchar](8) NULL
+	[IXPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )

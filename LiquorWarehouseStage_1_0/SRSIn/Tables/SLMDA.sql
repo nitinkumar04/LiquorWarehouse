@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[SLM]
+﻿CREATE TABLE [SRSIn].[SLMDA]
 (
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[SMSUPP] [varchar](10) NOT NULL,
@@ -13,5 +13,6 @@
 	[SML3NAME] [varchar](35) NULL,
 	[SMDIV] [varchar](5) NULL,
 	[SMDIVNAME] [varchar](35) NULL,
-	[SMPARENT] [varchar](8) NULL
+	[SMPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 ) 

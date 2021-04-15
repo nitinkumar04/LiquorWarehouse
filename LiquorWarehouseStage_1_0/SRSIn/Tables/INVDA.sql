@@ -1,4 +1,4 @@
-﻿CREATE TABLE [SRSIn].[INV](
+﻿CREATE TABLE [SRSIn].[INVDA](
 	[RECORDTYPE] [varchar](6) NOT NULL,
 	[DISTID] [varchar](8) NOT NULL,
 	[VIPSRS] [varchar](5) NULL,
@@ -18,5 +18,6 @@
 	[RIDITEM] [varchar](10) NULL,
 	[RIITMSTS] [varchar](1) NULL,
 	[RIREPACK] [varchar](1) NULL,
-	[RIPARENT] [varchar](8) NULL
+	[RIPARENT] [varchar](8) NULL,
+	[FILENAME] VARCHAR(100) NOT NULL
 )
